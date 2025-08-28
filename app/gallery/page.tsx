@@ -370,12 +370,11 @@ export default function Gallery() {
   return (
     <div className="min-h-screen relative bg-white overflow-hidden">
       <div className="fixed inset-0 pointer-events-none z-0">
-        {/* Floating cupcake icons */}
         <div
           className="absolute top-20 left-10 animate-bounce"
           style={{ animationDelay: "0s", animationDuration: "3s" }}
         >
-          <svg className="w-8 h-8 text-pink-200 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="w-8 h-8 text-pink-300 opacity-40" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
           </svg>
         </div>
@@ -383,23 +382,24 @@ export default function Gallery() {
           className="absolute top-40 right-20 animate-pulse"
           style={{ animationDelay: "1s", animationDuration: "4s" }}
         >
-          <svg className="w-6 h-6 text-yellow-200 opacity-25" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          <svg className="w-10 h-10 text-yellow-300 opacity-35" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 1.27 10.29 2.97c-.19.3-.29.65-.29 1.03 0 1.1-.89 2-2 2s-2-.9-2-2z" />
           </svg>
         </div>
         <div
           className="absolute bottom-32 left-1/4 animate-bounce"
           style={{ animationDelay: "2s", animationDuration: "5s" }}
         >
-          <svg className="w-10 h-10 text-orange-200 opacity-20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          <svg className="w-12 h-12 text-orange-300 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            <circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.6" />
           </svg>
         </div>
         <div
           className="absolute top-1/3 right-10 animate-pulse"
           style={{ animationDelay: "0.5s", animationDuration: "3.5s" }}
         >
-          <svg className="w-7 h-7 text-pink-300 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="w-9 h-9 text-pink-400 opacity-35" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
           </svg>
         </div>
@@ -407,8 +407,26 @@ export default function Gallery() {
           className="absolute bottom-20 right-1/3 animate-bounce"
           style={{ animationDelay: "1.5s", animationDuration: "4.5s" }}
         >
-          <svg className="w-9 h-9 text-yellow-300 opacity-20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          <svg className="w-11 h-11 text-yellow-400 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
+            <rect x="8" y="14" width="8" height="6" rx="1" fill="currentColor" opacity="0.7" />
+          </svg>
+        </div>
+        <div
+          className="absolute top-60 left-1/3 animate-pulse"
+          style={{ animationDelay: "3s", animationDuration: "6s" }}
+        >
+          <svg className="w-7 h-7 text-pink-200 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
+          </svg>
+        </div>
+        <div
+          className="absolute bottom-40 left-20 animate-bounce"
+          style={{ animationDelay: "2.5s", animationDuration: "4s" }}
+        >
+          <svg className="w-8 h-8 text-orange-200 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="3" fill="currentColor" />
+            <path d="M12 12c-2 0-6 1-6 3v2h12v-2c0-2-4-3-6-3z" />
           </svg>
         </div>
       </div>

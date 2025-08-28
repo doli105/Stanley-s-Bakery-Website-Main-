@@ -82,14 +82,76 @@ export default function About() {
   }
 
   return (
-    <div className="min-h-screen relative bg-white">
+    <div className="min-h-screen relative bg-white overflow-hidden">
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div
+          className="absolute top-20 left-10 animate-bounce"
+          style={{ animationDelay: "0s", animationDuration: "3s" }}
+        >
+          <svg className="w-8 h-8 text-pink-300 opacity-40" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
+          </svg>
+        </div>
+        <div
+          className="absolute top-40 right-20 animate-pulse"
+          style={{ animationDelay: "1s", animationDuration: "4s" }}
+        >
+          <svg className="w-10 h-10 text-yellow-300 opacity-35" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 1.27 10.29 2.97c-.19.3-.29.65-.29 1.03 0 1.1.89 2 2 2zm4.6 9.99l-1.07-1.07-1.08 1.07c-1.3 1.3-3.58 1.31-4.89 0l-1.07-1.07L7.4 15.99C8.7 17.3 10.8 17.3 12 16.2c1.2 1.1 3.3 1.1 4.6-.21zm-8.6-9.99c0-.38.1-.73.29-1.03L10 1.27l1.71 1.7c.19.3.29.65.29 1.03 0 1.1-.89 2-2 2s-2-.9-2-2z" />
+          </svg>
+        </div>
+        <div
+          className="absolute bottom-32 left-1/4 animate-bounce"
+          style={{ animationDelay: "2s", animationDuration: "5s" }}
+        >
+          <svg className="w-12 h-12 text-orange-300 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            <circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.6" />
+          </svg>
+        </div>
+        <div
+          className="absolute top-1/3 right-10 animate-pulse"
+          style={{ animationDelay: "0.5s", animationDuration: "3.5s" }}
+        >
+          <svg className="w-9 h-9 text-pink-400 opacity-35" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </div>
+        <div
+          className="absolute bottom-20 right-1/3 animate-bounce"
+          style={{ animationDelay: "1.5s", animationDuration: "4.5s" }}
+        >
+          <svg className="w-11 h-11 text-yellow-400 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
+            <rect x="8" y="14" width="8" height="6" rx="1" fill="currentColor" opacity="0.7" />
+          </svg>
+        </div>
+        <div
+          className="absolute top-60 left-1/3 animate-pulse"
+          style={{ animationDelay: "3s", animationDuration: "6s" }}
+        >
+          <svg className="w-7 h-7 text-pink-200 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
+          </svg>
+        </div>
+        <div
+          className="absolute bottom-40 left-20 animate-bounce"
+          style={{ animationDelay: "2.5s", animationDuration: "4s" }}
+        >
+          <svg className="w-8 h-8 text-orange-200 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="3" fill="currentColor" />
+            <path d="M12 12c-2 0-6 1-6 3v2h12v-2c0-2-4-3-6-3z" />
+          </svg>
+        </div>
+      </div>
+
       <div className="pt-2 pb-8 relative z-10">
         <div className="container mx-auto px-3">
           <div className="text-center">
             <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-orange-500 bg-clip-text text-transparent mb-2 font-serif">
               Our Story
             </h1>
-            <p className="text-sm md:text-lg text-amber-700 max-w-3xl mx-auto font-medium mb-4">
+            <p className="text-sm md:text-lg text-pink-600 max-w-3xl mx-auto font-medium mb-4">
               Baking with love since 2016
             </p>
           </div>
@@ -105,12 +167,12 @@ export default function About() {
           }`}
         >
           <div className="space-y-6">
-            <Card className="bg-white border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-pink-50/30 border-pink-200 shadow-lg hover:shadow-xl transition-all duration-300 border-2">
               <CardContent className="p-8">
-                <h2 className="text-3xl font-bold text-amber-900 mb-6 font-serif">
+                <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-500 bg-clip-text text-transparent mb-6 font-serif">
                   Our Story — Baking with love since 2016
                 </h2>
-                <div className="space-y-4 text-amber-700 leading-relaxed">
+                <div className="space-y-4 text-pink-700 leading-relaxed">
                   <p>
                     Baking is our passion and family tradition. Founded in 2016 by Master Baker Sifiso Stanley Linda,
                     our home-based bakery started from our small kitchen and then expanded to a bigger structure. Our
@@ -201,52 +263,52 @@ export default function About() {
             What Makes Us Special
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="bg-white border-gray-200 shadow-lg text-center hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-pink-50/20 border-pink-200 shadow-lg text-center hover:shadow-xl transition-all duration-300 border-2 hover:border-pink-300">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Heart className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3 font-serif">Made with Love</h3>
-                <p className="text-amber-700 leading-relaxed">
+                <h3 className="text-xl font-bold text-pink-700 mb-3 font-serif">Made with Love</h3>
+                <p className="text-pink-600 leading-relaxed">
                   Every cake is crafted with genuine care and attention, using only the finest ingredients and
                   time-honored techniques.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-gray-200 shadow-lg text-center hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-yellow-50/20 border-yellow-200 shadow-lg text-center hover:shadow-xl transition-all duration-300 border-2 hover:border-yellow-300">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Award className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3 font-serif">Award-Winning Quality</h3>
-                <p className="text-amber-700 leading-relaxed">
+                <h3 className="text-xl font-bold text-orange-700 mb-3 font-serif">Award-Winning Quality</h3>
+                <p className="text-orange-600 leading-relaxed">
                   Recognized for excellence in both taste and design, our cakes have won hearts and awards throughout
                   the community.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-gray-200 shadow-lg text-center hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-pink-50/20 border-pink-200 shadow-lg text-center hover:shadow-xl transition-all duration-300 border-2 hover:border-pink-300">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3 font-serif">Community Focused</h3>
-                <p className="text-amber-700 leading-relaxed">
+                <h3 className="text-xl font-bold text-pink-700 mb-3 font-serif">Community Focused</h3>
+                <p className="text-pink-600 leading-relaxed">
                   We're proud to be part of your celebrations, from intimate gatherings to grand occasions that bring
                   people together.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-gray-200 shadow-lg text-center hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-yellow-50/20 border-yellow-200 shadow-lg text-center hover:shadow-xl transition-all duration-300 border-2 hover:border-yellow-300">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Clock className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3 font-serif">Always Fresh</h3>
-                <p className="text-amber-700 leading-relaxed text-sm">
+                <h3 className="text-xl font-bold text-orange-700 mb-3 font-serif">Always Fresh</h3>
+                <p className="text-orange-600 leading-relaxed text-sm">
                   We bake fresh daily and never compromise on quality, ensuring every bite is as perfect as the first.
                 </p>
               </CardContent>
@@ -266,10 +328,10 @@ export default function About() {
             Meet Our Sweet Team
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-white border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-pink-50/20 border-pink-200 shadow-lg hover:shadow-xl transition-all duration-300 border-2 hover:border-pink-300">
               <CardContent className="p-6 text-center">
                 {/* Updated team member image border with Stanley's gradient colors */}
-                <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden border-4 border-pink-400 hover:border-pink-500 transition-all duration-300">
+                <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden border-4 border-pink-400 hover:border-pink-500 transition-all duration-300 shadow-lg">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-13%20at%2011.19.42_530d56d5.jpg-VhGy1cz3ZKYWYGlqrRwPPkK00vogLC.jpeg"
                     alt="Sifiso Stanley Linda - Founder and Master Baker"
@@ -278,18 +340,18 @@ export default function About() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-2 font-serif">Sifiso Stanley Linda</h3>
-                <p className="text-amber-600 font-medium mb-3">Founder & Master Baker</p>
-                <p className="text-amber-700 leading-relaxed text-sm">
+                <h3 className="text-xl font-bold text-pink-700 mb-2 font-serif">Sifiso Stanley Linda</h3>
+                <p className="text-pink-600 font-medium mb-3">Founder & Master Baker</p>
+                <p className="text-pink-600 leading-relaxed text-sm">
                   The creative force behind our handcrafted treats, combining tradition with artistry.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-gradient-to-br from-white to-yellow-50/20 border-yellow-200 shadow-lg hover:shadow-xl transition-all duration-300 border-2 hover:border-yellow-300">
               <CardContent className="p-6 text-center">
                 {/* Updated team member image border with Stanley's gradient colors */}
-                <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden border-4 border-yellow-400 hover:border-yellow-500 transition-all duration-300">
+                <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden border-4 border-yellow-400 hover:border-yellow-500 transition-all duration-300 shadow-lg">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-13%20at%2011.19.42_f23bb3dc.jpg-8si4hK32ygHttoOTIjjy1NdUUuJiph.jpeg"
                     alt="Noluvuyo Linda - Manager"
@@ -298,9 +360,9 @@ export default function About() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-2 font-serif">Noluvuyo Linda</h3>
-                <p className="text-amber-600 font-medium mb-3">Co-founder & Manager</p>
-                <p className="text-amber-700 leading-relaxed text-sm">
+                <h3 className="text-xl font-bold text-orange-700 mb-2 font-serif">Noluvuyo Linda</h3>
+                <p className="text-orange-600 font-medium mb-3">Co-founder & Manager</p>
+                <p className="text-orange-600 leading-relaxed text-sm">
                   Ensuring every detail runs smoothly so our customers always leave with a smile.
                 </p>
               </CardContent>
@@ -322,13 +384,13 @@ export default function About() {
         </a>
       </div>
 
-      <div className="bg-gradient-to-r from-amber-50 to-orange-50 py-12 mt-16">
+      <div className="bg-gradient-to-r from-pink-50 to-orange-50 py-12 mt-16">
         <div className="container mx-auto px-3 text-center">
           {/* Updated "Ready to Order Your Perfect Cake?" heading with Stanley's pink gradient */}
           <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-500 bg-clip-text text-transparent mb-4 font-serif">
             Ready to Order Your Perfect Cake?
           </h2>
-          <p className="text-amber-700 mb-6 max-w-2xl mx-auto">
+          <p className="text-pink-600 mb-6 max-w-2xl mx-auto">
             Browse our full menu and place your order today. We can't wait to create something special for you!
           </p>
           <Link href="/cakes">
