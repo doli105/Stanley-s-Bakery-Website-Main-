@@ -16,13 +16,13 @@ export default function Hero() {
   const cart = useCart()
 
   const slideshowImages = [
-    "/images/hero-cupcakes.jpg", // Salted caramel cupcakes with cream frosting
-    "/images/hero-donuts.jpg", // Glazed donuts with caramel coating
-    "/images/hero-churros.jpg", // Churros with chocolate dipping sauce
-    "/images/hero-wedding-cake.jpg", // Three-tier wedding cake with baby's breath
-    "/images/hero-strawberry-cake.jpg", // Chocolate layer cake with fresh strawberries
-    "/images/hero-birthday-cake.jpg", // White birthday cake with embossed leaf pattern and gold text
-    "/images/hero-chocolate-cake.jpg", // Elaborate chocolate cake with intricate piped decorations
+    "/images/hero-cupcakes.jpg", // Start with colorful, appealing cupcakes
+    "/images/hero-chocolate-cake.jpg", // Follow with elaborate chocolate artistry
+    "/images/hero-donuts.jpg", // Transition to warm, golden donuts
+    "/images/hero-birthday-cake.jpg", // Elegant white cake with gold accents
+    "/images/hero-strawberry-cake.jpg", // Fresh, vibrant strawberry cake
+    "/images/hero-wedding-cake.jpg", // Sophisticated wedding cake
+    "/images/hero-churros.jpg", // End with warm, comforting churros and chocolate
   ]
 
   useEffect(() => {
