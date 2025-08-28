@@ -1,0 +1,1053 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --radius: 0.5rem;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Remove white space gap on mobile between navigation and page headings */
+@media (max-width: 640px) {
+  .pt-4 {
+    padding-top: 0.5rem !important;
+  }
+
+  /* Ensure page containers start immediately after navigation */
+  .container.mx-auto.px-4 {
+    padding-top: 0 !important;
+  }
+
+  /* Remove any extra margin/padding from page headings on mobile */
+  h1.animate-slideInFromTop,
+  h1.animate-slideInFromLeft {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+/* Enhanced Text Shadows for Readability */
+.text-shadow-strong {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.text-shadow-medium {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6), 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Shadow Effects */
+.btn-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.btn-shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.btn-shadow-primary {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(245, 158, 11, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-shadow-primary:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px rgba(245, 158, 11, 0.3),
+    0 0 0 1px rgba(245, 158, 11, 0.2);
+  transform: translateY(-3px);
+}
+
+.btn-shadow-secondary {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-shadow-secondary:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px rgba(255, 255, 255, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.btn-shadow-accent {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(236, 72, 153, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-shadow-accent:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px rgba(236, 72, 153, 0.3),
+    0 0 0 1px rgba(236, 72, 153, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-amber-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-amber-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-amber-400;
+}
+
+/* Added scrollbar-hide utility for smooth horizontal scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes gentle-zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes gentle-pan {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-5px) translateY(-3px);
+  }
+  50% {
+    transform: translateX(3px) translateY(-5px);
+  }
+  75% {
+    transform: translateX(-2px) translateY(2px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-gentle-zoom {
+  animation: gentle-zoom 15s ease-in-out infinite;
+}
+
+.animate-gentle-pan {
+  animation: gentle-pan 20s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Dancing Script font variable */
+.font-dancing-script {
+  font-family: "Dancing Script", cursive;
+}
+
+/* Modern animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Updated slideInFromLeft to slideInFromTop for consistent heading animations */
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Updated class name to match the new slideInFromTop animation */
+.animate-slideInFromTop {
+  animation: slideInFromTop 0.8s ease-out forwards;
+}
+
+.animate-slideInFromBottom {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.animate-pulse-subtle {
+  animation: pulse 2s infinite;
+}
+
+/* Modern button hover effects */
+.btn-modern {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern gradient backgrounds */
+.gradient-modern {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #f59e0b 100%);
+}
+
+/* Enhanced focus states */
+.focus-modern:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #f59e0b;
+  ring-offset: 2px;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gentleFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Enhanced smooth sliding background animation for mobile - shows full image while filling space */
+@keyframes smooth-slide-mobile {
+  0% {
+    background-position: center 0%, center 100%;
+  }
+  25% {
+    background-position: center 10%, center 110%;
+  }
+  50% {
+    background-position: center 20%, center 120%;
+  }
+  75% {
+    background-position: center 10%, center 110%;
+  }
+  100% {
+    background-position: center 0%, center 100%;
+  }
+}
+
+/* Enhanced desktop sliding animation with subtle movement */
+@keyframes smooth-slide-desktop {
+  0% {
+    background-position: center 0%;
+    transform: scale(1.05);
+  }
+  33% {
+    background-position: center 5%;
+    transform: scale(1.08);
+  }
+  66% {
+    background-position: center 10%;
+    transform: scale(1.1);
+  }
+  100% {
+    background-position: center 0%;
+    transform: scale(1.05);
+  }
+}
+
+/* Dynamic zoom effect for background */
+@keyframes dynamic-zoom {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(2deg);
+  }
+}
+
+.animate-dynamic-zoom {
+  animation: dynamic-zoom 20s ease-in-out infinite;
+}
+
+/* Updated animation classes for smooth sliding with full image display */
+.animate-smooth-slide-mobile {
+  animation: smooth-slide-mobile 20s ease-in-out infinite;
+}
+
+.animate-smooth-slide-desktop {
+  animation: smooth-slide-desktop 25s ease-in-out infinite;
+}
+
+/* Animation classes */
+.animate-slideInFromRight {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.animate-gentleFloat {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Elegant float animation for logo */
+@keyframes elegant-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+.animate-elegant-float {
+  animation: elegant-float 4s ease-in-out infinite;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+}
+
+/* Staggered animations */
+.stagger-1 {
+  animation-delay: 0.1s;
+}
+.stagger-2 {
+  animation-delay: 0.2s;
+}
+.stagger-3 {
+  animation-delay: 0.3s;
+}
+.stagger-4 {
+  animation-delay: 0.4s;
+}
+.stagger-5 {
+  animation-delay: 0.5s;
+}
+.stagger-6 {
+  animation-delay: 0.6s;
+}
+.stagger-7 {
+  animation-delay: 0.7s;
+}
+
+/* Smooth page transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s
+    ease;
+}
+
+/* Enhanced button animations */
+.btn-dynamic {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-dynamic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-dynamic:hover::before {
+  left: 100%;
+}
+
+.btn-dynamic:hover {
+  transform: translateY(-2px);
+}
+
+/* Parallax effect */
+.parallax-slow {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Bakery-themed animations */
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 25%, #fecaca 50%, #fde68a 75%, #fef3c7 100%);
+  }
+  25% {
+    background: linear-gradient(135deg, #fed7aa 0%, #fecaca 25%, #fde68a 50%, #fef3c7 75%, #fed7aa 100%);
+  }
+  50% {
+    background: linear-gradient(135deg, #fecaca 0%, #fde68a 25%, #fef3c7 50%, #fed7aa 75%, #fecaca 100%);
+  }
+  75% {
+    background: linear-gradient(135deg, #fde68a 0%, #fef3c7 25%, #fed7aa 50%, #fecaca 75%, #fde68a 100%);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-3deg);
+  }
+}
+
+@keyframes float-fast {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes pattern-drift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(10px) translateY(-5px);
+  }
+  50% {
+    transform: translateX(-5px) translateY(-10px);
+  }
+  75% {
+    transform: translateX(-10px) translateY(5px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px);
+  }
+  70% {
+    transform: scale(0.95) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3), 0 0 30px rgba(245, 158, 11, 0.1);
+  }
+}
+
+/* Animation classes */
+.animate-gradient-shift {
+  animation: gradient-shift 8s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 4s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-pattern-drift {
+  animation: pattern-drift 20s linear infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Delay classes for staggered animations */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+
+.delay-800 {
+  animation-delay: 0.8s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-1500 {
+  animation-delay: 1.5s;
+}
+
+.delay-2000 {
+  animation-delay: 2s;
+}
+
+.delay-2500 {
+  animation-delay: 2.5s;
+}
+
+.delay-3000 {
+  animation-delay: 3s;
+}
+
+.delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Enhanced shadow effects */
+.shadow-3xl {
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Backdrop blur enhancements */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+/* Bakery-themed background animations for other pages */
+.bakery-animated-bg {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.bakery-animated-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Bakery-themed CSS shapes and animations for other pages */
+@keyframes bakery-cake-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(15deg);
+  }
+}
+
+@keyframes bakery-bread-drift {
+  0% {
+    transform: translateX(-100px) translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(-20px) rotate(360deg);
+  }
+}
+
+@keyframes bakery-flour-particle {
+  0% {
+    transform: translateY(-20px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) translateX(30px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes bakery-whisk-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+@keyframes bakery-oven-glow {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+/* CSS-only bakery shapes */
+.bakery-cake-shape {
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to bottom, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  border-radius: 8px 8px 4px 4px;
+  position: relative;
+}
+
+.bakery-cake-shape::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 8px;
+  background: #fef3c7;
+  border-radius: 4px;
+}
+
+.bakery-cake-shape::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 1px;
+}
+
+.bakery-bread-shape {
+  width: 50px;
+  height: 25px;
+  background: linear-gradient(to bottom, #fbbf24 0%, #f59e0b 100%);
+  border-radius: 25px 25px 15px 15px;
+  position: relative;
+}
+
+.bakery-bread-shape::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 30px;
+  height: 3px;
+  background: #d97706;
+  border-radius: 2px;
+  box-shadow: 0 6px 0 #d97706, 0 12px 0 #d97706;
+}
+
+.bakery-flour-particle {
+  width: 6px;
+  height: 6px;
+  background: #fef3c7;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.bakery-whisk-shape {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6b7280;
+  border-radius: 50%;
+  position: relative;
+}
+
+.bakery-whisk-shape::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 30px;
+  background: #374151;
+  border-radius: 1px;
+}
+
+.bakery-oven-glow {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #fbbf24 0%, #f59e0b 50%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* Animation classes for bakery elements */
+.animate-bakery-cake-float {
+  animation: bakery-cake-float 8s ease-in-out infinite;
+}
+
+.animate-bakery-bread-drift {
+  animation: bakery-bread-drift 20s linear infinite;
+}
+
+.animate-bakery-flour-particle {
+  animation: bakery-flour-particle 12s linear infinite;
+}
+
+.animate-bakery-whisk-spin {
+  animation: bakery-whisk-spin 4s linear infinite;
+}
+
+.animate-bakery-oven-glow {
+  animation: bakery-oven-glow 3s ease-in-out infinite;
+}
+
+/* Logo glow effect */
+.logo-glow {
+  filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.logo-glow:hover {
+  filter: drop-shadow(0 0 30px rgba(245, 158, 11, 0.5));
+}
+
+/* Hover glow for special elements */
+.hover-glow:hover {
+  filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.4));
+}
+
+/* Custom font imports */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+.font-dancing-script {
+  font-family: "Dancing Script", cursive;
+}
+
+/* Enhanced responsive background image positioning for full image display */
+@media (max-width: 640px) {
+  .hero-bg {
+    object-position: center 30%;
+  }
+
+  /* Enhanced mobile background coverage with full image display */
+  .hero-bg-mobile {
+    background-size: contain !important;
+    background-repeat: repeat-y !important;
+    background-position: center 0% !important;
+    min-height: 150vh !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-bg {
+    object-position: center 40%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-bg {
+    object-position: center center;
+  }
+}
+
+/* Enhanced landscape and mobile optimizations for full image */
+@media (orientation: landscape) and (max-height: 600px) {
+  .hero-bg {
+    object-position: center 25%;
+    transform: scale(1.1);
+  }
+
+  .hero-bg-mobile {
+    background-size: contain !important;
+    background-repeat: repeat-y !important;
+    background-position: center 0% !important;
+    min-height: 180vh !important;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1920px) {
+  .hero-bg {
+    object-position: center center;
+    transform: scale(1.05);
+  }
+}
