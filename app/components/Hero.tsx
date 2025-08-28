@@ -10,37 +10,26 @@ import OrderTracking from "./OrderTracking"
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [isOrderTrackingOpen, setIsOrderTrackingOpen] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
   const cart = useCart()
 
   const slideshowImages = [
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.27_411b42eb.jpg-6B2xdYI0CYqsYgPktOyZLvFBfdwTdS.jpeg", // Chocolate strawberry cake
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.28_7852dbd9.jpg-L3hdibFeecL1JvsuAAdADkCxhLyY1K.jpeg", // Salted caramel cupcakes
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.26_dc8c4c6a.jpg-C2fIfagb8oDTTrkamuFTqwV6gYh5Ug.jpeg", // Glazed donuts
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.28_07d7c411.jpg-I2t15f7NaNhxq5SlBqaImDOA1ITSVG.jpeg", // Churros with chocolate
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.27_411b42eb.jpg-6B2xdYI0CYqsYgPktOyZLvFBfdwTdS.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.28_7852dbd9.jpg-L3hdibFeecL1JvsuAAdADkCxhLyY1K.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.26_dc8c4c6a.jpg-C2fIfagb8oDTTrkamuFTqwV6gYh5Ug.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2001.16.28_07d7c411.jpg-I2t15f7NaNhxq5SlBqaImDOA1ITSVG.jpeg",
   ]
 
   useEffect(() => {
     setIsVisible(true)
 
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 20,
-        y: (e.clientY / window.innerHeight) * 20,
-      })
-    }
-
     const slideInterval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slideshowImages.length)
-    }, 8000) // Change slide every 8 seconds
-
-    window.addEventListener("mousemove", handleMouseMove)
+    }, 8000)
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove)
       clearInterval(slideInterval)
     }
   }, [slideshowImages.length])
@@ -61,73 +50,22 @@ export default function Hero() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              filter: "contrast(1.1) saturate(1.1) brightness(1.05)",
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-b from-amber-900/5 via-black/10 to-amber-800/15" />
-      </div>
-
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Rising steam effects */}
-        <div className="absolute bottom-0 left-1/4 w-2 h-32 opacity-30">
-          <div className="steam-rise bg-gradient-to-t from-amber-200/60 to-transparent rounded-full animate-steam-1" />
-        </div>
-
-        {/* Golden flour dust particles */}
-        {[...Array(6)].map((_, i) => (
-          <div
-            key={`flour-${i}`}
-            className="absolute w-1 h-1 bg-gradient-to-r from-amber-200 to-yellow-300 rounded-full animate-flour-fall opacity-40 shadow-sm"
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 10}s`,
-              animationDuration: `${12 + Math.random() * 8}s`, // Slower animation
-            }}
-          />
-        ))}
-
-        {/* Warm golden twinkling lights */}
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={`twinkle-${i}`}
-            className="absolute w-1 h-1 bg-gradient-to-r from-amber-300 to-yellow-400 rounded-full animate-twinkle opacity-50 shadow-amber-300/30 shadow-sm"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 8}s`,
-              animationDuration: `${5 + Math.random() * 4}s`, // Slower animation
-            }}
-          />
-        ))}
-
-        {/* Subtle floating sparkles */}
-        {[...Array(4)].map((_, i) => (
-          <div
-            key={`sparkle-${i}`}
-            className="absolute animate-float opacity-30"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 6}s`,
-              animationDuration: `${8 + Math.random() * 6}s`, // Slower animation
-            }}
-          >
-            <Sparkles className="h-3 w-3 text-amber-300 drop-shadow-sm" />
-          </div>
-        ))}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="absolute top-4 right-4 z-20 flex flex-row sm:flex-col space-x-2 sm:space-x-0 sm:space-y-3">
         <button
           onClick={() => setIsCartOpen(true)}
-          className="relative bg-white/95 backdrop-blur-sm hover:bg-white p-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-200/50"
+          className="relative bg-white/20 backdrop-blur-sm hover:bg-white/30 p-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
           disabled={!cart.isLoaded}
           title="View Cart"
         >
-          <ShoppingCart className="h-5 w-5 text-gray-800 group-hover:text-gray-900" />
+          <ShoppingCart className="h-5 w-5 text-white" />
           {totalItems > 0 && (
-            <span className="absolute -top-1 -right-1 bg-gradient-to-r from-amber-400 to-yellow-500 text-amber-900 text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center animate-pulse shadow-md">
+            <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
               {totalItems}
             </span>
           )}
@@ -135,10 +73,10 @@ export default function Hero() {
 
         <button
           onClick={() => setIsOrderTrackingOpen(true)}
-          className="bg-white/95 backdrop-blur-sm hover:bg-white p-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-200/50"
+          className="bg-white/20 backdrop-blur-sm hover:bg-white/30 p-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
           title="Track Your Order"
         >
-          <Package className="h-5 w-5 text-gray-800 group-hover:text-gray-900" />
+          <Package className="h-5 w-5 text-white" />
         </button>
       </div>
 
@@ -148,7 +86,7 @@ export default function Hero() {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-2 h-2 rounded-full transition-all duration-500 ${
-              index === currentSlide ? "bg-amber-300 shadow-lg" : "bg-white/50 hover:bg-white/70"
+              index === currentSlide ? "bg-amber-400 scale-125" : "bg-white/50 hover:bg-amber-300/70"
             }`}
           />
         ))}
@@ -161,36 +99,20 @@ export default function Hero() {
           >
             <div className="flex items-center space-x-1">
               {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className={`h-4 w-4 sm:h-5 sm:w-5 fill-amber-400 text-amber-400 transition-all duration-300 hover:scale-125 drop-shadow-lg ${isVisible ? "animate-scaleIn" : ""}`}
-                  style={{ animationDelay: `${0.5 + i * 0.1}s` }}
-                />
+                <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-amber-400 text-amber-400" />
               ))}
             </div>
-            <span
-              className="text-sm sm:text-base text-amber-100 font-medium drop-shadow-2xl"
-              style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.8)" }}
-            >
-              500+ Happy Customers
-            </span>
-            <Sparkles className="h-4 w-4 text-amber-300 animate-pulse drop-shadow-lg" />
+            <span className="text-sm sm:text-base text-white font-medium">500+ Happy Customers</span>
+            <Sparkles className="h-4 w-4 text-amber-400" />
           </div>
 
           <div className={`${isVisible ? "animate-slideInFromLeft stagger-2" : "opacity-0"}`}>
-            <h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-2xl max-w-4xl mx-auto"
-              style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
-            >
-              <span className="inline-block hover:animate-pulse transition-all duration-300">Baked</span>{" "}
-              <span className="inline-block hover:animate-pulse transition-all duration-300">with</span>
-              <span
-                className="font-dancing-script text-amber-300 block text-5xl sm:text-6xl md:text-7xl lg:text-8xl hover:text-yellow-300 transition-colors duration-500 drop-shadow-2xl my-2"
-                style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
-              >
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl mx-auto">
+              Baked with
+              <span className="font-dancing-script text-pink-400 block text-5xl sm:text-6xl md:text-7xl lg:text-8xl my-2">
                 Love,
               </span>
-              <span className="inline-block hover:animate-pulse transition-all duration-300">Naturally!</span>
+              Naturally!
             </h1>
           </div>
 
@@ -200,10 +122,10 @@ export default function Hero() {
             <Link href="/cakes" className="w-full">
               <Button
                 size="default"
-                className="w-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 hover:from-amber-600 hover:via-yellow-600 hover:to-amber-600 text-amber-900 font-bold px-4 py-3 sm:px-6 sm:py-4 lg:px-10 lg:py-6 xl:px-12 xl:py-7 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group border border-amber-400/30 text-sm sm:text-base lg:text-xl xl:text-2xl"
+                className="w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold px-4 py-3 sm:px-6 sm:py-4 lg:px-10 lg:py-6 xl:px-12 xl:py-7 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm sm:text-base lg:text-xl xl:text-2xl border-2 border-pink-400"
               >
-                <span className="relative z-10">VIEW CAKE OPTIONS</span>
-                <ArrowRight className="ml-2 h-5 w-5 sm:h-6 w-6 lg:h-7 lg:w-7 xl:h-8 xl:w-8 group-hover:translate-x-1 transition-transform duration-300" />
+                VIEW CAKE OPTIONS
+                <ArrowRight className="ml-2 h-5 w-5 sm:h-6 w-6 lg:h-7 lg:w-7 xl:h-8 xl:w-8" />
               </Button>
             </Link>
           </div>
@@ -213,33 +135,30 @@ export default function Hero() {
           >
             <button
               onClick={() => setIsCartOpen(true)}
-              className="flex items-center justify-center space-x-2 px-3 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4 xl:px-10 xl:py-5 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group border border-gray-200/50 w-full sm:w-auto text-xs sm:text-sm lg:text-base xl:text-lg"
+              className="flex items-center justify-center space-x-2 px-3 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4 xl:px-10 xl:py-5 bg-white/20 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto text-xs sm:text-sm lg:text-base xl:text-lg"
               disabled={!cart.isLoaded}
             >
-              <ShoppingCart className="h-3 w-3 sm:h-4 sm:w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6 text-gray-800 group-hover:text-gray-900" />
-              <span className="font-medium text-gray-800 group-hover:text-gray-900">
-                Cart {totalItems > 0 && `(${totalItems})`}
-              </span>
+              <ShoppingCart className="h-3 w-3 sm:h-4 sm:w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6 text-white" />
+              <span className="font-medium text-white">Cart {totalItems > 0 && `(${totalItems})`}</span>
             </button>
 
             <button
               onClick={() => setIsOrderTrackingOpen(true)}
-              className="flex items-center justify-center space-x-2 px-3 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4 xl:px-10 xl:py-5 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group border border-gray-200/50 w-full sm:w-auto text-xs sm:text-sm lg:text-base xl:text-lg"
+              className="flex items-center justify-center space-x-2 px-3 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4 xl:px-10 xl:py-5 bg-white/20 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto text-xs sm:text-sm lg:text-base xl:text-lg"
             >
-              <Package className="h-3 w-3 sm:h-4 sm:w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6 text-gray-800 group-hover:text-gray-900" />
-              <span className="font-medium text-gray-800 group-hover:text-gray-900">Track Order</span>
+              <Package className="h-3 w-3 sm:h-4 sm:w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6 text-white" />
+              <span className="font-medium text-white">Track Order</span>
             </button>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-amber-300 rounded-full flex justify-center shadow-lg">
-          <div className="w-1 h-3 bg-gradient-to-b from-amber-300 to-amber-400 rounded-full mt-2 animate-pulse shadow-sm"></div>
+        <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-amber-400 rounded-full mt-2"></div>
         </div>
       </div>
 
-      {/* Modals */}
       {cart.isLoaded && <CartModal isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />}
       <OrderTracking isOpen={isOrderTrackingOpen} onClose={() => setIsOrderTrackingOpen(false)} />
     </section>

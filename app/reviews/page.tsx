@@ -91,10 +91,10 @@ export default function Reviews() {
       <div className="pt-2 pb-8">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-amber-600 bg-clip-text text-transparent mb-4 font-serif">
+            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent mb-4 font-serif">
               Customer Reviews
             </h1>
-            <p className="text-amber-700 text-base md:text-lg mb-6">
+            <p className="text-stanley-pink text-base md:text-lg mb-6">
               Discover our exquisite collection of handcrafted cakes and sweet treats
             </p>
           </div>
@@ -124,16 +124,16 @@ export default function Reviews() {
         </a>
       </div>
 
-      <div className="bg-amber-50 py-12 mt-16">
+      <div className="bg-gradient-to-r from-pink-100 to-yellow-100 py-12 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-amber-700 mb-4 font-serif">
+          <h2 className="text-2xl md:text-3xl font-bold text-stanley-pink mb-4 font-serif">
             Love What You See? Order Your Cake Today!
           </h2>
-          <p className="text-amber-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-stanley-pink mb-6 max-w-2xl mx-auto">
             Join our happy customers and experience the magic of Stanley's Bakery for yourself.
           </p>
           <Link href="/cakes">
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-yellow-400 hover:border-yellow-500">
+            <Button className="bg-stanley-yellow hover:bg-yellow-400 text-stanley-brown font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-stanley-pink hover:border-pink-400">
               Order Now
             </Button>
           </Link>

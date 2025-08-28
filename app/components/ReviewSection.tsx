@@ -89,7 +89,7 @@ export default function ReviewSection() {
           {!showForm ? (
             <Button
               onClick={() => setShowForm(true)}
-              className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold px-8 py-3 rounded-full text-lg shadow-lg hover:shadow-xl transition-all mb-8"
+              className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-amber-900 font-bold px-8 py-3 rounded-full text-lg shadow-lg hover:shadow-xl transition-all border-2 border-yellow-300 mb-8"
             >
               <Plus className="w-5 h-5 mr-2" />
               Add a Review
@@ -98,7 +98,7 @@ export default function ReviewSection() {
             <Card className="max-w-2xl mx-auto bg-white shadow-xl mb-8">
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-amber-600 bg-clip-text text-transparent">
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-orange-500 bg-clip-text text-transparent">
                     Share Your Experience
                   </h3>
                   <Button
@@ -181,7 +181,10 @@ export default function ReviewSection() {
                     >
                       Cancel
                     </Button>
-                    <Button type="submit" className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold px-8">
+                    <Button
+                      type="submit"
+                      className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-amber-900 font-bold px-8 border-2 border-yellow-300"
+                    >
                       Submit Review
                     </Button>
                   </div>
@@ -192,7 +195,9 @@ export default function ReviewSection() {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-amber-700 mb-4">What Our Customers Say</h2>
+          <h2 className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-pink-600 to-orange-500 bg-clip-text text-transparent mb-4">
+            What Our Customers Say
+          </h2>
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
