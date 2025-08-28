@@ -368,11 +368,55 @@ export default function Gallery() {
   }
 
   return (
-    <div className="min-h-screen relative bg-white">
+    <div className="min-h-screen relative bg-white overflow-hidden">
+      <div className="fixed inset-0 pointer-events-none z-0">
+        {/* Floating cupcake icons */}
+        <div
+          className="absolute top-20 left-10 animate-bounce"
+          style={{ animationDelay: "0s", animationDuration: "3s" }}
+        >
+          <svg className="w-8 h-8 text-pink-200 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 8c0-3.31-2.69-6-6-6S6 6.69 6 10v2c0 2.76 2.24 5 5 5h2c2.76 0 5-2.24 5-5v-2z" />
+          </svg>
+        </div>
+        <div
+          className="absolute top-40 right-20 animate-pulse"
+          style={{ animationDelay: "1s", animationDuration: "4s" }}
+        >
+          <svg className="w-6 h-6 text-yellow-200 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+        <div
+          className="absolute bottom-32 left-1/4 animate-bounce"
+          style={{ animationDelay: "2s", animationDuration: "5s" }}
+        >
+          <svg className="w-10 h-10 text-orange-200 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          </svg>
+        </div>
+        <div
+          className="absolute top-1/3 right-10 animate-pulse"
+          style={{ animationDelay: "0.5s", animationDuration: "3.5s" }}
+        >
+          <svg className="w-7 h-7 text-pink-300 opacity-25" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </div>
+        <div
+          className="absolute bottom-20 right-1/3 animate-bounce"
+          style={{ animationDelay: "1.5s", animationDuration: "4.5s" }}
+        >
+          <svg className="w-9 h-9 text-yellow-300 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          </svg>
+        </div>
+      </div>
+
       <div className="pt-2 pb-8 relative z-10">
         <div className="container mx-auto px-3">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-pink-700 bg-clip-text text-transparent mb-2 font-serif">
+            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-orange-500 bg-clip-text text-transparent mb-2 font-serif">
               Our Cake Gallery
             </h1>
             <p className="text-sm md:text-lg text-amber-700 max-w-3xl mx-auto font-medium mb-4">
@@ -407,7 +451,9 @@ export default function Gallery() {
               }}
             >
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg md:text-2xl font-bold text-amber-700 font-serif">{category.name}</h2>
+                <h2 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent font-serif">
+                  {category.name}
+                </h2>
                 <div className="flex space-x-2">
                   <Button
                     variant="outline"
@@ -443,30 +489,30 @@ export default function Gallery() {
                       transitionDelay: `${categoryIndex * 100 + cakeIndex * 50}ms`,
                     }}
                   >
-                    <Card className="w-64 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border-2 border-amber-200 hover:border-amber-400 bg-white overflow-hidden group relative">
+                    <Card className="w-64 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border-2 border-yellow-300 hover:border-yellow-400 bg-white overflow-hidden group relative">
                       <CardContent className="p-0">
-                        <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-yellow-50 border-b-2 border-amber-100 group-hover:border-amber-300 transition-all duration-500">
-                          <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                          <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                          <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                          <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                          <div className="absolute inset-1 border-2 border-transparent group-hover:border-amber-300 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-amber-200/50"></div>
+                        <div className="relative overflow-hidden bg-gradient-to-br from-yellow-50 to-amber-50 border-b-2 border-yellow-200 group-hover:border-yellow-300 transition-all duration-500">
+                          <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                          <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                          <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                          <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                          <div className="absolute inset-1 border-2 border-transparent group-hover:border-yellow-300 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-yellow-200/50"></div>
                           <img
                             src={cake.image || "/placeholder.svg"}
                             alt={cake.name}
                             className="w-full h-48 object-contain transition-all duration-500 group-hover:scale-110 p-3 group-hover:p-2"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
-                          <Badge className="absolute top-3 left-3 bg-pink-600/90 hover:bg-pink-700 text-white font-medium px-2 py-1 text-xs backdrop-blur-sm border border-pink-400/30 shadow-lg">
+                          <Badge className="absolute top-3 left-3 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 text-white font-medium px-2 py-1 text-xs backdrop-blur-sm border border-yellow-400/30 shadow-lg">
                             {category.name.split(" ")[0]}
                           </Badge>
                         </div>
-                        <div className="p-4 bg-gradient-to-b from-white to-amber-50/30 group-hover:from-amber-50/50 group-hover:to-yellow-50/50 transition-all duration-500">
-                          <h3 className="text-sm font-bold text-amber-700 mb-3 font-serif leading-tight text-center line-clamp-2 group-hover:text-amber-800 transition-colors duration-300">
+                        <div className="p-4 bg-gradient-to-b from-white to-yellow-50/30 group-hover:from-yellow-50/50 group-hover:to-amber-50/50 transition-all duration-500">
+                          <h3 className="text-sm font-bold text-pink-600 mb-3 font-serif leading-tight text-center line-clamp-2 group-hover:text-pink-700 transition-colors duration-300">
                             {cake.name}
                           </h3>
                           <Link href="/cakes">
-                            <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold py-2 text-xs rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400 hover:border-yellow-500 group-hover:scale-105">
+                            <Button className="w-full bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold py-2 text-xs rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-2 border-pink-300 group-hover:scale-105">
                               Order Now
                             </Button>
                           </Link>
@@ -496,12 +542,14 @@ export default function Gallery() {
 
       <div className="bg-amber-50 py-12 mt-16">
         <div className="container mx-auto px-3 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-amber-700 mb-4 font-serif">Found Your Perfect Cake?</h2>
-          <p className="text-amber-600 mb-6 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent mb-4 font-serif">
+            Found Your Perfect Cake?
+          </h2>
+          <p className="text-pink-600 mb-6 max-w-2xl mx-auto">
             Browse our complete menu to see all available options and place your order today!
           </p>
           <Link href="/cakes">
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-yellow-400 hover:border-yellow-500">
+            <Button className="bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-pink-300">
               Order Now
             </Button>
           </Link>

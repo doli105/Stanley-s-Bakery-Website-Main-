@@ -37,10 +37,10 @@ export default function TermsAndConditions() {
       <div className="pt-2 pb-6">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-amber-600 bg-clip-text text-transparent mb-4 font-serif">
+            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent mb-4 font-serif">
               Terms & Conditions
             </h1>
-            <p className="text-amber-700 font-medium">
+            <p className="text-stanley-pink font-medium">
               Please read these terms carefully before placing your order with Stanley's Bakery
             </p>
           </div>
@@ -50,126 +50,126 @@ export default function TermsAndConditions() {
       <div className="container mx-auto px-4 max-w-4xl pb-8">
         <div className="space-y-8">
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Order Lead Time</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Order Lead Time</h2>
+            <p className="text-stanley-pink">
               Orders require at least 48 hours' notice. This may change based on how busy we are.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Delivery Information</h2>
-            <p className="text-amber-600 mb-2">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Delivery Information</h2>
+            <p className="text-stanley-pink mb-2">
               Deliveries are made between 8am–6pm. If you're not home, the driver will wait 10 minutes before returning
               the order to our store in Cosmo City. No redeliveries. Delivery fees are non-refundable.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Delivery Radius & Cost</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Delivery Radius & Cost</h2>
+            <p className="text-stanley-pink">
               Delivery is available within a 50km radius, with a tiered fee based on distance. While your delivery date
               is guaranteed, we can't promise an exact time.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Collections</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Collections</h2>
+            <p className="text-stanley-pink">
               Collection orders are ready by 9am. Please collect within 24 hours or your order will be discarded without
               a refund.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Cancellations & Refunds</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Cancellations & Refunds</h2>
+            <p className="text-stanley-pink">
               Cancel more than 48 hours in advance for a full refund minus a 10% admin fee. No refunds for cancellations
               under 24 hours. Refunds take up to 3 business days.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">After Delivery/Collection</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">After Delivery/Collection</h2>
+            <p className="text-stanley-pink">
               We are not liable for any damage once the cake leaves our store. Cakes must be transported flat, kept
               cool, and handled with care.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Post-Damage Fixes</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Post-Damage Fixes</h2>
+            <p className="text-stanley-pink">
               If we agree to repair a damaged cake, labour & ingredient costs will apply.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Collection Refusal</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Collection Refusal</h2>
+            <p className="text-stanley-pink">
               We may withhold orders if your transport method is unsafe, until you arrange an alternative.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Allergens</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Allergens</h2>
+            <p className="text-stanley-pink">
               Products may contain milk, wheat, nuts, edible flowers, etc. We take no responsibility for allergic
               reactions.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Storage</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Storage</h2>
+            <p className="text-stanley-pink">
               Store cakes in a cool, dry place. Best within 3 days. Leftovers in sealed containers. Do not refrigerate;
               freezing is fine for up to 2 weeks.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Product Variation</h2>
-            <p className="text-amber-600">Actual products may slightly differ from online images.</p>
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Product Variation</h2>
+            <p className="text-stanley-pink">Actual products may slightly differ from online images.</p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Complaints</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Complaints</h2>
+            <p className="text-stanley-pink">
               Report within 48 hours. For full refunds, return the item to us in its original state within 24 hours. No
               collections for complaints.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Privacy</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Privacy</h2>
+            <p className="text-stanley-pink">
               We follow POPIA to keep your info safe and confidential. Only essential data is collected for service
               purposes.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Marketing Communication</h2>
-            <p className="text-amber-600">You may opt out of our promotional emails at any time.</p>
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Marketing Communication</h2>
+            <p className="text-stanley-pink">You may opt out of our promotional emails at any time.</p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Cookies</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Cookies</h2>
+            <p className="text-stanley-pink">
               We use cookies to improve your online experience. These don't store personal info but help us enhance site
               performance and marketing.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Consent</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Consent</h2>
+            <p className="text-stanley-pink">
               By using our website, you agree to our use of cookies and personal information as stated.
             </p>
           </section>
 
           <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-amber-700 mb-4">Refund Fee</h2>
-            <p className="text-amber-600">
+            <h2 className="text-xl font-bold text-stanley-pink mb-4">Refund Fee</h2>
+            <p className="text-stanley-pink">
               All refunds carry a 10% admin fee, unless caused by a mistake or quality issue on our part.
             </p>
           </section>
@@ -177,12 +177,12 @@ export default function TermsAndConditions() {
 
         <div
           ref={addToRefs}
-          className="mt-12 p-6 bg-amber-50 rounded-lg border border-amber-200 opacity-0 translate-y-8 transition-all duration-700"
+          className="mt-12 p-6 bg-pink-50 rounded-lg border border-stanley-pink opacity-0 translate-y-8 transition-all duration-700"
         >
-          <p className="text-amber-800 text-center">
+          <p className="text-stanley-pink text-center">
             <strong>Last Updated:</strong> January 2024
           </p>
-          <p className="text-amber-700 text-center mt-2">
+          <p className="text-stanley-pink text-center mt-2">
             For questions about these terms, please contact us at orders@stanleysbakery.co.za
           </p>
         </div>
@@ -201,14 +201,16 @@ export default function TermsAndConditions() {
         </a>
       </div>
 
-      <div className="bg-amber-50 py-12 mt-8">
+      <div className="bg-gradient-to-r from-pink-100 to-yellow-100 py-12 mt-8">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-amber-700 mb-4 font-serif">Ready to Place Your Order?</h2>
-          <p className="text-amber-600 mb-6 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-stanley-pink mb-4 font-serif">
+            Ready to Place Your Order?
+          </h2>
+          <p className="text-stanley-pink mb-6 max-w-2xl mx-auto">
             Now that you understand our terms, browse our delicious cake menu and place your order with confidence.
           </p>
           <Link href="/cakes">
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-yellow-400 hover:border-yellow-500">
+            <Button className="bg-stanley-yellow hover:bg-yellow-400 text-stanley-brown font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-stanley-pink hover:border-pink-400">
               Order Now
             </Button>
           </Link>
