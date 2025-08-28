@@ -33,143 +33,237 @@ export default function TermsAndConditions() {
   }
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="pt-2 pb-6">
+    <div className="bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50 min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute top-20 left-10 text-4xl opacity-20"
+          style={{ animation: "breathe 3s ease-in-out infinite" }}
+        >
+          🧁
+        </div>
+        <div
+          className="absolute top-40 right-20 text-3xl opacity-15"
+          style={{ animation: "breathe 4s ease-in-out infinite 0.5s" }}
+        >
+          🍰
+        </div>
+        <div
+          className="absolute top-60 left-1/4 text-5xl opacity-10"
+          style={{ animation: "breathe 3.5s ease-in-out infinite 1s" }}
+        >
+          🎂
+        </div>
+        <div
+          className="absolute bottom-40 right-10 text-4xl opacity-20"
+          style={{ animation: "breathe 4.5s ease-in-out infinite 2s" }}
+        >
+          🧁
+        </div>
+        <div
+          className="absolute bottom-20 left-20 text-3xl opacity-15"
+          style={{ animation: "breathe 3.2s ease-in-out infinite 0.5s" }}
+        >
+          🍰
+        </div>
+        <div
+          className="absolute top-1/3 right-1/3 text-4xl opacity-10"
+          style={{ animation: "breathe 4.2s ease-in-out infinite 1.5s" }}
+        >
+          🎂
+        </div>
+        <div
+          className="absolute bottom-1/3 left-1/2 text-3xl opacity-20"
+          style={{ animation: "breathe 3.8s ease-in-out infinite 3s" }}
+        >
+          🧁
+        </div>
+      </div>
+
+      <div className="pt-2 pb-6 relative z-10">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent mb-4 font-serif">
+            <h1 className="text-2xl md:text-4xl font-serif font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-orange-500 bg-clip-text text-transparent mb-4 text-balance">
               Terms & Conditions
             </h1>
-            <p className="text-stanley-pink font-medium">
+            <p className="text-pink-600 font-medium text-pretty">
               Please read these terms carefully before placing your order with Stanley's Bakery
             </p>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 max-w-4xl pb-8">
+      <div className="container mx-auto px-4 max-w-4xl pb-8 relative z-10">
         <div className="space-y-8">
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Order Lead Time</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Order Lead Time</h2>
+            <p className="text-pink-600">
               Orders require at least 48 hours' notice. This may change based on how busy we are.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Delivery Information</h2>
-            <p className="text-stanley-pink mb-2">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Delivery Information</h2>
+            <p className="text-pink-600 mb-2">
               Deliveries are made between 8am–6pm. If you're not home, the driver will wait 10 minutes before returning
               the order to our store in Cosmo City. No redeliveries. Delivery fees are non-refundable.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Delivery Radius & Cost</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Delivery Radius & Cost</h2>
+            <p className="text-pink-600">
               Delivery is available within a 50km radius, with a tiered fee based on distance. While your delivery date
               is guaranteed, we can't promise an exact time.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Collections</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Collections</h2>
+            <p className="text-pink-600">
               Collection orders are ready by 9am. Please collect within 24 hours or your order will be discarded without
               a refund.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Cancellations & Refunds</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Cancellations & Refunds</h2>
+            <p className="text-pink-600">
               Cancel more than 48 hours in advance for a full refund minus a 10% admin fee. No refunds for cancellations
               under 24 hours. Refunds take up to 3 business days.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">After Delivery/Collection</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">After Delivery/Collection</h2>
+            <p className="text-pink-600">
               We are not liable for any damage once the cake leaves our store. Cakes must be transported flat, kept
               cool, and handled with care.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Post-Damage Fixes</h2>
-            <p className="text-stanley-pink">
-              If we agree to repair a damaged cake, labour & ingredient costs will apply.
-            </p>
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Post-Damage Fixes</h2>
+            <p className="text-pink-600">If we agree to repair a damaged cake, labour & ingredient costs will apply.</p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Collection Refusal</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Collection Refusal</h2>
+            <p className="text-pink-600">
               We may withhold orders if your transport method is unsafe, until you arrange an alternative.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Allergens</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Allergens</h2>
+            <p className="text-pink-600">
               Products may contain milk, wheat, nuts, edible flowers, etc. We take no responsibility for allergic
               reactions.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Storage</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Storage</h2>
+            <p className="text-pink-600">
               Store cakes in a cool, dry place. Best within 3 days. Leftovers in sealed containers. Do not refrigerate;
               freezing is fine for up to 2 weeks.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Product Variation</h2>
-            <p className="text-stanley-pink">Actual products may slightly differ from online images.</p>
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Product Variation</h2>
+            <p className="text-pink-600">Actual products may slightly differ from online images.</p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Complaints</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Complaints</h2>
+            <p className="text-pink-600">
               Report within 48 hours. For full refunds, return the item to us in its original state within 24 hours. No
               collections for complaints.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Privacy</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Privacy</h2>
+            <p className="text-pink-600">
               We follow POPIA to keep your info safe and confidential. Only essential data is collected for service
               purposes.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Marketing Communication</h2>
-            <p className="text-stanley-pink">You may opt out of our promotional emails at any time.</p>
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Marketing Communication</h2>
+            <p className="text-pink-600">You may opt out of our promotional emails at any time.</p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Cookies</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Cookies</h2>
+            <p className="text-pink-600">
               We use cookies to improve your online experience. These don't store personal info but help us enhance site
               performance and marketing.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Consent</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Consent</h2>
+            <p className="text-pink-600">
               By using our website, you agree to our use of cookies and personal information as stated.
             </p>
           </section>
 
-          <section ref={addToRefs} className="opacity-0 translate-y-8 transition-all duration-700">
-            <h2 className="text-xl font-bold text-stanley-pink mb-4">Refund Fee</h2>
-            <p className="text-stanley-pink">
+          <section
+            ref={addToRefs}
+            className="opacity-0 translate-y-8 transition-all duration-700 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-pink-100"
+          >
+            <h2 className="text-xl font-bold text-pink-600 mb-4">Refund Fee</h2>
+            <p className="text-pink-600">
               All refunds carry a 10% admin fee, unless caused by a mistake or quality issue on our part.
             </p>
           </section>
@@ -177,12 +271,12 @@ export default function TermsAndConditions() {
 
         <div
           ref={addToRefs}
-          className="mt-12 p-6 bg-pink-50 rounded-lg border border-stanley-pink opacity-0 translate-y-8 transition-all duration-700"
+          className="mt-12 p-6 bg-white/90 backdrop-blur-sm rounded-lg border border-pink-200 opacity-0 translate-y-8 transition-all duration-700 shadow-xl"
         >
-          <p className="text-stanley-pink text-center">
+          <p className="text-pink-600 text-center">
             <strong>Last Updated:</strong> January 2024
           </p>
-          <p className="text-stanley-pink text-center mt-2">
+          <p className="text-pink-600 text-center mt-2">
             For questions about these terms, please contact us at orders@stanleysbakery.co.za
           </p>
         </div>
@@ -201,16 +295,14 @@ export default function TermsAndConditions() {
         </a>
       </div>
 
-      <div className="bg-gradient-to-r from-pink-100 to-yellow-100 py-12 mt-8">
+      <div className="bg-gradient-to-r from-pink-100 via-orange-100 to-yellow-100 py-12 mt-8 relative z-10">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-stanley-pink mb-4 font-serif">
-            Ready to Place Your Order?
-          </h2>
-          <p className="text-stanley-pink mb-6 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-pink-600 mb-4 font-serif">Ready to Place Your Order?</h2>
+          <p className="text-pink-600 mb-6 max-w-2xl mx-auto">
             Now that you understand our terms, browse our delicious cake menu and place your order with confidence.
           </p>
           <Link href="/cakes">
-            <Button className="bg-stanley-yellow hover:bg-yellow-400 text-stanley-brown font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-stanley-pink hover:border-pink-400">
+            <Button className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-pink-800 font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-pink-200 hover:border-pink-300">
               Order Now
             </Button>
           </Link>
@@ -218,6 +310,14 @@ export default function TermsAndConditions() {
       </div>
 
       <style jsx>{`
+        @keyframes breathe {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
         .animate-slideUp {
           opacity: 1 !important;
           transform: translateY(0) !important;

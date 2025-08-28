@@ -78,14 +78,70 @@ Message: ${formData.message}`
   }
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="pt-2 pb-8">
+    <div className="bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50 min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute top-20 left-10 text-4xl animate-pulse opacity-20"
+          style={{ animation: "breathe 3s ease-in-out infinite" }}
+        >
+          🧁
+        </div>
+        <div
+          className="absolute top-40 right-20 text-3xl opacity-15"
+          style={{ animation: "breathe 4s ease-in-out infinite 0.5s" }}
+        >
+          🍰
+        </div>
+        <div
+          className="absolute top-60 left-1/4 text-5xl opacity-10"
+          style={{ animation: "breathe 3.5s ease-in-out infinite 1s" }}
+        >
+          🎂
+        </div>
+        <div
+          className="absolute bottom-40 right-10 text-4xl opacity-20"
+          style={{ animation: "breathe 4.5s ease-in-out infinite 2s" }}
+        >
+          🧁
+        </div>
+        <div
+          className="absolute bottom-20 left-20 text-3xl opacity-15"
+          style={{ animation: "breathe 3.2s ease-in-out infinite 0.5s" }}
+        >
+          🍰
+        </div>
+        <div
+          className="absolute top-1/3 right-1/3 text-4xl opacity-10"
+          style={{ animation: "breathe 4.2s ease-in-out infinite 1.5s" }}
+        >
+          🎂
+        </div>
+        <div
+          className="absolute bottom-1/3 left-1/2 text-3xl opacity-20"
+          style={{ animation: "breathe 3.8s ease-in-out infinite 3s" }}
+        >
+          🧁
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes breathe {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+      `}</style>
+
+      <div className="pt-2 pb-8 relative z-10">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent mb-4 font-serif">
+            <h1 className="text-2xl md:text-4xl font-serif font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-orange-500 bg-clip-text text-transparent mb-4 text-balance">
               Get in Touch
             </h1>
-            <p className="text-stanley-pink max-w-4xl mx-auto leading-relaxed">
+            <p className="text-pink-600 max-w-4xl mx-auto leading-relaxed text-pretty">
               We'd love to hear from you! Whether you have questions about our cakes, want to place a custom order, or
               simply want to say hello, we're here to help make your sweet dreams come true.
             </p>
@@ -93,7 +149,7 @@ Message: ${formData.message}`
         </div>
       </div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div
             ref={(el) => (sectionRefs.current[0] = el)}
@@ -102,14 +158,14 @@ Message: ${formData.message}`
               visibleSections.has(0) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
           >
-            <Card className="bg-white border-stanley-pink shadow-lg">
+            <Card className="bg-white/90 backdrop-blur-sm border-pink-200 shadow-xl shadow-pink-100/50">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-stanley-pink font-serif">Send us a Message</CardTitle>
+                <CardTitle className="text-2xl font-bold text-pink-600 font-serif">Send us a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName" className="text-stanley-pink font-medium">
+                    <Label htmlFor="firstName" className="text-pink-600 font-medium">
                       First Name
                     </Label>
                     <Input
@@ -118,12 +174,12 @@ Message: ${formData.message}`
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="border-stanley-pink focus:border-pink-400 focus:ring-pink-400/20"
+                      className="border-pink-200 focus:border-pink-400 focus:ring-pink-400/20"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="surname" className="text-stanley-pink font-medium">
+                    <Label htmlFor="surname" className="text-pink-600 font-medium">
                       Surname
                     </Label>
                     <Input
@@ -132,12 +188,12 @@ Message: ${formData.message}`
                       value={formData.surname}
                       onChange={handleInputChange}
                       required
-                      className="border-stanley-pink focus:border-pink-400 focus:ring-pink-400/20"
+                      className="border-pink-200 focus:border-pink-400 focus:ring-pink-400/20"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-stanley-pink font-medium">
+                    <Label htmlFor="email" className="text-pink-600 font-medium">
                       Email
                     </Label>
                     <Input
@@ -147,12 +203,12 @@ Message: ${formData.message}`
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="border-stanley-pink focus:border-pink-400 focus:ring-pink-400/20"
+                      className="border-pink-200 focus:border-pink-400 focus:ring-pink-400/20"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-stanley-pink font-medium">
+                    <Label htmlFor="phone" className="text-pink-600 font-medium">
                       Phone Number
                     </Label>
                     <Input
@@ -162,16 +218,16 @@ Message: ${formData.message}`
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="border-stanley-pink focus:border-pink-400 focus:ring-pink-400/20"
+                      className="border-pink-200 focus:border-pink-400 focus:ring-pink-400/20"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-stanley-pink font-medium">
+                    <Label htmlFor="message" className="text-pink-600 font-medium">
                       Message
                     </Label>
-                    <div className="mb-2 p-3 bg-pink-50 rounded-lg border border-stanley-pink">
-                      <p className="text-stanley-pink text-sm">
+                    <div className="mb-2 p-3 bg-pink-50 rounded-lg border border-pink-200">
+                      <p className="text-pink-600 text-sm">
                         <strong>Note:</strong> Please send through your inquiries or any questions you may have. This
                         form is for questions only and not for placing orders.
                       </p>
@@ -183,7 +239,7 @@ Message: ${formData.message}`
                       value={formData.message}
                       onChange={handleInputChange}
                       required
-                      className="border-stanley-pink focus:border-pink-400 focus:ring-pink-400/20 resize-none"
+                      className="border-pink-200 focus:border-pink-400 focus:ring-pink-400/20 resize-none"
                       placeholder="Please send through your inquiries or any questions you may have. This form is for questions only and not for placing orders."
                     />
                   </div>
@@ -191,7 +247,7 @@ Message: ${formData.message}`
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-stanley-yellow hover:bg-yellow-400 text-stanley-brown font-bold py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-pink-800 font-bold py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
@@ -214,20 +270,20 @@ Message: ${formData.message}`
                 visibleSections.has(1) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
               }`}
             >
-              <Card className="bg-white border-stanley-pink shadow-lg">
+              <Card className="bg-white/90 backdrop-blur-sm border-pink-200 shadow-xl shadow-pink-100/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-stanley-pink font-serif flex items-center">
+                  <CardTitle className="text-2xl font-bold text-pink-600 font-serif flex items-center">
                     <Clock className="mr-3 h-6 w-6" />
                     Stanley's Bakery Hours
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-stanley-pink font-medium">Monday to Sunday</span>
-                    <span className="text-stanley-pink">9:00 a.m. to 6:30 p.m.</span>
+                    <span className="text-pink-600 font-medium">Monday to Sunday</span>
+                    <span className="text-pink-600">9:00 a.m. to 6:30 p.m.</span>
                   </div>
-                  <div className="mt-4 p-3 bg-pink-50 rounded-lg border border-stanley-pink">
-                    <p className="text-stanley-pink text-sm">
+                  <div className="mt-4 p-3 bg-pink-50 rounded-lg border border-pink-200">
+                    <p className="text-pink-600 text-sm">
                       <strong className="font-medium">Closed on:</strong> 25 December and 1 January
                     </p>
                   </div>
@@ -242,20 +298,20 @@ Message: ${formData.message}`
                 visibleSections.has(2) ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
               }`}
             >
-              <Card className="bg-white border-stanley-pink shadow-lg">
+              <Card className="bg-white/90 backdrop-blur-sm border-pink-200 shadow-xl shadow-pink-100/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-stanley-pink font-serif">Contact Details</CardTitle>
+                  <CardTitle className="text-2xl font-bold text-pink-600 font-serif">Contact Details</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <MapPin className="h-6 w-6 text-stanley-pink mt-1 flex-shrink-0" />
+                    <MapPin className="h-6 w-6 text-pink-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-stanley-pink mb-1">Visit Our Bakery</h3>
+                      <h3 className="font-semibold text-pink-600 mb-1">Visit Our Bakery</h3>
                       <a
                         href="https://maps.google.com/?q=15+Turkmenistan+Crescent,+Randburg,+Gauteng"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-stanley-pink leading-relaxed hover:text-pink-600 transition-colors duration-300 cursor-pointer underline"
+                        className="text-pink-600 leading-relaxed hover:text-pink-700 transition-colors duration-300 cursor-pointer underline"
                       >
                         15 Turkmenistan Crescent
                         <br />
@@ -284,27 +340,27 @@ Message: ${formData.message}`
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 text-stanley-pink mt-1 flex-shrink-0" />
+                    <Phone className="h-6 w-6 text-pink-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-stanley-pink mb-1">Call Us</h3>
-                      <p className="text-stanley-pink">+27 10 335 1169</p>
-                      <p className="text-stanley-pink text-sm">Available during business hours</p>
+                      <h3 className="font-semibold text-pink-600 mb-1">Call Us</h3>
+                      <p className="text-pink-600">+27 10 335 1169</p>
+                      <p className="text-pink-600 text-sm">Available during business hours</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <Mail className="h-6 w-6 text-stanley-pink mt-1 flex-shrink-0" />
+                    <Mail className="h-6 w-6 text-pink-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-stanley-pink mb-1">Email Us</h3>
-                      <p className="text-stanley-pink">orders@stanleysbakery.co.za</p>
-                      <p className="text-stanley-pink text-sm">We respond within 24 hours</p>
+                      <h3 className="font-semibold text-pink-600 mb-1">Email Us</h3>
+                      <p className="text-pink-600">orders@stanleysbakery.co.za</p>
+                      <p className="text-pink-600 text-sm">We respond within 24 hours</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
                     <MessageCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-stanley-pink mb-1">Send us a WhatsApp</h3>
+                      <h3 className="font-semibold text-pink-600 mb-1">Send us a WhatsApp</h3>
                       <a
                         href="https://wa.me/27784914587"
                         target="_blank"
@@ -313,7 +369,7 @@ Message: ${formData.message}`
                       >
                         +27 78 491 4587
                       </a>
-                      <p className="text-stanley-pink text-sm">Quick responses via WhatsApp</p>
+                      <p className="text-pink-600 text-sm">Quick responses via WhatsApp</p>
                     </div>
                   </div>
                 </CardContent>

@@ -87,15 +87,71 @@ export default function Reviews() {
   }, [])
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="pt-2 pb-8">
+    <div className="bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50 min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute top-20 left-10 text-4xl opacity-20"
+          style={{ animation: "breathe 3s ease-in-out infinite" }}
+        >
+          🧁
+        </div>
+        <div
+          className="absolute top-40 right-20 text-3xl opacity-15"
+          style={{ animation: "breathe 4s ease-in-out infinite 0.5s" }}
+        >
+          🍰
+        </div>
+        <div
+          className="absolute top-60 left-1/4 text-5xl opacity-10"
+          style={{ animation: "breathe 3.5s ease-in-out infinite 1s" }}
+        >
+          🎂
+        </div>
+        <div
+          className="absolute bottom-40 right-10 text-4xl opacity-20"
+          style={{ animation: "breathe 4.5s ease-in-out infinite 2s" }}
+        >
+          🧁
+        </div>
+        <div
+          className="absolute bottom-20 left-20 text-3xl opacity-15"
+          style={{ animation: "breathe 3.2s ease-in-out infinite 0.5s" }}
+        >
+          🍰
+        </div>
+        <div
+          className="absolute top-1/3 right-1/3 text-4xl opacity-10"
+          style={{ animation: "breathe 4.2s ease-in-out infinite 1.5s" }}
+        >
+          🎂
+        </div>
+        <div
+          className="absolute bottom-1/3 left-1/2 text-3xl opacity-20"
+          style={{ animation: "breathe 3.8s ease-in-out infinite 3s" }}
+        >
+          🧁
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes breathe {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+      `}</style>
+
+      <div className="pt-2 pb-8 relative z-10">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent mb-4 font-serif">
-              Customer Reviews
+            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-orange-500 bg-clip-text text-transparent mb-2 font-serif">
+              Reviews
             </h1>
-            <p className="text-stanley-pink text-base md:text-lg mb-6">
-              Discover our exquisite collection of handcrafted cakes and sweet treats
+            <p className="text-sm md:text-lg text-pink-600 max-w-3xl mx-auto font-medium mb-4">
+              See what our delighted customers have to say about Stanley's magical creations
             </p>
           </div>
         </div>
@@ -103,7 +159,7 @@ export default function Reviews() {
 
       <div
         ref={sectionRef}
-        className={`transition-all duration-1000 ${
+        className={`transition-all duration-1000 relative z-10 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
@@ -124,16 +180,16 @@ export default function Reviews() {
         </a>
       </div>
 
-      <div className="bg-gradient-to-r from-pink-100 to-yellow-100 py-12 mt-16">
+      <div className="bg-gradient-to-r from-pink-200 via-orange-200 to-yellow-200 py-16 mt-16 relative z-10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-stanley-pink mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-6 font-serif">
             Love What You See? Order Your Cake Today!
           </h2>
-          <p className="text-stanley-pink mb-6 max-w-2xl mx-auto">
+          <p className="text-pink-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
             Join our happy customers and experience the magic of Stanley's Bakery for yourself.
           </p>
           <Link href="/cakes">
-            <Button className="bg-stanley-yellow hover:bg-yellow-400 text-stanley-brown font-bold py-3 px-8 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-stanley-pink hover:border-pink-400">
+            <Button className="bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white font-bold py-4 px-10 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white hover:scale-105">
               Order Now
             </Button>
           </Link>
