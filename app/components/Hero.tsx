@@ -21,7 +21,6 @@ export default function Hero() {
     "/images/hero-churros-chocolate.jpg", // Warm churros with chocolate
     "/images/hero-dessert-cups.jpg", // Elegant chocolate dessert cups
     "/images/hero-chocolate-strawberry.jpg", // Rich chocolate cake with fresh berries
-    "/images/hero-roses-cake.jpg", // Dramatic white cake with red roses
     "/images/hero-luxury-wedding.jpg", // End with sophisticated luxury wedding cake
   ]
 
