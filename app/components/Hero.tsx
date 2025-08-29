@@ -16,12 +16,12 @@ export default function Hero() {
   const cart = useCart()
 
   const slideshowImages = [
-    "/images/hero-caramel-cupcakes.jpg", // Start with warm, inviting cupcakes
-    "/images/hero-glazed-donuts.jpg", // Continue with golden glazed donuts
+    "/images/hero-chocolate-strawberry.jpg", // Rich chocolate cake with fresh berries - now first
+    "/images/hero-caramel-cupcakes.jpg", // Warm, inviting cupcakes
+    "/images/hero-luxury-wedding.jpg", // Moved wedding cake closer to beginning
+    "/images/hero-glazed-donuts.jpg", // Golden glazed donuts
     "/images/hero-churros-chocolate.jpg", // Warm churros with chocolate
     "/images/hero-dessert-cups.jpg", // Elegant chocolate dessert cups
-    "/images/hero-chocolate-strawberry.jpg", // Rich chocolate cake with fresh berries
-    "/images/hero-luxury-wedding.jpg", // End with sophisticated luxury wedding cake
   ]
 
   useEffect(() => {
@@ -40,6 +40,21 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center">
+      <style jsx>{`
+        @keyframes zoomIn {
+          0% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(1.1);
+          }
+        }
+        
+        .zoom-animation {
+          animation: zoomIn 8s ease-in-out infinite alternate;
+        }
+      `}</style>
+
       <div className="absolute inset-0">
         {slideshowImages.map((image, index) => (
           <div
@@ -47,14 +62,20 @@ export default function Hero() {
             className={`absolute inset-0 transition-opacity duration-2000 ease-in-out ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
-            style={{
-              backgroundImage: `url("${image}")`,
-              backgroundSize: "cover",
-              backgroundPosition: "center center",
-              backgroundRepeat: "no-repeat",
-              backgroundAttachment: "fixed",
-            }}
-          />
+          >
+            <div
+              className={`absolute inset-0 zoom-animation ${index === currentSlide ? "zoom-animation" : ""}`}
+              style={{
+                backgroundImage: `url("${image}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+                transform: index === currentSlide ? "scale(1)" : "scale(1.05)",
+                transition: "transform 8s ease-in-out",
+              }}
+            />
+          </div>
         ))}
         <div className="absolute inset-0 bg-black/50 sm:bg-black/40" />
       </div>
