@@ -1264,38 +1264,38 @@ export default function CakesPage() {
     return (
       <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
         <div className="bg-white shadow-sm border-b sticky top-0 z-10">
-          <div className="max-w-7xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-4">
             <div className="flex items-center gap-3">
               <Button
                 variant="ghost"
-                size="sm"
+                size="default"
                 onClick={() => {
                   setSelectedCategory(null)
                 }}
-                className="flex items-center gap-2 text-amber-700 hover:text-amber-800 hover:bg-amber-50"
+                className="flex items-center gap-2 text-amber-700 hover:text-amber-800 hover:bg-amber-50 min-h-[44px] px-4"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowLeft className="w-5 h-5" />
                 <span className="hidden sm:inline">Back to Menu</span>
                 <span className="sm:hidden">Back</span>
               </Button>
               <div>
-                <h1 className="text-lg sm:text-2xl font-bold text-amber-800">{category.name}</h1>
-                <p className="text-xs sm:text-sm text-amber-600 hidden sm:block">{category.description}</p>
+                <h1 className="text-xl sm:text-2xl font-bold text-amber-800">{category.name}</h1>
+                <p className="text-sm sm:text-sm text-amber-600 hidden sm:block">{category.description}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-white/80 backdrop-blur-sm border-b sticky top-[73px] sm:top-[89px] z-10">
-          <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2">
-            <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+        <div className="bg-white/80 backdrop-blur-sm border-b sticky top-[81px] sm:top-[89px] z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-1">
               {categories.map((cat) => (
                 <Button
                   key={cat.id}
                   variant={selectedCategory === cat.id ? "default" : "ghost"}
-                  size="sm"
+                  size="default"
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`whitespace-nowrap text-xs sm:text-sm px-3 py-1.5 h-auto flex-shrink-0 ${
+                  className={`whitespace-nowrap text-sm px-4 py-2 min-h-[44px] flex-shrink-0 ${
                     selectedCategory === cat.id
                       ? "bg-amber-600 text-white hover:bg-amber-700"
                       : "text-amber-700 hover:text-amber-800 hover:bg-amber-50"
@@ -1308,42 +1308,42 @@ export default function CakesPage() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {category.items.map((item, index) => (
               <Card
                 key={item.name}
                 className={`${category.bgColor} ${category.borderColor} border-2 hover:shadow-lg transition-all duration-300 transform hover:scale-105 animate-in slide-in-from-bottom-4 fade-in`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardContent className="p-3 sm:p-4">
-                  <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                <CardContent className="p-4 sm:p-4">
+                  <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                     <img
                       src={`/abstract-geometric-shapes.png?key=5ik1h&height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert")}`}
                       alt={item.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className={`font-semibold text-sm sm:text-base ${category.textColor} mb-1 sm:mb-2`}>
+                  <h3 className={`font-semibold text-base sm:text-base ${category.textColor} mb-2 sm:mb-2`}>
                     {item.name}
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3 line-clamp-2">{item.description}</p>
-                  <div className="flex items-center justify-between">
+                  <p className="text-sm sm:text-sm text-gray-600 mb-3 sm:mb-3 line-clamp-2">{item.description}</p>
+                  <div className="flex items-center justify-between gap-2">
                     <Badge
                       variant="secondary"
-                      className={`${category.bgColor} ${category.textColor} text-xs sm:text-sm font-bold px-2 py-1`}
+                      className={`${category.bgColor} ${category.textColor} text-sm font-bold px-3 py-1.5`}
                     >
                       {item.price}
                     </Badge>
                     <Button
-                      size="sm"
-                      className="bg-amber-600 hover:bg-amber-700 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-2 h-auto"
+                      size="default"
+                      className="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 min-h-[44px] flex-shrink-0"
                       onClick={() => {
                         const message = `Hi! I'd like to order: ${item.name} (${item.price})`
                         window.open(`https://wa.me/27123456789?text=${encodeURIComponent(message)}`, "_blank")
                       }}
                     >
-                      <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                      <ShoppingCart className="w-4 h-4 mr-2" />
                       Order
                     </Button>
                   </div>
@@ -1431,36 +1431,36 @@ export default function CakesPage() {
         {selectedParentCategory ? (
           <>
             <div className="bg-gradient-to-br from-yellow-50 to-pink-50 border-b relative z-10">
-              <div className="max-w-7xl mx-auto px-3 sm:px-6 py-3">
-                <div className="flex items-center gap-3 mb-3">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+                <div className="flex items-center gap-3 mb-4">
                   <Button
                     variant="ghost"
-                    size="sm"
+                    size="default"
                     onClick={() => setSelectedParentCategory(null)}
-                    className="flex items-center gap-2 text-pink-600 hover:text-pink-700 hover:bg-pink-50 border border-pink-200 hover:border-pink-300"
+                    className="flex items-center gap-2 text-pink-600 hover:text-pink-700 hover:bg-pink-50 border border-pink-200 hover:border-pink-300 min-h-[44px] px-4"
                   >
-                    <ArrowLeft className="w-4 h-4" />
+                    <ArrowLeft className="w-5 h-5" />
                     <span className="hidden sm:inline">Back to Categories</span>
                     <span className="sm:hidden">Back</span>
                   </Button>
-                  <h2 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent font-serif">
+                  <h2 className="text-xl sm:text-xl font-bold bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent font-serif">
                     {parentCategories.find((p) => p.id === selectedParentCategory)?.name}
                   </h2>
                 </div>
-                <p className="text-xs sm:text-sm text-pink-600 text-center mb-2 font-medium">
+                <p className="text-sm sm:text-sm text-pink-600 text-center mb-3 font-medium">
                   <span className="hidden sm:inline">
                     Slide horizontally to browse categories • Click to view full menu
                   </span>
                   <span className="sm:hidden">Slide to browse • Tap to view menu</span>
                 </p>
-                <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+                <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-2">
                   {categories.map((category) => (
                     <Button
                       key={category.id}
                       variant="ghost"
-                      size="sm"
+                      size="default"
                       onClick={() => setSelectedCategory(category.id)}
-                      className="whitespace-nowrap text-xs sm:text-sm px-3 py-1.5 h-auto flex-shrink-0 text-pink-600 hover:text-pink-700 hover:bg-pink-50 border border-pink-200 hover:border-pink-300"
+                      className="whitespace-nowrap text-sm px-4 py-2 min-h-[44px] flex-shrink-0 text-pink-600 hover:text-pink-700 hover:bg-pink-50 border border-pink-200 hover:border-pink-300"
                     >
                       {category.name}
                     </Button>
@@ -1469,8 +1469,8 @@ export default function CakesPage() {
               </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-8 relative z-10">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 relative z-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-6">
                 {categories.map((category, index) => (
                   <div
                     key={category.id}
@@ -1487,29 +1487,29 @@ export default function CakesPage() {
                       className="bg-gradient-to-br from-yellow-50 to-pink-50 border-2 border-pink-300 hover:border-pink-400 cursor-pointer hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden"
                       onClick={() => setSelectedCategory(category.id)}
                     >
-                      <CardContent className="p-3 sm:p-4 relative">
-                        <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <CardContent className="p-4 sm:p-4 relative">
+                        <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                        <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-3 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
+                        <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
                             src={`/abstract-geometric-shapes.png?key=6r18z&key=xifyx&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                           />
                         </div>
-                        <h3 className="font-bold text-base sm:text-lg text-pink-600 mb-1 sm:mb-2 font-serif group-hover:text-pink-700 transition-colors duration-300">
+                        <h3 className="font-bold text-lg sm:text-lg text-pink-600 mb-2 sm:mb-2 font-serif group-hover:text-pink-700 transition-colors duration-300">
                           {category.name}
                         </h3>
-                        <p className="text-xs sm:text-sm text-pink-500 mb-3 sm:mb-4 line-clamp-2">
+                        <p className="text-sm sm:text-sm text-pink-500 mb-4 sm:mb-4 line-clamp-2">
                           {category.description}
                         </p>
                         <Button
-                          size="sm"
+                          size="default"
                           onClick={() => setSelectedCategory(category.id)}
-                          className="bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold text-xs sm:text-sm px-2 sm:px-3 py-1 h-auto rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-pink-300 group-hover:scale-105"
+                          className="bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold text-sm px-4 py-2 min-h-[44px] w-full rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-pink-300 group-hover:scale-105"
                         >
                           View Menu
                         </Button>
@@ -1518,6 +1518,39 @@ export default function CakesPage() {
                   </div>
                 ))}
               </div>
+
+              {/* Added contact card for personalized recommendations */}
+              {/* Improved animations and transitions for smoother user experience */}
+            </div>
+
+            {/* Added contact card for personalized recommendations */}
+            <div
+              className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-center relative z-10"
+              style={{ animationDelay: "800ms" }}
+            >
+              <Card className="bg-gradient-to-r from-pink-100 to-yellow-100 border-pink-300 border-2 max-w-md mx-auto hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="p-6 sm:p-6">
+                  <h3 className="font-bold text-xl sm:text-xl text-pink-600 mb-3 sm:mb-3 font-serif">
+                    Need Help Choosing?
+                  </h3>
+                  <p className="text-base sm:text-base text-pink-500 mb-4 sm:mb-4 font-medium">
+                    Contact us for personalized recommendations
+                  </p>
+                  <Button
+                    size="default"
+                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 min-h-[48px] text-base"
+                    onClick={() =>
+                      window.open(
+                        "https://wa.me/27123456789?text=Hi! I need help choosing from your cake menu.",
+                        "_blank",
+                      )
+                    }
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    WhatsApp Us
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </>
         ) : (
