@@ -9,8 +9,8 @@ import Link from "next/link"
 const galleryImages = [
   {
     id: 1,
-    src: "/placeholder.svg?height=400&width=400&text=Elegant+white+3-tier+wedding+cake+with+roses",
-    alt: "Elegant Wedding Cake",
+    src: "/images/elegant-white-wedding-cake.jpg",
+    alt: "Elegant White Wedding Cake with Gold Accents",
     category: "Wedding",
   },
   {
