@@ -72,27 +72,33 @@ const cakeCategories = [
     cakes: [
       {
         id: 45,
-        name: "Classic Pearl Elegance Wedding Cake",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2016.53.11_0c246b40.jpg-Ldt5olDCPXhdMz079huRBvlfwiN1la.jpeg",
+        name: "Elegant Rose Monogram Wedding Cake",
+        image: "/images/wedding-cake-elegant-roses.jpg",
       },
       {
         id: 46,
-        name: "Art Deco Luxury Wedding Cake",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2016.56.02_36d003a3.jpg-qWyKj0R2acsJ81FsFf1LvWCdAwESVr.jpeg",
+        name: "Portuguese Tile Pattern Wedding Cake",
+        image: "/images/wedding-cake-blue-portuguese.jpg",
       },
       {
         id: 47,
-        name: "Romantic Draped Monogram Wedding Cake",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2016.53.11_12f9cf00.jpg-WpBpZH5WzdbHv9DCJqC1owUmWheDvy.jpeg",
+        name: "Moroccan Geometric Wedding Cake",
+        image: "/images/wedding-cake-moroccan-tiles.jpg",
       },
       {
         id: 48,
-        name: "Bohemian Gold Mandala Wedding Cake",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-14%20at%2016.56.03_04e4a44b.jpg-a0e3cN0JfCoOQQEtjl3OUXDW4jyZIi.jpeg",
+        name: "African Traditional Wedding Cake",
+        image: "/images/wedding-cake-african-traditional.jpg",
+      },
+      {
+        id: 49,
+        name: "Minimalist Monogram Wedding Cake",
+        image: "/images/wedding-cake-minimalist-monogram.jpg",
+      },
+      {
+        id: 50,
+        name: "Golden Mandala Wedding Cake",
+        image: "/images/wedding-cake-golden-mandala.jpg",
       },
     ],
   },
