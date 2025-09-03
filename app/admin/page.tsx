@@ -1,13 +1,35 @@
 "use client"
 
+import type React from "react"
+import { ChefHat } from "lucide-react" // Added ChefHat import
+
 import { useState } from "react"
-import { Package, Clock, Truck, CheckCircle, Edit, X, CreditCard, XCircle, Trash2, Plus, ImageIcon } from "lucide-react"
+import {
+  Package,
+  Clock,
+  Truck,
+  CheckCircle,
+  Edit,
+  X,
+  CreditCard,
+  XCircle,
+  Trash2,
+  Plus,
+  ImageIcon,
+  Lock,
+  User,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Textarea } from "@/components/ui/textarea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+const ADMIN_CREDENTIALS = {
+  username: "orders@stanleysbakery",
+  password: "Sifiso@2016",
+}
 
 const initialOrders = [
   {
@@ -79,18 +101,21 @@ const initialCakeMenu = [
 ]
 
 const statusOptions = [
-  { key: "pending", label: "Pending", color: "bg-yellow-100 text-yellow-800", icon: Clock },
-  { key: "confirmed", label: "Confirmed", color: "bg-blue-100 text-blue-800", icon: CheckCircle },
-  { key: "ready-to-collect", label: "Ready to be Collected", color: "bg-orange-100 text-orange-800", icon: Package },
-  { key: "out-for-delivery", label: "Out for Delivery", color: "bg-purple-100 text-purple-800", icon: Truck },
-  { key: "collected", label: "Collected", color: "bg-green-100 text-green-800", icon: CheckCircle },
-  { key: "delivered", label: "Delivered", color: "bg-green-100 text-green-800", icon: Package },
+  { key: "preparing", label: "Baking in Progress", color: "bg-orange-100 text-orange-800", icon: ChefHat },
+  { key: "ready-to-collect", label: "Ready for Pickup", color: "bg-purple-100 text-purple-800", icon: Package },
+  { key: "out-for-delivery", label: "Out for Delivery", color: "bg-indigo-100 text-indigo-800", icon: Truck },
+  { key: "delivered", label: "Delivered", color: "bg-green-100 text-green-800", icon: CheckCircle },
 ]
 
 export default function AdminPanel() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [loginForm, setLoginForm] = useState({ username: "", password: "" })
+  const [loginError, setLoginError] = useState("")
+
   const [orders, setOrders] = useState(initialOrders)
   const [editingOrder, setEditingOrder] = useState<string | null>(null)
   const [searchTerm, setSearchTerm] = useState("")
+  const [orderFilter, setOrderFilter] = useState("all") // all, paid, completed, pending
   const [cakeMenu, setCakeMenu] = useState(initialCakeMenu)
   const [editingCake, setEditingCake] = useState<string | null>(null)
   const [newCake, setNewCake] = useState({
@@ -101,6 +126,81 @@ export default function AdminPanel() {
     image: "",
   })
 
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (loginForm.username === ADMIN_CREDENTIALS.username && loginForm.password === ADMIN_CREDENTIALS.password) {
+      setIsAuthenticated(true)
+      setLoginError("")
+    } else {
+      setLoginError("Invalid username or password")
+    }
+  }
+
+  const handleLogout = () => {
+    setIsAuthenticated(false)
+    setLoginForm({ username: "", password: "" })
+    setLoginError("")
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="bg-gradient-to-br from-amber-50 to-pink-50 min-h-screen flex items-center justify-center">
+        <Card className="w-full max-w-md border-amber-200 shadow-lg">
+          <CardHeader className="text-center">
+            <div className="w-16 h-16 bg-gradient-to-r from-pink-600 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Lock className="h-8 w-8 text-white" />
+            </div>
+            <CardTitle className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-amber-600 bg-clip-text text-transparent">
+              Admin Login
+            </CardTitle>
+            <p className="text-amber-700">Enter your credentials to access the admin dashboard</p>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div>
+                <label className="text-sm font-medium text-amber-900 mb-2 block">Username</label>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-amber-600" />
+                  <Input
+                    type="text"
+                    placeholder="Enter username"
+                    value={loginForm.username}
+                    onChange={(e) => setLoginForm({ ...loginForm, username: e.target.value })}
+                    className="pl-10 border-amber-200 focus:border-pink-500"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="text-sm font-medium text-amber-900 mb-2 block">Password</label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-amber-600" />
+                  <Input
+                    type="password"
+                    placeholder="Enter password"
+                    value={loginForm.password}
+                    onChange={(e) => setLoginForm({ ...loginForm, password: e.target.value })}
+                    className="pl-10 border-amber-200 focus:border-pink-500"
+                    required
+                  />
+                </div>
+              </div>
+              {loginError && (
+                <div className="text-red-600 text-sm bg-red-50 p-3 rounded-lg border border-red-200">{loginError}</div>
+              )}
+              <Button
+                type="submit"
+                className="w-full bg-gradient-to-r from-pink-600 to-amber-600 hover:from-pink-700 hover:to-amber-700 text-white font-medium py-2"
+              >
+                Login to Admin Panel
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
+
   const updateOrderStatus = (orderId: string, newStatus: string) => {
     setOrders(orders.map((order) => (order.id === orderId ? { ...order, status: newStatus } : order)))
     setEditingOrder(null)
@@ -110,22 +210,52 @@ export default function AdminPanel() {
     setOrders(orders.map((order) => (order.id === orderId ? { ...order, paymentStatus: newPaymentStatus } : order)))
   }
 
-  const filteredOrders = orders.filter(
-    (order) =>
+  const filteredOrders = orders.filter((order) => {
+    const matchesSearch =
       order.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
       order.customerName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      order.cakeName.toLowerCase().includes(searchTerm.toLowerCase()),
-  )
+      order.cakeName.toLowerCase().includes(searchTerm.toLowerCase())
+
+    if (orderFilter === "paid") {
+      return matchesSearch && order.paymentStatus === "paid"
+    } else if (orderFilter === "completed") {
+      return (
+        matchesSearch &&
+        order.paymentStatus === "paid" &&
+        (order.status === "delivered" || order.status === "collected")
+      )
+    } else if (orderFilter === "pending") {
+      return matchesSearch && (order.paymentStatus === "unpaid" || order.status === "pending")
+    }
+    return matchesSearch
+  })
 
   const getStatusInfo = (status: string) => {
     return statusOptions.find((option) => option.key === status) || statusOptions[0]
   }
 
   const getStatusCounts = () => {
-    return statusOptions.map((status) => ({
-      ...status,
-      count: orders.filter((order) => order.status === status.key).length,
-    }))
+    const totalOrders = orders.length
+    const paidOrders = orders.filter((order) => order.paymentStatus === "paid").length
+    const completedOrders = orders.filter(
+      (order) => order.paymentStatus === "paid" && (order.status === "delivered" || order.status === "collected"),
+    ).length
+    const pendingOrders = orders.filter(
+      (order) => order.paymentStatus === "unpaid" || order.status === "pending",
+    ).length
+
+    return [
+      { key: "total", label: "Total Orders", count: totalOrders, color: "bg-blue-100 text-blue-800", icon: Package },
+      { key: "paid", label: "Paid Orders", count: paidOrders, color: "bg-green-100 text-green-800", icon: CreditCard },
+      {
+        key: "completed",
+        label: "Completed",
+        count: completedOrders,
+        color: "bg-purple-100 text-purple-800",
+        icon: CheckCircle,
+      },
+      { key: "pending", label: "Pending", count: pendingOrders, color: "bg-yellow-100 text-yellow-800", icon: Clock },
+    ]
   }
 
   const updateCake = (cakeId: string, updatedCake: any) => {
@@ -157,9 +287,21 @@ export default function AdminPanel() {
       <div className="pt-4 pb-8">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-amber-600 bg-clip-text text-transparent mb-4 font-serif animate-slideInFromLeft">
-              Admin Dashboard
-            </h1>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex-1">
+                <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-amber-600 bg-clip-text text-transparent font-serif animate-slideInFromLeft">
+                  Admin Dashboard
+                </h1>
+              </div>
+              <Button
+                onClick={handleLogout}
+                variant="outline"
+                className="border-pink-300 text-pink-700 hover:bg-pink-50 bg-transparent"
+              >
+                <X className="h-4 w-4 mr-2" />
+                Logout
+              </Button>
+            </div>
             <p className="text-amber-700 max-w-2xl mx-auto">Manage orders and cake menu from one central location</p>
           </div>
         </div>
@@ -174,12 +316,17 @@ export default function AdminPanel() {
           </TabsList>
 
           <TabsContent value="orders">
-            {/* Status Overview */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {getStatusCounts().map((status) => {
                 const IconComponent = status.icon
                 return (
-                  <Card key={status.key} className="border-amber-200">
+                  <Card
+                    key={status.key}
+                    className={`border-amber-200 cursor-pointer transition-all hover:shadow-md ${
+                      orderFilter === status.key ? "ring-2 ring-pink-500 bg-pink-50" : ""
+                    }`}
+                    onClick={() => setOrderFilter(status.key === "total" ? "all" : status.key)}
+                  >
                     <CardContent className="p-4 text-center">
                       <div
                         className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 ${status.color}`}
@@ -194,15 +341,80 @@ export default function AdminPanel() {
               })}
             </div>
 
+            <div className="flex flex-wrap gap-2 mb-6">
+              <Button
+                variant={orderFilter === "all" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("all")}
+                className={
+                  orderFilter === "all"
+                    ? "bg-pink-500 hover:bg-pink-600"
+                    : "border-pink-300 text-pink-700 hover:bg-pink-50"
+                }
+              >
+                All Orders
+              </Button>
+              <Button
+                variant={orderFilter === "paid" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("paid")}
+                className={
+                  orderFilter === "paid"
+                    ? "bg-green-500 hover:bg-green-600"
+                    : "border-green-300 text-green-700 hover:bg-green-50"
+                }
+              >
+                <CreditCard className="h-4 w-4 mr-1" />
+                Paid Orders
+              </Button>
+              <Button
+                variant={orderFilter === "completed" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("completed")}
+                className={
+                  orderFilter === "completed"
+                    ? "bg-purple-500 hover:bg-purple-600"
+                    : "border-purple-300 text-purple-700 hover:bg-purple-50"
+                }
+              >
+                <CheckCircle className="h-4 w-4 mr-1" />
+                Completed Orders
+              </Button>
+              <Button
+                variant={orderFilter === "pending" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("pending")}
+                className={
+                  orderFilter === "pending"
+                    ? "bg-yellow-500 hover:bg-yellow-600"
+                    : "border-yellow-300 text-yellow-700 hover:bg-yellow-50"
+                }
+              >
+                <Clock className="h-4 w-4 mr-1" />
+                Pending Orders
+              </Button>
+            </div>
+
             {/* Search */}
             <div className="mb-6">
               <Input
-                placeholder="Search orders by ID, customer name, or cake name..."
+                placeholder="Search orders by Order Number, customer name, or cake name..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="max-w-md border-amber-200 focus:border-yellow-500"
               />
             </div>
+
+            {orderFilter !== "all" && (
+              <div className="mb-4 p-3 bg-pink-50 border border-pink-200 rounded-lg">
+                <p className="text-pink-800 text-sm font-medium">
+                  {orderFilter === "paid" && "Showing all orders that have been paid for"}
+                  {orderFilter === "completed" && "Showing completed orders (paid and delivered/collected)"}
+                  {orderFilter === "pending" && "Showing pending orders (unpaid or awaiting confirmation)"}
+                  {filteredOrders.length > 0 && ` - ${filteredOrders.length} order(s) found`}
+                </p>
+              </div>
+            )}
 
             {/* Orders Table */}
             <div className="space-y-4">
@@ -214,7 +426,10 @@ export default function AdminPanel() {
                   <Card key={order.id} className="border-amber-200 hover:shadow-lg transition-shadow">
                     <CardHeader className="pb-3">
                       <div className="flex items-center justify-between">
-                        <CardTitle className="text-lg text-amber-900">{order.id}</CardTitle>
+                        <div>
+                          <CardTitle className="text-xl text-amber-900 font-bold">{order.id}</CardTitle>
+                          <p className="text-sm text-amber-600 mt-1">Order Tracking Number</p>
+                        </div>
                         <div className="flex items-center space-x-2">
                           <Badge
                             variant={order.paymentStatus === "paid" ? "default" : "destructive"}
@@ -301,7 +516,7 @@ export default function AdminPanel() {
                                 onClick={() => updatePaymentStatus(order.id, "unpaid")}
                                 className={`${
                                   order.paymentStatus === "unpaid"
-                                    ? "bg-red-500 hover:bg-red-600 text-white"
+                                    ? "bg-red-500 hover:bg-red-600"
                                     : "border-red-300 text-red-700 hover:bg-red-50"
                                 }`}
                               >
@@ -311,9 +526,15 @@ export default function AdminPanel() {
                             </div>
                           </div>
 
-                          <div>
-                            <p className="text-sm font-medium text-amber-900 mb-3">Update Order Status:</p>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                          <div className="bg-pink-50 border border-pink-200 rounded-lg p-4">
+                            <p className="text-sm font-medium text-pink-900 mb-3 flex items-center">
+                              <Package className="h-4 w-4 mr-2" />
+                              Update Order Status (Customer Tracking):
+                            </p>
+                            <p className="text-xs text-pink-700 mb-3">
+                              Update the status that customers see when they track order: <strong>{order.id}</strong>
+                            </p>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                               {statusOptions.map((status) => {
                                 const StatusIcon = status.icon
                                 return (
@@ -324,8 +545,8 @@ export default function AdminPanel() {
                                     onClick={() => updateOrderStatus(order.id, status.key)}
                                     className={`${
                                       order.status === status.key
-                                        ? "bg-yellow-500 hover:bg-yellow-600 text-amber-900"
-                                        : "border-amber-300 text-amber-700 hover:bg-amber-50"
+                                        ? "bg-pink-500 hover:bg-pink-600 text-white"
+                                        : "border-pink-300 text-pink-700 hover:bg-pink-50"
                                     }`}
                                   >
                                     <StatusIcon className="h-4 w-4 mr-1" />
@@ -346,8 +567,18 @@ export default function AdminPanel() {
             {filteredOrders.length === 0 && (
               <div className="text-center py-12">
                 <Package className="h-16 w-16 text-amber-300 mx-auto mb-4" />
-                <p className="text-amber-700 text-lg">No orders found</p>
-                <p className="text-amber-600">Try adjusting your search criteria</p>
+                <p className="text-amber-700 text-lg">
+                  {orderFilter === "all"
+                    ? "No orders found"
+                    : orderFilter === "paid"
+                      ? "No paid orders found"
+                      : orderFilter === "completed"
+                        ? "No completed orders found"
+                        : "No pending orders found"}
+                </p>
+                <p className="text-amber-600">
+                  {searchTerm ? "Try adjusting your search criteria" : "Orders will appear here when available"}
+                </p>
               </div>
             )}
           </TabsContent>
