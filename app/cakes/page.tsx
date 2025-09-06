@@ -887,6 +887,156 @@ const celebrationCategories = [
     ],
   },
   {
+    id: "wedding-cakes",
+    name: "Wedding Cakes",
+    description: "Elegant and romantic wedding cakes for your special day",
+    bgColor: "bg-gradient-to-br from-rose-100 to-rose-200",
+    textColor: "text-rose-800",
+    borderColor: "border-rose-300",
+    items: [
+      {
+        name: "Elegant White Wedding Cake with Roses",
+        price: "R450",
+        description: "Classic three-tier white wedding cake adorned with fresh roses and elegant piping",
+      },
+      {
+        name: "Rustic Wedding Cake with Flowers",
+        price: "R420",
+        description: "Semi-naked cake style with fresh flowers and natural decorations",
+      },
+      {
+        name: "Modern Minimalist Wedding Cake",
+        price: "R380",
+        description: "Clean lines and sophisticated design with subtle gold accents",
+      },
+      {
+        name: "Vintage Lace Wedding Cake",
+        price: "R480",
+        description: "Intricate lace patterns with pearl details and romantic styling",
+      },
+    ],
+  },
+  {
+    id: "milestone-cakes",
+    name: "Milestone Cakes",
+    description: "Celebrate life's important milestones with custom designed cakes",
+    bgColor: "bg-gradient-to-br from-amber-100 to-amber-200",
+    textColor: "text-amber-800",
+    borderColor: "border-amber-300",
+    items: [
+      {
+        name: "Golden 50th Anniversary Cake",
+        price: "R320",
+        description: "Elegant gold-themed cake celebrating 50 years together with sophisticated decorations",
+      },
+      {
+        name: "Graduation Cap Cake",
+        price: "R280",
+        description: "Graduation-themed cake with cap topper and diploma decorations",
+      },
+      {
+        name: "Sweet 16 Birthday Cake",
+        price: "R290",
+        description: "Glamorous cake design perfect for celebrating the sweet sixteen milestone",
+      },
+      {
+        name: "Retirement Celebration Cake",
+        price: "R300",
+        description: "Custom cake celebrating a well-deserved retirement with personalized themes",
+      },
+    ],
+  },
+  {
+    id: "baby-shower-cakes",
+    name: "Baby Shower Cakes",
+    description: "Sweet cakes to celebrate the upcoming arrival of your little one",
+    bgColor: "bg-gradient-to-br from-sky-100 to-sky-200",
+    textColor: "text-sky-800",
+    borderColor: "border-sky-300",
+    items: [
+      {
+        name: "Pink Baby Shower Cake with Booties",
+        price: "R250",
+        description: "Adorable pink cake decorated with baby booties and delicate flowers",
+      },
+      {
+        name: "Blue Baby Shower Cake with Teddy Bear",
+        price: "R260",
+        description: "Charming blue cake featuring a cute teddy bear and baby-themed decorations",
+      },
+      {
+        name: "Gender Reveal Cake",
+        price: "R280",
+        description: "Surprise cake with colored interior to reveal baby's gender",
+      },
+      {
+        name: "Neutral Baby Shower Cake",
+        price: "R240",
+        description: "Beautiful yellow and green themed cake perfect for any gender",
+      },
+    ],
+  },
+  {
+    id: "novelty-themed-cakes",
+    name: "Novelty Themed Cakes",
+    description: "Creative and fun themed cakes for unique celebrations",
+    bgColor: "bg-gradient-to-br from-indigo-100 to-indigo-200",
+    textColor: "text-indigo-800",
+    borderColor: "border-indigo-300",
+    items: [
+      {
+        name: "Superhero Themed Cake",
+        price: "R320",
+        description: "Action-packed superhero cake with cape and emblem decorations",
+      },
+      {
+        name: "Sports Themed Cake with Soccer Ball",
+        price: "R290",
+        description: "Perfect for sports fans with realistic soccer ball and field decorations",
+      },
+      {
+        name: "Music Themed Cake",
+        price: "R310",
+        description: "Musical cake with notes, instruments, and treble clef decorations",
+      },
+      {
+        name: "Travel Themed Cake",
+        price: "R340",
+        description: "Adventure-inspired cake with suitcases, maps, and travel elements",
+      },
+    ],
+  },
+  {
+    id: "corporate-custom-cakes",
+    name: "Corporate & Custom Cakes",
+    description: "Professional cakes for corporate events and fully customized designs",
+    bgColor: "bg-gradient-to-br from-slate-100 to-slate-200",
+    textColor: "text-slate-800",
+    borderColor: "border-slate-300",
+    items: [
+      {
+        name: "Professional Corporate Logo Cake",
+        price: "R380",
+        description: "Custom cake featuring your company logo and branding colors",
+      },
+      {
+        name: "Custom Design Cake",
+        price: "R400",
+        description: "Fully customized cake designed to your exact specifications and theme",
+      },
+      {
+        name: "Conference Event Cake",
+        price: "R350",
+        description: "Large cake perfect for corporate conferences and business events",
+      },
+      {
+        name: "Product Launch Cake",
+        price: "R420",
+        description: "Celebrate your product launch with a custom-designed promotional cake",
+      },
+    ],
+  },
+  {
     id: "heart-shaped-cakes",
     name: "Heart Shaped Cakes",
     description: "Romantic heart-shaped cakes for anniversaries, Valentine's Day, and special occasions",
@@ -919,208 +1069,6 @@ const celebrationCategories = [
         price: "R210",
         description: "Minimalist white heart cake with February calendar design in elegant black script lettering",
       },
-    ],
-  },
-  {
-    id: "car-lovers-cakes",
-    name: "Car Lovers Cakes",
-    description: "Cakes designed for car enthusiasts, featuring popular car brands and racing themes",
-    bgColor: "bg-gradient-to-br from-gray-100 to-gray-200",
-    textColor: "text-gray-800",
-    borderColor: "border-gray-300",
-    items: [
-      {
-        name: "BMW Birthday Celebration Cake",
-        price: "R280",
-        description:
-          "White cylindrical cake with blue drip effect, BMW logo, racing checkered flag elements, and tire decorations",
-      },
-      {
-        name: "BMW Luxury Sports Cake",
-        price: "R300",
-        description:
-          "Sophisticated gray cake with BMW logo, black car silhouettes, silver decorations, and metallic finish",
-      },
-      {
-        name: "Mercedes-Benz Elegant Cake",
-        price: "R290",
-        description:
-          "Upscale beige cake featuring Mercedes-Benz logo, white car model, silver decorations, and luxury styling",
-      },
-    ],
-  },
-  {
-    id: "sportsman-cakes",
-    name: "Sportsman Cakes",
-    description: "Cakes for sports fans, featuring popular sports teams and athletic themes",
-    bgColor: "bg-gradient-to-br from-green-100 to-green-200",
-    textColor: "text-green-800",
-    borderColor: "border-green-300",
-    items: [
-      {
-        name: "Arsenal Football Club Celebration Cake",
-        price: "R260",
-        description:
-          "Red and white Arsenal-themed cake with club logo, player jerseys (Odegaard #8, Rice #41), and soccer ball decorations",
-      },
-      {
-        name: "Classic Soccer Birthday Cake",
-        price: "R240",
-        description:
-          "Elegant white cake with realistic soccer ball topper, green grass piping, and hexagon pattern decorations",
-      },
-      {
-        name: "Messi Argentina Legend Cake",
-        price: "R270",
-        description:
-          "Light blue and white cake featuring Messi #10 Argentina jersey design with soccer ball decorations and birthday theme",
-      },
-      {
-        name: "Manchester City Champions Cake",
-        price: "R250",
-        description:
-          "White and blue Manchester City themed cake with club logo, soccer balls, blue balloon clusters, and gold accents",
-      },
-    ],
-  },
-  {
-    id: "princess-cakes",
-    name: "Princess Cakes",
-    description: "Elegant and royal Princess Cakes for magical celebrations",
-    bgColor: "bg-gradient-to-br from-pink-100 to-pink-200",
-    textColor: "text-pink-800",
-    borderColor: "border-pink-300",
-    items: [
-      { name: "Classic Princess Cake", price: "R115", description: "Traditional creamy delight" },
-      { name: "Chocolate Princess Cake", price: "R120", description: "Rich chocolate variation" },
-      { name: "Strawberry Princess Cake", price: "R118", description: "Fresh strawberry flavor" },
-      { name: "Vanilla Princess Cake", price: "R115", description: "Pure vanilla essence" },
-      { name: "Caramel Princess Cake", price: "R122", description: "Sweet caramel swirl" },
-      { name: "Coffee Princess Cake", price: "R120", description: "Rich coffee infusion" },
-    ],
-  },
-  {
-    id: "fairyland-cakes",
-    name: "Fairyland Cakes",
-    description: "Magical and enchanting cakes from a world of fantasy and wonder",
-    bgColor: "bg-gradient-to-br from-violet-100 to-violet-200",
-    textColor: "text-violet-800",
-    borderColor: "border-violet-300",
-    items: [
-      {
-        name: "Fairy Castle Cake",
-        price: "R280",
-        description: "Enchanted castle with towers and magical details",
-      },
-      {
-        name: "Unicorn Dreams Cake",
-        price: "R250",
-        description: "Magical unicorn with rainbow mane and horn",
-      },
-      { name: "Fairy Garden Cake", price: "R220", description: "Whimsical garden with fairy houses and flowers" },
-      { name: "Magic Wand Cake", price: "R190", description: "Sparkling wand with stars and glitter" },
-      {
-        name: "Enchanted Forest Cake",
-        price: "R300",
-        description: "Mystical forest scene with fairy lights and creatures",
-      },
-      { name: "Fairy Wings Cake", price: "R240", description: "Delicate butterfly wings with shimmer details" },
-      { name: "Pixie Dust Cake", price: "R200", description: "Magical cake covered in edible glitter and stars" },
-      { name: "Fairy Tale Book Cake", price: "R260", description: "Open storybook with fairy tale scenes" },
-    ],
-  },
-  {
-    id: "spider-man-cakes",
-    name: "Spider Man Cakes",
-    description: "Heroic and fun Spider Man Cakes for superhero celebrations",
-    bgColor: "bg-gradient-to-br from-slate-100 to-slate-200",
-    textColor: "text-slate-800",
-    borderColor: "border-slate-300",
-    items: [
-      { name: "Classic Spider Cake", price: "R75", description: "Traditional creamy delight" },
-      { name: "Chocolate Spider Cake", price: "R80", description: "Rich chocolate variation" },
-      { name: "Strawberry Spider Cake", price: "R78", description: "Fresh strawberry flavor" },
-      { name: "Vanilla Spider Cake", price: "R75", description: "Pure vanilla essence" },
-      { name: "Caramel Spider Cake", price: "R82", description: "Sweet caramel swirl" },
-      { name: "Coffee Spider Cake", price: "R80", description: "Rich coffee infusion" },
-    ],
-  },
-  {
-    id: "frozen-cakes",
-    name: "Frozen Cakes",
-    description: "Magical and icy Frozen Cakes for winter wonderland celebrations",
-    bgColor: "bg-gradient-to-br from-cyan-100 to-cyan-200",
-    textColor: "text-cyan-800",
-    borderColor: "border-cyan-300",
-    items: [
-      { name: "Classic Frozen Cake", price: "R95", description: "Traditional creamy delight" },
-      { name: "Chocolate Frozen Cake", price: "R100", description: "Rich chocolate variation" },
-      { name: "Strawberry Frozen Cake", price: "R98", description: "Fresh strawberry flavor" },
-      { name: "Vanilla Frozen Cake", price: "R95", description: "Pure vanilla essence" },
-      { name: "Caramel Frozen Cake", price: "R102", description: "Sweet caramel swirl" },
-      { name: "Coffee Frozen Cake", price: "R100", description: "Rich coffee infusion" },
-    ],
-  },
-  {
-    id: "cocomelon-cakes",
-    name: "CoComelon Cakes",
-    description: "Playful and colorful CoComelon Cakes for children's celebrations",
-    bgColor: "bg-gradient-to-br from-lime-100 to-lime-200",
-    textColor: "text-lime-800",
-    borderColor: "border-lime-300",
-    items: [
-      { name: "Classic CoComelon Cake", price: "R85", description: "Traditional creamy delight" },
-      { name: "Chocolate CoComelon Cake", price: "R90", description: "Rich chocolate variation" },
-      { name: "Strawberry CoComelon Cake", price: "R88", description: "Fresh strawberry flavor" },
-      { name: "Vanilla CoComelon Cake", price: "R85", description: "Pure vanilla essence" },
-      { name: "Caramel CoComelon Cake", price: "R92", description: "Sweet caramel swirl" },
-      { name: "Coffee CoComelon Cake", price: "R90", description: "Rich coffee infusion" },
-    ],
-  },
-  {
-    id: "jungle-cakes",
-    name: "Jungle Cakes",
-    description: "Wild and adventurous Jungle Cakes for safari-themed celebrations",
-    bgColor: "bg-gradient-to-br from-emerald-100 to-emerald-200",
-    textColor: "text-emerald-800",
-    borderColor: "border-emerald-300",
-    items: [
-      { name: "Classic Jungle Cake", price: "R105", description: "Traditional creamy delight" },
-      { name: "Chocolate Jungle Cake", price: "R110", description: "Rich chocolate variation" },
-      { name: "Strawberry Jungle Cake", price: "R108", description: "Fresh strawberry flavor" },
-      { name: "Vanilla Jungle Cake", price: "R105", description: "Pure vanilla essence" },
-      { name: "Caramel Jungle Cake", price: "R112", description: "Sweet caramel swirl" },
-      { name: "Coffee Jungle Cake", price: "R110", description: "Rich coffee infusion" },
-    ],
-  },
-  {
-    id: "mickey-mouse-cakes",
-    name: "Mickey Mouse Cakes",
-    description: "Magical Disney-themed cakes featuring everyone's favorite mouse",
-    bgColor: "bg-gradient-to-br from-red-100 to-red-200",
-    textColor: "text-red-800",
-    borderColor: "border-red-300",
-    items: [
-      {
-        name: "Classic Mickey Head Cake",
-        price: "R180",
-        description: "Traditional Mickey Mouse head shape with chocolate ears",
-      },
-      {
-        name: "Mickey Clubhouse Cake",
-        price: "R220",
-        description: "Colorful clubhouse design with Mickey and friends",
-      },
-      { name: "Vintage Mickey Cake", price: "R200", description: "Retro black and white Mickey Mouse design" },
-      { name: "Mickey Birthday Cake", price: "R190", description: "Birthday-themed with Mickey's iconic red shorts" },
-      {
-        name: "Mickey & Minnie Cake",
-        price: "R250",
-        description: "Romantic couple cake featuring both Mickey and Minnie",
-      },
-      { name: "Mickey Ears Cupcake Tower", price: "R160", description: "Tower of cupcakes with Mickey ear toppers" },
-      { name: "3D Mickey Cake", price: "R280", description: "Three-dimensional Mickey Mouse figure cake" },
-      { name: "Mickey Steamboat Willie Cake", price: "R240", description: "Classic steamboat Willie themed design" },
     ],
   },
 ]
@@ -1219,6 +1167,51 @@ const parentCategories = [
     borderColor: "border-slate-300",
     subcategories: cakeBoardsCategories,
     totalItems: cakeBoardsCategories.reduce((sum, cat) => sum + cat.items.length, 0),
+  },
+  {
+    id: "custom-cake-design",
+    name: "Custom Cake Design",
+    description: "Can't find what you're looking for? Design your perfect custom cake with our expert bakers",
+    bgColor: "bg-gradient-to-br from-indigo-100 to-indigo-200",
+    textColor: "text-indigo-800",
+    borderColor: "border-indigo-300",
+    subcategories: [
+      {
+        id: "custom-cake-design",
+        name: "Custom Cake Design",
+        description: "Design your perfect cake with our customization options",
+        bgColor: "bg-gradient-to-br from-indigo-100 to-indigo-200",
+        textColor: "text-indigo-800",
+        borderColor: "border-indigo-300",
+        items: [
+          {
+            name: "Basic Custom Cake",
+            price: "From R200",
+            description: "Choose your size, flavor, and basic decorations",
+            isCustomizable: true,
+          },
+          {
+            name: "Premium Custom Cake",
+            price: "From R350",
+            description: "Advanced decorations, multiple layers, and premium ingredients",
+            isCustomizable: true,
+          },
+          {
+            name: "Deluxe Custom Cake",
+            price: "From R500",
+            description: "Elaborate designs, fondant work, and specialty decorations",
+            isCustomizable: true,
+          },
+          {
+            name: "Wedding Custom Cake",
+            price: "From R800",
+            description: "Multi-tier wedding cakes with intricate designs",
+            isCustomizable: true,
+          },
+        ],
+      },
+    ],
+    totalItems: 4,
   },
 ]
 
