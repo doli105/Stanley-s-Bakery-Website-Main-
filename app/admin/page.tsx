@@ -849,6 +849,17 @@ export default function AdminPanel() {
     setMenuData(newMenuData)
   }
 
+  const handleNewItemImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (file) {
+      const reader = new FileReader()
+      reader.onload = (e) => {
+        setNewItem({ ...newItem, image: e.target?.result as string })
+      }
+      reader.readAsDataURL(file)
+    }
+  }
+
   const addNewMenuItem = () => {
     if (newItem.name && newItem.price && newItem.parentCategory && newItem.subcategory) {
       const newItemWithId = {
@@ -867,6 +878,12 @@ export default function AdminPanel() {
       newMenuData[newItem.parentCategory].subcategories[newItem.subcategory].items.push(newItemWithId)
       setMenuData(newMenuData)
       setNewItem({ name: "", price: "", description: "", image: "", parentCategory: "", subcategory: "" })
+      setShowAddItemModal(false)
+
+      // Show success message
+      alert("Menu item added successfully!")
+    } else {
+      alert("Please fill in all required fields")
     }
   }
 
@@ -1559,6 +1576,154 @@ export default function AdminPanel() {
             )}
           </TabsContent>
         </Tabs>
+
+        {showAddItemModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-lg font-semibold text-stanley-brown">Add New Menu Item</h3>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => {
+                    setShowAddItemModal(false)
+                    setNewItem({ name: "", price: "", description: "", image: "", parentCategory: "", subcategory: "" })
+                  }}
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
+
+              <div className="space-y-4">
+                {/* Category Selection */}
+                <div>
+                  <label className="block text-sm font-medium text-stanley-brown mb-2">Main Category *</label>
+                  <Select
+                    value={newItem.parentCategory}
+                    onValueChange={(value) => setNewItem({ ...newItem, parentCategory: value, subcategory: "" })}
+                  >
+                    <SelectTrigger className="border-stanley-brown">
+                      <SelectValue placeholder="Select main category" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {Object.entries(menuData).map(([key, category]) => (
+                        <SelectItem key={key} value={key}>
+                          {category.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                {/* Subcategory Selection */}
+                {newItem.parentCategory && (
+                  <div>
+                    <label className="block text-sm font-medium text-stanley-brown mb-2">Subcategory *</label>
+                    <Select
+                      value={newItem.subcategory}
+                      onValueChange={(value) => setNewItem({ ...newItem, subcategory: value })}
+                    >
+                      <SelectTrigger className="border-stanley-brown">
+                        <SelectValue placeholder="Select subcategory" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {Object.entries(menuData[newItem.parentCategory]?.subcategories || {}).map(
+                          ([key, subcategory]) => (
+                            <SelectItem key={key} value={key}>
+                              {subcategory.name}
+                            </SelectItem>
+                          ),
+                        )}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
+                {/* Item Name */}
+                <div>
+                  <label className="block text-sm font-medium text-stanley-brown mb-2">Item Name *</label>
+                  <Input
+                    value={newItem.name}
+                    onChange={(e) => setNewItem({ ...newItem, name: e.target.value })}
+                    placeholder="Enter item name"
+                    className="border-stanley-brown"
+                  />
+                </div>
+
+                {/* Price */}
+                <div>
+                  <label className="block text-sm font-medium text-stanley-brown mb-2">Price *</label>
+                  <Input
+                    value={newItem.price}
+                    onChange={(e) => setNewItem({ ...newItem, price: e.target.value })}
+                    placeholder="e.g., R150"
+                    className="border-stanley-brown"
+                  />
+                </div>
+
+                {/* Description */}
+                <div>
+                  <label className="block text-sm font-medium text-stanley-brown mb-2">Description</label>
+                  <textarea
+                    value={newItem.description}
+                    onChange={(e) => setNewItem({ ...newItem, description: e.target.value })}
+                    placeholder="Enter item description"
+                    className="w-full p-2 border border-stanley-brown rounded-md resize-none"
+                    rows={3}
+                  />
+                </div>
+
+                {/* Image Upload */}
+                <div>
+                  <label className="block text-sm font-medium text-stanley-brown mb-2">Item Image</label>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleNewItemImageUpload}
+                    className="w-full p-2 border border-stanley-brown rounded-md"
+                  />
+                  {newItem.image && (
+                    <div className="mt-2">
+                      <img
+                        src={newItem.image || "/placeholder.svg"}
+                        alt="Preview"
+                        className="w-20 h-20 object-cover rounded-md"
+                      />
+                    </div>
+                  )}
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex gap-2 pt-4">
+                  <Button
+                    onClick={addNewMenuItem}
+                    className="stanley-button flex-1"
+                    disabled={!newItem.name || !newItem.price || !newItem.parentCategory || !newItem.subcategory}
+                  >
+                    Add Item
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setShowAddItemModal(false)
+                      setNewItem({
+                        name: "",
+                        price: "",
+                        description: "",
+                        image: "",
+                        parentCategory: "",
+                        subcategory: "",
+                      })
+                    }}
+                    className="border-stanley-brown text-stanley-brown flex-1"
+                  >
+                    Cancel
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {editingMenuItem && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
