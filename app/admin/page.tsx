@@ -22,15 +22,11 @@ import {
   Grid,
   List,
   Star,
-  Eye,
-  EyeOff,
-  Save,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-import { Textarea } from "@/components/ui/textarea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
@@ -353,6 +349,71 @@ const completeMenuStructure = {
             inStock: true,
             featured: false,
           },
+          {
+            id: "novelty-3",
+            name: "Sportsman Cake",
+            price: "R300",
+            image: "/sportsman-cake.jpg",
+            description:
+              "Athletic themed cake perfect for sports enthusiasts with various sports equipment decorations",
+            inStock: true,
+            featured: false,
+          },
+          {
+            id: "novelty-4",
+            name: "Gentlemen Cake",
+            price: "R320",
+            image: "/gentlemen-cake.jpg",
+            description:
+              "Sophisticated masculine cake with elegant decorations perfect for the distinguished gentleman",
+            inStock: true,
+            featured: false,
+          },
+          {
+            id: "novelty-5",
+            name: "Jungle Cake",
+            price: "R290",
+            image: "/jungle-cake.jpg",
+            description: "Wild jungle adventure cake with animal decorations and tropical elements",
+            inStock: true,
+            featured: false,
+          },
+          {
+            id: "novelty-6",
+            name: "Cocomelon Cake",
+            price: "R280",
+            image: "/cocomelon-cake.jpg",
+            description: "Colorful Cocomelon themed cake featuring beloved characters from the popular children's show",
+            inStock: true,
+            featured: false,
+          },
+          {
+            id: "novelty-7",
+            name: "Princess Cake",
+            price: "R310",
+            image: "/princess-cake.jpg",
+            description: "Magical princess cake with crown, jewels, and royal decorations fit for a little princess",
+            inStock: true,
+            featured: false,
+          },
+          {
+            id: "novelty-8",
+            name: "Spider-Man Cake",
+            price: "R300",
+            image: "/spiderman-cake.jpg",
+            description: "Amazing Spider-Man themed cake with web designs and superhero action elements",
+            inStock: true,
+            featured: false,
+          },
+          {
+            id: "novelty-9",
+            name: "Frozen Cake",
+            price: "R320",
+            image: "/frozen-cake.jpg",
+            description: "Enchanting Frozen themed cake featuring Elsa, Anna, and magical ice kingdom decorations",
+            inStock: true,
+            featured: false,
+          },
         ],
       },
       "corporate-custom-cakes": {
@@ -558,6 +619,9 @@ export default function AdminPanel() {
     subcategory: "",
   })
 
+  const [showAddItemModal, setShowAddItemModal] = useState(false)
+  const [editingMenuItem, setEditingMenuItem] = useState<any>(null)
+
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
     if (loginForm.username === ADMIN_CREDENTIALS.username && loginForm.password === ADMIN_CREDENTIALS.password) {
@@ -736,22 +800,41 @@ export default function AdminPanel() {
     return items
   }
 
-  const updateMenuItem = (itemId: string, updates: any) => {
-    const newMenuData = { ...menuData }
-    Object.keys(newMenuData).forEach((parentKey) => {
-      Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
-        const itemIndex = newMenuData[parentKey].subcategories[subKey].items.findIndex(
-          (item: any) => item.id === itemId,
-        )
-        if (itemIndex !== -1) {
-          newMenuData[parentKey].subcategories[subKey].items[itemIndex] = {
-            ...newMenuData[parentKey].subcategories[subKey].items[itemIndex],
-            ...updates,
+  const updateMenuItem = () => {
+    if (editingMenuItem && editingMenuItem.name && editingMenuItem.price) {
+      const newMenuData = { ...menuData }
+
+      // Find and update the item in the correct category and subcategory
+      Object.keys(newMenuData).forEach((categoryKey) => {
+        Object.keys(newMenuData[categoryKey].subcategories).forEach((subcategoryKey) => {
+          const itemIndex = newMenuData[categoryKey].subcategories[subcategoryKey].items.findIndex(
+            (item: any) => item.id === editingMenuItem.id,
+          )
+          if (itemIndex !== -1) {
+            newMenuData[categoryKey].subcategories[subcategoryKey].items[itemIndex] = {
+              ...editingMenuItem,
+            }
           }
-        }
+        })
       })
-    })
-    setMenuData(newMenuData)
+
+      setMenuData(newMenuData)
+      setEditingMenuItem(null)
+    }
+  }
+
+  const handleEditImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (file && editingMenuItem) {
+      const reader = new FileReader()
+      reader.onload = (e) => {
+        setEditingMenuItem({
+          ...editingMenuItem,
+          image: e.target?.result as string,
+        })
+      }
+      reader.readAsDataURL(file)
+    }
   }
 
   const deleteMenuItem = (itemId: string) => {
@@ -800,42 +883,47 @@ export default function AdminPanel() {
   const menuStats = getMenuStats()
 
   return (
-    <div className="bg-gradient-to-br from-stanley-cream to-stanley-pink min-h-screen scale-95 sm:scale-100 transition-transform duration-300">
+    <div className="bg-gradient-to-br from-stanley-cream to-stanley-pink min-h-screen">
       {/* Header */}
-      <div className="pt-4 pb-8">
-        <div className="container mx-auto px-4">
+      <div className="pt-4 pb-6 px-2 sm:px-4">
+        <div className="container mx-auto">
           <div className="text-center">
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex flex-col sm:flex-row items-center justify-between mb-4 gap-3">
               <div className="flex-1">
-                <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent font-serif animate-slideInFromLeft">
+                <h1 className="text-xl sm:text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent font-serif animate-slideInFromLeft">
                   Stanley's Bakery Admin
                 </h1>
               </div>
               <Button
                 onClick={handleLogout}
                 variant="outline"
-                className="border-stanley-pink text-stanley-pink hover:bg-stanley-pink hover:text-white bg-transparent"
+                size="sm"
+                className="border-stanley-pink text-stanley-pink hover:bg-stanley-pink hover:text-white bg-transparent min-h-[44px] px-4"
               >
                 <X className="h-4 w-4 mr-2" />
                 Logout
               </Button>
             </div>
-            <p className="text-stanley-brown max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-stanley-brown max-w-2xl mx-auto px-2">
               Manage orders and complete cake menu from one central location
             </p>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 sm:px-4">
         <Tabs defaultValue="orders" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="orders">Order Management</TabsTrigger>
-            <TabsTrigger value="menu">Complete Menu Management</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 mb-6 h-12">
+            <TabsTrigger value="orders" className="text-sm sm:text-base">
+              Order Management
+            </TabsTrigger>
+            <TabsTrigger value="menu" className="text-sm sm:text-base">
+              Complete Menu Management
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="orders">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
               {getStatusCounts().map((status) => {
                 const IconComponent = status.icon
                 return (
@@ -865,11 +953,11 @@ export default function AdminPanel() {
                 variant={orderFilter === "all" ? "default" : "outline"}
                 size="sm"
                 onClick={() => setOrderFilter("all")}
-                className={
+                className={`min-h-[40px] text-xs sm:text-sm ${
                   orderFilter === "all"
                     ? "stanley-button"
                     : "border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10"
-                }
+                }`}
               >
                 All Orders
               </Button>
@@ -877,11 +965,11 @@ export default function AdminPanel() {
                 variant={orderFilter === "paid" ? "default" : "outline"}
                 size="sm"
                 onClick={() => setOrderFilter("paid")}
-                className={
+                className={`min-h-[40px] text-xs sm:text-sm ${
                   orderFilter === "paid"
                     ? "bg-green-500 hover:bg-green-600"
                     : "border-green-300 text-green-700 hover:bg-green-50"
-                }
+                }`}
               >
                 <CreditCard className="h-4 w-4 mr-1" />
                 Paid Orders
@@ -890,27 +978,14 @@ export default function AdminPanel() {
                 variant={orderFilter === "completed" ? "default" : "outline"}
                 size="sm"
                 onClick={() => setOrderFilter("completed")}
-                className={
+                className={`min-h-[40px] text-xs sm:text-sm ${
                   orderFilter === "completed"
-                    ? "bg-purple-500 hover:bg-purple-600"
-                    : "border-purple-300 text-purple-700 hover:bg-purple-50"
-                }
+                    ? "bg-blue-500 hover:bg-blue-600"
+                    : "border-blue-300 text-blue-700 hover:bg-blue-50"
+                }`}
               >
                 <CheckCircle className="h-4 w-4 mr-1" />
-                Completed Orders
-              </Button>
-              <Button
-                variant={orderFilter === "pending" ? "default" : "outline"}
-                size="sm"
-                onClick={() => setOrderFilter("pending")}
-                className={
-                  orderFilter === "pending"
-                    ? "bg-yellow-500 hover:bg-yellow-600"
-                    : "border-yellow-300 text-yellow-700 hover:bg-yellow-50"
-                }
-              >
-                <Clock className="h-4 w-4 mr-1" />
-                Pending Orders
+                Completed
               </Button>
             </div>
 
@@ -940,6 +1015,22 @@ export default function AdminPanel() {
               {filteredOrders.map((order) => {
                 const statusInfo = getStatusInfo(order.status)
                 const IconComponent = statusInfo.icon
+
+                const updateOrderPaymentStatus = (orderId: string, newPaymentStatus: string) => {
+                  setOrders(
+                    orders.map((order) =>
+                      order.id === orderId ? { ...order, paymentStatus: newPaymentStatus } : order,
+                    ),
+                  )
+                }
+
+                const saveOrderChanges = (orderId: string) => {
+                  setEditingOrder(null)
+                }
+
+                const deleteOrder = (orderId: string) => {
+                  setOrders(orders.filter((order) => order.id !== orderId))
+                }
 
                 return (
                   <Card key={order.id} className="border-stanley-brown hover:shadow-lg transition-shadow">
@@ -971,113 +1062,139 @@ export default function AdminPanel() {
                             <IconComponent className="h-4 w-4 mr-1" />
                             {statusInfo.label}
                           </span>
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={() => setEditingOrder(editingOrder === order.id ? null : order.id)}
-                            className="text-stanley-brown hover:text-stanley-brown"
-                          >
-                            {editingOrder === order.id ? <X className="h-4 w-4" /> : <Edit className="h-4 w-4" />}
-                          </Button>
                         </div>
                       </div>
                     </CardHeader>
 
-                    <CardContent>
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                      <div>
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Customer</p>
+                        <p className="font-medium text-stanley-brown text-sm sm:text-base">{order.customerName}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">{order.email}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">{order.phone}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Cake</p>
+                        <p className="font-medium text-stanley-brown text-sm sm:text-base">{order.cakeName}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">Total: {order.total}</p>
+                      </div>
+                      <div className="sm:col-span-2 lg:col-span-1">
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Dates</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">Ordered: {order.orderDate}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">Delivery: {order.deliveryDate}</p>
+                      </div>
+                    </div>
+
+                    {order.notes && (
+                      <div className="mb-4">
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Notes</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80 bg-stanley-cream p-3 rounded">
+                          {order.notes}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Status Update Controls */}
+                    {editingOrder === order.id && (
+                      <div className="border-t border-stanley-brown/20 pt-4 space-y-4">
                         <div>
-                          <p className="text-sm text-stanley-brown/70">Customer</p>
-                          <p className="font-medium text-stanley-brown">{order.customerName}</p>
-                          <p className="text-sm text-stanley-brown/80">{order.email}</p>
-                          <p className="text-sm text-stanley-brown/80">{order.phone}</p>
+                          <p className="text-sm font-medium text-stanley-brown mb-3">Update Payment Status:</p>
+                          <div className="flex flex-wrap gap-2">
+                            <Button
+                              variant={order.paymentStatus === "paid" ? "default" : "outline"}
+                              size="sm"
+                              onClick={() => updateOrderPaymentStatus(order.id, "paid")}
+                              className={`min-h-[40px] text-xs sm:text-sm ${
+                                order.paymentStatus === "paid"
+                                  ? "bg-green-500 hover:bg-green-600"
+                                  : "border-green-300 text-green-700 hover:bg-green-50"
+                              }`}
+                            >
+                              <CreditCard className="h-4 w-4 mr-1" />
+                              Mark as Paid
+                            </Button>
+                            <Button
+                              variant={order.paymentStatus === "pending" ? "default" : "outline"}
+                              size="sm"
+                              onClick={() => updateOrderPaymentStatus(order.id, "pending")}
+                              className={`min-h-[40px] text-xs sm:text-sm ${
+                                order.paymentStatus === "pending"
+                                  ? "bg-yellow-500 hover:bg-yellow-600"
+                                  : "border-yellow-300 text-yellow-700 hover:bg-yellow-50"
+                              }`}
+                            >
+                              <Clock className="h-4 w-4 mr-1" />
+                              Mark as Pending
+                            </Button>
+                          </div>
                         </div>
+
                         <div>
-                          <p className="text-sm text-stanley-brown/70">Cake</p>
-                          <p className="font-medium text-stanley-brown">{order.cakeName}</p>
-                          <p className="text-sm text-stanley-brown/80">Total: {order.total}</p>
+                          <p className="text-sm font-medium text-stanley-brown mb-3">Update Order Status:</p>
+                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            {statusOptions.map((status) => {
+                              const StatusIcon = status.icon
+                              return (
+                                <Button
+                                  key={status.key}
+                                  variant={order.status === status.key ? "default" : "outline"}
+                                  size="sm"
+                                  onClick={() => updateOrderStatus(order.id, status.key)}
+                                  className={`min-h-[40px] text-xs ${
+                                    order.status === status.key
+                                      ? "stanley-button"
+                                      : "border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10"
+                                  }`}
+                                >
+                                  <StatusIcon className="h-4 w-4 mr-1" />
+                                  <span className="hidden sm:inline">{status.label}</span>
+                                  <span className="sm:hidden">{status.label.split(" ")[0]}</span>
+                                </Button>
+                              )
+                            })}
+                          </div>
                         </div>
-                        <div>
-                          <p className="text-sm text-stanley-brown/70">Dates</p>
-                          <p className="text-sm text-stanley-brown/80">Ordered: {order.orderDate}</p>
-                          <p className="text-sm text-stanley-brown/80">Delivery: {order.deliveryDate}</p>
+
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          <Button
+                            onClick={() => setEditingOrder(null)}
+                            variant="outline"
+                            size="sm"
+                            className="min-h-[40px] border-stanley-brown text-stanley-brown hover:bg-stanley-brown/10"
+                          >
+                            Cancel
+                          </Button>
+                          <Button
+                            onClick={() => saveOrderChanges(order.id)}
+                            size="sm"
+                            className="stanley-button min-h-[40px]"
+                          >
+                            Save Changes
+                          </Button>
                         </div>
                       </div>
+                    )}
 
-                      {order.notes && (
-                        <div className="mb-4">
-                          <p className="text-sm text-stanley-brown/70">Notes</p>
-                          <p className="text-sm text-stanley-brown/80 bg-stanley-cream p-2 rounded">{order.notes}</p>
-                        </div>
-                      )}
-
-                      {/* Status Update Controls */}
-                      {editingOrder === order.id && (
-                        <div className="border-t border-stanley-brown/20 pt-4 space-y-4">
-                          <div>
-                            <p className="text-sm font-medium text-stanley-brown mb-3">Update Payment Status:</p>
-                            <div className="flex gap-2">
-                              <Button
-                                variant={order.paymentStatus === "paid" ? "default" : "outline"}
-                                size="sm"
-                                onClick={() => updatePaymentStatus(order.id, "paid")}
-                                className={`${
-                                  order.paymentStatus === "paid"
-                                    ? "bg-green-500 hover:bg-green-600 text-white"
-                                    : "border-green-300 text-green-700 hover:bg-green-50"
-                                }`}
-                              >
-                                <CreditCard className="h-4 w-4 mr-1" />
-                                Paid
-                              </Button>
-                              <Button
-                                variant={order.paymentStatus === "unpaid" ? "default" : "outline"}
-                                size="sm"
-                                onClick={() => updatePaymentStatus(order.id, "unpaid")}
-                                className={`${
-                                  order.paymentStatus === "unpaid"
-                                    ? "bg-red-500 hover:bg-red-600"
-                                    : "border-red-300 text-red-700 hover:bg-red-50"
-                                }`}
-                              >
-                                <XCircle className="h-4 w-4 mr-1" />
-                                Unpaid
-                              </Button>
-                            </div>
-                          </div>
-
-                          <div className="bg-stanley-pink/10 border border-stanley-pink rounded-lg p-4">
-                            <p className="text-sm font-medium text-stanley-brown mb-3 flex items-center">
-                              <Package className="h-4 w-4 mr-2" />
-                              Update Order Status (Customer Tracking):
-                            </p>
-                            <p className="text-xs text-stanley-brown/70 mb-3">
-                              Update the status that customers see when they track order: <strong>{order.id}</strong>
-                            </p>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                              {statusOptions.map((status) => {
-                                const StatusIcon = status.icon
-                                return (
-                                  <Button
-                                    key={status.key}
-                                    variant={order.status === status.key ? "default" : "outline"}
-                                    size="sm"
-                                    onClick={() => updateOrderStatus(order.id, status.key)}
-                                    className={`${
-                                      order.status === status.key
-                                        ? "stanley-button"
-                                        : "border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10"
-                                    }`}
-                                  >
-                                    <StatusIcon className="h-4 w-4 mr-1" />
-                                    {status.label}
-                                  </Button>
-                                )
-                              })}
-                            </div>
-                          </div>
-                        </div>
-                      )}
-                    </CardContent>
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      <Button
+                        onClick={() => setEditingOrder(editingOrder === order.id ? null : order.id)}
+                        variant="outline"
+                        size="sm"
+                        className="min-h-[40px] border-stanley-brown text-stanley-brown hover:bg-stanley-brown/10"
+                      >
+                        <Edit className="h-4 w-4 mr-1" />
+                        {editingOrder === order.id ? "Cancel" : "Edit"}
+                      </Button>
+                      <Button
+                        onClick={() => deleteOrder(order.id)}
+                        variant="outline"
+                        size="sm"
+                        className="min-h-[40px] border-red-300 text-red-700 hover:bg-red-50"
+                      >
+                        <Trash2 className="h-4 w-4 mr-1" />
+                        Delete
+                      </Button>
+                    </div>
                   </Card>
                 )
               })}
@@ -1103,8 +1220,7 @@ export default function AdminPanel() {
           </TabsContent>
 
           <TabsContent value="menu">
-            {/* Menu Statistics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
               <Card className="border-stanley-brown">
                 <CardContent className="p-4 text-center">
                   <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-2">
@@ -1143,82 +1259,7 @@ export default function AdminPanel() {
               </Card>
             </div>
 
-            {/* Add New Item Section */}
-            <Card className="border-stanley-brown mb-8">
-              <CardHeader>
-                <CardTitle className="text-stanley-brown flex items-center">
-                  <Plus className="h-5 w-5 mr-2" />
-                  Add New Menu Item
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-                  <Input
-                    placeholder="Item Name"
-                    value={newItem.name}
-                    onChange={(e) => setNewItem({ ...newItem, name: e.target.value })}
-                    className="border-stanley-brown"
-                  />
-                  <Input
-                    placeholder="Price (e.g., R150)"
-                    value={newItem.price}
-                    onChange={(e) => setNewItem({ ...newItem, price: e.target.value })}
-                    className="border-stanley-brown"
-                  />
-                  <Input
-                    placeholder="Image URL (optional)"
-                    value={newItem.image}
-                    onChange={(e) => setNewItem({ ...newItem, image: e.target.value })}
-                    className="border-stanley-brown"
-                  />
-                  <Select
-                    value={newItem.parentCategory}
-                    onValueChange={(value) => setNewItem({ ...newItem, parentCategory: value, subcategory: "" })}
-                  >
-                    <SelectTrigger className="border-stanley-brown">
-                      <SelectValue placeholder="Select Parent Category" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {Object.entries(menuData).map(([key, category]) => (
-                        <SelectItem key={key} value={key}>
-                          {category.name}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <Select
-                    value={newItem.subcategory}
-                    onValueChange={(value) => setNewItem({ ...newItem, subcategory: value })}
-                    disabled={!newItem.parentCategory}
-                  >
-                    <SelectTrigger className="border-stanley-brown">
-                      <SelectValue placeholder="Select Subcategory" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {newItem.parentCategory &&
-                        Object.entries(menuData[newItem.parentCategory].subcategories).map(([key, subcategory]) => (
-                          <SelectItem key={key} value={key}>
-                            {subcategory.name}
-                          </SelectItem>
-                        ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-                <Textarea
-                  placeholder="Item Description"
-                  value={newItem.description}
-                  onChange={(e) => setNewItem({ ...newItem, description: e.target.value })}
-                  className="border-stanley-brown mb-4"
-                />
-                <Button onClick={addNewMenuItem} className="stanley-button">
-                  <Plus className="h-4 w-4 mr-2" />
-                  Add Menu Item
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Filters and Search */}
-            <div className="flex flex-col md:flex-row gap-4 mb-6">
+            <div className="flex flex-col gap-4 mb-6">
               <div className="flex-1">
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-stanley-brown/50" />
@@ -1226,219 +1267,170 @@ export default function AdminPanel() {
                     placeholder="Search menu items..."
                     value={menuSearchTerm}
                     onChange={(e) => setMenuSearchTerm(e.target.value)}
-                    className="pl-10 border-stanley-brown"
+                    className="pl-10 border-stanley-brown h-12"
                   />
                 </div>
               </div>
-              <Select value={selectedParentCategory} onValueChange={setSelectedParentCategory}>
-                <SelectTrigger className="w-full md:w-48 border-stanley-brown">
-                  <SelectValue placeholder="All Categories" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Categories</SelectItem>
-                  {Object.entries(menuData).map(([key, category]) => (
-                    <SelectItem key={key} value={key}>
-                      {category.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              <Select value={selectedSubcategory} onValueChange={setSelectedSubcategory}>
-                <SelectTrigger className="w-full md:w-48 border-stanley-brown">
-                  <SelectValue placeholder="All Subcategories" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Subcategories</SelectItem>
-                  {selectedParentCategory !== "all" &&
-                    menuData[selectedParentCategory] &&
-                    Object.entries(menuData[selectedParentCategory].subcategories).map(([key, subcategory]) => (
+              <div className="flex flex-col sm:flex-row gap-2">
+                <Select value={selectedParentCategory} onValueChange={setSelectedParentCategory}>
+                  <SelectTrigger className="w-full sm:w-48 border-stanley-brown h-12">
+                    <SelectValue placeholder="All Categories" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Categories</SelectItem>
+                    {Object.entries(menuData).map(([key, category]) => (
                       <SelectItem key={key} value={key}>
-                        {subcategory.name}
+                        {category.name}
                       </SelectItem>
                     ))}
-                </SelectContent>
-              </Select>
-              <div className="flex gap-2">
-                <Button
-                  variant={viewMode === "grid" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setViewMode("grid")}
-                  className={viewMode === "grid" ? "stanley-button" : "border-stanley-brown text-stanley-brown"}
-                >
-                  <Grid className="h-4 w-4" />
-                </Button>
-                <Button
-                  variant={viewMode === "list" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setViewMode("list")}
-                  className={viewMode === "list" ? "stanley-button" : "border-stanley-brown text-stanley-brown"}
-                >
-                  <List className="h-4 w-4" />
-                </Button>
-                <Button
-                  variant={showOutOfStock ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setShowOutOfStock(!showOutOfStock)}
-                  className={showOutOfStock ? "stanley-button" : "border-stanley-brown text-stanley-brown"}
-                >
-                  {showOutOfStock ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
-                </Button>
+                  </SelectContent>
+                </Select>
+                <Select value={selectedSubcategory} onValueChange={setSelectedSubcategory}>
+                  <SelectTrigger className="w-full sm:w-48 border-stanley-brown h-12">
+                    <SelectValue placeholder="All Subcategories" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Subcategories</SelectItem>
+                    {selectedParentCategory !== "all" &&
+                      menuData[selectedParentCategory] &&
+                      Object.entries(menuData[selectedParentCategory].subcategories).map(([key, subcategory]) => (
+                        <SelectItem key={key} value={key}>
+                          {subcategory.name}
+                        </SelectItem>
+                      ))}
+                  </SelectContent>
+                </Select>
+                <div className="flex gap-2">
+                  <Button
+                    variant={viewMode === "grid" ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setViewMode("grid")}
+                    className={`min-h-[48px] px-4 ${viewMode === "grid" ? "stanley-button" : "border-stanley-brown text-stanley-brown"}`}
+                  >
+                    <Grid className="h-4 w-4" />
+                  </Button>
+                  <Button
+                    variant={viewMode === "list" ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setViewMode("list")}
+                    className={`min-h-[48px] px-4 ${viewMode === "list" ? "stanley-button" : "border-stanley-brown text-stanley-brown"}`}
+                  >
+                    <List className="h-4 w-4" />
+                  </Button>
+                </div>
               </div>
             </div>
 
-            {/* Menu Items Display */}
-            <div className={viewMode === "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" : "space-y-4"}>
-              {getFilteredMenuItems().map((item) => (
-                <Card
-                  key={item.id}
-                  className={`border-stanley-brown hover:shadow-lg transition-shadow ${!item.inStock ? "opacity-60" : ""}`}
-                >
-                  {viewMode === "grid" ? (
-                    <>
-                      <CardHeader className="pb-3">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <CardTitle className="text-lg text-stanley-brown">{item.name}</CardTitle>
-                            <div className="flex items-center gap-2 mt-1">
-                              <Badge variant="outline" className="text-xs border-stanley-brown text-stanley-brown">
-                                {item.subcategoryName}
-                              </Badge>
-                              {item.featured && (
-                                <Badge className="text-xs bg-stanley-yellow text-stanley-brown">
-                                  <Star className="h-3 w-3 mr-1" />
-                                  Featured
+            <div className="mb-6">
+              <Button
+                onClick={() => setShowAddItemModal(true)}
+                className="stanley-button w-full sm:w-auto min-h-[48px]"
+              >
+                <Plus className="h-4 w-4 mr-2" />
+                Add New Menu Item
+              </Button>
+            </div>
+
+            <div
+              className={
+                viewMode === "grid" ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" : "space-y-4"
+              }
+            >
+              {getFilteredMenuItems().map((item) => {
+                const updateMenuItem = (itemId: string, updates: any) => {
+                  const newMenuData = { ...menuData }
+                  Object.keys(newMenuData).forEach((parentKey) => {
+                    Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
+                      const itemIndex = newMenuData[parentKey].subcategories[subKey].items.findIndex(
+                        (item: any) => item.id === itemId,
+                      )
+                      if (itemIndex !== -1) {
+                        newMenuData[parentKey].subcategories[subKey].items[itemIndex] = {
+                          ...newMenuData[parentKey].subcategories[subKey].items[itemIndex],
+                          ...updates,
+                        }
+                      }
+                    })
+                  })
+                  setMenuData(newMenuData)
+                }
+
+                const deleteMenuItem = (itemId: string) => {
+                  const newMenuData = { ...menuData }
+                  Object.keys(newMenuData).forEach((parentKey) => {
+                    Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
+                      newMenuData[parentKey].subcategories[subKey].items = newMenuData[parentKey].subcategories[
+                        subKey
+                      ].items.filter((item: any) => item.id !== itemId)
+                    })
+                  })
+                  setMenuData(newMenuData)
+                }
+
+                return (
+                  <Card
+                    key={item.id}
+                    className={`border-stanley-brown hover:shadow-lg transition-shadow ${
+                      !item.inStock ? "opacity-60" : ""
+                    }`}
+                  >
+                    {viewMode === "grid" ? (
+                      <>
+                        <CardHeader className="pb-3">
+                          <div className="flex items-start justify-between">
+                            <div className="flex-1 min-w-0">
+                              <CardTitle className="text-base sm:text-lg text-stanley-brown truncate">
+                                {item.name}
+                              </CardTitle>
+                              <div className="flex flex-wrap items-center gap-2 mt-1">
+                                <Badge variant="outline" className="text-xs border-stanley-brown text-stanley-brown">
+                                  {item.subcategoryName}
                                 </Badge>
-                              )}
+                                {item.featured && (
+                                  <Badge className="text-xs bg-stanley-yellow text-stanley-brown">
+                                    <Star className="h-3 w-3 mr-1" />
+                                    Featured
+                                  </Badge>
+                                )}
+                              </div>
+                            </div>
+                            <div className="flex items-center space-x-1 ml-2">
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => updateMenuItem(item.id, { featured: !item.featured })}
+                                className={`text-stanley-brown hover:text-stanley-brown min-h-[40px] min-w-[40px] ${
+                                  item.featured ? "text-stanley-yellow" : ""
+                                }`}
+                              >
+                                <Star className={`h-4 w-4 ${item.featured ? "fill-current" : ""}`} />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => updateMenuItem(item.id, { inStock: !item.inStock })}
+                                className={`min-h-[40px] min-w-[40px] ${
+                                  item.inStock
+                                    ? "text-green-600 hover:text-green-700"
+                                    : "text-red-600 hover:text-red-700"
+                                }`}
+                              >
+                                {item.inStock ? <CheckCircle className="h-4 w-4" /> : <XCircle className="h-4 w-4" />}
+                              </Button>
                             </div>
                           </div>
-                          <div className="flex items-center space-x-2">
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => updateMenuItem(item.id, { featured: !item.featured })}
-                              className={`text-stanley-brown hover:text-stanley-brown ${item.featured ? "text-stanley-yellow" : ""}`}
-                            >
-                              <Star className={`h-4 w-4 ${item.featured ? "fill-current" : ""}`} />
-                            </Button>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => setEditingItem(editingItem === item.id ? null : item.id)}
-                              className="text-stanley-brown hover:text-stanley-brown"
-                            >
-                              {editingItem === item.id ? <X className="h-4 w-4" /> : <Edit className="h-4 w-4" />}
-                            </Button>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => deleteMenuItem(item.id)}
-                              className="text-red-600 hover:text-red-800"
-                            >
-                              <Trash2 className="h-4 w-4" />
-                            </Button>
-                          </div>
-                        </div>
-                      </CardHeader>
-
-                      <CardContent>
-                        <div className="mb-4">
+                        </CardHeader>
+                        <CardContent className="pt-0">
                           <img
                             src={item.image || "/placeholder.svg"}
                             alt={item.name}
-                            className="w-full h-48 object-cover rounded-lg"
+                            className="w-full h-32 sm:h-40 object-cover rounded-lg mb-3"
                           />
-                        </div>
-
-                        {editingItem === item.id ? (
-                          <div className="space-y-3">
-                            <Input
-                              value={item.name}
-                              onChange={(e) => updateMenuItem(item.id, { name: e.target.value })}
-                              className="border-stanley-brown"
-                              placeholder="Item name"
-                            />
-                            <Input
-                              value={item.price}
-                              onChange={(e) => updateMenuItem(item.id, { price: e.target.value })}
-                              className="border-stanley-brown"
-                              placeholder="Price"
-                            />
-                            <Input
-                              value={item.image}
-                              onChange={(e) => updateMenuItem(item.id, { image: e.target.value })}
-                              placeholder="Image URL"
-                              className="border-stanley-brown"
-                            />
-                            <Textarea
-                              value={item.description}
-                              onChange={(e) => updateMenuItem(item.id, { description: e.target.value })}
-                              className="border-stanley-brown"
-                              placeholder="Description"
-                            />
-                            <div className="flex gap-2">
-                              <Button
-                                onClick={() => updateMenuItem(item.id, { inStock: !item.inStock })}
-                                variant={item.inStock ? "default" : "outline"}
-                                size="sm"
-                                className={
-                                  item.inStock ? "bg-green-500 hover:bg-green-600" : "border-red-300 text-red-700"
-                                }
-                              >
-                                {item.inStock ? "In Stock" : "Out of Stock"}
-                              </Button>
-                              <Button onClick={() => setEditingItem(null)} className="stanley-button flex-1">
-                                <Save className="h-4 w-4 mr-1" />
-                                Save
-                              </Button>
-                            </div>
-                          </div>
-                        ) : (
-                          <div>
-                            <p className="text-2xl font-bold text-stanley-brown mb-2">{item.price}</p>
-                            <p className="text-sm text-stanley-brown/80 mb-3">{item.description}</p>
-                            <div className="flex items-center justify-between">
-                              <Badge
-                                variant={item.inStock ? "default" : "destructive"}
-                                className={item.inStock ? "bg-green-500" : "bg-red-500"}
-                              >
-                                {item.inStock ? "In Stock" : "Out of Stock"}
-                              </Badge>
-                              <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={() => updateMenuItem(item.id, { inStock: !item.inStock })}
-                                className="border-stanley-brown text-stanley-brown hover:bg-stanley-brown hover:text-white"
-                              >
-                                Toggle Stock
-                              </Button>
-                            </div>
-                          </div>
-                        )}
-                      </CardContent>
-                    </>
-                  ) : (
-                    <CardContent className="p-4">
-                      <div className="flex items-center gap-4">
-                        <img
-                          src={item.image || "/placeholder.svg"}
-                          alt={item.name}
-                          className="w-20 h-20 object-cover rounded-lg"
-                        />
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-1">
-                            <h3 className="font-semibold text-stanley-brown">{item.name}</h3>
-                            {item.featured && (
-                              <Badge className="text-xs bg-stanley-yellow text-stanley-brown">
-                                <Star className="h-3 w-3 mr-1" />
-                                Featured
-                              </Badge>
-                            )}
-                          </div>
-                          <p className="text-sm text-stanley-brown/80 mb-1">{item.description}</p>
-                          <div className="flex items-center gap-2">
-                            <Badge variant="outline" className="text-xs border-stanley-brown text-stanley-brown">
-                              {item.subcategoryName}
-                            </Badge>
+                          <p className="text-xs sm:text-sm text-stanley-brown/80 mb-3 line-clamp-2">
+                            {item.description}
+                          </p>
+                          <div className="flex items-center justify-between">
+                            <p className="text-lg sm:text-xl font-bold text-stanley-brown">{item.price}</p>
                             <Badge
                               variant={item.inStock ? "default" : "destructive"}
                               className={`text-xs ${item.inStock ? "bg-green-500" : "bg-red-500"}`}
@@ -1446,41 +1438,112 @@ export default function AdminPanel() {
                               {item.inStock ? "In Stock" : "Out of Stock"}
                             </Badge>
                           </div>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-xl font-bold text-stanley-brown mb-2">{item.price}</p>
-                          <div className="flex items-center space-x-1">
+                          <div className="flex gap-2 mt-4">
                             <Button
-                              variant="ghost"
+                              variant="outline"
                               size="sm"
-                              onClick={() => updateMenuItem(item.id, { featured: !item.featured })}
-                              className={`text-stanley-brown hover:text-stanley-brown ${item.featured ? "text-stanley-yellow" : ""}`}
+                              onClick={() => setEditingMenuItem(item)}
+                              className="flex-1 min-h-[40px] border-stanley-brown text-stanley-brown hover:bg-stanley-brown/10"
                             >
-                              <Star className={`h-4 w-4 ${item.featured ? "fill-current" : ""}`} />
+                              <Edit className="h-4 w-4 mr-1" />
+                              Edit
                             </Button>
                             <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => setEditingItem(editingItem === item.id ? null : item.id)}
-                              className="text-stanley-brown hover:text-stanley-brown"
-                            >
-                              <Edit className="h-4 w-4" />
-                            </Button>
-                            <Button
-                              variant="ghost"
+                              variant="outline"
                               size="sm"
                               onClick={() => deleteMenuItem(item.id)}
-                              className="text-red-600 hover:text-red-800"
+                              className="flex-1 min-h-[40px] border-red-300 text-red-700 hover:bg-red-50"
                             >
-                              <Trash2 className="h-4 w-4" />
+                              <Trash2 className="h-4 w-4 mr-1" />
+                              Delete
                             </Button>
                           </div>
+                        </CardContent>
+                      </>
+                    ) : (
+                      <CardContent className="p-3 sm:p-4">
+                        <div className="flex items-center gap-3 sm:gap-4">
+                          <img
+                            src={item.image || "/placeholder.svg"}
+                            alt={item.name}
+                            className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg flex-shrink-0"
+                          />
+                          <div className="flex-1 min-w-0">
+                            <div className="flex flex-wrap items-center gap-2 mb-1">
+                              <h3 className="font-semibold text-stanley-brown text-sm sm:text-base truncate">
+                                {item.name}
+                              </h3>
+                              {item.featured && (
+                                <Badge className="text-xs bg-stanley-yellow text-stanley-brown">
+                                  <Star className="h-3 w-3 mr-1" />
+                                  Featured
+                                </Badge>
+                              )}
+                            </div>
+                            <p className="text-xs sm:text-sm text-stanley-brown/80 mb-1 line-clamp-2">
+                              {item.description}
+                            </p>
+                            <div className="flex flex-wrap items-center gap-2">
+                              <Badge variant="outline" className="text-xs border-stanley-brown text-stanley-brown">
+                                {item.subcategoryName}
+                              </Badge>
+                              <Badge
+                                variant={item.inStock ? "default" : "destructive"}
+                                className={`text-xs ${item.inStock ? "bg-green-500" : "bg-red-500"}`}
+                              >
+                                {item.inStock ? "In Stock" : "Out of Stock"}
+                              </Badge>
+                            </div>
+                          </div>
+                          <div className="text-right flex-shrink-0">
+                            <p className="text-lg sm:text-xl font-bold text-stanley-brown mb-2">{item.price}</p>
+                            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-1">
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => updateMenuItem(item.id, { featured: !item.featured })}
+                                className={`text-stanley-brown hover:text-stanley-brown min-h-[36px] min-w-[36px] ${
+                                  item.featured ? "text-stanley-yellow" : ""
+                                }`}
+                              >
+                                <Star className={`h-4 w-4 ${item.featured ? "fill-current" : ""}`} />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => updateMenuItem(item.id, { inStock: !item.inStock })}
+                                className={`min-h-[36px] min-w-[36px] ${
+                                  item.inStock
+                                    ? "text-green-600 hover:text-green-700"
+                                    : "text-red-600 hover:text-red-700"
+                                }`}
+                              >
+                                {item.inStock ? <CheckCircle className="h-4 w-4" /> : <XCircle className="h-4 w-4" />}
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => setEditingMenuItem(item)}
+                                className="text-stanley-brown hover:text-stanley-brown min-h-[36px] min-w-[36px]"
+                              >
+                                <Edit className="h-4 w-4" />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => deleteMenuItem(item.id)}
+                                className="text-red-600 hover:text-red-700 min-h-[36px] min-w-[36px]"
+                              >
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </CardContent>
-                  )}
-                </Card>
-              ))}
+                      </CardContent>
+                    )}
+                  </Card>
+                )
+              })}
             </div>
 
             {getFilteredMenuItems().length === 0 && (
@@ -1496,6 +1559,102 @@ export default function AdminPanel() {
             )}
           </TabsContent>
         </Tabs>
+
+        {editingMenuItem && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+              <h3 className="text-lg font-semibold mb-4 text-stanley-brown">Edit Menu Item</h3>
+
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-1 text-stanley-brown">Name</label>
+                  <Input
+                    value={editingMenuItem.name}
+                    onChange={(e) => setEditingMenuItem({ ...editingMenuItem, name: e.target.value })}
+                    placeholder="Item name"
+                    className="border-stanley-brown/30 focus:border-stanley-brown"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-1 text-stanley-brown">Price</label>
+                  <Input
+                    value={editingMenuItem.price}
+                    onChange={(e) => setEditingMenuItem({ ...editingMenuItem, price: e.target.value })}
+                    placeholder="R 0.00"
+                    className="border-stanley-brown/30 focus:border-stanley-brown"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-1 text-stanley-brown">Description</label>
+                  <textarea
+                    value={editingMenuItem.description}
+                    onChange={(e) => setEditingMenuItem({ ...editingMenuItem, description: e.target.value })}
+                    placeholder="Item description"
+                    className="w-full p-2 border border-stanley-brown/30 rounded-md focus:border-stanley-brown focus:outline-none resize-none"
+                    rows={3}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-1 text-stanley-brown">Current Image</label>
+                  {editingMenuItem.image && (
+                    <img
+                      src={editingMenuItem.image || "/placeholder.svg"}
+                      alt={editingMenuItem.name}
+                      className="w-full h-32 object-cover rounded-lg mb-2"
+                    />
+                  )}
+                  <label className="block">
+                    <span className="sr-only">Choose new image</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleEditImageUpload}
+                      className="block w-full text-sm text-stanley-brown file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-stanley-pink file:text-white hover:file:bg-stanley-pink/90"
+                    />
+                  </label>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <label className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={editingMenuItem.inStock}
+                      onChange={(e) => setEditingMenuItem({ ...editingMenuItem, inStock: e.target.checked })}
+                      className="rounded border-stanley-brown/30"
+                    />
+                    <span className="text-sm text-stanley-brown">In Stock</span>
+                  </label>
+
+                  <label className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={editingMenuItem.featured}
+                      onChange={(e) => setEditingMenuItem({ ...editingMenuItem, featured: e.target.checked })}
+                      className="rounded border-stanley-brown/30"
+                    />
+                    <span className="text-sm text-stanley-brown">Featured</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="flex gap-2 mt-6">
+                <Button
+                  onClick={() => setEditingMenuItem(null)}
+                  variant="outline"
+                  className="flex-1 border-stanley-brown/30 text-stanley-brown hover:bg-stanley-brown/10"
+                >
+                  Cancel
+                </Button>
+                <Button onClick={updateMenuItem} className="flex-1 stanley-button">
+                  Update Item
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       <style jsx>{`
