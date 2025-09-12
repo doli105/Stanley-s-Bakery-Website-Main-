@@ -52,29 +52,37 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    const whatsappMessage = `New Inquiry from Stanley's Bakery Website:
-
-Name: ${formData.firstName} ${formData.surname}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Message: ${formData.message}`
-
-    const whatsappNumber = "27784914587"
-    const encodedMessage = encodeURIComponent(whatsappMessage)
-
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank")
-
-    setTimeout(() => {
-      setSubmitMessage("Your message was sent successfully.")
-      setIsSubmitting(false)
-      setFormData({
-        firstName: "",
-        surname: "",
-        email: "",
-        phone: "",
-        message: "",
+    try {
+      const response = await fetch("https://formspree.io/f/movnbepe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.surname}`,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
       })
-    }, 1000)
+
+      if (response.ok) {
+        setSubmitMessage("Thank you! Your message has been sent.")
+        setFormData({
+          firstName: "",
+          surname: "",
+          email: "",
+          phone: "",
+          message: "",
+        })
+      } else {
+        setSubmitMessage("Sorry, there was an error sending your message. Please try again.")
+      }
+    } catch (error) {
+      setSubmitMessage("Sorry, there was an error sending your message. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
