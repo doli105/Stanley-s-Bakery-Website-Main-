@@ -559,14 +559,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-pink-100 to-pink-200",
       textColor: "text-pink-800",
       borderColor: "border-pink-300",
-      items: [
-        { name: "Classic Princess Cake", price: "R115", description: "Traditional creamy delight" },
-        { name: "Chocolate Princess Cake", price: "R120", description: "Rich chocolate variation" },
-        { name: "Strawberry Princess Cake", price: "R118", description: "Fresh strawberry flavor" },
-        { name: "Vanilla Princess Cake", price: "R115", description: "Pure vanilla essence" },
-        { name: "Caramel Princess Cake", price: "R122", description: "Sweet caramel swirl" },
-        { name: "Coffee Princess Cake", price: "R120", description: "Rich coffee infusion" },
-      ],
+      items: [],
     },
     {
       id: "fairyland-cakes",
@@ -575,28 +568,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-violet-100 to-violet-200",
       textColor: "text-violet-800",
       borderColor: "border-violet-300",
-      items: [
-        {
-          name: "Fairy Castle Cake",
-          price: "R280",
-          description: "Enchanted castle with towers and magical details",
-        },
-        {
-          name: "Unicorn Dreams Cake",
-          price: "R250",
-          description: "Magical unicorn with rainbow mane and horn",
-        },
-        { name: "Fairy Garden Cake", price: "R220", description: "Whimsical garden with fairy houses and flowers" },
-        { name: "Magic Wand Cake", price: "R190", description: "Sparkling wand with stars and glitter" },
-        {
-          name: "Enchanted Forest Cake",
-          price: "R300",
-          description: "Mystical forest scene with fairy lights and creatures",
-        },
-        { name: "Fairy Wings Cake", price: "R240", description: "Delicate butterfly wings with shimmer details" },
-        { name: "Pixie Dust Cake", price: "R200", description: "Magical cake covered in edible glitter and stars" },
-        { name: "Fairy Tale Book Cake", price: "R260", description: "Open storybook with fairy tale scenes" },
-      ],
+      items: [],
     },
     {
       id: "spider-man-cakes",
@@ -605,14 +577,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-slate-100 to-slate-200",
       textColor: "text-slate-800",
       borderColor: "border-slate-300",
-      items: [
-        { name: "Classic Spider Cake", price: "R75", description: "Traditional creamy delight" },
-        { name: "Chocolate Spider Cake", price: "R80", description: "Rich chocolate variation" },
-        { name: "Strawberry Spider Cake", price: "R78", description: "Fresh strawberry flavor" },
-        { name: "Vanilla Spider Cake", price: "R75", description: "Pure vanilla essence" },
-        { name: "Caramel Spider Cake", price: "R82", description: "Sweet caramel swirl" },
-        { name: "Coffee Spider Cake", price: "R80", description: "Rich coffee infusion" },
-      ],
+      items: [],
     },
     {
       id: "frozen-cakes",
@@ -621,14 +586,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-cyan-100 to-cyan-200",
       textColor: "text-cyan-800",
       borderColor: "border-cyan-300",
-      items: [
-        { name: "Classic Frozen Cake", price: "R95", description: "Traditional creamy delight" },
-        { name: "Chocolate Frozen Cake", price: "R100", description: "Rich chocolate variation" },
-        { name: "Strawberry Frozen Cake", price: "R98", description: "Fresh strawberry flavor" },
-        { name: "Vanilla Frozen Cake", price: "R95", description: "Pure vanilla essence" },
-        { name: "Caramel Frozen Cake", price: "R102", description: "Sweet caramel swirl" },
-        { name: "Coffee Frozen Cake", price: "R100", description: "Rich coffee infusion" },
-      ],
+      items: [],
     },
     {
       id: "cocomelon-cakes",
@@ -637,14 +595,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-lime-100 to-lime-200",
       textColor: "text-lime-800",
       borderColor: "border-lime-300",
-      items: [
-        { name: "Classic CoComelon Cake", price: "R85", description: "Traditional creamy delight" },
-        { name: "Chocolate CoComelon Cake", price: "R90", description: "Rich chocolate variation" },
-        { name: "Strawberry CoComelon Cake", price: "R88", description: "Fresh strawberry flavor" },
-        { name: "Vanilla CoComelon Cake", price: "R85", description: "Pure vanilla essence" },
-        { name: "Caramel CoComelon Cake", price: "R92", description: "Sweet caramel swirl" },
-        { name: "Coffee CoComelon Cake", price: "R90", description: "Rich coffee infusion" },
-      ],
+      items: [],
     },
     {
       id: "jungle-cakes",
@@ -653,14 +604,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-emerald-100 to-emerald-200",
       textColor: "text-emerald-800",
       borderColor: "border-emerald-300",
-      items: [
-        { name: "Classic Jungle Cake", price: "R105", description: "Traditional creamy delight" },
-        { name: "Chocolate Jungle Cake", price: "R110", description: "Rich chocolate variation" },
-        { name: "Strawberry Jungle Cake", price: "R108", description: "Fresh strawberry flavor" },
-        { name: "Vanilla Jungle Cake", price: "R105", description: "Pure vanilla essence" },
-        { name: "Caramel Jungle Cake", price: "R112", description: "Sweet caramel swirl" },
-        { name: "Coffee Jungle Cake", price: "R110", description: "Rich coffee infusion" },
-      ],
+      items: [],
     },
     {
       id: "mickey-mouse-cakes",
@@ -669,28 +613,7 @@ const kidsThemedCategories = {
       bgColor: "bg-gradient-to-br from-red-100 to-red-200",
       textColor: "text-red-800",
       borderColor: "border-red-300",
-      items: [
-        {
-          name: "Classic Mickey Head Cake",
-          price: "R180",
-          description: "Traditional Mickey Mouse head shape with chocolate ears",
-        },
-        {
-          name: "Mickey Clubhouse Cake",
-          price: "R220",
-          description: "Colorful clubhouse design with Mickey and friends",
-        },
-        { name: "Vintage Mickey Cake", price: "R200", description: "Retro black and white Mickey Mouse design" },
-        { name: "Mickey Birthday Cake", price: "R190", description: "Birthday-themed with Mickey's iconic red shorts" },
-        {
-          name: "Mickey & Minnie Cake",
-          price: "R250",
-          description: "Romantic couple cake featuring both Mickey and Minnie",
-        },
-        { name: "Mickey Ears Cupcake Tower", price: "R160", description: "Tower of cupcakes with Mickey ear toppers" },
-        { name: "3D Mickey Cake", price: "R280", description: "Three-dimensional Mickey Mouse figure cake" },
-        { name: "Mickey Steamboat Willie Cake", price: "R240", description: "Classic steamboat Willie themed design" },
-      ],
+      items: [],
     },
   ],
 }
@@ -699,50 +622,29 @@ const regularCategories = [
   {
     id: "roman-cream",
     name: "Roman Cream",
-    description: "Rich and creamy Roman-style desserts",
-    bgColor: "bg-gradient-to-br from-yellow-100 to-yellow-200",
-    textColor: "text-yellow-800",
-    borderColor: "border-yellow-300",
-    items: [
-      { name: "Classic Roman Cream", price: "R45", description: "Traditional creamy delight" },
-      { name: "Chocolate Roman Cream", price: "R50", description: "Rich chocolate variation" },
-      { name: "Strawberry Roman Cream", price: "R48", description: "Fresh strawberry flavor" },
-      { name: "Vanilla Roman Cream", price: "R45", description: "Pure vanilla essence" },
-      { name: "Caramel Roman Cream", price: "R52", description: "Sweet caramel swirl" },
-      { name: "Coffee Roman Cream", price: "R50", description: "Rich coffee infusion" },
-    ],
+    description: "Creamy and delicious Roman cream desserts",
+    bgColor: "bg-gradient-to-br from-amber-100 to-amber-200",
+    textColor: "text-amber-800",
+    borderColor: "border-amber-300",
+    items: [],
   },
   {
     id: "swiss-rolls",
     name: "Swiss Rolls",
-    description: "Delicate and fluffy Swiss roll creations",
-    bgColor: "bg-gradient-to-br from-pink-100 to-pink-200",
-    textColor: "text-pink-800",
-    borderColor: "border-pink-300",
-    items: [
-      { name: "Classic Swiss Roll", price: "R35", description: "Traditional creamy filling" },
-      { name: "Chocolate Swiss Roll", price: "R40", description: "Rich chocolate indulgence" },
-      { name: "Strawberry Swiss Roll", price: "R38", description: "Fresh strawberry sensation" },
-      { name: "Vanilla Swiss Roll", price: "R35", description: "Pure vanilla delight" },
-      { name: "Caramel Swiss Roll", price: "R42", description: "Sweet caramel swirl" },
-      { name: "Coffee Swiss Roll", price: "R40", description: "Rich coffee infusion" },
-    ],
+    description: "Light and fluffy Swiss roll cakes with various fillings",
+    bgColor: "bg-gradient-to-br from-yellow-100 to-yellow-200",
+    textColor: "text-yellow-800",
+    borderColor: "border-yellow-300",
+    items: [],
   },
   {
     id: "cupcakes",
     name: "Cupcakes",
-    description: "Moist and flavorful cupcakes",
-    bgColor: "bg-gradient-to-br from-green-100 to-green-200",
-    textColor: "text-green-800",
-    borderColor: "border-green-300",
-    items: [
-      { name: "Classic Cupcake", price: "R25", description: "Traditional creamy delight" },
-      { name: "Chocolate Cupcake", price: "R30", description: "Rich chocolate variation" },
-      { name: "Strawberry Cupcake", price: "R28", description: "Fresh strawberry flavor" },
-      { name: "Vanilla Cupcake", price: "R25", description: "Pure vanilla essence" },
-      { name: "Caramel Cupcake", price: "R32", description: "Sweet caramel swirl" },
-      { name: "Coffee Cupcake", price: "R30", description: "Rich coffee infusion" },
-    ],
+    description: "Individual cupcakes perfect for any occasion",
+    bgColor: "bg-gradient-to-br from-pink-100 to-pink-200",
+    textColor: "text-pink-800",
+    borderColor: "border-pink-300",
+    items: [],
   },
   {
     id: "little-champs-cakes",
@@ -853,227 +755,78 @@ const celebrationCategories = [
   {
     id: "bento-cakes",
     name: "Bento Cakes",
-    description: "Cute and compact bento-style cakes perfect for small celebrations",
+    description: "Small, personalized cakes perfect for individual celebrations",
     bgColor: "bg-gradient-to-br from-pink-100 to-pink-200",
     textColor: "text-pink-800",
     borderColor: "border-pink-300",
-    items: [
-      {
-        name: "Black & Gold Elegance Bento",
-        price: "R150",
-        description:
-          "Sophisticated black buttercream with gold accents, featuring personalized messages and calendar designs",
-      },
-      {
-        name: "Pink & White Birthday Bento",
-        price: "R140",
-        description: "Elegant pink and white themed bento with pearl decorations, perfect for milestone birthdays",
-      },
-      {
-        name: "Cream & Gold Royal Bento",
-        price: "R160",
-        description: "Luxurious cream buttercream with red floral accents and gold crown decorations",
-      },
-      {
-        name: "Humorous 25th Birthday Bento",
-        price: "R130",
-        description: "Fun and playful bento with cartoon characters and witty birthday messages",
-      },
-      {
-        name: "Vibrant Pink Birthday Bento",
-        price: "R155",
-        description: "Bold pink rose wreath design with gold script lettering for festive celebrations",
-      },
-    ],
-  },
-  {
-    id: "wedding-cakes",
-    name: "Wedding Cakes",
-    description: "Elegant and romantic wedding cakes for your special day",
-    bgColor: "bg-gradient-to-br from-rose-100 to-rose-200",
-    textColor: "text-rose-800",
-    borderColor: "border-rose-300",
-    items: [
-      {
-        name: "Elegant White Wedding Cake with Roses",
-        price: "R450",
-        description: "Classic three-tier white wedding cake adorned with fresh roses and elegant piping",
-      },
-      {
-        name: "Rustic Wedding Cake with Flowers",
-        price: "R420",
-        description: "Semi-naked cake style with fresh flowers and natural decorations",
-      },
-      {
-        name: "Modern Minimalist Wedding Cake",
-        price: "R380",
-        description: "Clean lines and sophisticated design with subtle gold accents",
-      },
-      {
-        name: "Vintage Lace Wedding Cake",
-        price: "R480",
-        description: "Intricate lace patterns with pearl details and romantic styling",
-      },
-    ],
-  },
-  {
-    id: "milestone-cakes",
-    name: "Milestone Cakes",
-    description: "Celebrate life's important milestones with custom designed cakes",
-    bgColor: "bg-gradient-to-br from-amber-100 to-amber-200",
-    textColor: "text-amber-800",
-    borderColor: "border-amber-300",
-    items: [
-      {
-        name: "Golden 50th Anniversary Cake",
-        price: "R320",
-        description: "Elegant gold-themed cake celebrating 50 years together with sophisticated decorations",
-      },
-      {
-        name: "Graduation Cap Cake",
-        price: "R280",
-        description: "Graduation-themed cake with cap topper and diploma decorations",
-      },
-      {
-        name: "Sweet 16 Birthday Cake",
-        price: "R290",
-        description: "Glamorous cake design perfect for celebrating the sweet sixteen milestone",
-      },
-      {
-        name: "Retirement Celebration Cake",
-        price: "R300",
-        description: "Custom cake celebrating a well-deserved retirement with personalized themes",
-      },
-    ],
-  },
-  {
-    id: "baby-shower-cakes",
-    name: "Baby Shower Cakes",
-    description: "Sweet cakes to celebrate the upcoming arrival of your little one",
-    bgColor: "bg-gradient-to-br from-sky-100 to-sky-200",
-    textColor: "text-sky-800",
-    borderColor: "border-sky-300",
-    items: [
-      {
-        name: "Pink Baby Shower Cake with Booties",
-        price: "R250",
-        description: "Adorable pink cake decorated with baby booties and delicate flowers",
-      },
-      {
-        name: "Blue Baby Shower Cake with Teddy Bear",
-        price: "R260",
-        description: "Charming blue cake featuring a cute teddy bear and baby-themed decorations",
-      },
-      {
-        name: "Gender Reveal Cake",
-        price: "R280",
-        description: "Surprise cake with colored interior to reveal baby's gender",
-      },
-      {
-        name: "Neutral Baby Shower Cake",
-        price: "R240",
-        description: "Beautiful yellow and green themed cake perfect for any gender",
-      },
-    ],
-  },
-  {
-    id: "novelty-themed-cakes",
-    name: "Novelty Themed Cakes",
-    description: "Creative and fun themed cakes for unique celebrations",
-    bgColor: "bg-gradient-to-br from-indigo-100 to-indigo-200",
-    textColor: "text-indigo-800",
-    borderColor: "border-indigo-300",
-    items: [
-      {
-        name: "Superhero Themed Cake",
-        price: "R320",
-        description: "Action-packed superhero cake with cape and emblem decorations",
-      },
-      {
-        name: "Sports Themed Cake with Soccer Ball",
-        price: "R290",
-        description: "Perfect for sports fans with realistic soccer ball and field decorations",
-      },
-      {
-        name: "Music Themed Cake",
-        price: "R310",
-        description: "Musical cake with notes, instruments, and treble clef decorations",
-      },
-      {
-        name: "Travel Themed Cake",
-        price: "R340",
-        description: "Adventure-inspired cake with suitcases, maps, and travel elements",
-      },
-    ],
-  },
-  {
-    id: "corporate-custom-cakes",
-    name: "Corporate & Custom Cakes",
-    description: "Professional cakes for corporate events and fully customized designs",
-    bgColor: "bg-gradient-to-br from-slate-100 to-slate-200",
-    textColor: "text-slate-800",
-    borderColor: "border-slate-300",
-    items: [
-      {
-        name: "Professional Corporate Logo Cake",
-        price: "R380",
-        description: "Custom cake featuring your company logo and branding colors",
-      },
-      {
-        name: "Custom Design Cake",
-        price: "R400",
-        description: "Fully customized cake designed to your exact specifications and theme",
-      },
-      {
-        name: "Conference Event Cake",
-        price: "R350",
-        description: "Large cake perfect for corporate conferences and business events",
-      },
-      {
-        name: "Product Launch Cake",
-        price: "R420",
-        description: "Celebrate your product launch with a custom-designed promotional cake",
-      },
-    ],
+    items: [],
   },
   {
     id: "heart-shaped-cakes",
     name: "Heart Shaped Cakes",
-    description: "Romantic heart-shaped cakes for anniversaries, Valentine's Day, and special occasions",
+    description: "Romantic and loving heart-shaped cakes for special occasions",
     bgColor: "bg-gradient-to-br from-red-100 to-red-200",
     textColor: "text-red-800",
     borderColor: "border-red-300",
-    items: [
-      {
-        name: "Personalized Photo Heart Cake",
-        price: "R220",
-        description: "Elegant white heart cake with photo prints, black ribbon bows, and personalized birthday message",
-      },
-      {
-        name: "Royal Gold Crown Heart Cake",
-        price: "R250",
-        description: "Luxurious white heart cake with gold script lettering, pearl details, and golden crown topper",
-      },
-      {
-        name: "Red Calendar Heart Cake",
-        price: "R230",
-        description: "Vibrant red heart cake with August 2024 calendar design and white pearl decorations",
-      },
-      {
-        name: "Pink 21st Birthday Heart Cake",
-        price: "R240",
-        description: "Romantic pink heart cake with elaborate buttercream rosettes and ribbon bow decorations",
-      },
-      {
-        name: "White February Calendar Heart Cake",
-        price: "R210",
-        description: "Minimalist white heart cake with February calendar design in elegant black script lettering",
-      },
-    ],
+    items: [],
+  },
+  {
+    id: "car-lovers-cakes",
+    name: "Car Lovers Cakes",
+    description: "Perfect cakes for automotive enthusiasts and car lovers",
+    bgColor: "bg-gradient-to-br from-blue-100 to-blue-200",
+    textColor: "text-blue-800",
+    borderColor: "border-blue-300",
+    items: [],
+  },
+  {
+    id: "wedding-cakes",
+    name: "Wedding Cakes",
+    description: "Elegant and beautiful wedding cakes for your special day",
+    bgColor: "bg-gradient-to-br from-rose-100 to-rose-200",
+    textColor: "text-rose-800",
+    borderColor: "border-rose-300",
+    items: [],
+  },
+  {
+    id: "milestone-cakes",
+    name: "Milestone Cakes",
+    description: "Celebrate life's important milestones with our special cakes",
+    bgColor: "bg-gradient-to-br from-amber-100 to-amber-200",
+    textColor: "text-amber-800",
+    borderColor: "border-amber-300",
+    items: [],
+  },
+  {
+    id: "baby-shower-cakes",
+    name: "Baby Shower Cakes",
+    description: "Sweet and adorable cakes for welcoming new arrivals",
+    bgColor: "bg-gradient-to-br from-green-100 to-green-200",
+    textColor: "text-green-800",
+    borderColor: "border-green-300",
+    items: [],
+  },
+  {
+    id: "novelty-themed-cakes",
+    name: "Novelty Themed Cakes",
+    description: "Creative and unique themed cakes for any occasion",
+    bgColor: "bg-gradient-to-br from-indigo-100 to-indigo-200",
+    textColor: "text-indigo-800",
+    borderColor: "border-indigo-300",
+    items: [],
+  },
+  {
+    id: "corporate-custom-cakes",
+    name: "Corporate & Custom Cakes",
+    description: "Professional corporate cakes and fully customized designs",
+    bgColor: "bg-gradient-to-br from-gray-100 to-gray-200",
+    textColor: "text-gray-800",
+    borderColor: "border-gray-300",
+    items: [],
   },
 ]
 
-const parentCategories = [
+const parentCategoriesData = [
   {
     id: "celebration-special-occasion",
     name: "Celebration & Special Occasion Cakes",
@@ -1221,34 +974,84 @@ export default function CakesPage() {
   const [selectedParentCategory, setSelectedParentCategory] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState(null)
   const [visibleCategories, setVisibleCategories] = useState<Set<number>>(new Set())
+  const [menuData, setMenuData] = useState<any>({})
+  const [loading, setLoading] = useState(true)
   const categoryRefs = useRef<(HTMLDivElement | null)[]>([])
 
+  useEffect(() => {
+    const fetchMenuData = async () => {
+      try {
+        const response = await fetch("/api/menu")
+        if (response.ok) {
+          const data = await response.json()
+          setMenuData(data)
+        }
+      } catch (error) {
+        console.error("Failed to fetch menu data:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchMenuData()
+  }, [])
+
+  const parentCategories = Object.keys(menuData).map((categoryKey, index) => {
+    const categoryData = menuData[categoryKey]
+    const totalItems = Object.values(categoryData?.subcategories || {}).reduce((total: number, subcategory: any) => {
+      return total + (subcategory?.items?.length || 0)
+    }, 0)
+
+    return {
+      id: index + 1,
+      name: categoryData?.name || categoryKey,
+      key: categoryKey,
+      description: getDescriptionForCategory(categoryData?.name || categoryKey),
+      totalItems,
+    }
+  })
+
   const categories = selectedParentCategory
-    ? parentCategories.find((parent) => parent.id === selectedParentCategory)?.subcategories || []
+    ? Object.keys(
+        menuData[parentCategories.find((p) => p.id === selectedParentCategory)?.key]?.subcategories || {},
+      ).map((subcategoryKey, index) => {
+        const parentCategoryKey = parentCategories.find((p) => p.id === selectedParentCategory)?.key
+        const subcategoryData = menuData[parentCategoryKey]?.subcategories[subcategoryKey]
+
+        return {
+          id: index + 1,
+          name: subcategoryData?.name || subcategoryKey,
+          key: subcategoryKey,
+          description: `Delicious ${(subcategoryData?.name || subcategoryKey).toLowerCase()} made fresh daily`,
+          items: subcategoryData?.items || [],
+        }
+      })
     : []
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number.parseInt(entry.target.getAttribute("data-category-index") || "0")
-          if (entry.isIntersecting) {
-            setVisibleCategories((prev) => new Set([...prev, index]))
-          }
-        })
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      },
+  function getDescriptionForCategory(categoryName: string) {
+    const descriptions: { [key: string]: string } = {
+      "Celebration and Special Occasion Cakes": "Perfect cakes for birthdays, weddings, and special celebrations",
+      "Cookies and Pastries": "Freshly baked cookies, pastries, and sweet treats",
+      "Regular treats and desserts": "Daily favorites and classic desserts for every occasion",
+      "Cake boards": "Professional cake boards and accessories for your perfect presentation",
+    }
+    return descriptions[categoryName] || "Delicious treats made with love"
+  }
+
+  const categories1 = selectedParentCategory
+    ? parentCategoriesData.find((parent) => parent.id === selectedParentCategory)?.subcategories || []
+    : []
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500 mx-auto mb-4"></div>
+          <p className="text-pink-600 font-medium">Loading menu...</p>
+        </div>
+      </div>
     )
-
-    categoryRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref)
-    })
-
-    return () => observer.disconnect()
-  }, [selectedParentCategory])
+  }
 
   if (selectedCategory) {
     const category = categories.find((cat) => cat.id === selectedCategory)
@@ -1312,7 +1115,10 @@ export default function CakesPage() {
                 <CardContent className="p-4 sm:p-4">
                   <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                     <img
-                      src={`/abstract-geometric-shapes.png?key=5ik1h&height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert")}`}
+                      src={
+                        item.image ||
+                        `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert") || "/placeholder.svg"}`
+                      }
                       alt={item.name}
                       className="w-full h-full object-cover"
                     />
@@ -1488,7 +1294,7 @@ export default function CakesPage() {
 
                         <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
-                            src={`/abstract-geometric-shapes.png?key=6r18z&key=xifyx&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
+                            src={`/abstract-geometric-shapes.png?key=x63n4&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                           />
@@ -1531,7 +1337,7 @@ export default function CakesPage() {
                   </p>
                   <Button
                     size="default"
-                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 min-h-[48px] text-base"
+                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full"
                     onClick={() =>
                       window.open(
                         "https://wa.me/27123456789?text=Hi! I need help choosing from your cake menu.",
@@ -1600,7 +1406,7 @@ export default function CakesPage() {
                     Contact us for personalized recommendations
                   </p>
                   <Button
-                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full sm:w-auto font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full sm:w-auto"
                     onClick={() =>
                       window.open(
                         "https://wa.me/27123456789?text=Hi! I need help choosing from your cake menu.",

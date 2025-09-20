@@ -3,7 +3,7 @@
 import type React from "react"
 import { ChefHat } from "lucide-react" // Added ChefHat import
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {
   Package,
   Clock,
@@ -41,403 +41,64 @@ const completeMenuStructure = {
     subcategories: {
       "bento-cakes": {
         name: "Bento Cakes",
-        items: [
-          {
-            id: "bento-1",
-            name: "Black & Gold Elegance Bento",
-            price: "R150",
-            image: "/black-gold-bento-cake.jpg",
-            description:
-              "Sophisticated black buttercream with gold accents, featuring personalized messages and calendar designs",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "bento-2",
-            name: "Pink & White Birthday Bento",
-            price: "R140",
-            image: "/pink-white-bento-cake.jpg",
-            description: "Elegant pink and white themed bento with pearl decorations, perfect for milestone birthdays",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "bento-3",
-            name: "Cream & Gold Royal Bento",
-            price: "R160",
-            image: "/cream-gold-royal-bento-cake.jpg",
-            description: "Luxurious cream buttercream with red floral accents and gold crown decorations",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "bento-4",
-            name: "Humorous 25th Birthday Bento",
-            price: "R130",
-            image: "/humorous-25th-birthday-bento-cake.jpg",
-            description: "Fun and playful bento with cartoon characters and witty birthday messages",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "bento-5",
-            name: "Vibrant Pink Birthday Bento",
-            price: "R155",
-            image: "/vibrant-pink-birthday-bento-cake.jpg",
-            description: "Bold pink rose wreath design with gold script lettering for festive celebrations",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "heart-shaped-cakes": {
         name: "Heart Shaped Cakes",
-        items: [
-          {
-            id: "heart-1",
-            name: "Personalized Photo Heart Cake",
-            price: "R220",
-            image: "/personalized-photo-heart-cake.jpg",
-            description:
-              "Elegant white heart cake with photo prints, black ribbon bows, and personalized birthday message",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "heart-2",
-            name: "Royal Gold Crown Heart Cake",
-            price: "R250",
-            image: "/royal-gold-crown-heart-cake.jpg",
-            description:
-              "Luxurious white heart cake with gold script lettering, pearl details, and golden crown topper",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "heart-3",
-            name: "Red Calendar Heart Cake",
-            price: "R230",
-            image: "/red-calendar-heart-cake.jpg",
-            description: "Vibrant red heart cake with August 2024 calendar design and white pearl decorations",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "heart-4",
-            name: "Pink 21st Birthday Heart Cake",
-            price: "R240",
-            image: "/pink-21st-birthday-heart-cake.jpg",
-            description: "Romantic pink heart cake with elaborate buttercream rosettes and ribbon bow decorations",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "heart-5",
-            name: "White February Calendar Heart Cake",
-            price: "R210",
-            image: "/white-february-calendar-heart-cake.jpg",
-            description: "Minimalist white heart cake with February calendar design in elegant black script lettering",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "car-lovers-cakes": {
         name: "Car Lovers Cakes",
-        items: [
-          {
-            id: "car-1",
-            name: "BMW Birthday Celebration Cake",
-            price: "R280",
-            image: "/bmw-birthday-cake.jpg",
-            description:
-              "White cylindrical cake with blue drip effect, BMW logo, racing checkered flag elements, and tire decorations",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "car-2",
-            name: "BMW Luxury Sports Cake",
-            price: "R300",
-            image: "/bmw-luxury-sports-cake.jpg",
-            description:
-              "Sophisticated gray cake with BMW logo, black car silhouettes, silver decorations, and metallic finish",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "car-3",
-            name: "Mercedes-Benz Elegant Cake",
-            price: "R290",
-            image: "/mercedes-benz-elegant-cake.jpg",
-            description:
-              "Upscale beige cake featuring Mercedes-Benz logo, white car model, silver decorations, and luxury styling",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "fairyland-cakes": {
         name: "Fairyland Cakes",
-        items: [
-          {
-            id: "fairy-1",
-            name: "Fairy Castle Cake",
-            price: "R280",
-            image: "/fairy-castle-cake.jpg",
-            description: "Enchanted castle with towers and magical details",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "fairy-2",
-            name: "Unicorn Dreams Cake",
-            price: "R250",
-            image: "/unicorn-dreams-cake.jpg",
-            description: "Magical unicorn with rainbow mane and horn",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "fairy-3",
-            name: "Fairy Garden Cake",
-            price: "R220",
-            image: "/fairy-garden-cake.jpg",
-            description: "Whimsical garden with fairy houses and flowers",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "fairy-4",
-            name: "Magic Wand Cake",
-            price: "R190",
-            image: "/magic-wand-cake.jpg",
-            description: "Sparkling wand with stars and glitter",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "fairy-5",
-            name: "Enchanted Forest Cake",
-            price: "R300",
-            image: "/enchanted-forest-cake.jpg",
-            description: "Mystical forest scene with fairy lights and creatures",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "mickey-mouse-cakes": {
         name: "Mickey Mouse Cakes",
-        items: [
-          {
-            id: "mickey-1",
-            name: "Classic Mickey Head Cake",
-            price: "R180",
-            image: "/classic-mickey-head-cake.jpg",
-            description: "Traditional Mickey Mouse head shape with chocolate ears",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "mickey-2",
-            name: "Mickey Clubhouse Cake",
-            price: "R220",
-            image: "/mickey-clubhouse-cake.jpg",
-            description: "Colorful clubhouse design with Mickey and friends",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "mickey-3",
-            name: "3D Mickey Cake",
-            price: "R280",
-            image: "/3d-mickey-cake.jpg",
-            description: "Three-dimensional Mickey Mouse figure cake",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "wedding-cakes": {
         name: "Wedding Cakes",
-        items: [
-          {
-            id: "wedding-1",
-            name: "Classic White Wedding Cake",
-            price: "R800",
-            image: "/elegant-white-wedding-cake-with-roses.jpg",
-            description: "Elegant multi-tier white wedding cake with buttercream roses and pearl details",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "wedding-2",
-            name: "Rustic Wedding Cake",
-            price: "R750",
-            image: "/rustic-wedding-cake-with-flowers.jpg",
-            description: "Beautiful rustic style cake with fresh flowers and natural decorations",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "milestone-cakes": {
         name: "Milestone Cakes",
-        items: [
-          {
-            id: "milestone-1",
-            name: "50th Anniversary Cake",
-            price: "R400",
-            image: "/golden-50th-anniversary-cake.jpg",
-            description: "Golden anniversary celebration cake with elegant gold decorations",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "milestone-2",
-            name: "Graduation Cake",
-            price: "R350",
-            image: "/graduation-cap-cake.jpg",
-            description: "Graduation themed cake with cap and diploma decorations",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "baby-shower-cakes": {
         name: "Baby Shower Cakes",
-        items: [
-          {
-            id: "baby-1",
-            name: "Pink Baby Shower Cake",
-            price: "R300",
-            image: "/pink-baby-shower-cake-with-booties.jpg",
-            description: "Adorable pink themed baby shower cake with baby booties and rattles",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "baby-2",
-            name: "Blue Baby Shower Cake",
-            price: "R300",
-            image: "/blue-baby-shower-cake-with-teddy-bear.jpg",
-            description: "Sweet blue themed baby shower cake with teddy bear decorations",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "novelty-themed-cakes": {
         name: "Novelty Themed Cakes",
-        items: [
-          {
-            id: "novelty-1",
-            name: "Superhero Cake",
-            price: "R320",
-            image: "/superhero-themed-cake.jpg",
-            description: "Action-packed superhero themed cake with cape and logo decorations",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "novelty-2",
-            name: "Sports Theme Cake",
-            price: "R280",
-            image: "/sports-themed-cake-with-soccer-ball.jpg",
-            description: "Sports enthusiast cake with soccer ball and field decorations",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-3",
-            name: "Sportsman Cake",
-            price: "R300",
-            image: "/sportsman-cake.jpg",
-            description:
-              "Athletic themed cake perfect for sports enthusiasts with various sports equipment decorations",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-4",
-            name: "Gentlemen Cake",
-            price: "R320",
-            image: "/gentlemen-cake.jpg",
-            description:
-              "Sophisticated masculine cake with elegant decorations perfect for the distinguished gentleman",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-5",
-            name: "Jungle Cake",
-            price: "R290",
-            image: "/jungle-cake.jpg",
-            description: "Wild jungle adventure cake with animal decorations and tropical elements",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-6",
-            name: "Cocomelon Cake",
-            price: "R280",
-            image: "/cocomelon-cake.jpg",
-            description: "Colorful Cocomelon themed cake featuring beloved characters from the popular children's show",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-7",
-            name: "Princess Cake",
-            price: "R310",
-            image: "/princess-cake.jpg",
-            description: "Magical princess cake with crown, jewels, and royal decorations fit for a little princess",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-8",
-            name: "Spider-Man Cake",
-            price: "R300",
-            image: "/spiderman-cake.jpg",
-            description: "Amazing Spider-Man themed cake with web designs and superhero action elements",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "novelty-9",
-            name: "Frozen Cake",
-            price: "R320",
-            image: "/frozen-cake.jpg",
-            description: "Enchanting Frozen themed cake featuring Elsa, Anna, and magical ice kingdom decorations",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "corporate-custom-cakes": {
         name: "Corporate & Custom Cakes",
-        items: [
-          {
-            id: "corporate-1",
-            name: "Corporate Logo Cake",
-            price: "R500",
-            image: "/professional-corporate-logo-cake.jpg",
-            description: "Professional corporate cake with custom logo and branding elements",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "corporate-2",
-            name: "Custom Design Cake",
-            price: "R600",
-            image: "/custom-designed-celebration-cake.jpg",
-            description: "Fully customized cake designed to your specific requirements and theme",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
+      },
+    },
+  },
+  "cookies-pastries": {
+    name: "Cookies and Pastries",
+    subcategories: {
+      cookies: {
+        name: "Cookies",
+        items: [],
+      },
+      pastries: {
+        name: "Pastries",
+        items: [],
+      },
+      donuts: {
+        name: "Donuts",
+        items: [],
+      },
+      muffins: {
+        name: "Muffins",
+        items: [],
       },
     },
   },
@@ -446,99 +107,32 @@ const completeMenuStructure = {
     subcategories: {
       "roman-cream": {
         name: "Roman Cream",
-        items: [
-          {
-            id: "roman-1",
-            name: "Classic Roman Cream",
-            price: "R45",
-            image: "/roman-cream-dessert.jpg",
-            description: "Traditional creamy delight",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "roman-2",
-            name: "Chocolate Roman Cream",
-            price: "R50",
-            image: "/roman-cream-chocolate.jpg",
-            description: "Rich chocolate variation",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "roman-3",
-            name: "Strawberry Roman Cream",
-            price: "R48",
-            image: "/roman-cream-strawberry.jpg",
-            description: "Fresh strawberry flavor",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       "swiss-rolls": {
         name: "Swiss Rolls",
-        items: [
-          {
-            id: "swiss-1",
-            name: "Classic Swiss Roll",
-            price: "R35",
-            image: "/swiss-roll-classic.jpg",
-            description: "Traditional creamy filling",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "swiss-2",
-            name: "Chocolate Swiss Roll",
-            price: "R40",
-            image: "/swiss-roll-chocolate.jpg",
-            description: "Rich chocolate indulgence",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "swiss-3",
-            name: "Strawberry Swiss Roll",
-            price: "R38",
-            image: "/swiss-roll-strawberry.jpg",
-            description: "Fresh strawberry sensation",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
       },
       cupcakes: {
         name: "Cupcakes",
-        items: [
-          {
-            id: "cupcake-1",
-            name: "Classic Cupcake",
-            price: "R25",
-            image: "/cupcakes-vanilla-sprinkles.jpg",
-            description: "Traditional creamy delight",
-            inStock: true,
-            featured: false,
-          },
-          {
-            id: "cupcake-2",
-            name: "Chocolate Cupcake",
-            price: "R30",
-            image: "/cupcakes-chocolate.jpg",
-            description: "Rich chocolate variation",
-            inStock: true,
-            featured: true,
-          },
-          {
-            id: "cupcake-3",
-            name: "Vanilla Cupcake",
-            price: "R25",
-            image: "/cupcakes-vanilla-chocolate.jpg",
-            description: "Pure vanilla essence",
-            inStock: true,
-            featured: false,
-          },
-        ],
+        items: [],
+      },
+    },
+  },
+  "cake-boards": {
+    name: "Cake Boards",
+    subcategories: {
+      "round-boards": {
+        name: "Round Cake Boards",
+        items: [],
+      },
+      "square-boards": {
+        name: "Square Cake Boards",
+        items: [],
+      },
+      "custom-boards": {
+        name: "Custom Cake Boards",
+        items: [],
       },
     },
   },
@@ -621,6 +215,44 @@ export default function AdminPanel() {
 
   const [showAddItemModal, setShowAddItemModal] = useState(false)
   const [editingMenuItem, setEditingMenuItem] = useState<any>(null)
+
+  const saveMenuData = async (data: any) => {
+    try {
+      const response = await fetch("/api/menu", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to save menu data")
+      }
+
+      console.log("[v0] Menu data saved successfully")
+    } catch (error) {
+      console.error("[v0] Failed to save menu data:", error)
+      alert("Failed to save menu data. Please try again.")
+    }
+  }
+
+  useEffect(() => {
+    const loadMenuData = async () => {
+      try {
+        const response = await fetch("/api/menu")
+        if (response.ok) {
+          const data = await response.json()
+          setMenuData(data)
+          console.log("[v0] Menu data loaded from API")
+        }
+      } catch (error) {
+        console.error("[v0] Failed to load menu data:", error)
+      }
+    }
+
+    loadMenuData()
+  }, [])
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
@@ -800,7 +432,37 @@ export default function AdminPanel() {
     return items
   }
 
-  const updateMenuItem = () => {
+  const addNewMenuItem = async () => {
+    if (newItem.name && newItem.price && newItem.parentCategory && newItem.subcategory) {
+      const newItemWithId = {
+        id: `item-${Date.now()}`,
+        name: newItem.name,
+        price: newItem.price,
+        description: newItem.description,
+        image:
+          newItem.image ||
+          `/placeholder.svg?height=200&width=200&query=${newItem.name.replace(/\s+/g, "+").toLowerCase()}`,
+        inStock: true,
+        featured: false,
+      }
+
+      const newMenuData = { ...menuData }
+      newMenuData[newItem.parentCategory].subcategories[newItem.subcategory].items.push(newItemWithId)
+      setMenuData(newMenuData)
+
+      await saveMenuData(newMenuData)
+
+      setNewItem({ name: "", price: "", description: "", image: "", parentCategory: "", subcategory: "" })
+      setShowAddItemModal(false)
+
+      // Show success message
+      alert("Menu item added successfully!")
+    } else {
+      alert("Please fill in all required fields")
+    }
+  }
+
+  const updateMenuItem = async () => {
     if (editingMenuItem && editingMenuItem.name && editingMenuItem.price) {
       const newMenuData = { ...menuData }
 
@@ -819,8 +481,30 @@ export default function AdminPanel() {
       })
 
       setMenuData(newMenuData)
+
+      await saveMenuData(newMenuData)
+
       setEditingMenuItem(null)
+
+      // Show success message
+      alert("Menu item updated successfully!")
     }
+  }
+
+  const deleteMenuItem = async (itemId: string) => {
+    const newMenuData = { ...menuData }
+    Object.keys(newMenuData).forEach((parentKey) => {
+      Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
+        newMenuData[parentKey].subcategories[subKey].items = newMenuData[parentKey].subcategories[subKey].items.filter(
+          (item: any) => item.id !== itemId,
+        )
+      })
+    })
+    setMenuData(newMenuData)
+    await saveMenuData(newMenuData)
+
+    // Show success message
+    alert("Menu item deleted successfully!")
   }
 
   const handleEditImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -837,18 +521,6 @@ export default function AdminPanel() {
     }
   }
 
-  const deleteMenuItem = (itemId: string) => {
-    const newMenuData = { ...menuData }
-    Object.keys(newMenuData).forEach((parentKey) => {
-      Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
-        newMenuData[parentKey].subcategories[subKey].items = newMenuData[parentKey].subcategories[subKey].items.filter(
-          (item: any) => item.id !== itemId,
-        )
-      })
-    })
-    setMenuData(newMenuData)
-  }
-
   const handleNewItemImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (file) {
@@ -857,33 +529,6 @@ export default function AdminPanel() {
         setNewItem({ ...newItem, image: e.target?.result as string })
       }
       reader.readAsDataURL(file)
-    }
-  }
-
-  const addNewMenuItem = () => {
-    if (newItem.name && newItem.price && newItem.parentCategory && newItem.subcategory) {
-      const newItemWithId = {
-        id: `item-${Date.now()}`,
-        name: newItem.name,
-        price: newItem.price,
-        description: newItem.description,
-        image:
-          newItem.image ||
-          `/placeholder.svg?height=200&width=200&query=${newItem.name.replace(/\s+/g, "+").toLowerCase()}`,
-        inStock: true,
-        featured: false,
-      }
-
-      const newMenuData = { ...menuData }
-      newMenuData[newItem.parentCategory].subcategories[newItem.subcategory].items.push(newItemWithId)
-      setMenuData(newMenuData)
-      setNewItem({ name: "", price: "", description: "", image: "", parentCategory: "", subcategory: "" })
-      setShowAddItemModal(false)
-
-      // Show success message
-      alert("Menu item added successfully!")
-    } else {
-      alert("Please fill in all required fields")
     }
   }
 
@@ -907,7 +552,7 @@ export default function AdminPanel() {
           <div className="text-center">
             <div className="flex flex-col sm:flex-row items-center justify-between mb-4 gap-3">
               <div className="flex-1">
-                <h1 className="text-xl sm:text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent font-serif animate-slideInFromLeft">
+                <h1 className="text-xl sm:text-2xl md:text-4xl font-bold bg-gradient-to-r from-stanley-pink via-stanley-orange to-stanley-yellow bg-clip-text text-transparent font-serif animate-pulse">
                   Stanley's Bakery Admin
                 </h1>
               </div>
@@ -1354,7 +999,7 @@ export default function AdminPanel() {
               }
             >
               {getFilteredMenuItems().map((item) => {
-                const updateMenuItem = (itemId: string, updates: any) => {
+                const updateMenuItemInline = async (itemId: string, updates: any) => {
                   const newMenuData = { ...menuData }
                   Object.keys(newMenuData).forEach((parentKey) => {
                     Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
@@ -1370,9 +1015,10 @@ export default function AdminPanel() {
                     })
                   })
                   setMenuData(newMenuData)
+                  await saveMenuData(newMenuData)
                 }
 
-                const deleteMenuItem = (itemId: string) => {
+                const deleteMenuItemInline = async (itemId: string) => {
                   const newMenuData = { ...menuData }
                   Object.keys(newMenuData).forEach((parentKey) => {
                     Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
@@ -1382,6 +1028,7 @@ export default function AdminPanel() {
                     })
                   })
                   setMenuData(newMenuData)
+                  await saveMenuData(newMenuData)
                 }
 
                 return (
@@ -1415,7 +1062,7 @@ export default function AdminPanel() {
                               <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => updateMenuItem(item.id, { featured: !item.featured })}
+                                onClick={() => updateMenuItemInline(item.id, { featured: !item.featured })}
                                 className={`text-stanley-brown hover:text-stanley-brown min-h-[40px] min-w-[40px] ${
                                   item.featured ? "text-stanley-yellow" : ""
                                 }`}
@@ -1425,7 +1072,7 @@ export default function AdminPanel() {
                               <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => updateMenuItem(item.id, { inStock: !item.inStock })}
+                                onClick={() => updateMenuItemInline(item.id, { inStock: !item.inStock })}
                                 className={`min-h-[40px] min-w-[40px] ${
                                   item.inStock
                                     ? "text-green-600 hover:text-green-700"
@@ -1468,7 +1115,7 @@ export default function AdminPanel() {
                             <Button
                               variant="outline"
                               size="sm"
-                              onClick={() => deleteMenuItem(item.id)}
+                              onClick={() => deleteMenuItemInline(item.id)}
                               className="flex-1 min-h-[40px] border-red-300 text-red-700 hover:bg-red-50"
                             >
                               <Trash2 className="h-4 w-4 mr-1" />
@@ -1518,7 +1165,7 @@ export default function AdminPanel() {
                               <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => updateMenuItem(item.id, { featured: !item.featured })}
+                                onClick={() => updateMenuItemInline(item.id, { featured: !item.featured })}
                                 className={`text-stanley-brown hover:text-stanley-brown min-h-[36px] min-w-[36px] ${
                                   item.featured ? "text-stanley-yellow" : ""
                                 }`}
@@ -1528,7 +1175,7 @@ export default function AdminPanel() {
                               <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => updateMenuItem(item.id, { inStock: !item.inStock })}
+                                onClick={() => updateMenuItemInline(item.id, { inStock: !item.inStock })}
                                 className={`min-h-[36px] min-w-[36px] ${
                                   item.inStock
                                     ? "text-green-600 hover:text-green-700"
@@ -1548,7 +1195,7 @@ export default function AdminPanel() {
                               <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => deleteMenuItem(item.id)}
+                                onClick={() => deleteMenuItemInline(item.id)}
                                 className="text-red-600 hover:text-red-700 min-h-[36px] min-w-[36px]"
                               >
                                 <Trash2 className="h-4 w-4" />
@@ -1627,6 +1274,7 @@ export default function AdminPanel() {
                         <SelectValue placeholder="Select subcategory" />
                       </SelectTrigger>
                       <SelectContent>
+                        <SelectItem value="all">All Subcategories</SelectItem>
                         {Object.entries(menuData[newItem.parentCategory]?.subcategories || {}).map(
                           ([key, subcategory]) => (
                             <SelectItem key={key} value={key}>
@@ -1821,20 +1469,6 @@ export default function AdminPanel() {
           </div>
         )}
       </div>
-
-      <style jsx>{`
-        .animate-slideInFromLeft {
-          animation: slideInFromLeft 1s ease-in-out;
-        }
-        @keyframes slideInFromLeft {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
-      `}</style>
     </div>
   )
 }
