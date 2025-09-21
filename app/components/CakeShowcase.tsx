@@ -9,6 +9,8 @@ const showcaseCakes: any[] = []
 
 export default function CakeShowcase() {
   const [isVisible, setIsVisible] = useState(false)
+  const [menuData, setMenuData] = useState<any>({})
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,6 +27,37 @@ export default function CakeShowcase() {
 
     return () => observer.disconnect()
   }, [])
+
+  useEffect(() => {
+    const fetchMenuData = async () => {
+      try {
+        const response = await fetch("/api/menu")
+        if (response.ok) {
+          const data = await response.json()
+          setMenuData(data)
+          console.log("[v0] CakeShowcase: Menu data loaded")
+        }
+      } catch (error) {
+        console.error("CakeShowcase: Failed to fetch menu data:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchMenuData()
+  }, [])
+
+  const getTotalMenuItems = () => {
+    let totalItems = 0
+    Object.values(menuData).forEach((category: any) => {
+      Object.values(category.subcategories || {}).forEach((subcategory: any) => {
+        totalItems += subcategory.items?.length || 0
+      })
+    })
+    return totalItems
+  }
+
+  const totalItems = getTotalMenuItems()
 
   return (
     <section
@@ -60,18 +93,31 @@ export default function CakeShowcase() {
           <div className="text-center py-16">
             <div className="max-w-lg mx-auto">
               <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-yellow-100 to-amber-100 rounded-full flex items-center justify-center">
-                <svg className="w-12 h-12 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
+                {loading ? (
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-600"></div>
+                ) : (
+                  <svg className="w-12 h-12 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  </svg>
+                )}
               </div>
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">Collections Coming Soon</h3>
+              <h3 className="text-2xl font-bold text-amber-900 mb-4">
+                {loading
+                  ? "Loading Menu..."
+                  : totalItems > 0
+                    ? `${totalItems} Delicious Items Available`
+                    : "Collections Coming Soon"}
+              </h3>
               <p className="text-amber-700 mb-8 text-lg">
-                We're curating our signature cake collections. In the meantime, contact us for custom designs and
-                orders.
+                {loading
+                  ? "Please wait while we load our menu..."
+                  : totalItems > 0
+                    ? "Browse our complete menu of freshly baked cakes, pastries, and treats."
+                    : "We're curating our signature cake collections. In the meantime, contact us for custom designs and orders."}
               </p>
               <Link href="/cakes">
                 <Button className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-amber-900 font-bold btn-dynamic hover-lift group">
-                  Contact for Custom Orders
+                  {totalItems > 0 ? "View Full Menu" : "Contact for Custom Orders"}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
               </Link>

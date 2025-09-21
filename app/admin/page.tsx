@@ -455,8 +455,15 @@ export default function AdminPanel() {
       setNewItem({ name: "", price: "", description: "", image: "", parentCategory: "", subcategory: "" })
       setShowAddItemModal(false)
 
-      // Show success message
-      alert("Menu item added successfully!")
+      alert("Menu item added successfully! Changes will appear on the customer menu within moments.")
+      console.log(
+        "[v0] New menu item added:",
+        newItemWithId.name,
+        "to",
+        newItem.parentCategory,
+        ">",
+        newItem.subcategory,
+      )
     } else {
       alert("Please fill in all required fields")
     }
@@ -486,25 +493,34 @@ export default function AdminPanel() {
 
       setEditingMenuItem(null)
 
-      // Show success message
-      alert("Menu item updated successfully!")
+      alert("Menu item updated successfully! Changes will appear on the customer menu within moments.")
+      console.log("[v0] Menu item updated:", editingMenuItem.name)
     }
   }
 
   const deleteMenuItem = async (itemId: string) => {
     const newMenuData = { ...menuData }
+    let deletedItemName = ""
+
     Object.keys(newMenuData).forEach((parentKey) => {
       Object.keys(newMenuData[parentKey].subcategories).forEach((subKey) => {
+        const itemIndex = newMenuData[parentKey].subcategories[subKey].items.findIndex(
+          (item: any) => item.id === itemId,
+        )
+        if (itemIndex !== -1) {
+          deletedItemName = newMenuData[parentKey].subcategories[subKey].items[itemIndex].name
+        }
         newMenuData[parentKey].subcategories[subKey].items = newMenuData[parentKey].subcategories[subKey].items.filter(
           (item: any) => item.id !== itemId,
         )
       })
     })
+
     setMenuData(newMenuData)
     await saveMenuData(newMenuData)
 
-    // Show success message
-    alert("Menu item deleted successfully!")
+    alert("Menu item deleted successfully! Changes will appear on the customer menu within moments.")
+    console.log("[v0] Menu item deleted:", deletedItemName)
   }
 
   const handleEditImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {

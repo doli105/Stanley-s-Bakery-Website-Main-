@@ -59,7 +59,7 @@ export default function CartModal({ isOpen, onClose }: CartModalProps) {
                 {items.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 p-4 border border-amber-200 rounded-lg">
                     <Image
-                      src={item.image || "/placeholder.svg"}
+                      src={item.image || "/colorful-layered-cake.png"}
                       alt={item.name}
                       width={80}
                       height={80}
@@ -69,6 +69,12 @@ export default function CartModal({ isOpen, onClose }: CartModalProps) {
                       <h3 className="font-semibold text-amber-900">{item.name}</h3>
                       <p className="text-sm text-amber-600">{item.category}</p>
                       <p className="text-sm text-amber-600">{item.serves}</p>
+                      {item.customizations?.size && (
+                        <p className="text-xs text-amber-600">Size: {item.customizations.size.name}</p>
+                      )}
+                      {item.customizations?.flavor && (
+                        <p className="text-xs text-amber-600">Flavor: {item.customizations.flavor.name}</p>
+                      )}
                       <p className="font-bold text-amber-800">R{item.price}</p>
                     </div>
                     <div className="flex items-center space-x-2">

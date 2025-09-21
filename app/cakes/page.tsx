@@ -976,6 +976,7 @@ export default function CakesPage() {
   const [visibleCategories, setVisibleCategories] = useState<Set<number>>(new Set())
   const [menuData, setMenuData] = useState<any>({})
   const [loading, setLoading] = useState(true)
+  const [refreshTrigger, setRefreshTrigger] = useState(0)
   const categoryRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
@@ -985,6 +986,7 @@ export default function CakesPage() {
         if (response.ok) {
           const data = await response.json()
           setMenuData(data)
+          console.log("[v0] Menu data loaded successfully:", Object.keys(data).length, "categories")
         }
       } catch (error) {
         console.error("Failed to fetch menu data:", error)
@@ -994,6 +996,23 @@ export default function CakesPage() {
     }
 
     fetchMenuData()
+  }, [refreshTrigger])
+
+  const refreshMenuData = () => {
+    setLoading(true)
+    setRefreshTrigger((prev) => prev + 1)
+  }
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (!document.hidden) {
+        // Tab became active, refresh menu data to get latest items
+        refreshMenuData()
+      }
+    }
+
+    document.addEventListener("visibilitychange", handleVisibilityChange)
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange)
   }, [])
 
   const parentCategories = Object.keys(menuData).map((categoryKey, index) => {

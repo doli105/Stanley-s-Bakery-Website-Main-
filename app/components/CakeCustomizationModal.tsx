@@ -10,9 +10,9 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
-import { X } from "lucide-react"
+import { X, ShoppingCart } from "lucide-react"
 import Image from "next/image"
-import PaymentModal from "./PaymentModal"
+import { useCart } from "./CartContext"
 
 interface CakeCustomizationModalProps {
   isOpen: boolean
@@ -34,12 +34,13 @@ export default function CakeCustomizationModal({
   const [selectedExtras, setSelectedExtras] = useState<string[]>([])
   const [uploadedImage, setUploadedImage] = useState<File | null>(null)
   const [imagePreview, setImagePreview] = useState<string | null>(null)
-  const [showPaymentModal, setShowPaymentModal] = useState(false)
   const [quantity, setQuantity] = useState(1)
   const [specialInstructions, setSpecialInstructions] = useState("")
 
+  const { addToCart } = useCart()
+
   // Show image upload only for corporate/custom cakes
-  const showImageUpload = category === "corporate" && (subcategory === "Logo Cakes" || subcategory === "Product Cakes")
+  const showImageUpload = category === "celebration-special-occasion" && subcategory === "corporate-custom-cakes"
 
   const getJungleCakePricing = () => {
     if (cake?.category !== "Jungle Cakes") return null
@@ -155,7 +156,7 @@ export default function CakeCustomizationModal({
       basePrice = selectedSizeOption?.price || cake.basePrice
     } else {
       const selectedSizeOption = sizeOptions.find((size) => size.id === selectedSize)
-      basePrice = cake.basePrice * (selectedSizeOption?.priceMultiplier || 1)
+      basePrice = (cake.basePrice || 0) * (selectedSizeOption?.priceMultiplier || 1)
     }
 
     const selectedFlavorOption = flavorOptions.find((flavor) => flavor.id === selectedFlavor)
@@ -169,295 +170,287 @@ export default function CakeCustomizationModal({
     return (basePrice + extrasPrice) * quantity
   }
 
-  const handleProceedToCheckout = () => {
-    const orderDetails = {
-      cake,
-      customizations: {
-        size: sizeOptions.find((s) => s.id === selectedSize),
-        flavor: flavorOptions.find((f) => f.id === selectedFlavor),
-        extras: selectedExtras.map((id) => extraOptions.find((e) => e.id === id)).filter(Boolean),
-        specialInstructions,
-        uploadedImage: uploadedImage ? uploadedImage.name : null,
-      },
-      quantity,
-      totalPrice: calculatePrice(),
-      category,
+  const handleAddToCart = () => {
+    if (!selectedSize) return
+
+    const selectedSizeOption = sizeOptions.find((s) => s.id === selectedSize)
+    const selectedFlavorOption = flavorOptions.find((f) => f.id === selectedFlavor)
+    const selectedExtrasOptions = selectedExtras.map((id) => extraOptions.find((e) => e.id === id)).filter(Boolean)
+
+    const cartItem = {
+      id: cake.id || `${category}-${subcategory}-${cake.name}`,
+      name: cake.name,
+      price: calculatePrice() / quantity, // Base price per item
+      category: `${category} - ${subcategory}`,
       subcategory,
+      serves: selectedSizeOption?.serves || "1 person",
+      image: cake.image || "/colorful-layered-cake.png",
+      customizations: {
+        size: selectedSizeOption,
+        flavor: selectedFlavorOption,
+        extras: selectedExtrasOptions,
+        specialInstructions,
+        uploadedImage: uploadedImage ? uploadedImage.name : undefined,
+      },
     }
 
-    setShowPaymentModal(true)
+    // Add the item with the specified quantity
+    for (let i = 0; i < quantity; i++) {
+      addToCart(cartItem)
+    }
+
+    onClose()
   }
 
   if (!cake) return null
 
   return (
-    <>
-      <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle className="text-2xl font-bold text-amber-900 flex items-center justify-between">
-              Customize Your Cake
-              <Button variant="ghost" size="sm" onClick={onClose}>
-                <X className="h-4 w-4" />
-              </Button>
-            </DialogTitle>
-          </DialogHeader>
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-bold text-amber-900 flex items-center justify-between">
+            Customize Your Cake
+            <Button variant="ghost" size="sm" onClick={onClose}>
+              <X className="h-4 w-4" />
+            </Button>
+          </DialogTitle>
+        </DialogHeader>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Left Column - Cake Details */}
-            <div className="space-y-6">
-              <Card>
-                <CardContent className="p-4">
-                  <div className="relative mb-4">
-                    <Image
-                      src={cake.image || "/placeholder.svg"}
-                      alt={cake.name}
-                      width={400}
-                      height={300}
-                      className="w-full h-48 object-contain rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-amber-900 mb-2">{cake.name}</h3>
-                  <p className="text-amber-700 text-sm mb-2">{cake.description}</p>
-                </CardContent>
-              </Card>
-
-              {/* Pricing Information */}
-              {(cake.pricing || cake?.category === "Jungle Cakes") && (
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="text-lg font-semibold text-amber-900 mb-3">Pricing Information</h4>
-                    <div className="p-3 mb-3">
-                      {cake?.category === "Jungle Cakes" ? (
-                        <>
-                          <p className="text-amber-800 text-sm mb-2">
-                            <strong>Single Tier: Starting from R550</strong>
-                          </p>
-                          <p className="text-amber-800 text-sm mb-2">
-                            <strong>2-Tier: Starting from R1500</strong>
-                          </p>
-                          <p className="text-amber-700 text-xs mb-3">(excluding animal figurines and cake toppers)</p>
-                        </>
-                      ) : (
-                        <p className="text-amber-800 text-sm mb-2">
-                          <strong>Starting from R{cake.basePrice}</strong> (excluding cake toppers)
-                        </p>
-                      )}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-amber-700">
-                        {cake?.category === "Jungle Cakes" && (
-                          <div>
-                            • Animal Figurines: <strong>Contact for pricing</strong>
-                          </div>
-                        )}
-                        <div>
-                          • Happy Birthday Cake Topper: <strong>R150</strong>
-                        </div>
-                        <div>
-                          • Custom-Made Cake Topper: <strong>R200</strong>
-                        </div>
-                      </div>
-                      <p className="text-xs text-amber-600 mt-2 italic">All flavors available for every cake design</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
-
-              {/* Image Upload Section - Only for Corporate/Custom Cakes */}
-              {showImageUpload && (
-                <Card>
-                  <CardContent className="p-4">
-                    <Label className="text-base font-semibold text-amber-900 mb-3 block">Upload Reference Image</Label>
-                    <div className="border border-amber-300 rounded-lg p-6 text-center">
-                      {imagePreview ? (
-                        <div className="space-y-3">
-                          <img
-                            src={imagePreview || "/placeholder.svg"}
-                            alt="Preview"
-                            className="max-w-full h-32 object-cover mx-auto rounded"
-                          />
-                          <p className="text-sm text-amber-600">{uploadedImage?.name}</p>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => {
-                              setUploadedImage(null)
-                              setImagePreview(null)
-                            }}
-                          >
-                            Remove Image
-                          </Button>
-                        </div>
-                      ) : (
-                        <div className="space-y-3">
-                          <div>
-                            <Label htmlFor="image-upload" className="cursor-pointer">
-                              <span className="text-amber-700 hover:text-amber-900">
-                                Click to upload your logo or reference image
-                              </span>
-                              <Input
-                                id="image-upload"
-                                type="file"
-                                accept="image/*"
-                                onChange={handleImageUpload}
-                                className="hidden"
-                              />
-                            </Label>
-                          </div>
-                          <p className="text-xs text-amber-500">PNG, JPG up to 10MB</p>
-                        </div>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
-            </div>
-
-            {/* Right Column - Customization Options */}
-            <div className="space-y-6">
-              {/* Size Selection */}
-              <Card>
-                <CardContent className="p-4">
-                  <Label className="text-base font-semibold text-amber-900 mb-3 block">Cake Size</Label>
-                  <Select value={selectedSize} onValueChange={setSelectedSize}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select a size" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {sizeOptions.map((size) => (
-                        <SelectItem key={size.id} value={size.id}>
-                          {cake.pricing
-                            ? `${size.name} - ${size.serves} - R${size.price}`
-                            : `${size.name} - ${size.serves}`}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </CardContent>
-              </Card>
-
-              {/* Flavor Selection */}
-              <Card>
-                <CardContent className="p-4">
-                  <Label className="text-base font-semibold text-amber-900 mb-3 block">Cake Flavor</Label>
-                  <Select value={selectedFlavor} onValueChange={setSelectedFlavor}>
-                    <SelectTrigger>
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {flavorOptions.map((flavor) => (
-                        <SelectItem key={flavor.id} value={flavor.id}>
-                          {flavor.name}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </CardContent>
-              </Card>
-
-              {/* Extra Options */}
-              <Card>
-                <CardContent className="p-4">
-                  <Label className="text-base font-semibold text-amber-900 mb-3 block">Extra Decorations</Label>
-                  <div className="grid grid-cols-1 gap-2">
-                    {extraOptions.map((extra) => (
-                      <div
-                        key={extra.id}
-                        className={`p-3 border rounded-lg cursor-pointer transition-colors ${
-                          selectedExtras.includes(extra.id)
-                            ? "border-amber-500 bg-amber-50"
-                            : "border-amber-200 hover:border-amber-300"
-                        }`}
-                        onClick={() => toggleExtra(extra.id)}
-                      >
-                        <div className="flex justify-between items-center">
-                          <span className="text-sm font-medium text-amber-900">{extra.name}</span>
-                          <span className="text-sm text-amber-600">+R{extra.price}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Quantity */}
-              <Card>
-                <CardContent className="p-4">
-                  <Label className="text-base font-semibold text-amber-900 mb-3 block">Quantity</Label>
-                  <div className="flex items-center space-x-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                      disabled={quantity <= 1}
-                    >
-                      -
-                    </Button>
-                    <span className="text-lg font-semibold text-amber-900 min-w-[2rem] text-center">{quantity}</span>
-                    <Button variant="outline" size="sm" onClick={() => setQuantity(quantity + 1)}>
-                      +
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Special Instructions */}
-              <Card>
-                <CardContent className="p-4">
-                  <Label className="text-base font-semibold text-amber-900 mb-3 block">Special Instructions</Label>
-                  <Textarea
-                    placeholder="Any special requests, dietary requirements, or custom messages..."
-                    value={specialInstructions}
-                    onChange={(e) => setSpecialInstructions(e.target.value)}
-                    className="min-h-[80px]"
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Left Column - Cake Details */}
+          <div className="space-y-6">
+            <Card>
+              <CardContent className="p-4">
+                <div className="relative mb-4">
+                  <Image
+                    src={cake.image || "/colorful-layered-cake.png"}
+                    alt={cake.name}
+                    width={400}
+                    height={300}
+                    className="w-full h-48 object-contain rounded-lg"
                   />
+                </div>
+                <h3 className="text-xl font-semibold text-amber-900 mb-2">{cake.name}</h3>
+                <p className="text-amber-700 text-sm mb-2">{cake.description}</p>
+              </CardContent>
+            </Card>
+
+            {/* Pricing Information */}
+            {(cake.pricing || cake?.category === "Jungle Cakes") && (
+              <Card>
+                <CardContent className="p-4">
+                  <h4 className="text-lg font-semibold text-amber-900 mb-3">Pricing Information</h4>
+                  <div className="p-3 mb-3">
+                    {cake?.category === "Jungle Cakes" ? (
+                      <>
+                        <p className="text-amber-800 text-sm mb-2">
+                          <strong>Single Tier: Starting from R550</strong>
+                        </p>
+                        <p className="text-amber-800 text-sm mb-2">
+                          <strong>2-Tier: Starting from R1500</strong>
+                        </p>
+                        <p className="text-amber-700 text-xs mb-3">(excluding animal figurines and cake toppers)</p>
+                      </>
+                    ) : (
+                      <p className="text-amber-800 text-sm mb-2">
+                        <strong>Starting from R{cake.basePrice || 0}</strong> (excluding cake toppers)
+                      </p>
+                    )}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-amber-700">
+                      {cake?.category === "Jungle Cakes" && (
+                        <div>
+                          • Animal Figurines: <strong>Contact for pricing</strong>
+                        </div>
+                      )}
+                      <div>
+                        • Happy Birthday Cake Topper: <strong>R150</strong>
+                      </div>
+                      <div>
+                        • Custom-Made Cake Topper: <strong>R200</strong>
+                      </div>
+                    </div>
+                    <p className="text-xs text-amber-600 mt-2 italic">All flavors available for every cake design</p>
+                  </div>
                 </CardContent>
               </Card>
-            </div>
+            )}
+
+            {/* Image Upload Section - Only for Corporate/Custom Cakes */}
+            {showImageUpload && (
+              <Card>
+                <CardContent className="p-4">
+                  <Label className="text-base font-semibold text-amber-900 mb-3 block">Upload Reference Image</Label>
+                  <div className="border border-amber-300 rounded-lg p-6 text-center">
+                    {imagePreview ? (
+                      <div className="space-y-3">
+                        <img
+                          src={imagePreview || "/placeholder.svg"}
+                          alt="Preview"
+                          className="max-w-full h-32 object-cover mx-auto rounded"
+                        />
+                        <p className="text-sm text-amber-600">{uploadedImage?.name}</p>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => {
+                            setUploadedImage(null)
+                            setImagePreview(null)
+                          }}
+                        >
+                          Remove Image
+                        </Button>
+                      </div>
+                    ) : (
+                      <div className="space-y-3">
+                        <div>
+                          <Label htmlFor="image-upload" className="cursor-pointer">
+                            <span className="text-amber-700 hover:text-amber-900">
+                              Click to upload your logo or reference image
+                            </span>
+                            <Input
+                              id="image-upload"
+                              type="file"
+                              accept="image/*"
+                              onChange={handleImageUpload}
+                              className="hidden"
+                            />
+                          </Label>
+                        </div>
+                        <p className="text-xs text-amber-500">PNG, JPG up to 10MB</p>
+                      </div>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
 
-          {/* Price Summary and Actions */}
-          <div className="border-t pt-6 mt-6">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <div className="text-center sm:text-left">
-                <p className="text-sm text-amber-600">Total Price</p>
-                <p className="text-3xl font-bold text-amber-900">R{calculatePrice()}</p>
-              </div>
-              <div className="flex gap-3">
-                <Button variant="outline" onClick={onClose}>
-                  Cancel
-                </Button>
-                <Button
-                  className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold"
-                  onClick={handleProceedToCheckout}
-                  disabled={!selectedSize}
-                >
-                  Proceed to Checkout
-                </Button>
-              </div>
+          {/* Right Column - Customization Options */}
+          <div className="space-y-6">
+            {/* Size Selection */}
+            <Card>
+              <CardContent className="p-4">
+                <Label className="text-base font-semibold text-amber-900 mb-3 block">Cake Size</Label>
+                <Select value={selectedSize} onValueChange={setSelectedSize}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a size" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {sizeOptions.map((size) => (
+                      <SelectItem key={size.id} value={size.id}>
+                        {cake.pricing || size.price
+                          ? `${size.name} - ${size.serves} - R${size.price}`
+                          : `${size.name} - ${size.serves}`}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </CardContent>
+            </Card>
+
+            {/* Flavor Selection */}
+            <Card>
+              <CardContent className="p-4">
+                <Label className="text-base font-semibold text-amber-900 mb-3 block">Cake Flavor</Label>
+                <Select value={selectedFlavor} onValueChange={setSelectedFlavor}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {flavorOptions.map((flavor) => (
+                      <SelectItem key={flavor.id} value={flavor.id}>
+                        {flavor.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </CardContent>
+            </Card>
+
+            {/* Extra Options */}
+            <Card>
+              <CardContent className="p-4">
+                <Label className="text-base font-semibold text-amber-900 mb-3 block">Extra Decorations</Label>
+                <div className="grid grid-cols-1 gap-2">
+                  {extraOptions.map((extra) => (
+                    <div
+                      key={extra.id}
+                      className={`p-3 border rounded-lg cursor-pointer transition-colors ${
+                        selectedExtras.includes(extra.id)
+                          ? "border-amber-500 bg-amber-50"
+                          : "border-amber-200 hover:border-amber-300"
+                      }`}
+                      onClick={() => toggleExtra(extra.id)}
+                    >
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium text-amber-900">{extra.name}</span>
+                        <span className="text-sm text-amber-600">+R{extra.price}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Quantity */}
+            <Card>
+              <CardContent className="p-4">
+                <Label className="text-base font-semibold text-amber-900 mb-3 block">Quantity</Label>
+                <div className="flex items-center space-x-3">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                    disabled={quantity <= 1}
+                  >
+                    -
+                  </Button>
+                  <span className="text-lg font-semibold text-amber-900 min-w-[2rem] text-center">{quantity}</span>
+                  <Button variant="outline" size="sm" onClick={() => setQuantity(quantity + 1)}>
+                    +
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Special Instructions */}
+            <Card>
+              <CardContent className="p-4">
+                <Label className="text-base font-semibold text-amber-900 mb-3 block">Special Instructions</Label>
+                <Textarea
+                  placeholder="Any special requests, dietary requirements, or custom messages..."
+                  value={specialInstructions}
+                  onChange={(e) => setSpecialInstructions(e.target.value)}
+                  className="min-h-[80px]"
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Price Summary and Actions */}
+        <div className="border-t pt-6 mt-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="text-center sm:text-left">
+              <p className="text-sm text-amber-600">Total Price</p>
+              <p className="text-3xl font-bold text-amber-900">R{calculatePrice()}</p>
+            </div>
+            <div className="flex gap-3">
+              <Button variant="outline" onClick={onClose}>
+                Cancel
+              </Button>
+              <Button
+                className="bg-yellow-500 hover:bg-yellow-600 text-amber-900 font-bold"
+                onClick={handleAddToCart}
+                disabled={!selectedSize}
+              >
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Add to Cart
+              </Button>
             </div>
           </div>
-        </DialogContent>
-      </Dialog>
-
-      {/* Payment Modal */}
-      <PaymentModal
-        isOpen={showPaymentModal}
-        onClose={() => setShowPaymentModal(false)}
-        orderDetails={{
-          cake,
-          customizations: {
-            size: sizeOptions.find((s) => s.id === selectedSize),
-            flavor: flavorOptions.find((f) => f.id === selectedFlavor),
-            extras: selectedExtras.map((id) => extraOptions.find((e) => e.id === id)).filter(Boolean),
-            specialInstructions,
-            uploadedImage: uploadedImage ? uploadedImage.name : null,
-          },
-          quantity,
-          totalPrice: calculatePrice(),
-          category,
-          subcategory,
-        }}
-      />
-    </>
+        </div>
+      </DialogContent>
+    </Dialog>
   )
 }

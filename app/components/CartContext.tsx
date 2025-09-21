@@ -8,8 +8,16 @@ interface CartItem {
   price: number
   quantity: number
   category: string
+  subcategory?: string
   serves: string
   image: string
+  customizations?: {
+    size?: { id: string; name: string; serves: string; price: number }
+    flavor?: { id: string; name: string; price: number }
+    extras?: Array<{ id: string; name: string; price: number }>
+    specialInstructions?: string
+    uploadedImage?: string
+  }
 }
 
 interface CartContextType {
@@ -23,6 +31,12 @@ interface CartContextType {
   showConfirmation: boolean
   setShowConfirmation: (show: boolean) => void
   isLoaded: boolean
+  deliveryOption: "pickup" | "delivery"
+  setDeliveryOption: (option: "pickup" | "delivery") => void
+  deliveryAddress: string
+  setDeliveryAddress: (address: string) => void
+  deliveryCost: number
+  setDeliveryCost: (cost: number) => void
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined)
@@ -31,13 +45,20 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([])
   const [showConfirmation, setShowConfirmation] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
+  const [deliveryOption, setDeliveryOption] = useState<"pickup" | "delivery">("pickup")
+  const [deliveryAddress, setDeliveryAddress] = useState("")
+  const [deliveryCost, setDeliveryCost] = useState(0)
 
   useEffect(() => {
     // Initialize cart from localStorage if available
     try {
       const savedCart = localStorage.getItem("stanley-bakery-cart")
       if (savedCart) {
-        setItems(JSON.parse(savedCart))
+        const cartData = JSON.parse(savedCart)
+        setItems(cartData.items || cartData) // Handle both old and new format
+        setDeliveryOption(cartData.deliveryOption || "pickup")
+        setDeliveryAddress(cartData.deliveryAddress || "")
+        setDeliveryCost(cartData.deliveryCost || 0)
       }
     } catch (error) {
       console.error("Error loading cart from localStorage:", error)
@@ -49,20 +70,30 @@ export function CartProvider({ children }: { children: ReactNode }) {
     // Save cart to localStorage whenever items change
     if (isLoaded) {
       try {
-        localStorage.setItem("stanley-bakery-cart", JSON.stringify(items))
+        const cartData = {
+          items,
+          deliveryOption,
+          deliveryAddress,
+          deliveryCost,
+        }
+        localStorage.setItem("stanley-bakery-cart", JSON.stringify(cartData))
       } catch (error) {
         console.error("Error saving cart to localStorage:", error)
       }
     }
-  }, [items, isLoaded])
+  }, [items, deliveryOption, deliveryAddress, deliveryCost, isLoaded])
 
   const addToCart = (item: Omit<CartItem, "quantity">) => {
     setItems((prevItems) => {
-      const existingItem = prevItems.find((i) => i.id === item.id)
+      const customizationId = item.customizations
+        ? `${item.id}-${item.customizations.size?.id || ""}-${item.customizations.flavor?.id || ""}-${item.customizations.extras?.map((e) => e.id).join(",") || ""}`
+        : item.id
+
+      const existingItem = prevItems.find((i) => i.id === customizationId)
       if (existingItem) {
-        return prevItems.map((i) => (i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i))
+        return prevItems.map((i) => (i.id === customizationId ? { ...i, quantity: i.quantity + 1 } : i))
       }
-      return [...prevItems, { ...item, quantity: 1 }]
+      return [...prevItems, { ...item, id: customizationId, quantity: 1 }]
     })
     setShowConfirmation(true)
   }
@@ -81,10 +112,21 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const clearCart = () => {
     setItems([])
+    setDeliveryOption("pickup")
+    setDeliveryAddress("")
+    setDeliveryCost(0)
   }
 
   const getTotalPrice = () => {
-    return items.reduce((total, item) => total + item.price * item.quantity, 0)
+    const itemsTotal = items.reduce((total, item) => {
+      let itemPrice = item.price
+      if (item.customizations?.extras) {
+        itemPrice += item.customizations.extras.reduce((extraTotal, extra) => extraTotal + extra.price, 0)
+      }
+      return total + itemPrice * item.quantity
+    }, 0)
+
+    return itemsTotal + (deliveryOption === "delivery" ? deliveryCost : 0)
   }
 
   const getTotalItems = () => {
@@ -104,6 +146,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
         showConfirmation,
         setShowConfirmation,
         isLoaded,
+        deliveryOption,
+        setDeliveryOption,
+        deliveryAddress,
+        setDeliveryAddress,
+        deliveryCost,
+        setDeliveryCost,
       }}
     >
       {children}
