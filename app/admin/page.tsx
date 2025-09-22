@@ -22,7 +22,6 @@ import {
   Grid,
   List,
   Star,
-  Eye,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -188,23 +187,12 @@ const statusOptions = [
   { key: "delivered", label: "Delivered", color: "bg-green-100 text-green-800", icon: CheckCircle },
 ]
 
-// Define order statuses for the Select component
-const orderStatuses = [
-  { key: "pending", label: "Pending Confirmation", icon: Clock },
-  { key: "confirmed", label: "Confirmed", icon: CheckCircle },
-  { key: "preparing", label: "Baking in Progress", icon: ChefHat },
-  { key: "ready-to-collect", label: "Ready for Pickup", icon: Package },
-  { key: "out-for-delivery", label: "Out for Delivery", icon: Truck },
-  { key: "delivered", label: "Delivered", icon: CheckCircle },
-  { key: "cancelled", label: "Cancelled", icon: X },
-]
-
 export default function AdminPanel() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [loginForm, setLoginForm] = useState({ username: "", password: "" })
   const [loginError, setLoginError] = useState("")
 
-  const [orders, setOrders] = useState([])
+  const [orders, setOrders] = useState(initialOrders)
   const [editingOrder, setEditingOrder] = useState<string | null>(null)
   const [searchTerm, setSearchTerm] = useState("")
   const [orderFilter, setOrderFilter] = useState("all") // all, paid, completed, pending
@@ -227,41 +215,6 @@ export default function AdminPanel() {
 
   const [showAddItemModal, setShowAddItemModal] = useState(false)
   const [editingMenuItem, setEditingMenuItem] = useState<any>(null)
-
-  const loadOrdersData = async () => {
-    try {
-      const response = await fetch("/api/orders")
-      if (response.ok) {
-        const data = await response.json()
-        setOrders(data)
-      }
-    } catch (error) {
-      console.error("Failed to load orders:", error)
-    }
-  }
-
-  const saveOrdersData = async (ordersData: any) => {
-    try {
-      const response = await fetch("/api/orders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(ordersData),
-      })
-      if (!response.ok) {
-        throw new Error("Failed to save orders")
-      }
-    } catch (error) {
-      console.error("Failed to save orders:", error)
-    }
-  }
-
-  useEffect(() => {
-    if (isAuthenticated) {
-      loadOrdersData()
-    }
-  }, [isAuthenticated])
 
   const saveMenuData = async (data: any) => {
     try {
@@ -373,24 +326,13 @@ export default function AdminPanel() {
     )
   }
 
-  const updateOrderStatus = async (orderId: string, newStatus: string) => {
-    const updatedOrders = orders.map((order) => (order.id === orderId ? { ...order, status: newStatus } : order))
-    setOrders(updatedOrders)
-    await saveOrdersData(updatedOrders)
+  const updateOrderStatus = (orderId: string, newStatus: string) => {
+    setOrders(orders.map((order) => (order.id === orderId ? { ...order, status: newStatus } : order)))
+    setEditingOrder(null)
   }
 
-  const updateOrderPaymentStatus = async (orderId: string, newPaymentStatus: string) => {
-    const updatedOrders = orders.map((order) =>
-      order.id === orderId ? { ...order, paymentStatus: newPaymentStatus } : order,
-    )
-    setOrders(updatedOrders)
-    await saveOrdersData(updatedOrders)
-  }
-
-  const deleteOrder = async (orderId: string) => {
-    const updatedOrders = orders.filter((order) => order.id !== orderId)
-    setOrders(updatedOrders)
-    await saveOrdersData(updatedOrders)
+  const updatePaymentStatus = (orderId: string, newPaymentStatus: string) => {
+    setOrders(orders.map((order) => (order.id === orderId ? { ...order, paymentStatus: newPaymentStatus } : order)))
   }
 
   const filteredOrders = orders.filter((order) => {
@@ -619,10 +561,10 @@ export default function AdminPanel() {
   const menuStats = getMenuStats()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stanley-cream via-white to-stanley-cream/50">
+    <div className="bg-gradient-to-br from-stanley-cream to-stanley-pink min-h-screen">
       {/* Header */}
       <div className="pt-4 pb-6 px-2 sm:px-4">
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto">
           <div className="text-center">
             <div className="flex flex-col sm:flex-row items-center justify-between mb-4 gap-3">
               <div className="flex-1">
@@ -647,23 +589,19 @@ export default function AdminPanel() {
         </div>
       </div>
 
-      <div className="container mx-auto px-2 sm:px-4 max-w-7xl">
+      <div className="container mx-auto px-2 sm:px-4">
         <Tabs defaultValue="orders" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6 h-12 sm:h-14">
-            <TabsTrigger value="orders" className="text-xs sm:text-base px-2">
-              <Package className="h-4 w-4 mr-1 sm:mr-2" />
-              <span className="hidden xs:inline">Order Management</span>
-              <span className="xs:hidden">Orders</span>
+          <TabsList className="grid w-full grid-cols-2 mb-6 h-12">
+            <TabsTrigger value="orders" className="text-sm sm:text-base">
+              Order Management
             </TabsTrigger>
-            <TabsTrigger value="menu" className="text-xs sm:text-base px-2">
-              <ChefHat className="h-4 w-4 mr-1 sm:mr-2" />
-              <span className="hidden xs:inline">Menu Management</span>
-              <span className="xs:hidden">Menu</span>
+            <TabsTrigger value="menu" className="text-sm sm:text-base">
+              Complete Menu Management
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="orders">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 mb-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
               {getStatusCounts().map((status) => {
                 const IconComponent = status.icon
                 return (
@@ -674,71 +612,81 @@ export default function AdminPanel() {
                     }`}
                     onClick={() => setOrderFilter(status.key === "total" ? "all" : status.key)}
                   >
-                    <CardContent className="p-2 sm:p-4 text-center">
+                    <CardContent className="p-4 text-center">
                       <div
-                        className={`w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mx-auto mb-1 sm:mb-2 ${status.color}`}
+                        className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 ${status.color}`}
                       >
-                        <IconComponent className="h-4 w-4 sm:h-6 sm:w-6" />
+                        <IconComponent className="h-6 w-6" />
                       </div>
-                      <p className="text-lg sm:text-2xl font-bold text-stanley-brown">{status.count}</p>
-                      <p className="text-xs text-stanley-brown/70 leading-tight">{status.label}</p>
+                      <p className="text-2xl font-bold text-stanley-brown">{status.count}</p>
+                      <p className="text-xs text-stanley-brown/70">{status.label}</p>
                     </CardContent>
                   </Card>
                 )
               })}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-6">
-              <div className="flex-1">
-                <div className="relative">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-stanley-brown/50" />
-                  <Input
-                    placeholder="Search orders..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="pl-10 border-stanley-brown h-12"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <Button
-                  variant={orderFilter === "all" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setOrderFilter("all")}
-                  className={`min-h-[40px] text-xs sm:text-sm ${
-                    orderFilter === "all"
-                      ? "stanley-button"
-                      : "border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10"
-                  }`}
-                >
-                  All Orders
-                </Button>
-                <Button
-                  variant={orderFilter === "paid" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setOrderFilter("paid")}
-                  className={`min-h-[40px] text-xs sm:text-sm ${
-                    orderFilter === "paid"
-                      ? "bg-green-500 hover:bg-green-600"
-                      : "border-green-300 text-green-700 hover:bg-green-50"
-                  }`}
-                >
-                  Paid
-                </Button>
-                <Button
-                  variant={orderFilter === "pending" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setOrderFilter("pending")}
-                  className={`min-h-[40px] text-xs sm:text-sm ${
-                    orderFilter === "pending"
-                      ? "bg-yellow-500 hover:bg-yellow-600"
-                      : "border-yellow-300 text-yellow-700 hover:bg-yellow-50"
-                  }`}
-                >
-                  Pending
-                </Button>
-              </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+              <Button
+                variant={orderFilter === "all" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("all")}
+                className={`min-h-[40px] text-xs sm:text-sm ${
+                  orderFilter === "all"
+                    ? "stanley-button"
+                    : "border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10"
+                }`}
+              >
+                All Orders
+              </Button>
+              <Button
+                variant={orderFilter === "paid" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("paid")}
+                className={`min-h-[40px] text-xs sm:text-sm ${
+                  orderFilter === "paid"
+                    ? "bg-green-500 hover:bg-green-600"
+                    : "border-green-300 text-green-700 hover:bg-green-50"
+                }`}
+              >
+                <CreditCard className="h-4 w-4 mr-1" />
+                Paid Orders
+              </Button>
+              <Button
+                variant={orderFilter === "completed" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrderFilter("completed")}
+                className={`min-h-[40px] text-xs sm:text-sm ${
+                  orderFilter === "completed"
+                    ? "bg-blue-500 hover:bg-blue-600"
+                    : "border-blue-300 text-blue-700 hover:bg-blue-50"
+                }`}
+              >
+                <CheckCircle className="h-4 w-4 mr-1" />
+                Completed
+              </Button>
             </div>
+
+            {/* Search */}
+            <div className="mb-6">
+              <Input
+                placeholder="Search orders by Order Number, customer name, or cake name..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="max-w-md border-stanley-brown focus:border-stanley-yellow"
+              />
+            </div>
+
+            {orderFilter !== "all" && (
+              <div className="mb-4 p-3 bg-stanley-pink/10 border border-stanley-pink rounded-lg">
+                <p className="text-stanley-brown text-sm font-medium">
+                  {orderFilter === "paid" && "Showing all orders that have been paid for"}
+                  {orderFilter === "completed" && "Showing completed orders (paid and delivered/collected)"}
+                  {orderFilter === "pending" && "Showing pending orders (unpaid or awaiting confirmation)"}
+                  {filteredOrders.length > 0 && ` - ${filteredOrders.length} order(s) found`}
+                </p>
+              </div>
+            )}
 
             {/* Orders Table */}
             <div className="space-y-4">
@@ -746,15 +694,31 @@ export default function AdminPanel() {
                 const statusInfo = getStatusInfo(order.status)
                 const IconComponent = statusInfo.icon
 
+                const updateOrderPaymentStatus = (orderId: string, newPaymentStatus: string) => {
+                  setOrders(
+                    orders.map((order) =>
+                      order.id === orderId ? { ...order, paymentStatus: newPaymentStatus } : order,
+                    ),
+                  )
+                }
+
+                const saveOrderChanges = (orderId: string) => {
+                  setEditingOrder(null)
+                }
+
+                const deleteOrder = (orderId: string) => {
+                  setOrders(orders.filter((order) => order.id !== orderId))
+                }
+
                 return (
                   <Card key={order.id} className="border-stanley-brown hover:shadow-lg transition-shadow">
                     <CardHeader className="pb-3">
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <CardTitle className="text-lg sm:text-xl text-stanley-brown font-bold">{order.id}</CardTitle>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <CardTitle className="text-xl text-stanley-brown font-bold">{order.id}</CardTitle>
                           <p className="text-sm text-stanley-brown/70 mt-1">Order Tracking Number</p>
                         </div>
-                        <div className="flex flex-wrap items-center gap-2">
+                        <div className="flex items-center space-x-2">
                           <Badge
                             variant={order.paymentStatus === "paid" ? "default" : "destructive"}
                             className={
@@ -764,128 +728,151 @@ export default function AdminPanel() {
                             }
                           >
                             {order.paymentStatus === "paid" ? (
-                              <>
-                                <CheckCircle className="h-3 w-3 mr-1" />
-                                Paid
-                              </>
+                              <CreditCard className="h-3 w-3 mr-1" />
                             ) : (
-                              <>
-                                <Clock className="h-3 w-3 mr-1" />
-                                Pending Payment
-                              </>
+                              <XCircle className="h-3 w-3 mr-1" />
                             )}
+                            {order.paymentStatus === "paid" ? "Paid" : "Unpaid"}
                           </Badge>
-                          <Badge className={statusInfo.color}>
-                            <IconComponent className="h-3 w-3 mr-1" />
+                          <span
+                            className={`px-3 py-1 rounded-full text-sm font-medium flex items-center ${statusInfo.color}`}
+                          >
+                            <IconComponent className="h-4 w-4 mr-1" />
                             {statusInfo.label}
-                          </Badge>
+                          </span>
                         </div>
                       </div>
                     </CardHeader>
 
-                    <CardContent className="space-y-4">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-                        <div>
-                          <p className="font-medium text-stanley-brown">Customer</p>
-                          <p className="text-stanley-brown/70">{order.customerName}</p>
-                          <p className="text-stanley-brown/70">{order.phone}</p>
-                          <p className="text-stanley-brown/70">{order.email}</p>
-                        </div>
-                        <div>
-                          <p className="font-medium text-stanley-brown">Delivery</p>
-                          <p className="text-stanley-brown/70 capitalize">{order.deliveryOption || "N/A"}</p>
-                          {order.deliveryAddress && (
-                            <p className="text-stanley-brown/70 text-xs">{order.deliveryAddress}</p>
-                          )}
-                        </div>
-                        <div>
-                          <p className="font-medium text-stanley-brown">Total</p>
-                          <p className="text-lg font-bold text-stanley-brown">{order.total}</p>
-                          <p className="text-stanley-brown/70 text-xs">{order.items?.length || 0} item(s)</p>
-                        </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                      <div>
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Customer</p>
+                        <p className="font-medium text-stanley-brown text-sm sm:text-base">{order.customerName}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">{order.email}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">{order.phone}</p>
                       </div>
-
-                      <div className="flex flex-col sm:flex-row gap-2 pt-4 border-t border-stanley-brown/20">
-                        <Select value={order.status} onValueChange={(value) => updateOrderStatus(order.id, value)}>
-                          <SelectTrigger className="w-full sm:w-auto min-w-[200px] h-10">
-                            <SelectValue />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {orderStatuses.map((status) => (
-                              <SelectItem key={status.key} value={status.key}>
-                                <div className="flex items-center">
-                                  <status.icon className="h-4 w-4 mr-2" />
-                                  {status.label}
-                                </div>
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-
-                        <Select
-                          value={order.paymentStatus}
-                          onValueChange={(value) => updateOrderPaymentStatus(order.id, value)}
-                        >
-                          <SelectTrigger className="w-full sm:w-auto min-w-[150px] h-10">
-                            <SelectValue />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="pending">
-                              <div className="flex items-center">
-                                <Clock className="h-4 w-4 mr-2" />
-                                Pending
-                              </div>
-                            </SelectItem>
-                            <SelectItem value="paid">
-                              <div className="flex items-center">
-                                <CheckCircle className="h-4 w-4 mr-2" />
-                                Paid
-                              </div>
-                            </SelectItem>
-                          </SelectContent>
-                        </Select>
-
-                        <div className="flex gap-2 ml-auto">
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setEditingOrder(editingOrder === order.id ? null : order.id)}
-                            className="border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10 h-10"
-                          >
-                            <Eye className="h-4 w-4 mr-1" />
-                            <span className="hidden sm:inline">View</span>
-                          </Button>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => deleteOrder(order.id)}
-                            className="border-red-300 text-red-600 hover:bg-red-50 h-10"
-                          >
-                            <Trash2 className="h-4 w-4 mr-1" />
-                            <span className="hidden sm:inline">Delete</span>
-                          </Button>
-                        </div>
+                      <div>
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Cake</p>
+                        <p className="font-medium text-stanley-brown text-sm sm:text-base">{order.cakeName}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">Total: {order.total}</p>
                       </div>
+                      <div className="sm:col-span-2 lg:col-span-1">
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Dates</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">Ordered: {order.orderDate}</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80">Delivery: {order.deliveryDate}</p>
+                      </div>
+                    </div>
 
-                      {/* Order Details Expansion */}
-                      {editingOrder === order.id && (
-                        <div className="mt-4 p-4 bg-stanley-cream/30 rounded-lg border border-stanley-brown/20">
-                          <h4 className="font-medium text-stanley-brown mb-3">Order Items</h4>
-                          <div className="space-y-2">
-                            {order.items &&
-                              order.items.map((item, index) => (
-                                <div key={index} className="flex justify-between items-center text-sm">
-                                  <div>
-                                    <p className="font-medium">{item.name}</p>
-                                    <p className="text-stanley-brown/70">Qty: {item.quantity}</p>
-                                  </div>
-                                  <p className="font-medium">R{item.price * item.quantity}</p>
-                                </div>
-                              ))}
+                    {order.notes && (
+                      <div className="mb-4">
+                        <p className="text-xs sm:text-sm text-stanley-brown/70">Notes</p>
+                        <p className="text-xs sm:text-sm text-stanley-brown/80 bg-stanley-cream p-3 rounded">
+                          {order.notes}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Status Update Controls */}
+                    {editingOrder === order.id && (
+                      <div className="border-t border-stanley-brown/20 pt-4 space-y-4">
+                        <div>
+                          <p className="text-sm font-medium text-stanley-brown mb-3">Update Payment Status:</p>
+                          <div className="flex flex-wrap gap-2">
+                            <Button
+                              variant={order.paymentStatus === "paid" ? "default" : "outline"}
+                              size="sm"
+                              onClick={() => updateOrderPaymentStatus(order.id, "paid")}
+                              className={`min-h-[40px] text-xs sm:text-sm ${
+                                order.paymentStatus === "paid"
+                                  ? "bg-green-500 hover:bg-green-600"
+                                  : "border-green-300 text-green-700 hover:bg-green-50"
+                              }`}
+                            >
+                              <CreditCard className="h-4 w-4 mr-1" />
+                              Mark as Paid
+                            </Button>
+                            <Button
+                              variant={order.paymentStatus === "pending" ? "default" : "outline"}
+                              size="sm"
+                              onClick={() => updateOrderPaymentStatus(order.id, "pending")}
+                              className={`min-h-[40px] text-xs sm:text-sm ${
+                                order.paymentStatus === "pending"
+                                  ? "bg-yellow-500 hover:bg-yellow-600"
+                                  : "border-yellow-300 text-yellow-700 hover:bg-yellow-50"
+                              }`}
+                            >
+                              <Clock className="h-4 w-4 mr-1" />
+                              Mark as Pending
+                            </Button>
                           </div>
                         </div>
-                      )}
-                    </CardContent>
+
+                        <div>
+                          <p className="text-sm font-medium text-stanley-brown mb-3">Update Order Status:</p>
+                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            {statusOptions.map((status) => {
+                              const StatusIcon = status.icon
+                              return (
+                                <Button
+                                  key={status.key}
+                                  variant={order.status === status.key ? "default" : "outline"}
+                                  size="sm"
+                                  onClick={() => updateOrderStatus(order.id, status.key)}
+                                  className={`min-h-[40px] text-xs ${
+                                    order.status === status.key
+                                      ? "stanley-button"
+                                      : "border-stanley-pink text-stanley-pink hover:bg-stanley-pink/10"
+                                  }`}
+                                >
+                                  <StatusIcon className="h-4 w-4 mr-1" />
+                                  <span className="hidden sm:inline">{status.label}</span>
+                                  <span className="sm:hidden">{status.label.split(" ")[0]}</span>
+                                </Button>
+                              )
+                            })}
+                          </div>
+                        </div>
+
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          <Button
+                            onClick={() => setEditingOrder(null)}
+                            variant="outline"
+                            size="sm"
+                            className="min-h-[40px] border-stanley-brown text-stanley-brown hover:bg-stanley-brown/10"
+                          >
+                            Cancel
+                          </Button>
+                          <Button
+                            onClick={() => saveOrderChanges(order.id)}
+                            size="sm"
+                            className="stanley-button min-h-[40px]"
+                          >
+                            Save Changes
+                          </Button>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      <Button
+                        onClick={() => setEditingOrder(editingOrder === order.id ? null : order.id)}
+                        variant="outline"
+                        size="sm"
+                        className="min-h-[40px] border-stanley-brown text-stanley-brown hover:bg-stanley-brown/10"
+                      >
+                        <Edit className="h-4 w-4 mr-1" />
+                        {editingOrder === order.id ? "Cancel" : "Edit"}
+                      </Button>
+                      <Button
+                        onClick={() => deleteOrder(order.id)}
+                        variant="outline"
+                        size="sm"
+                        className="min-h-[40px] border-red-300 text-red-700 hover:bg-red-50"
+                      >
+                        <Trash2 className="h-4 w-4 mr-1" />
+                        Delete
+                      </Button>
+                    </div>
                   </Card>
                 )
               })}
