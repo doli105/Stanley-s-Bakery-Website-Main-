@@ -872,19 +872,6 @@
         "name": "Square Cake Boards",
         "items": [
           {
-            "id": "cupcake-window-box",
-            "name": "Cupcake Window Box",
-            "description": "White square cake box with clear window lid and circular cutouts, perfect for displaying and transporting cupcakes safely.",
-            "basePrice": 25,
-            "image": "/images/cake-boards/square/cupcake-window-box.jpeg",
-            "sizes": [
-              { "name": "4 Cupcake Box", "price": 25 },
-              { "name": "6 Cupcake Box", "price": 30 },
-              { "name": "12 Cupcake Box", "price": 45 }
-            ],
-            "customizable": false
-          },
-          {
             "id": "6-cupcake-box",
             "name": "6 Cupcake Box",
             "description": "Sturdy white square box with 6 circular cutouts designed to hold standard cupcakes securely during transport.",
