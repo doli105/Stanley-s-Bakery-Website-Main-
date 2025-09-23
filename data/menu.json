@@ -135,7 +135,82 @@
     "subcategories": {
       "desserts": {
         "name": "Desserts",
-        "items": []
+        "items": [
+          {
+            "id": "layered-trifle-cup",
+            "name": "Layered Trifle Cup",
+            "description": "Delightful individual trifle featuring layers of vanilla custard, fresh berry compote, fluffy whipped cream, and cake pieces. Topped with a cherry and served in a convenient clear cup with dome lid.",
+            "basePrice": 45,
+            "image": "/images/desserts/layered-trifle-cup.jpeg",
+            "sizes": [{ "name": "Individual Cup", "price": 45 }, { "name": "Large Cup", "price": 55 }],
+            "flavors": ["Mixed Berry Trifle", "Strawberry Trifle", "Chocolate Berry Trifle", "Lemon Berry Trifle"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Whipped Cream", "price": 8 },
+              { "name": "Fresh Berry Topping", "price": 12 },
+              { "name": "Chocolate Shavings", "price": 10 }
+            ]
+          },
+          {
+            "id": "berry-cheesecake-cup",
+            "name": "Berry Cheesecake Cup",
+            "description": "Creamy individual cheesecake with graham cracker crust, smooth cheesecake filling, and a vibrant berry compote layer. Topped with berry sauce and served in a clear container.",
+            "basePrice": 50,
+            "image": "/images/desserts/cheesecake-cup-berry.jpeg",
+            "sizes": [{ "name": "Individual Cup", "price": 50 }, { "name": "Large Cup", "price": 60 }],
+            "flavors": [
+              "Strawberry Cheesecake",
+              "Mixed Berry Cheesecake",
+              "Raspberry Cheesecake",
+              "Blueberry Cheesecake"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Berry Compote", "price": 10 },
+              { "name": "Graham Cracker Crumbs", "price": 8 },
+              { "name": "Whipped Cream Dollop", "price": 8 }
+            ]
+          },
+          {
+            "id": "tiramisu-cup",
+            "name": "Tiramisu Cup",
+            "description": "Classic Italian tiramisu in individual serving size. Features coffee-soaked ladyfingers layered with rich mascarpone cream, dusted with cocoa powder and finished with chocolate drizzle.",
+            "basePrice": 55,
+            "image": "/images/desserts/tiramisu-cup.jpeg",
+            "sizes": [{ "name": "Individual Cup", "price": 55 }, { "name": "Large Cup", "price": 65 }],
+            "flavors": ["Classic Tiramisu", "Chocolate Tiramisu", "Amaretto Tiramisu", "Espresso Tiramisu"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Cocoa Dusting", "price": 5 },
+              { "name": "Chocolate Shavings", "price": 12 },
+              { "name": "Coffee Bean Garnish", "price": 8 }
+            ]
+          },
+          {
+            "id": "cherry-cheesecake-cup",
+            "name": "Cherry Cheesecake Cup",
+            "description": "Individual New York style cheesecake with graham cracker crust, rich cream cheese filling, and topped with cherry compote and a fresh cherry. Perfect portion-controlled dessert.",
+            "basePrice": 52,
+            "image": "/images/desserts/cheesecake-cup-cherry.jpeg",
+            "sizes": [{ "name": "Individual Cup", "price": 52 }, { "name": "Large Cup", "price": 62 }],
+            "flavors": [
+              "Classic Cherry Cheesecake",
+              "Black Cherry Cheesecake",
+              "Cherry Vanilla Cheesecake",
+              "White Chocolate Cherry Cheesecake"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Cherry Topping", "price": 10 },
+              { "name": "Fresh Cherry Garnish", "price": 8 },
+              { "name": "Vanilla Wafer Crumbs", "price": 8 }
+            ]
+          }
+        ]
       },
       "swiss-rolls": {
         "name": "Swiss Rolls",
