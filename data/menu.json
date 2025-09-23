@@ -49,104 +49,6 @@
               { "name": "Decorative Ribbons", "price": 25 },
               { "name": "Pearl Details", "price": 30 }
             ]
-          },
-          {
-            "id": "red-calendar-heart",
-            "name": "Red Calendar Heart Cake",
-            "description": "Stunning red heart-shaped cake with calendar design and pearl decorations. Perfect for anniversaries and special date celebrations.",
-            "basePrice": 380,
-            "image": "/images/heart-cakes/red-august-calendar-heart.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 380 },
-              { "name": "Medium (8 inch)", "price": 480 },
-              { "name": "Large (10 inch)", "price": 580 }
-            ],
-            "flavors": ["Red Velvet", "Chocolate", "Vanilla", "Strawberry"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Calendar Month", "price": 0 },
-              { "name": "Pearl Decorations", "price": 35 },
-              { "name": "Special Date Highlight", "price": 20 }
-            ]
-          },
-          {
-            "id": "white-calendar-heart",
-            "name": "White Calendar Heart Cake",
-            "description": "Elegant white heart-shaped cake with beautiful calendar design and cream piping. Perfect for romantic occasions and special memories.",
-            "basePrice": 370,
-            "image": "/images/heart-cakes/white-february-calendar-heart.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 370 },
-              { "name": "Medium (8 inch)", "price": 470 },
-              { "name": "Large (10 inch)", "price": 570 }
-            ],
-            "flavors": ["Vanilla", "Lemon", "Coconut", "Chocolate"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Calendar Month", "price": 0 },
-              { "name": "Elegant Piping", "price": 40 },
-              { "name": "Special Date Highlight", "price": 20 }
-            ]
-          },
-          {
-            "id": "crown-birthday-heart",
-            "name": "Crown Birthday Heart Cake",
-            "description": "Luxurious white heart-shaped cake with golden 'Happy Birthday' script and decorative crown. Features pearl details and elegant piping.",
-            "basePrice": 420,
-            "image": "/images/heart-cakes/white-birthday-crown-heart.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 420 },
-              { "name": "Medium (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Golden Crown Topper", "price": 50 },
-              { "name": "Pearl Details", "price": 35 },
-              { "name": "Custom Name", "price": 0 },
-              { "name": "Gold Script Writing", "price": 25 }
-            ]
-          },
-          {
-            "id": "photo-memorial-heart",
-            "name": "Photo Memorial Heart Cake",
-            "description": "Touching heart-shaped cake with edible photo prints and black ribbon details. Perfect for memorial services and remembrance occasions.",
-            "basePrice": 450,
-            "image": "/images/heart-cakes/photo-memorial-heart.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 450 },
-              { "name": "Medium (8 inch)", "price": 550 },
-              { "name": "Large (10 inch)", "price": 650 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Lemon", "Coconut"],
-            "customizable": true,
-            "extras": [
-              { "name": "Edible Photo Print", "price": 80 },
-              { "name": "Black Ribbon Details", "price": 30 },
-              { "name": "Custom Message", "price": 0 },
-              { "name": "Calendar Design", "price": 25 }
-            ]
-          },
-          {
-            "id": "personalized-birthday-heart",
-            "name": "Personalized Birthday Heart Cake",
-            "description": "Custom heart-shaped cake with personalized birthday message and photo elements. Features elegant white piping and black ribbon accents.",
-            "basePrice": 400,
-            "image": "/images/heart-cakes/white-nqobile-birthday-heart.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 400 },
-              { "name": "Medium (8 inch)", "price": 500 },
-              { "name": "Large (10 inch)", "price": 600 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name", "price": 0 },
-              { "name": "Photo Elements", "price": 60 },
-              { "name": "Black Ribbon Details", "price": 25 },
-              { "name": "Elegant Piping", "price": 35 }
-            ]
           }
         ]
       },
@@ -168,7 +70,30 @@
       },
       "milestone-cakes": {
         "name": "Milestone Cakes",
-        "items": []
+        "items": [
+          {
+            "id": "gold-60th-birthday-cake",
+            "name": "Gold 60th Birthday Milestone Cake",
+            "description": "Luxurious gold and white milestone cake featuring elegant '60' number topper, 'Happy Birthday Mum' script, and sophisticated gold and white sphere decorations with metallic feather accents. Perfect for celebrating life's precious milestones.",
+            "basePrice": 650,
+            "image": "/images/milestone-cakes/gold-60th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 650 },
+              { "name": "Large (10 inch)", "price": 750 },
+              { "name": "Extra Large (12 inch)", "price": 850 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Coconut"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Numbers", "price": 0 },
+              { "name": "Custom Name/Message", "price": 0 },
+              { "name": "Gold Sphere Decorations", "price": 45 },
+              { "name": "Metallic Feather Accents", "price": 35 },
+              { "name": "Premium Gold Cake Board", "price": 25 },
+              { "name": "Additional Decorative Elements", "price": 40 }
+            ]
+          }
+        ]
       },
       "baby-shower-cakes": {
         "name": "Baby Shower Cakes",
