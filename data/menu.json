@@ -1045,6 +1045,41 @@
             "sizes": [{ "name": "3-piece Topper Set", "price": 70 }, { "name": "5-piece Deluxe Set", "price": 110 }],
             "customizable": false,
             "inStock": true
+          },
+          {
+            "id": "baby-pink-fondant",
+            "name": "Premium Baby Pink Fondant",
+            "description": "High-quality baby pink cake covering fondant that's silky smooth with great taste and easy to use. Perfect for creating elegant pink-themed cakes and decorations with professional results.",
+            "basePrice": 45,
+            "image": "/images/cake-accessories/baby-pink-fondant.jpeg",
+            "sizes": [
+              { "name": "Small Tub (500g)", "price": 45 },
+              { "name": "Medium Tub (1kg)", "price": 75 },
+              { "name": "Large Tub (2kg)", "price": 135 }
+            ],
+            "flavors": ["Baby Pink", "Rose Pink", "Dusty Pink", "Hot Pink"],
+            "customizable": false,
+            "inStock": true,
+            "extras": [
+              { "name": "Fondant Tools Set", "price": 25 },
+              { "name": "Rolling Mat", "price": 15 },
+              { "name": "Modeling Tools", "price": 20 }
+            ]
+          },
+          {
+            "id": "gold-botanical-topper",
+            "name": "Gold Botanical Leaf Topper",
+            "description": "Exquisite gold botanical cake topper featuring intricate leaf design with delicate line work. This elegant decorative piece adds sophisticated natural beauty to wedding cakes and special occasion desserts.",
+            "basePrice": 65,
+            "image": "/images/cake-accessories/gold-botanical-topper.jpeg",
+            "sizes": [{ "name": "Standard Size", "price": 65 }, { "name": "Large Size", "price": 85 }],
+            "customizable": false,
+            "inStock": true,
+            "extras": [
+              { "name": "Matching Small Leaves (set of 3)", "price": 25 },
+              { "name": "Silver Version", "price": 65 },
+              { "name": "Rose Gold Version", "price": 70 }
+            ]
           }
         ]
       }
