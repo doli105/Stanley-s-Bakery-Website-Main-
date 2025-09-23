@@ -329,6 +329,91 @@
       "donuts": {
         "name": "Donuts",
         "items": []
+      },
+      "cupcakes": {
+        "name": "Cupcakes",
+        "items": [
+          {
+            "id": "red-velvet-crumb-cupcakes",
+            "name": "Red Velvet Crumb Cupcakes",
+            "description": "Decadent cupcakes topped with smooth vanilla buttercream frosting and sprinkled with red velvet cake crumbs. Each cupcake features elegant swirl piping and the perfect balance of sweet cream and rich red velvet flavor.",
+            "basePrice": 120,
+            "image": "/images/cupcakes/red-velvet-crumb-cupcakes.jpeg",
+            "sizes": [
+              { "name": "6-pack", "price": 120 },
+              { "name": "12-pack", "price": 220 },
+              { "name": "18-pack", "price": 310 },
+              { "name": "24-pack", "price": 390 }
+            ],
+            "flavors": [
+              "Red Velvet with Vanilla Buttercream",
+              "Red Velvet with Cream Cheese Frosting",
+              "Chocolate with Red Velvet Crumbs"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Red Velvet Crumbs", "price": 15 },
+              { "name": "Custom Message Toppers", "price": 25 },
+              { "name": "Gift Box Packaging", "price": 20 },
+              { "name": "Decorative Ribbon", "price": 10 }
+            ]
+          },
+          {
+            "id": "chocolate-buttercream-cupcakes",
+            "name": "Chocolate Buttercream Cupcakes",
+            "description": "Rich chocolate cupcakes topped with luxurious chocolate buttercream frosting piped in perfect rose swirls. Made with premium cocoa for an intense chocolate experience that melts in your mouth.",
+            "basePrice": 110,
+            "image": "/images/cupcakes/chocolate-buttercream-cupcakes.jpeg",
+            "sizes": [
+              { "name": "6-pack", "price": 110 },
+              { "name": "12-pack", "price": 200 },
+              { "name": "18-pack", "price": 285 },
+              { "name": "24-pack", "price": 360 }
+            ],
+            "flavors": [
+              "Double Chocolate",
+              "Chocolate with Vanilla Buttercream",
+              "Dark Chocolate with Mocha Buttercream",
+              "Milk Chocolate with Peanut Butter Frosting"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Chocolate Shavings", "price": 18 },
+              { "name": "Chocolate Drizzle", "price": 15 },
+              { "name": "Premium Gift Box", "price": 22 },
+              { "name": "Custom Decorations", "price": 20 }
+            ]
+          },
+          {
+            "id": "caramel-swirl-cupcakes",
+            "name": "Caramel Swirl Cupcakes",
+            "description": "Moist vanilla cupcakes topped with rich caramel buttercream frosting piped in elegant swirls. Each cupcake is finished with a decorative element and offers the perfect balance of vanilla cake and buttery caramel flavor.",
+            "basePrice": 115,
+            "image": "/images/cupcakes/caramel-swirl-cupcakes.jpeg",
+            "sizes": [
+              { "name": "6-pack", "price": 115 },
+              { "name": "12-pack", "price": 210 },
+              { "name": "18-pack", "price": 295 },
+              { "name": "24-pack", "price": 375 }
+            ],
+            "flavors": [
+              "Vanilla with Caramel Buttercream",
+              "Salted Caramel Cupcakes",
+              "Butterscotch with Caramel Frosting",
+              "Vanilla with Peanut Butter Caramel"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Caramel Drizzle", "price": 16 },
+              { "name": "Sea Salt Sprinkle", "price": 8 },
+              { "name": "Decorative Caramel Pieces", "price": 20 },
+              { "name": "Elegant Gift Box", "price": 20 }
+            ]
+          }
+        ]
       }
     }
   },
