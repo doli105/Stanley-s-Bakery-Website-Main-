@@ -25,6 +25,49 @@
               { "name": "Ribbon Decoration", "price": 10 },
               { "name": "Extra Cupcakes (each)", "price": 35 }
             ]
+          },
+          {
+            "id": "humorous-25th-birthday-bento",
+            "name": "Humorous 25th Birthday Bento Set",
+            "description": "Fun and playful bento cake set featuring a heart-shaped cake with 'Not me Turning 25' message and crying character, accompanied by 5 cupcakes with hilarious South African slang messages like 'HAMU SERIOUS!', 'Bathong 25 vele?', and 'HAIBO 25 VELE!'. Perfect for those who love humor with their celebrations.",
+            "basePrice": 320,
+            "image": "/images/bento-cakes/humorous-25th-birthday-bento.jpeg",
+            "sizes": [
+              { "name": "Standard Bento Set (1 cake + 5 cupcakes)", "price": 320 },
+              { "name": "Large Bento Set (1 cake + 8 cupcakes)", "price": 420 },
+              { "name": "Premium Bento Set (1 cake + 10 cupcakes)", "price": 520 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Funny Messages", "price": 0 },
+              { "name": "Additional Humor Cupcakes", "price": 40 },
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Gift Box with Humor Warning", "price": 20 },
+              { "name": "Party Favor Stickers", "price": 15 }
+            ]
+          },
+          {
+            "id": "elegant-black-gold-bento",
+            "name": "Elegant Black & Gold Birthday Bento Set",
+            "description": "Sophisticated bento cake set featuring a main cake with black buttercream rosettes, gold pearl decorations, and 'Happy Birthday' script, accompanied by 5 cupcakes including calendar design, personalized name, and elegant birthday messages. Perfect for milestone celebrations and sophisticated tastes.",
+            "basePrice": 380,
+            "image": "/images/bento-cakes/elegant-black-gold-bento.jpeg",
+            "sizes": [
+              { "name": "Standard Bento Set (1 cake + 5 cupcakes)", "price": 380 },
+              { "name": "Large Bento Set (1 cake + 8 cupcakes)", "price": 480 },
+              { "name": "Premium Bento Set (1 cake + 12 cupcakes)", "price": 620 }
+            ],
+            "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Coffee", "Salted Caramel"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name Personalization", "price": 0 },
+              { "name": "Custom Calendar Month", "price": 0 },
+              { "name": "Gold Pearl Decorations", "price": 30 },
+              { "name": "Premium Black Buttercream", "price": 25 },
+              { "name": "Luxury Gift Box", "price": 35 },
+              { "name": "Gold Twisted Candle", "price": 15 }
+            ]
           }
         ]
       },
