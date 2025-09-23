@@ -166,8 +166,8 @@
         "name": "Square Cake Boards",
         "items": []
       },
-      "custom-boards": {
-        "name": "Custom Cake Boards",
+      "cake-accessories": {
+        "name": "Cake accessories",
         "items": []
       }
     }
