@@ -160,7 +160,82 @@
     "subcategories": {
       "round-boards": {
         "name": "Round Cake Boards",
-        "items": []
+        "items": [
+          {
+            "id": "white-round-boards-stack",
+            "name": "White Round Cake Boards - Multi Pack",
+            "description": "Professional white round cake boards in a convenient multi-pack. Food-safe and sturdy construction perfect for supporting cakes of all sizes. Essential for cake presentation and transport.",
+            "basePrice": 35,
+            "image": "/images/cake-boards/round/white-round-boards-stack.jpeg",
+            "sizes": [
+              { "name": "6 inch (Pack of 10)", "price": 35 },
+              { "name": "8 inch (Pack of 10)", "price": 45 },
+              { "name": "10 inch (Pack of 8)", "price": 50 },
+              { "name": "12 inch (Pack of 6)", "price": 55 }
+            ],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "silver-decorative-round-boards",
+            "name": "Silver Decorative Round Cake Boards",
+            "description": "Premium silver round cake boards with elegant decorative pattern on top. Features a sophisticated embossed design that adds luxury to your cake presentation. Bulk pack for professional use.",
+            "basePrice": 65,
+            "image": "/images/cake-boards/round/silver-decorative-round-boards.jpeg",
+            "sizes": [
+              { "name": "8 inch (Pack of 20)", "price": 65 },
+              { "name": "10 inch (Pack of 15)", "price": 75 },
+              { "name": "12 inch (Pack of 12)", "price": 85 }
+            ],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "white-blue-round-boards",
+            "name": "Premium White Round Cake Boards",
+            "description": "High-quality white round cake boards with clean, professional finish. Perfect for wedding cakes, birthday cakes, and special occasions. Smooth surface ideal for elegant presentations.",
+            "basePrice": 40,
+            "image": "/images/cake-boards/round/white-blue-round-boards.jpeg",
+            "sizes": [
+              { "name": "6 inch (Pack of 8)", "price": 40 },
+              { "name": "8 inch (Pack of 6)", "price": 45 },
+              { "name": "10 inch (Pack of 5)", "price": 50 },
+              { "name": "12 inch (Pack of 4)", "price": 55 }
+            ],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "gold-round-boards",
+            "name": "Gold Round Cake Boards",
+            "description": "Luxurious gold round cake boards that add elegance and sophistication to any cake presentation. Perfect for special occasions, weddings, and milestone celebrations.",
+            "basePrice": 55,
+            "image": "/images/cake-boards/round/gold-round-boards.jpeg",
+            "sizes": [
+              { "name": "6 inch (Pack of 6)", "price": 55 },
+              { "name": "8 inch (Pack of 5)", "price": 60 },
+              { "name": "10 inch (Pack of 4)", "price": 65 },
+              { "name": "12 inch (Pack of 3)", "price": 70 }
+            ],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "black-slate-round-boards",
+            "name": "Black Slate Round Cake Boards",
+            "description": "Sophisticated black round cake boards with natural slate-like finish. Creates dramatic contrast and modern elegance for contemporary cake designs and upscale presentations.",
+            "basePrice": 60,
+            "image": "/images/cake-boards/round/black-slate-round-boards.jpeg",
+            "sizes": [
+              { "name": "8 inch (Pack of 6)", "price": 60 },
+              { "name": "10 inch (Pack of 5)", "price": 65 },
+              { "name": "12 inch (Pack of 4)", "price": 70 },
+              { "name": "14 inch (Pack of 3)", "price": 75 }
+            ],
+            "customizable": false,
+            "inStock": true
+          }
+        ]
       },
       "square-boards": {
         "name": "Square Cake Boards",
