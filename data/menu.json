@@ -405,7 +405,64 @@
       },
       "brownies": {
         "name": "Brownies",
-        "items": []
+        "items": [
+          {
+            "id": "classic-fudge-brownies",
+            "name": "Classic Fudge Brownies",
+            "description": "Rich, dense chocolate brownies with a glossy fudgy texture and deep chocolate flavor. Cut into perfect squares and served in a convenient clear container. These indulgent brownies are made with premium cocoa for the ultimate chocolate experience.",
+            "basePrice": 85,
+            "image": "/images/brownies/classic-fudge-brownies.jpeg",
+            "sizes": [
+              { "name": "6-piece Tray", "price": 85 },
+              { "name": "12-piece Tray", "price": 160 },
+              { "name": "18-piece Tray", "price": 230 },
+              { "name": "24-piece Family Tray", "price": 290 }
+            ],
+            "flavors": [
+              "Classic Chocolate Fudge",
+              "Double Chocolate Fudge",
+              "Salted Caramel Fudge",
+              "Espresso Chocolate Fudge"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Chocolate Drizzle", "price": 15 },
+              { "name": "Chopped Walnuts", "price": 20 },
+              { "name": "Sea Salt Sprinkle", "price": 8 },
+              { "name": "Gift Box Packaging", "price": 18 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          },
+          {
+            "id": "zebra-stripe-brownies",
+            "name": "Zebra Stripe Brownies",
+            "description": "Elegant chocolate brownies decorated with distinctive white chocolate drizzle in a beautiful zebra stripe pattern. These gourmet brownies combine rich chocolate base with artistic white chocolate decoration for a sophisticated presentation.",
+            "basePrice": 95,
+            "image": "/images/brownies/zebra-stripe-brownies.jpeg",
+            "sizes": [
+              { "name": "9-piece Tray", "price": 95 },
+              { "name": "16-piece Tray", "price": 170 },
+              { "name": "25-piece Tray", "price": 250 },
+              { "name": "36-piece Party Tray", "price": 340 }
+            ],
+            "flavors": [
+              "Chocolate with White Chocolate Drizzle",
+              "Dark Chocolate with Vanilla Drizzle",
+              "Milk Chocolate with White Chocolate Stripes",
+              "Red Velvet with Cream Cheese Drizzle"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra White Chocolate Drizzle", "price": 18 },
+              { "name": "Colored Drizzle Pattern", "price": 20 },
+              { "name": "Premium Chocolate Upgrade", "price": 25 },
+              { "name": "Elegant Gift Box", "price": 22 },
+              { "name": "Decorative Ribbon", "price": 10 }
+            ]
+          }
+        ]
       },
       "donuts": {
         "name": "Donuts",
