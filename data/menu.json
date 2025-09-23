@@ -466,7 +466,36 @@
       },
       "donuts": {
         "name": "Donuts",
-        "items": []
+        "items": [
+          {
+            "id": "assorted-glazed-donuts",
+            "name": "Assorted Glazed Donuts",
+            "description": "Delicious variety pack of 6 glazed donuts featuring different flavored glazes and toppings. Includes pink glazed with white drizzle, chocolate glazed with white drizzle, golden glazed with colorful sprinkles, and white glazed with rainbow sprinkles. Perfect for sharing or trying multiple flavors.",
+            "basePrice": 85,
+            "image": "/images/donuts/assorted-glazed-donuts.jpeg",
+            "sizes": [
+              { "name": "6-pack Assorted", "price": 85 },
+              { "name": "12-pack Assorted", "price": 160 },
+              { "name": "18-pack Assorted", "price": 230 },
+              { "name": "24-pack Party Box", "price": 290 }
+            ],
+            "flavors": [
+              "Mixed Assortment (Pink, Chocolate, Golden, White)",
+              "Chocolate Lovers (All Chocolate Varieties)",
+              "Fruity Mix (Pink Strawberry, Lemon, White Vanilla)",
+              "Classic Glazed (Traditional Glazed Varieties)"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Sprinkles", "price": 12 },
+              { "name": "Custom Glaze Colors", "price": 18 },
+              { "name": "Gift Box Packaging", "price": 20 },
+              { "name": "Decorative Ribbon", "price": 10 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          }
+        ]
       },
       "cupcakes": {
         "name": "Cupcakes",
