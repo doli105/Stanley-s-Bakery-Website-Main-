@@ -250,7 +250,31 @@
       },
       "scones": {
         "name": "Scones",
-        "items": []
+        "items": [
+          {
+            "id": "traditional-buttermilk-scones",
+            "name": "Traditional Buttermilk Scones",
+            "description": "Classic homemade buttermilk scones with golden-brown crusts and tender, flaky interiors. Baked fresh daily with the perfect balance of buttery richness and light texture. Ideal for breakfast, afternoon tea, or any time you crave a traditional bakery treat.",
+            "basePrice": 95,
+            "image": "/images/scones/traditional-buttermilk-scones.jpeg",
+            "sizes": [
+              { "name": "Small Tub (10 pieces)", "price": 95 },
+              { "name": "Medium Tub (15 pieces)", "price": 135 },
+              { "name": "Large Tub (20 pieces)", "price": 170 },
+              { "name": "Family Tub (30 pieces)", "price": 240 }
+            ],
+            "flavors": ["Traditional Buttermilk", "Vanilla Buttermilk", "Lemon Buttermilk", "Honey Buttermilk"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Clotted Cream (side)", "price": 25 },
+              { "name": "Strawberry Jam (side)", "price": 18 },
+              { "name": "Butter Portions", "price": 12 },
+              { "name": "Gift Tub Packaging", "price": 20 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          }
+        ]
       },
       "snow-balls": {
         "name": "Snow balls",
