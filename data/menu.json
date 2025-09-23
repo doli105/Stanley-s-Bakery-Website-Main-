@@ -994,16 +994,6 @@
             "inStock": true
           },
           {
-            "id": "gold-ginkgo-leaves",
-            "name": "Gold Ginkgo Leaf Decorations",
-            "description": "Delicate artificial gold ginkgo leaves for elegant cake decoration. These metallic leaf accents add a sophisticated botanical touch to wedding cakes and special occasions.",
-            "basePrice": 35,
-            "image": "/images/cake-accessories/gold-ginkgo-leaves.jpeg",
-            "sizes": [{ "name": "5-piece Set", "price": 35 }, { "name": "10-piece Set", "price": 60 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
             "id": "gold-crystal-crown",
             "name": "Gold Crystal Crown Topper",
             "description": "Magnificent gold crown cake topper with intricate crystal detailing and ornate design. Perfect for creating show-stopping celebration cakes fit for royalty.",
