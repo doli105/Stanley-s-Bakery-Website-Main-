@@ -164,7 +164,85 @@
       },
       "square-boards": {
         "name": "Square Cake Boards",
-        "items": []
+        "items": [
+          {
+            "id": "cupcake-window-box",
+            "name": "Cupcake Window Box",
+            "description": "White square cake box with clear window lid and circular cutouts, perfect for displaying and transporting cupcakes safely.",
+            "basePrice": 25,
+            "image": "/images/cake-boards/square/cupcake-window-box.jpeg",
+            "sizes": [
+              { "name": "4 Cupcake Box", "price": 25 },
+              { "name": "6 Cupcake Box", "price": 30 },
+              { "name": "12 Cupcake Box", "price": 45 }
+            ],
+            "customizable": false
+          },
+          {
+            "id": "6-cupcake-box",
+            "name": "6 Cupcake Box",
+            "description": "Sturdy white square box with 6 circular cutouts designed to hold standard cupcakes securely during transport.",
+            "basePrice": 30,
+            "image": "/images/cake-boards/square/6-cupcake-box.jpeg",
+            "sizes": [{ "name": "Standard 6 Cupcake", "price": 30 }],
+            "customizable": false
+          },
+          {
+            "id": "tall-cupcake-display-box",
+            "name": "Tall Cupcake Display Box",
+            "description": "Premium tall square display box with clear window, featuring multiple tiers of circular cutouts for elegant cupcake presentation.",
+            "basePrice": 55,
+            "image": "/images/cake-boards/square/tall-cupcake-display-box.jpeg",
+            "sizes": [{ "name": "15 Cupcake Display", "price": 55 }, { "name": "24 Cupcake Display", "price": 75 }],
+            "customizable": false
+          },
+          {
+            "id": "8-cupcake-box",
+            "name": "8 Cupcake Box",
+            "description": "Professional white square box with 8 circular cutouts arranged in 2 rows, ideal for medium-sized cupcake orders.",
+            "basePrice": 35,
+            "image": "/images/cake-boards/square/8-cupcake-box.jpeg",
+            "sizes": [{ "name": "Standard 8 Cupcake", "price": 35 }],
+            "customizable": false
+          },
+          {
+            "id": "mini-treats-box",
+            "name": "Mini Treats Box",
+            "description": "Large square box with multiple small circular cutouts, perfect for mini cupcakes, cake pops, or small treats display.",
+            "basePrice": 40,
+            "image": "/images/cake-boards/square/mini-treats-box.jpeg",
+            "sizes": [{ "name": "24 Mini Treats", "price": 40 }, { "name": "36 Mini Treats", "price": 50 }],
+            "customizable": false
+          },
+          {
+            "id": "windowed-cake-boxes",
+            "name": "Windowed Cake Boxes",
+            "description": "Elegant white square cake boxes with clear top windows, available in various sizes for different cake types and occasions.",
+            "basePrice": 20,
+            "image": "/images/cake-boards/square/windowed-cake-boxes.jpeg",
+            "sizes": [
+              { "name": "Small (6 inch)", "price": 20 },
+              { "name": "Medium (8 inch)", "price": 25 },
+              { "name": "Large (10 inch)", "price": 30 },
+              { "name": "Extra Large (12 inch)", "price": 35 }
+            ],
+            "customizable": false
+          },
+          {
+            "id": "basic-square-cake-box",
+            "name": "Basic Square Cake Box",
+            "description": "Simple, sturdy white square cake box without window, perfect for secure cake transport and storage.",
+            "basePrice": 15,
+            "image": "/images/cake-boards/square/basic-square-cake-box.jpeg",
+            "sizes": [
+              { "name": "Small (6 inch)", "price": 15 },
+              { "name": "Medium (8 inch)", "price": 18 },
+              { "name": "Large (10 inch)", "price": 22 },
+              { "name": "Extra Large (12 inch)", "price": 28 }
+            ],
+            "customizable": false
+          }
+        ]
       },
       "cake-accessories": {
         "name": "Cake accessories",
