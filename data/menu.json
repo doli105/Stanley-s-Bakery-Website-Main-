@@ -92,6 +92,48 @@
               { "name": "Decorative Ribbons", "price": 25 },
               { "name": "Pearl Details", "price": 30 }
             ]
+          },
+          {
+            "id": "white-nqobile-birthday-heart",
+            "name": "White Birthday Memorial Heart Cake",
+            "description": "Elegant white heart-shaped cake with cream frosting and decorative black ribbons. Features personalized photo panels and custom birthday message. Perfect for special birthday celebrations and memorial occasions.",
+            "basePrice": 420,
+            "image": "/images/heart-cakes/white-nqobile-birthday-heart.jpeg",
+            "sizes": [
+              { "name": "Small (6 inch)", "price": 420 },
+              { "name": "Medium (8 inch)", "price": 520 },
+              { "name": "Large (10 inch)", "price": 620 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Message", "price": 0 },
+              { "name": "Photo Panels (up to 4)", "price": 50 },
+              { "name": "Black Ribbon Decoration", "price": 25 },
+              { "name": "Pearl Border Details", "price": 35 },
+              { "name": "Custom Name Personalization", "price": 0 }
+            ]
+          },
+          {
+            "id": "red-august-calendar-heart",
+            "name": "Red Calendar Heart Cake",
+            "description": "Stunning red heart-shaped cake with vibrant red frosting and white pearl decorations. Features a personalized calendar design in the center with custom month and year. Perfect for anniversary celebrations and special date commemorations.",
+            "basePrice": 380,
+            "image": "/images/heart-cakes/red-august-calendar-heart.jpeg",
+            "sizes": [
+              { "name": "Small (6 inch)", "price": 380 },
+              { "name": "Medium (8 inch)", "price": 480 },
+              { "name": "Large (10 inch)", "price": 580 }
+            ],
+            "flavors": ["Red Velvet", "Strawberry", "Vanilla", "Chocolate"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Calendar Month/Year", "price": 0 },
+              { "name": "White Pearl Border", "price": 30 },
+              { "name": "Special Date Highlighting", "price": 15 },
+              { "name": "Custom Message on Calendar", "price": 0 },
+              { "name": "Heart Decorations", "price": 20 }
+            ]
           }
         ]
       },
