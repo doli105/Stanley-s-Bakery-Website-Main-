@@ -126,11 +126,58 @@
       },
       "snow-balls": {
         "name": "Snow balls",
-        "items": []
-      },
-      "cupcakes": {
-        "name": "Cupcakes",
-        "items": []
+        "items": [
+          {
+            "id": "pink-coconut-snowballs",
+            "name": "Pink Coconut Snowballs",
+            "description": "Delightful round cake treats rolled in pink-tinted coconut flakes, creating a festive and colorful snowball effect. Soft, moist cake interior with sweet coconut coating that melts in your mouth.",
+            "basePrice": 95,
+            "image": "/images/snowballs/pink-coconut-snowballs.jpeg",
+            "sizes": [
+              { "name": "6-piece Pack", "price": 95 },
+              { "name": "12-piece Pack", "price": 180 },
+              { "name": "18-piece Pack", "price": 260 }
+            ],
+            "flavors": [
+              "Vanilla Cake with Pink Coconut",
+              "Strawberry Cake with Pink Coconut",
+              "Lemon Cake with Pink Coconut"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Coconut Coating", "price": 15 },
+              { "name": "Gift Box Packaging", "price": 20 },
+              { "name": "Ribbon Decoration", "price": 10 },
+              { "name": "Custom Color Coconut", "price": 12 }
+            ]
+          },
+          {
+            "id": "chocolate-coconut-snowballs",
+            "name": "Chocolate Coconut Snowballs",
+            "description": "Rich chocolate cake balls rolled in a mixture of chocolate crumbs and white coconut flakes, creating the perfect 'snow-covered' appearance. A classic treat with deep chocolate flavor.",
+            "basePrice": 100,
+            "image": "/images/snowballs/chocolate-coconut-snowballs.jpeg",
+            "sizes": [
+              { "name": "6-piece Pack", "price": 100 },
+              { "name": "12-piece Pack", "price": 190 },
+              { "name": "18-piece Pack", "price": 275 }
+            ],
+            "flavors": [
+              "Dark Chocolate with Coconut",
+              "Milk Chocolate with Coconut",
+              "Double Chocolate with White Coconut"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Coconut Coating", "price": 15 },
+              { "name": "Chocolate Drizzle", "price": 18 },
+              { "name": "Premium Gift Box", "price": 25 },
+              { "name": "Decorative Ribbon", "price": 10 }
+            ]
+          }
+        ]
       },
       "roman-creams": {
         "name": "Roman creams",
