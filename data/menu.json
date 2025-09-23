@@ -116,16 +116,32 @@
         "name": "Cookies",
         "items": []
       },
-      "pastries": {
-        "name": "Pastries",
+      "melting-moment-biscuits": {
+        "name": "Melting moment biscuits",
+        "items": []
+      },
+      "scones": {
+        "name": "Scones",
+        "items": []
+      },
+      "snow-balls": {
+        "name": "Snow balls",
+        "items": []
+      },
+      "cupcakes": {
+        "name": "Cupcakes",
+        "items": []
+      },
+      "roman-creams": {
+        "name": "Roman creams",
+        "items": []
+      },
+      "brownies": {
+        "name": "Brownies",
         "items": []
       },
       "donuts": {
         "name": "Donuts",
-        "items": []
-      },
-      "muffins": {
-        "name": "Muffins",
         "items": []
       }
     }
