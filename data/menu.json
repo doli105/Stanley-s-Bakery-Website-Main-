@@ -139,7 +139,121 @@
       },
       "swiss-rolls": {
         "name": "Swiss Rolls",
-        "items": []
+        "items": [
+          {
+            "id": "chocolate-drizzle-swiss-roll",
+            "name": "Chocolate Drizzle Swiss Roll",
+            "description": "Decadent chocolate Swiss roll filled with light vanilla cream and topped with an elegant chocolate drizzle pattern. A perfect balance of rich chocolate cake and smooth cream filling.",
+            "basePrice": 180,
+            "image": "/images/swiss-rolls/chocolate-drizzle-swiss-roll.jpeg",
+            "sizes": [
+              { "name": "Individual Slice", "price": 35 },
+              { "name": "Half Roll (4-5 slices)", "price": 180 },
+              { "name": "Full Roll (8-10 slices)", "price": 320 }
+            ],
+            "flavors": ["Chocolate Cake with Vanilla Cream", "Double Chocolate", "Chocolate with Strawberry Cream"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Chocolate Drizzle", "price": 15 },
+              { "name": "Fresh Berries", "price": 25 },
+              { "name": "Gift Box", "price": 20 }
+            ]
+          },
+          {
+            "id": "chocolate-shavings-swiss-roll",
+            "name": "Chocolate Shavings Swiss Roll",
+            "description": "Rich chocolate Swiss roll with creamy white filling, generously topped with chocolate shavings and decorative chocolate pieces. A chocolate lover's dream dessert.",
+            "basePrice": 190,
+            "image": "/images/swiss-rolls/chocolate-shavings-swiss-roll.jpeg",
+            "sizes": [
+              { "name": "Individual Slice", "price": 38 },
+              { "name": "Half Roll (4-5 slices)", "price": 190 },
+              { "name": "Full Roll (8-10 slices)", "price": 340 }
+            ],
+            "flavors": [
+              "Chocolate with Vanilla Cream",
+              "Chocolate with Coffee Cream",
+              "Dark Chocolate with White Chocolate Cream"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Chocolate Shavings", "price": 20 },
+              { "name": "Chocolate Sauce", "price": 15 },
+              { "name": "Premium Gift Box", "price": 25 }
+            ]
+          },
+          {
+            "id": "red-velvet-swiss-roll",
+            "name": "Red Velvet Swiss Roll",
+            "description": "Classic red velvet Swiss roll with smooth cream cheese filling, topped with red velvet crumbs for an authentic red velvet experience in every bite.",
+            "basePrice": 200,
+            "image": "/images/swiss-rolls/red-velvet-swiss-roll.jpeg",
+            "sizes": [
+              { "name": "Individual Slice", "price": 40 },
+              { "name": "Half Roll (4-5 slices)", "price": 200 },
+              { "name": "Full Roll (8-10 slices)", "price": 360 }
+            ],
+            "flavors": ["Traditional Red Velvet with Cream Cheese", "Red Velvet with Vanilla Cream"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Red Velvet Crumbs", "price": 18 },
+              { "name": "Cream Cheese Frosting Drizzle", "price": 20 },
+              { "name": "Elegant Gift Box", "price": 25 }
+            ]
+          },
+          {
+            "id": "pink-coconut-swiss-roll",
+            "name": "Pink Coconut Swiss Roll",
+            "description": "Light vanilla Swiss roll filled with strawberry cream and covered in pink-tinted coconut flakes. A delightfully sweet and tropical treat with beautiful presentation.",
+            "basePrice": 185,
+            "image": "/images/swiss-rolls/pink-coconut-swiss-roll.jpeg",
+            "sizes": [
+              { "name": "Individual Slice", "price": 37 },
+              { "name": "Half Roll (4-5 slices)", "price": 185 },
+              { "name": "Full Roll (8-10 slices)", "price": 330 }
+            ],
+            "flavors": [
+              "Vanilla with Strawberry Cream",
+              "Coconut Cake with Berry Cream",
+              "Vanilla with Raspberry Cream"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Coconut Coating", "price": 15 },
+              { "name": "Fresh Strawberries", "price": 30 },
+              { "name": "Decorative Gift Box", "price": 22 }
+            ]
+          },
+          {
+            "id": "carrot-cake-swiss-roll",
+            "name": "Carrot Cake Swiss Roll",
+            "description": "Moist spiced carrot cake rolled with rich cream cheese frosting and topped with decorative piped cream cheese and a fondant carrot. All the flavors of classic carrot cake in Swiss roll form.",
+            "basePrice": 210,
+            "image": "/images/swiss-rolls/carrot-cake-swiss-roll.jpeg",
+            "sizes": [
+              { "name": "Individual Slice", "price": 42 },
+              { "name": "Half Roll (4-5 slices)", "price": 210 },
+              { "name": "Full Roll (8-10 slices)", "price": 380 }
+            ],
+            "flavors": [
+              "Traditional Carrot with Cream Cheese",
+              "Spiced Carrot with Cinnamon Cream",
+              "Carrot with Maple Cream Cheese"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Chopped Walnuts", "price": 25 },
+              { "name": "Extra Cream Cheese Frosting", "price": 20 },
+              { "name": "Decorative Fondant Carrots", "price": 15 },
+              { "name": "Premium Gift Box", "price": 28 }
+            ]
+          }
+        ]
       }
     }
   },
