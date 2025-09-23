@@ -76,6 +76,29 @@
               { "name": "Premium Gold Cake Board", "price": 25 },
               { "name": "Additional Decorative Elements", "price": 40 }
             ]
+          },
+          {
+            "id": "april-calendar-birthday-cake",
+            "name": "April Calendar Birthday Milestone Cake",
+            "description": "Elegant white fondant milestone cake featuring a personalized April 1985 calendar design with highlighted special date. Decorated with white sugar roses, gold spherical accents, pink macarons, and a gold 'Happy Birthday' topper. Perfect for celebrating birth month milestones and special anniversaries.",
+            "basePrice": 580,
+            "image": "/images/milestone-cakes/april-calendar-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 580 },
+              { "name": "Large (10 inch)", "price": 680 },
+              { "name": "Extra Large (12 inch)", "price": 780 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Strawberry"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Month/Year Calendar", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Sugar Rose Decorations", "price": 40 },
+              { "name": "Gold Sphere Accents", "price": 35 },
+              { "name": "Macaron Decorations", "price": 45 },
+              { "name": "Gold Leaf Trim", "price": 30 },
+              { "name": "Premium Gold Cake Board", "price": 25 }
+            ]
           }
         ]
       },
