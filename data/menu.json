@@ -114,7 +114,78 @@
     "subcategories": {
       "cookies": {
         "name": "Cookies",
-        "items": []
+        "items": [
+          {
+            "id": "ginger-snap-cookies",
+            "name": "Ginger Snap Cookies",
+            "description": "Classic ginger snap cookies with warm spices and a perfectly crispy texture. These traditional cookies feature a beautiful crackled surface and rich ginger flavor that melts in your mouth.",
+            "basePrice": 75,
+            "image": "/images/cookies/ginger-snap-cookies.jpeg",
+            "sizes": [
+              { "name": "Small Pack (6 pieces)", "price": 75 },
+              { "name": "Medium Pack (12 pieces)", "price": 140 },
+              { "name": "Large Pack (18 pieces)", "price": 200 },
+              { "name": "Family Pack (24 pieces)", "price": 250 }
+            ],
+            "flavors": ["Traditional Ginger", "Spiced Ginger", "Molasses Ginger"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Gift Box Packaging", "price": 18 },
+              { "name": "Ribbon Decoration", "price": 10 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          },
+          {
+            "id": "chocolate-chip-cookies",
+            "name": "Chocolate Chip Cookies",
+            "description": "Soft-baked chocolate chip cookies loaded with premium dark chocolate chips. These golden-brown cookies offer the perfect balance of chewy texture and rich chocolate flavor in every bite.",
+            "basePrice": 85,
+            "image": "/images/cookies/chocolate-chip-cookies.jpeg",
+            "sizes": [
+              { "name": "Small Pack (6 pieces)", "price": 85 },
+              { "name": "Medium Pack (12 pieces)", "price": 160 },
+              { "name": "Large Pack (18 pieces)", "price": 230 },
+              { "name": "Family Pack (24 pieces)", "price": 290 }
+            ],
+            "flavors": [
+              "Classic Chocolate Chip",
+              "Double Chocolate Chip",
+              "White Chocolate Chip",
+              "Mixed Chocolate Chip"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Chocolate Chips", "price": 15 },
+              { "name": "Gift Box Packaging", "price": 20 },
+              { "name": "Warm Cookie Service", "price": 12 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          },
+          {
+            "id": "sugar-cookies",
+            "name": "Sugar Cookies",
+            "description": "Classic buttery sugar cookies with a tender, melt-in-your-mouth texture and delicate vanilla flavor. These golden cookies have slightly crinkled edges and a perfectly sweet taste.",
+            "basePrice": 70,
+            "image": "/images/cookies/sugar-cookies.jpeg",
+            "sizes": [
+              { "name": "Small Pack (6 pieces)", "price": 70 },
+              { "name": "Medium Pack (12 pieces)", "price": 130 },
+              { "name": "Large Pack (18 pieces)", "price": 185 },
+              { "name": "Family Pack (24 pieces)", "price": 230 }
+            ],
+            "flavors": ["Classic Vanilla", "Lemon Sugar", "Almond Sugar", "Cinnamon Sugar"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Royal Icing Decoration", "price": 25 },
+              { "name": "Colored Sugar Sprinkles", "price": 12 },
+              { "name": "Gift Box Packaging", "price": 18 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          }
+        ]
       },
       "melting-moment-biscuits": {
         "name": "Melting moment biscuits",
