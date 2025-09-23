@@ -134,7 +134,75 @@
       },
       "roman-creams": {
         "name": "Roman creams",
-        "items": []
+        "items": [
+          {
+            "id": "chocolate-roman-creams",
+            "name": "Chocolate Roman Creams",
+            "description": "Classic chocolate Roman cream biscuits with rich cocoa flavor and smooth vanilla cream filling. These traditional oval-shaped sandwich biscuits offer the perfect balance of chocolate and cream in every bite.",
+            "basePrice": 85,
+            "image": "/images/roman-creams/chocolate-roman-creams.jpeg",
+            "sizes": [
+              { "name": "Small Pack (8 pieces)", "price": 85 },
+              { "name": "Medium Pack (12 pieces)", "price": 120 },
+              { "name": "Large Pack (16 pieces)", "price": 150 },
+              { "name": "Family Pack (24 pieces)", "price": 210 }
+            ],
+            "flavors": ["Chocolate with Vanilla Cream", "Double Chocolate", "Chocolate with Strawberry Cream"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Gift Box Packaging", "price": 15 },
+              { "name": "Ribbon Decoration", "price": 8 },
+              { "name": "Custom Message Card", "price": 5 }
+            ]
+          },
+          {
+            "id": "vanilla-roman-creams",
+            "name": "Vanilla Roman Creams",
+            "description": "Traditional vanilla Roman cream biscuits with golden buttery cookies and rich vanilla cream filling. A timeless classic that melts in your mouth with every bite.",
+            "basePrice": 80,
+            "image": "/images/roman-creams/vanilla-roman-creams.jpeg",
+            "sizes": [
+              { "name": "Small Pack (8 pieces)", "price": 80 },
+              { "name": "Medium Pack (12 pieces)", "price": 115 },
+              { "name": "Large Pack (16 pieces)", "price": 145 },
+              { "name": "Family Pack (24 pieces)", "price": 200 }
+            ],
+            "flavors": ["Classic Vanilla", "Vanilla with Lemon Cream", "Vanilla with Caramel Cream"],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Gift Box Packaging", "price": 15 },
+              { "name": "Ribbon Decoration", "price": 8 },
+              { "name": "Custom Message Card", "price": 5 }
+            ]
+          },
+          {
+            "id": "red-velvet-roman-creams",
+            "name": "Red Velvet Roman Creams",
+            "description": "Luxurious red velvet Roman cream biscuits with vibrant red cocoa cookies and smooth cream cheese filling. A modern twist on the classic Roman cream with rich red velvet flavor.",
+            "basePrice": 95,
+            "image": "/images/roman-creams/red-velvet-roman-creams.jpeg",
+            "sizes": [
+              { "name": "Small Pack (8 pieces)", "price": 95 },
+              { "name": "Medium Pack (12 pieces)", "price": 135 },
+              { "name": "Large Pack (16 pieces)", "price": 170 },
+              { "name": "Family Pack (24 pieces)", "price": 240 }
+            ],
+            "flavors": [
+              "Red Velvet with Cream Cheese",
+              "Red Velvet with Vanilla Cream",
+              "Red Velvet with White Chocolate Cream"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Premium Gift Box", "price": 20 },
+              { "name": "Elegant Ribbon", "price": 10 },
+              { "name": "Custom Message Card", "price": 5 }
+            ]
+          }
+        ]
       },
       "brownies": {
         "name": "Brownies",
