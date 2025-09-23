@@ -1139,7 +1139,7 @@ export default function CakesPage() {
                         `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert") || "/placeholder.svg"}`
                       }
                       alt={item.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <h3 className={`font-semibold text-base sm:text-base ${category.textColor} mb-2 sm:mb-2`}>
@@ -1315,7 +1315,7 @@ export default function CakesPage() {
                           <img
                             src={`/abstract-geometric-shapes.png?key=x63n4&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                           />
                         </div>
                         <h3 className="font-bold text-lg sm:text-lg text-pink-600 mb-2 sm:mb-2 font-serif group-hover:text-pink-700 transition-colors duration-300">
