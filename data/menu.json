@@ -246,7 +246,101 @@
       },
       "cake-accessories": {
         "name": "Cake accessories",
-        "items": []
+        "items": [
+          {
+            "id": "happy-birthday-gold-topper",
+            "name": "Happy Birthday Gold Script Topper",
+            "description": "Elegant gold script 'Happy Birthday' cake topper with flowing cursive lettering. Perfect for adding a luxurious touch to any birthday celebration.",
+            "basePrice": 45,
+            "image": "/images/cake-accessories/happy-birthday-gold-topper.jpeg",
+            "sizes": [{ "name": "Standard Size", "price": 45 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "gold-rhinestone-crown",
+            "name": "Gold Rhinestone Crown Topper",
+            "description": "Stunning gold crown cake topper adorned with sparkling rhinestones and crystals. Ideal for princess parties, milestone birthdays, and royal-themed celebrations.",
+            "basePrice": 85,
+            "image": "/images/cake-accessories/gold-rhinestone-crown.jpeg",
+            "sizes": [{ "name": "Standard Crown", "price": 85 }, { "name": "Large Crown", "price": 110 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "soccer-ball-decorations",
+            "name": "Soccer Ball Cake Decorations",
+            "description": "Set of 9 realistic soccer ball cake decorations made from high-quality edible materials. Perfect for sports-themed cakes and football fan celebrations.",
+            "basePrice": 65,
+            "image": "/images/cake-accessories/soccer-ball-decorations.jpeg",
+            "sizes": [{ "name": "9-piece Set", "price": 65 }, { "name": "15-piece Set", "price": 95 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "rainbow-cake-decoration-set",
+            "name": "Rainbow Cake Decoration Set",
+            "description": "Colorful rainbow cake decoration kit with vibrant rainbow arch and matching colorful ball decorations. Brings joy and color to any celebration.",
+            "basePrice": 75,
+            "image": "/images/cake-accessories/rainbow-cake-decoration-set.jpeg",
+            "sizes": [{ "name": "Complete Rainbow Set", "price": 75 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "gold-ginkgo-leaves",
+            "name": "Gold Ginkgo Leaf Decorations",
+            "description": "Delicate artificial gold ginkgo leaves for elegant cake decoration. These metallic leaf accents add a sophisticated botanical touch to wedding cakes and special occasions.",
+            "basePrice": 35,
+            "image": "/images/cake-accessories/gold-ginkgo-leaves.jpeg",
+            "sizes": [{ "name": "5-piece Set", "price": 35 }, { "name": "10-piece Set", "price": 60 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "gold-crystal-crown",
+            "name": "Gold Crystal Crown Topper",
+            "description": "Magnificent gold crown cake topper with intricate crystal detailing and ornate design. Perfect for creating show-stopping celebration cakes fit for royalty.",
+            "basePrice": 95,
+            "image": "/images/cake-accessories/gold-crystal-crown.jpeg",
+            "sizes": [{ "name": "Standard Crown", "price": 95 }, { "name": "Premium Large Crown", "price": 125 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "yellow-happy-birthday-topper",
+            "name": "Yellow Happy Birthday Circle Topper",
+            "description": "Bright yellow 'Happy Birthday' cake topper with circular design and elegant script lettering. Adds a cheerful pop of color to birthday celebrations.",
+            "basePrice": 40,
+            "image": "/images/cake-accessories/yellow-happy-birthday-topper.jpeg",
+            "sizes": [{ "name": "Standard Size", "price": 40 }],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "colored-cake-balls",
+            "name": "Assorted Colored Cake Balls",
+            "description": "Collection of colorful edible cake decoration balls in various sizes and vibrant colors including pink, blue, yellow, green, and more. Perfect for adding texture and color to any cake design.",
+            "basePrice": 55,
+            "image": "/images/cake-accessories/colored-cake-balls.jpeg",
+            "sizes": [
+              { "name": "Mixed Color Set (30 pieces)", "price": 55 },
+              { "name": "Large Mixed Set (50 pieces)", "price": 85 }
+            ],
+            "customizable": false,
+            "inStock": true
+          },
+          {
+            "id": "gold-birthday-toppers-set",
+            "name": "Gold Birthday Toppers Collection",
+            "description": "Premium set of gold 'Happy Birthday' cake toppers in various elegant script styles. Includes multiple designs for versatile decoration options.",
+            "basePrice": 70,
+            "image": "/images/cake-accessories/gold-birthday-toppers-set.jpeg",
+            "sizes": [{ "name": "3-piece Topper Set", "price": 70 }, { "name": "5-piece Deluxe Set", "price": 110 }],
+            "customizable": false,
+            "inStock": true
+          }
+        ]
       }
     }
   }
