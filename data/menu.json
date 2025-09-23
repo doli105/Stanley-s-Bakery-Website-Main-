@@ -4,7 +4,29 @@
     "subcategories": {
       "bento-cakes": {
         "name": "Bento Cakes",
-        "items": []
+        "items": [
+          {
+            "id": "pink-birthday-bento-set",
+            "name": "Pink Birthday Bento Cake Set",
+            "description": "Elegant bento cake set featuring a heart-shaped 'Happy 31st Birthday' cake with pearl border, accompanied by 4 matching cupcakes with pink and white frosting. Perfect for intimate celebrations and gift giving.",
+            "basePrice": 280,
+            "image": "/images/bento-cakes/pink-birthday-bento-set.jpeg",
+            "sizes": [
+              { "name": "Standard Bento Set (1 cake + 4 cupcakes)", "price": 280 },
+              { "name": "Large Bento Set (1 cake + 6 cupcakes)", "price": 350 },
+              { "name": "Premium Bento Set (1 cake + 8 cupcakes)", "price": 420 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Message", "price": 0 },
+              { "name": "Pearl Decorations", "price": 25 },
+              { "name": "Gift Box Upgrade", "price": 15 },
+              { "name": "Ribbon Decoration", "price": 10 },
+              { "name": "Extra Cupcakes (each)", "price": 35 }
+            ]
+          }
+        ]
       },
       "heart-shaped-cakes": {
         "name": "Heart Shaped Cakes",
