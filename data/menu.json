@@ -189,7 +189,64 @@
       },
       "melting-moment-biscuits": {
         "name": "Melting moment biscuits",
-        "items": []
+        "items": [
+          {
+            "id": "assorted-melting-moments-tray",
+            "name": "Assorted Melting Moments Tray",
+            "description": "Beautiful selection of buttery melting moment biscuits with decorative piped patterns in star and swirl designs. Each biscuit features the classic melt-in-your-mouth texture with colorful cherry and sprinkle decorations. Perfect for special occasions and gift giving.",
+            "basePrice": 120,
+            "image": "/images/melting-moments/assorted-melting-moments-tray.jpeg",
+            "sizes": [
+              { "name": "Small Tray (8 pieces)", "price": 120 },
+              { "name": "Medium Tray (12 pieces)", "price": 170 },
+              { "name": "Large Tray (16 pieces)", "price": 220 },
+              { "name": "Party Tray (24 pieces)", "price": 310 }
+            ],
+            "flavors": [
+              "Classic Vanilla with Cherry",
+              "Lemon with Colorful Sprinkles",
+              "Almond with Red Cherry",
+              "Mixed Assortment"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Cherry Decorations", "price": 15 },
+              { "name": "Custom Color Sprinkles", "price": 12 },
+              { "name": "Gift Box Packaging", "price": 25 },
+              { "name": "Ribbon Decoration", "price": 10 },
+              { "name": "Custom Message Card", "price": 8 }
+            ]
+          },
+          {
+            "id": "melting-moments-tub",
+            "name": "Melting Moments Tub",
+            "description": "Generous tub filled with traditional melting moment biscuits featuring the classic buttery shortbread texture with decorative piped ridges. Each biscuit melts delicately in your mouth and some are topped with colorful cherry decorations for extra sweetness.",
+            "basePrice": 180,
+            "image": "/images/melting-moments/melting-moments-tub.jpeg",
+            "sizes": [
+              { "name": "Small Tub (15 pieces)", "price": 180 },
+              { "name": "Medium Tub (25 pieces)", "price": 280 },
+              { "name": "Large Tub (35 pieces)", "price": 370 },
+              { "name": "Family Tub (50 pieces)", "price": 500 }
+            ],
+            "flavors": [
+              "Traditional Vanilla",
+              "Vanilla with Cherry Topping",
+              "Lemon Melting Moments",
+              "Coconut Melting Moments"
+            ],
+            "customizable": true,
+            "inStock": true,
+            "extras": [
+              { "name": "Extra Cherry Toppings", "price": 20 },
+              { "name": "Mixed Flavor Selection", "price": 15 },
+              { "name": "Premium Gift Tub", "price": 30 },
+              { "name": "Decorative Ribbon", "price": 12 },
+              { "name": "Custom Label", "price": 10 }
+            ]
+          }
+        ]
       },
       "scones": {
         "name": "Scones",
