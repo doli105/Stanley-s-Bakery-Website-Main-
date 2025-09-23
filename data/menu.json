@@ -133,24 +133,12 @@
   "regular-treats": {
     "name": "Regular treats and desserts",
     "subcategories": {
-      "roman-cream": {
-        "name": "Roman Cream",
+      "desserts": {
+        "name": "Desserts",
         "items": []
       },
       "swiss-rolls": {
         "name": "Swiss Rolls",
-        "items": []
-      },
-      "cupcakes": {
-        "name": "Cupcakes",
-        "items": []
-      },
-      "brownies": {
-        "name": "Brownies",
-        "items": []
-      },
-      "cheesecakes": {
-        "name": "Cheesecakes",
         "items": []
       }
     }
