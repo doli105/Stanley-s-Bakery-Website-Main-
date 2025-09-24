@@ -1127,27 +1127,28 @@ export default function CakesPage() {
                         image:
                           item.image ||
                           `/placeholder.svg?height=300&width=400&query=${encodeURIComponent(item.name + " cake")}`,
-                        basePrice: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 0,
+                        basePrice: Number.parseFloat(item.price.replace(/[^\\d.]/g, "")) || 0,
+                        category: category.name,
                         pricing: item.pricing || [
                           {
                             size: "Small (6 inch)",
                             serves: "6-8 people",
-                            price: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) * 0.8 || 350,
+                            price: Math.round((Number.parseFloat(item.price.replace(/[^\\d.]/g, "")) || 350) * 0.8),
                           },
                           {
                             size: "Medium (8 inch)",
                             serves: "10-12 people",
-                            price: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 450,
+                            price: Number.parseFloat(item.price.replace(/[^\\d.]/g, "")) || 450,
                           },
                           {
                             size: "Large (10 inch)",
                             serves: "15-20 people",
-                            price: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) * 1.3 || 650,
+                            price: Math.round((Number.parseFloat(item.price.replace(/[^\\d.]/g, "")) || 450) * 1.3),
                           },
                           {
                             size: "Extra Large (12 inch)",
                             serves: "25-30 people",
-                            price: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) * 1.6 || 850,
+                            price: Math.round((Number.parseFloat(item.price.replace(/[^\\d.]/g, "")) || 450) * 1.6),
                           },
                         ],
                       }}
