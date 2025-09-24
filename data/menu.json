@@ -589,7 +589,120 @@
       },
       "cocomelon-cakes": {
         "name": "Cocomelon Cakes",
-        "items": []
+        "items": [
+          {
+            "id": "nokuhle-2nd-birthday-cocomelon-cake",
+            "name": "Nokuhle 2nd Birthday Cocomelon Cake",
+            "description": "Delightful two-tier green Cocomelon cake featuring JJ character on top with rainbow, watermelon character, number '2', colorful balloons, white clouds and stars decorations. The signature Cocomelon bus is prominently displayed on the bottom tier with 'NOKUHLE' spelled out in colorful letters around the base.",
+            "basePrice": 580,
+            "image": "/images/cocomelon-cakes/nokuhle-2nd-birthday-cocomelon-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 580 },
+              { "name": "Large Two-Tier", "price": 680 },
+              { "name": "Premium Two-Tier", "price": 780 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Vanilla",
+              "Vanilla & Strawberry",
+              "Chocolate & Funfetti"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "JJ Character Topper", "price": 60 },
+              { "name": "Cocomelon Bus Enhancement", "price": 45 },
+              { "name": "Rainbow & Cloud Decorations", "price": 40 },
+              { "name": "Colorful Balloon Cluster", "price": 35 },
+              { "name": "Watermelon Character Addition", "price": 50 }
+            ]
+          },
+          {
+            "id": "1st-birthday-cocomelon-cake",
+            "name": "1st Birthday Cocomelon Cake",
+            "description": "Charming two-tier Cocomelon cake with blue top tier and green bottom tier, featuring JJ character on top with number '1', white clouds and stars, and the signature Cocomelon bus on the bottom tier. 'BIRTHDAY' is written in colorful letters around the base for a perfect first birthday celebration.",
+            "basePrice": 520,
+            "image": "/images/cocomelon-cakes/1st-birthday-cocomelon-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 520 },
+              { "name": "Large Two-Tier", "price": 620 },
+              { "name": "Premium Two-Tier", "price": 720 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Vanilla",
+              "Vanilla & Funfetti",
+              "Strawberry & Vanilla"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name Addition", "price": 0 },
+              { "name": "JJ Character Topper", "price": 60 },
+              { "name": "Cocomelon Bus Feature", "price": 45 },
+              { "name": "Cloud & Star Decorations", "price": 35 },
+              { "name": "Colorful Letter Spelling", "price": 40 }
+            ]
+          },
+          {
+            "id": "akonaho-1st-birthday-cocomelon-cake",
+            "name": "Akonaho 1st Birthday Animal Friends Cocomelon Cake",
+            "description": "Adorable two-tier pink Cocomelon cake featuring JJ character on top with number '1', and various beloved Cocomelon animal characters including elephant, pig, and duck arranged around a colorful rainbow on the bottom tier. 'AKONAHO' is spelled out in alphabet blocks around the base, perfect for educational fun.",
+            "basePrice": 620,
+            "image": "/images/cocomelon-cakes/akonaho-1st-birthday-cocomelon-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 620 },
+              { "name": "Large Two-Tier", "price": 720 },
+              { "name": "Premium Two-Tier", "price": 820 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Strawberry)",
+              "Double Vanilla",
+              "Vanilla & Chocolate",
+              "Funfetti & Vanilla"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name in Alphabet Blocks", "price": 0 },
+              { "name": "JJ Character Topper", "price": 60 },
+              { "name": "Animal Character Set (Elephant, Pig, Duck)", "price": 75 },
+              { "name": "Rainbow Decoration", "price": 40 },
+              { "name": "Alphabet Block Letters", "price": 50 },
+              { "name": "Educational Theme Enhancement", "price": 45 }
+            ]
+          },
+          {
+            "id": "mokone-garden-cocomelon-cake",
+            "name": "Mokone Garden Theme Cocomelon Cake",
+            "description": "Beautiful two-tier cream Cocomelon cake with natural garden theme featuring rainbow topper, JJ character, butterfly decorations, daisy flowers, watermelon character, and various colorful balloon clusters. 'MOKONE' is written around the base with a delightful garden-like aesthetic while maintaining the cheerful Cocomelon spirit.",
+            "basePrice": 650,
+            "image": "/images/cocomelon-cakes/mokone-garden-cocomelon-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 650 },
+              { "name": "Large Two-Tier", "price": 750 },
+              { "name": "Premium Two-Tier", "price": 850 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Lemon)",
+              "Double Vanilla",
+              "Vanilla & Coconut",
+              "Strawberry & Vanilla"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "JJ Character Topper", "price": 60 },
+              { "name": "Rainbow Arch Decoration", "price": 45 },
+              { "name": "Butterfly & Flower Set", "price": 55 },
+              { "name": "Watermelon Character", "price": 50 },
+              { "name": "Garden Theme Balloon Clusters", "price": 40 },
+              { "name": "Daisy Flower Decorations", "price": 35 },
+              { "name": "Natural Garden Enhancement", "price": 50 }
+            ]
+          }
+        ]
       },
       "jungle-cakes": {
         "name": "Jungle Cakes",
@@ -601,7 +714,96 @@
       },
       "super-hero-cakes": {
         "name": "Super hero cakes",
-        "items": []
+        "items": [
+          {
+            "id": "transformers-bumblebee-cake",
+            "name": "Transformers Bumblebee Action Cake",
+            "description": "Epic Transformers Bumblebee cake featuring a 3D Bumblebee figure on top with yellow and black colors, Autobot logo on the side, yellow and black star decorations, and personalized name on the base. Perfect for Transformers fans celebrating their special day with authentic robot action.",
+            "basePrice": 680,
+            "image": "/images/superhero-cakes/transformers-bumblebee-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 680 },
+              { "name": "Large (10 inch)", "price": 780 },
+              { "name": "Extra Large (12 inch)", "price": 880 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "3D Bumblebee Figure", "price": 80 },
+              { "name": "Autobot Logo Enhancement", "price": 45 },
+              { "name": "Yellow & Black Star Decorations", "price": 40 },
+              { "name": "Additional Transformer Characters", "price": 70 }
+            ]
+          },
+          {
+            "id": "superman-action-cake",
+            "name": "Superman Action Hero Cake",
+            "description": "Dynamic Superman cake with blue frosting and red drip effect, featuring multiple Superman character toppers, 'SUPERMAN' banner, yellow star decorations, and iconic Superman logo on the front. Perfect for superhero fans with personalized name on the base.",
+            "basePrice": 620,
+            "image": "/images/superhero-cakes/superman-action-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 620 },
+              { "name": "Large (10 inch)", "price": 720 },
+              { "name": "Extra Large (12 inch)", "price": 820 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Blue Velvet"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Multiple Superman Toppers", "price": 60 },
+              { "name": "Superman Banner", "price": 45 },
+              { "name": "Yellow Star Decorations", "price": 35 },
+              { "name": "Red Drip Effect", "price": 40 },
+              { "name": "Superman Logo Enhancement", "price": 50 }
+            ]
+          },
+          {
+            "id": "batman-5th-birthday-cake",
+            "name": "Batman 5th Birthday Cake",
+            "description": "Impressive Batman cake with white frosting and black drip, featuring Batman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Batman fans with comic book style elements.",
+            "basePrice": 650,
+            "image": "/images/superhero-cakes/batman-5th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 650 },
+              { "name": "Large (10 inch)", "price": 750 },
+              { "name": "Extra Large (12 inch)", "price": 850 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Cookies & Cream"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Personal Photo Integration", "price": 50 },
+              { "name": "Batman Mask & Logo", "price": 55 },
+              { "name": "Comic Book Style Toppers", "price": 45 },
+              { "name": "Black Drip Effect", "price": 40 }
+            ]
+          },
+          {
+            "id": "dragon-ball-z-goku-cake",
+            "name": "Dragon Ball Z Goku Power Cake",
+            "description": "Spectacular Dragon Ball Z cake with blue frosting featuring Goku character image with flame decorations on top, orange Dragon Balls around the base, and personalized name. Perfect for anime and superhero fans celebrating with authentic Dragon Ball Z elements.",
+            "basePrice": 680,
+            "image": "/images/superhero-cakes/dragon-ball-z-goku-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 680 },
+              { "name": "Large (10 inch)", "price": 780 },
+              { "name": "Extra Large (12 inch)", "price": 880 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Orange", "Funfetti", "Mango"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Goku Character Enhancement", "price": 60 },
+              { "name": "Flame Decorations", "price": 50 },
+              { "name": "Dragon Ball Set (7 pieces)", "price": 70 },
+              { "name": "Additional DBZ Characters", "price": 75 }
+            ]
+          }
+        ]
       },
       "product-themed-cakes": {
         "name": "Product themed cakes",
