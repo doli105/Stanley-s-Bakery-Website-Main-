@@ -41,15 +41,16 @@ export default function Header() {
             {!logoError ? (
               <Image
                 src="/images/stanley-logo-full.jpg"
-                alt="Stanley's Bakery"
-                width={60}
-                height={45}
+                alt="Stanley's Bakery Logo"
+                width={70}
+                height={52}
                 className="object-contain w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] rounded-lg shadow-md"
                 onError={() => setLogoError(true)}
                 priority
+                unoptimized
               />
             ) : (
-              <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-gradient-to-r from-amber-400 to-amber-500 rounded-lg shadow-md flex items-center justify-center">
+              <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg shadow-md flex items-center justify-center border-2 border-amber-300">
                 <span className="text-white font-bold text-xs sm:text-sm font-dancing-script">SB</span>
               </div>
             )}
