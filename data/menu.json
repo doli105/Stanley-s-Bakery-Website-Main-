@@ -184,6 +184,75 @@
               { "name": "Gold Leaf Trim", "price": 30 },
               { "name": "Premium Gold Cake Board", "price": 25 }
             ]
+          },
+          {
+            "id": "pink-gold-drip-birthday-cake",
+            "name": "Pink & Gold Drip Birthday Cake",
+            "description": "Stunning single-tier cake featuring elegant pink and gold drip effect cascading down the sides, topped with beautiful pink and gold roses and 'Happy Birthday' script topper. Decorated with pearl and gold ball accents throughout the drip design for a luxurious milestone celebration.",
+            "basePrice": 480,
+            "image": "/images/milestone-cakes/pink-gold-drip-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 480 },
+              { "name": "Large (10 inch)", "price": 580 },
+              { "name": "Extra Large (12 inch)", "price": 680 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Message Script", "price": 0 },
+              { "name": "Additional Rose Decorations", "price": 40 },
+              { "name": "Extra Gold Drip Effect", "price": 35 },
+              { "name": "Pearl Ball Decorations", "price": 30 },
+              { "name": "Premium Gold Cake Board", "price": 25 }
+            ]
+          },
+          {
+            "id": "white-botanical-birthday-cake",
+            "name": "White Botanical Birthday Cake",
+            "description": "Sophisticated white cake with artistic botanical design featuring white chocolate or fondant leaf decorations arranged vertically. Includes elegant 'Happy Birthday' script on white chocolate plaque with delicate white flower accent. Perfect for modern, minimalist milestone celebrations.",
+            "basePrice": 420,
+            "image": "/images/milestone-cakes/white-botanical-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 420 },
+              { "name": "Large (10 inch)", "price": 520 },
+              { "name": "Extra Large (12 inch)", "price": 620 }
+            ],
+            "flavors": ["Vanilla", "Lemon", "Coconut", "White Chocolate", "Almond"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Message on Plaque", "price": 0 },
+              { "name": "Additional Botanical Elements", "price": 45 },
+              { "name": "White Chocolate Leaf Decorations", "price": 40 },
+              { "name": "Delicate Flower Accents", "price": 35 },
+              { "name": "Premium White Cake Board", "price": 25 }
+            ]
+          },
+          {
+            "id": "pink-gold-anna-birthday-cake",
+            "name": "Pink & Gold Anna Birthday Cake",
+            "description": "Elegant two-tier milestone cake with pink top tier and gold bottom tier, featuring purple and cream roses with gold fan decoration. Decorated with gold spherical accents and personalized name on the base. Perfect for celebrating special milestones with sophisticated style.",
+            "basePrice": 550,
+            "image": "/images/milestone-cakes/pink-gold-anna-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Vanilla",
+              "Strawberry & Vanilla",
+              "Red Velvet & Vanilla"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Additional Rose Decorations", "price": 45 },
+              { "name": "Gold Fan Decoration", "price": 40 },
+              { "name": "Gold Sphere Accents", "price": 35 },
+              { "name": "Premium Gold Cake Board", "price": 30 },
+              { "name": "Additional Tier", "price": 200 }
+            ]
           }
         ]
       },
