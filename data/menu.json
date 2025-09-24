@@ -872,211 +872,134 @@
           {
             "id": "ballet-thando-butterfly-cake",
             "name": "Ballet Butterfly Elegance Cake",
-            "description": "A sophisticated two-tier princess cake featuring delicate ballet shoes, purple butterflies, and elegant gold script lettering. Perfect for young dancers and princess celebrations.",
-            "image": "/images/princess-cakes/ballet-thando-butterfly-cake.jpeg",
+            "description": "A sophisticated two-tier princess cake featuring delicate ballet shoes, purple butterflies, and elegant gold script lettering. Perfect for young dancers and princess celebrations with 'THANDO' personalization.",
             "basePrice": 850,
-            "sizes": [
-              {
-                "name": "Standard (2-tier)",
-                "serves": "15-20 people",
-                "price": 850
-              },
-              {
-                "name": "Large (2-tier)",
-                "serves": "25-30 people",
-                "price": 1050
-              }
-            ],
-            "personalization": {
-              "name": "Custom name in elegant gold script",
-              "age": "Age number topper",
-              "colors": "Ballet shoe and butterfly color customization"
-            },
+            "image": "/images/princess-cakes/ballet-thando-butterfly-cake.jpeg",
+            "sizes": [{ "name": "Standard (2-tier)", "price": 850 }, { "name": "Large (2-tier)", "price": 1050 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Funfetti"],
+            "customizable": true,
             "extras": [
-              "Additional butterfly decorations (+R50)",
-              "Premium balloon garland (+R150)",
-              "Custom ballet-themed toppers (+R100)",
-              "Edible glitter finish (+R75)"
+              { "name": "Custom Name in Gold Script", "price": 0 },
+              { "name": "Age Number Topper", "price": 0 },
+              { "name": "Additional Butterfly Decorations", "price": 50 },
+              { "name": "Premium Balloon Garland", "price": 150 },
+              { "name": "Custom Ballet-themed Toppers", "price": 100 },
+              { "name": "Edible Glitter Finish", "price": 75 },
+              { "name": "Ballet Shoe Color Customization", "price": 30 }
             ]
           },
           {
             "id": "masha-bear-sine-3rd-birthday-cake",
             "name": "Masha and Bear Adventure Cake",
-            "description": "A delightful fairy tale cake featuring beloved Masha character with forest elements, apple tree, mushrooms, and charming wooden fence details.",
-            "image": "/images/princess-cakes/masha-bear-sine-3rd-birthday-cake.jpeg",
+            "description": "A delightful fairy tale cake featuring beloved Masha character with forest elements, apple tree, mushrooms, and charming wooden fence details. Perfect for 'SINE' 3rd birthday celebration.",
             "basePrice": 750,
-            "sizes": [
-              {
-                "name": "Standard",
-                "serves": "12-15 people",
-                "price": 750
-              },
-              {
-                "name": "Large",
-                "serves": "18-22 people",
-                "price": 950
-              }
-            ],
-            "personalization": {
-              "name": "Custom name lettering",
-              "age": "Age number decoration",
-              "characters": "Additional Masha and Bear elements"
-            },
+            "image": "/images/princess-cakes/masha-bear-sine-3rd-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard", "price": 750 }, { "name": "Large", "price": 950 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
+            "customizable": true,
             "extras": [
-              "Extra forest decorations (+R75)",
-              "Custom wooden fence extension (+R100)",
-              "Additional character figures (+R120)",
-              "Edible mushroom garden (+R80)"
+              { "name": "Custom Name Lettering", "price": 0 },
+              { "name": "Age Number Decoration", "price": 0 },
+              { "name": "Extra Forest Decorations", "price": 75 },
+              { "name": "Custom Wooden Fence Extension", "price": 100 },
+              { "name": "Additional Character Figures", "price": 120 },
+              { "name": "Edible Mushroom Garden", "price": 80 },
+              { "name": "Additional Masha and Bear Elements", "price": 90 }
             ]
           },
           {
             "id": "rainbow-butterfly-okuhle-4th-birthday-cake",
             "name": "Rainbow Butterfly Garden Cake",
-            "description": "A modern princess cake with soft pastels, featuring rainbow arches, delicate butterflies, smiling clouds, and whimsical garden elements.",
-            "image": "/images/princess-cakes/rainbow-butterfly-okuhle-4th-birthday-cake.jpeg",
+            "description": "A modern princess cake with soft pastels, featuring rainbow arches, delicate butterflies, smiling clouds, and whimsical garden elements. Perfect for 'OKUHLE' 4th birthday celebration.",
             "basePrice": 800,
-            "sizes": [
-              {
-                "name": "Standard (2-tier)",
-                "serves": "15-18 people",
-                "price": 800
-              },
-              {
-                "name": "Large (2-tier)",
-                "serves": "22-25 people",
-                "price": 1000
-              }
-            ],
-            "personalization": {
-              "name": "Custom name in elegant script",
-              "age": "Age number with rainbow design",
-              "colors": "Rainbow and butterfly color customization"
-            },
+            "image": "/images/princess-cakes/rainbow-butterfly-okuhle-4th-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard (2-tier)", "price": 800 }, { "name": "Large (2-tier)", "price": 1000 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
+            "customizable": true,
             "extras": [
-              "Additional rainbow elements (+R100)",
-              "Extra butterfly decorations (+R75)",
-              "Cloud face customization (+R50)",
-              "Edible flower garden (+R90)"
+              { "name": "Custom Name in Elegant Script", "price": 0 },
+              { "name": "Age Number with Rainbow Design", "price": 0 },
+              { "name": "Additional Rainbow Elements", "price": 100 },
+              { "name": "Extra Butterfly Decorations", "price": 75 },
+              { "name": "Cloud Face Customization", "price": 50 },
+              { "name": "Edible Flower Garden", "price": 90 },
+              { "name": "Rainbow Color Customization", "price": 60 }
             ]
           },
           {
             "id": "elegant-butterfly-dzuvha-10th-birthday-cake",
             "name": "Elegant Butterfly Cascade Cake",
-            "description": "A sophisticated three-tier princess cake with white and pink ombre effect, featuring cascading pink butterflies, pearl details, and golden birthday message.",
-            "image": "/images/princess-cakes/elegant-butterfly-dzuvha-10th-birthday-cake.jpeg",
+            "description": "A sophisticated three-tier princess cake with white and pink ombre effect, featuring cascading pink butterflies, pearl details, and golden birthday message. Perfect for 'DZUVHA' 10th birthday celebration.",
             "basePrice": 1200,
-            "sizes": [
-              {
-                "name": "Standard (3-tier)",
-                "serves": "25-30 people",
-                "price": 1200
-              },
-              {
-                "name": "Large (3-tier)",
-                "serves": "35-40 people",
-                "price": 1500
-              }
-            ],
-            "personalization": {
-              "name": "Custom name at base",
-              "age": "Age number customization",
-              "colors": "Butterfly and ombre color options"
-            },
+            "image": "/images/princess-cakes/elegant-butterfly-dzuvha-10th-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard (3-tier)", "price": 1200 }, { "name": "Large (3-tier)", "price": 1500 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
+            "customizable": true,
             "extras": [
-              "Additional butterfly cascade (+R150)",
-              "Premium pearl decorations (+R100)",
-              "Gold leaf accents (+R200)",
-              "Custom tier height adjustment (+R100)"
+              { "name": "Custom Name at Base", "price": 0 },
+              { "name": "Age Number Customization", "price": 0 },
+              { "name": "Additional Butterfly Cascade", "price": 150 },
+              { "name": "Premium Pearl Decorations", "price": 100 },
+              { "name": "Gold Leaf Accents", "price": 200 },
+              { "name": "Custom Tier Height Adjustment", "price": 100 },
+              { "name": "Ombre Color Options", "price": 80 }
             ]
           },
           {
             "id": "barbie-azania-5th-birthday-cake",
             "name": "Barbie Princess Dream Cake",
-            "description": "A glamorous Barbie-themed princess cake with pink frosting, rainbow decorations, stars, and official Barbie princess imagery for the ultimate celebration.",
-            "image": "/images/princess-cakes/barbie-azania-5th-birthday-cake.jpeg",
+            "description": "A glamorous Barbie-themed princess cake with pink frosting, rainbow decorations, stars, and official Barbie princess imagery. Perfect for 'AZANIA' 5th birthday celebration.",
             "basePrice": 700,
-            "sizes": [
-              {
-                "name": "Standard",
-                "serves": "12-15 people",
-                "price": 700
-              },
-              {
-                "name": "Large",
-                "serves": "18-22 people",
-                "price": 900
-              }
-            ],
-            "personalization": {
-              "name": "Custom name lettering",
-              "age": "Age number with star design",
-              "colors": "Pink theme color variations"
-            },
+            "image": "/images/princess-cakes/barbie-azania-5th-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard", "price": 700 }, { "name": "Large", "price": 900 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Funfetti"],
+            "customizable": true,
             "extras": [
-              "Additional Barbie elements (+R100)",
-              "Extra rainbow decorations (+R75)",
-              "Star and pearl accents (+R80)",
-              "Custom Barbie image printing (+R120)"
+              { "name": "Custom Name Lettering", "price": 0 },
+              { "name": "Age Number with Star Design", "price": 0 },
+              { "name": "Additional Barbie Elements", "price": 100 },
+              { "name": "Extra Rainbow Decorations", "price": 75 },
+              { "name": "Star and Pearl Accents", "price": 80 },
+              { "name": "Custom Barbie Image Printing", "price": 120 },
+              { "name": "Pink Theme Color Variations", "price": 50 }
             ]
           },
           {
             "id": "royal-crown-owethu-10th-birthday-cake",
             "name": "Royal Crown Princess Cake",
-            "description": "A majestic three-tier princess cake featuring a golden crown topper, quilted white middle tier with pink hearts, and luxurious pink ruffled base.",
-            "image": "/images/princess-cakes/royal-crown-owethu-10th-birthday-cake.jpeg",
+            "description": "A majestic three-tier princess cake featuring a golden crown topper, quilted white middle tier with pink hearts, and luxurious pink ruffled base. Perfect for 'OWETHU' 10th birthday celebration.",
             "basePrice": 1100,
-            "sizes": [
-              {
-                "name": "Standard (3-tier)",
-                "serves": "25-30 people",
-                "price": 1100
-              },
-              {
-                "name": "Large (3-tier)",
-                "serves": "35-40 people",
-                "price": 1400
-              }
-            ],
-            "personalization": {
-              "name": "Custom name at base",
-              "age": "Age number on quilted tier",
-              "colors": "Crown and heart color customization"
-            },
+            "image": "/images/princess-cakes/royal-crown-owethu-10th-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard (3-tier)", "price": 1100 }, { "name": "Large (3-tier)", "price": 1400 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
+            "customizable": true,
             "extras": [
-              "Premium gold crown upgrade (+R200)",
-              "Additional quilted pattern details (+R150)",
-              "Extra ruffle tier decoration (+R100)",
-              "Edible pearls and gems (+R120)"
+              { "name": "Custom Name at Base", "price": 0 },
+              { "name": "Age Number on Quilted Tier", "price": 0 },
+              { "name": "Premium Gold Crown Upgrade", "price": 200 },
+              { "name": "Additional Quilted Pattern Details", "price": 150 },
+              { "name": "Extra Ruffle Tier Decoration", "price": 100 },
+              { "name": "Edible Pearls and Gems", "price": 120 },
+              { "name": "Crown and Heart Color Customization", "price": 80 }
             ]
           },
           {
             "id": "unicorn-celokuhle-5th-birthday-cake",
             "name": "Magical Unicorn Castle Cake",
-            "description": "An enchanting three-tier unicorn cake with rainbow mane unicorn topper, colorful flowers throughout, mushroom decorations, and magical garden elements.",
-            "image": "/images/princess-cakes/unicorn-celokuhle-5th-birthday-cake.jpeg",
+            "description": "An enchanting three-tier unicorn cake with rainbow mane unicorn topper, colorful flowers throughout, mushroom decorations, and magical garden elements. Perfect for 'CELOKUHLE' 5th birthday celebration.",
             "basePrice": 950,
-            "sizes": [
-              {
-                "name": "Standard (3-tier)",
-                "serves": "20-25 people",
-                "price": 950
-              },
-              {
-                "name": "Large (3-tier)",
-                "serves": "30-35 people",
-                "price": 1200
-              }
-            ],
-            "personalization": {
-              "name": "Custom name lettering",
-              "age": "Age number with floral design",
-              "colors": "Unicorn and flower color customization"
-            },
+            "image": "/images/princess-cakes/unicorn-celokuhle-5th-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard (3-tier)", "price": 950 }, { "name": "Large (3-tier)", "price": 1200 }],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
+            "customizable": true,
             "extras": [
-              "Additional unicorn elements (+R150)",
-              "Extra flower garden decorations (+R100)",
-              "Mushroom village expansion (+R80)",
-              "Rainbow mane color upgrade (+R75)"
+              { "name": "Custom Name Lettering", "price": 0 },
+              { "name": "Age Number with Floral Design", "price": 0 },
+              { "name": "Additional Unicorn Elements", "price": 150 },
+              { "name": "Extra Flower Garden Decorations", "price": 100 },
+              { "name": "Mushroom Village Expansion", "price": 80 },
+              { "name": "Rainbow Mane Color Upgrade", "price": 75 },
+              { "name": "Unicorn and Flower Color Customization", "price": 90 }
             ]
           }
         ]
@@ -1304,7 +1227,200 @@
       },
       "wedding-cakes": {
         "name": "Wedding cakes",
-        "items": []
+        "items": [
+          {
+            "id": "classic-white-roses-monogram",
+            "name": "Classic White Roses with Monogram",
+            "description": "Elegant three-tier white wedding cake featuring handcrafted sugar roses cascading from top to side, with personalized gold script monogram on middle tier. Perfect for traditional and romantic weddings.",
+            "image": "/images/wedding-cakes/classic-white-roses-monogram-cake.jpeg",
+            "basePrice": 2800,
+            "sizes": [
+              { "name": "2-Tier (Serves 30-40)", "price": 2200 },
+              { "name": "3-Tier (Serves 60-80)", "price": 2800 },
+              { "name": "4-Tier (Serves 100-120)", "price": 3600 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Custom Monogram/Initials", "price": 150 },
+              { "name": "Wedding Date", "price": 100 },
+              { "name": "Special Message", "price": 120 }
+            ],
+            "extras": [
+              { "name": "Additional Sugar Roses", "price": 80 },
+              { "name": "Gold Leaf Accents", "price": 200 },
+              { "name": "Pearl Details", "price": 150 },
+              { "name": "Ribbon Decoration", "price": 100 }
+            ]
+          },
+          {
+            "id": "navy-white-botanical-magnolia",
+            "name": "Navy & White Botanical Magnolia",
+            "description": "Stunning four-tier wedding cake with alternating white and navy tiers, featuring textured chevron pattern and cascading white magnolia flowers with orange berries and natural greenery.",
+            "image": "/images/wedding-cakes/navy-white-botanical-magnolia-cake.jpeg",
+            "basePrice": 3800,
+            "sizes": [
+              { "name": "3-Tier (Serves 70-90)", "price": 3200 },
+              { "name": "4-Tier (Serves 110-130)", "price": 3800 },
+              { "name": "5-Tier (Serves 150-180)", "price": 4800 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Custom Color Scheme", "price": 200 },
+              { "name": "Monogram Addition", "price": 150 },
+              { "name": "Different Flower Types", "price": 250 }
+            ],
+            "extras": [
+              { "name": "Additional Botanical Elements", "price": 180 },
+              { "name": "Textured Pattern Upgrade", "price": 220 },
+              { "name": "Fresh Flower Option", "price": 300 },
+              { "name": "Gold Accent Details", "price": 180 }
+            ]
+          },
+          {
+            "id": "gold-mandala-luxury",
+            "name": "Gold Mandala Luxury Wedding Cake",
+            "description": "Sophisticated three-tier cake with gold metallic top tier, pristine white middle tier, and ornate mandala pattern bottom tier. Features elegant white sugar flowers and luxurious gold detailing.",
+            "image": "/images/wedding-cakes/gold-mandala-luxury-wedding-cake.jpeg",
+            "basePrice": 3200,
+            "sizes": [
+              { "name": "2-Tier (Serves 40-50)", "price": 2600 },
+              { "name": "3-Tier (Serves 70-90)", "price": 3200 },
+              { "name": "4-Tier (Serves 110-130)", "price": 4200 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Custom Mandala Design", "price": 300 },
+              { "name": "Personalized Pattern", "price": 250 },
+              { "name": "Color Scheme Change", "price": 200 }
+            ],
+            "extras": [
+              { "name": "24k Gold Leaf Application", "price": 400 },
+              { "name": "Hand-painted Details", "price": 350 },
+              { "name": "Additional Sugar Flowers", "price": 120 },
+              { "name": "Metallic Finish Upgrade", "price": 280 }
+            ]
+          },
+          {
+            "id": "portuguese-tile-blue-bow",
+            "name": "Portuguese Tile with Blue Bow",
+            "description": "Cultural two-tier wedding cake featuring authentic Portuguese tile patterns on bottom tier with elegant white top tier. Crowned with a stunning blue patterned fabric bow and white flower accent.",
+            "image": "/images/wedding-cakes/portuguese-tile-blue-bow-cake.jpeg",
+            "basePrice": 2600,
+            "sizes": [
+              { "name": "2-Tier (Serves 35-45)", "price": 2600 },
+              { "name": "3-Tier (Serves 65-85)", "price": 3400 },
+              { "name": "4-Tier (Serves 100-120)", "price": 4200 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Custom Tile Pattern", "price": 280 },
+              { "name": "Different Cultural Design", "price": 300 },
+              { "name": "Bow Color Change", "price": 150 }
+            ],
+            "extras": [
+              { "name": "Hand-painted Tile Work", "price": 400 },
+              { "name": "Fabric Bow Upgrade", "price": 200 },
+              { "name": "Additional Cultural Elements", "price": 250 },
+              { "name": "Gold Accent Lines", "price": 180 }
+            ]
+          },
+          {
+            "id": "mediterranean-tile-pattern",
+            "name": "Mediterranean Tile Pattern Masterpiece",
+            "description": "Bold three-tier wedding cake completely adorned with intricate blue and gold Mediterranean tile patterns separated by elegant gold grid lines. Features decorative patterned fabric accent on top.",
+            "image": "/images/wedding-cakes/mediterranean-tile-pattern-cake.jpeg",
+            "basePrice": 3600,
+            "sizes": [
+              { "name": "2-Tier (Serves 40-55)", "price": 2800 },
+              { "name": "3-Tier (Serves 75-95)", "price": 3600 },
+              { "name": "4-Tier (Serves 115-140)", "price": 4600 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Custom Tile Design", "price": 350 },
+              { "name": "Color Scheme Modification", "price": 280 },
+              { "name": "Pattern Complexity Change", "price": 300 }
+            ],
+            "extras": [
+              { "name": "Hand-painted Artistry", "price": 500 },
+              { "name": "24k Gold Grid Lines", "price": 350 },
+              { "name": "Cultural Pattern Research", "price": 200 },
+              { "name": "Fabric Accent Upgrade", "price": 180 }
+            ]
+          },
+          {
+            "id": "african-protea-cultural",
+            "name": "African Protea Cultural Wedding Cake",
+            "description": "Vibrant two-tier cake celebrating African heritage with traditional beadwork patterns on middle tier and geometric tribal designs on bottom tier. Crowned with a magnificent protea flower.",
+            "image": "/images/wedding-cakes/african-protea-cultural-cake.jpeg",
+            "basePrice": 2800,
+            "sizes": [
+              { "name": "2-Tier (Serves 35-50)", "price": 2800 },
+              { "name": "3-Tier (Serves 70-90)", "price": 3600 },
+              { "name": "4-Tier (Serves 105-125)", "price": 4400 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Tribal Pattern Customization", "price": 300 },
+              { "name": "Beadwork Color Change", "price": 250 },
+              { "name": "Cultural Symbol Addition", "price": 200 }
+            ],
+            "extras": [
+              { "name": "Hand-crafted Protea Flower", "price": 280 },
+              { "name": "Traditional Pattern Painting", "price": 400 },
+              { "name": "Beadwork Detail Enhancement", "price": 320 },
+              { "name": "Cultural Consultation", "price": 150 }
+            ]
+          },
+          {
+            "id": "white-roses-monogram-textured",
+            "name": "White Roses Monogram with Texture",
+            "description": "Refined three-tier white wedding cake featuring 'R+A' monogram, cascading white roses, and elegant textured bottom tier with vertical line pattern. Classic romance meets modern sophistication.",
+            "image": "/images/wedding-cakes/white-roses-monogram-textured-cake.jpeg",
+            "basePrice": 2900,
+            "sizes": [
+              { "name": "2-Tier (Serves 35-45)", "price": 2300 },
+              { "name": "3-Tier (Serves 65-85)", "price": 2900 },
+              { "name": "4-Tier (Serves 100-120)", "price": 3800 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Custom Monogram/Initials", "price": 150 },
+              { "name": "Wedding Date Addition", "price": 100 },
+              { "name": "Texture Pattern Change", "price": 200 }
+            ],
+            "extras": [
+              { "name": "Premium Sugar Roses", "price": 150 },
+              { "name": "Textured Tier Upgrade", "price": 220 },
+              { "name": "Gold Monogram Option", "price": 180 },
+              { "name": "Pearl Accent Details", "price": 160 }
+            ]
+          },
+          {
+            "id": "modern-fabric-drape-sculptural",
+            "name": "Modern Fabric Drape Sculptural Cake",
+            "description": "Contemporary three-tier white wedding cake featuring dramatic flowing fabric-like fondant draping with elegant gold trim edges. A true work of edible art for modern couples.",
+            "image": "/images/wedding-cakes/modern-fabric-drape-sculptural-cake.jpeg",
+            "basePrice": 3400,
+            "sizes": [
+              { "name": "2-Tier (Serves 40-50)", "price": 2700 },
+              { "name": "3-Tier (Serves 70-90)", "price": 3400 },
+              { "name": "4-Tier (Serves 110-130)", "price": 4400 }
+            ],
+            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
+            "personalization": [
+              { "name": "Drape Style Modification", "price": 300 },
+              { "name": "Color Accent Change", "price": 200 },
+              { "name": "Sculptural Element Addition", "price": 350 }
+            ],
+            "extras": [
+              { "name": "24k Gold Trim Upgrade", "price": 400 },
+              { "name": "Advanced Sculptural Work", "price": 500 },
+              { "name": "Fabric Texture Enhancement", "price": 280 },
+              { "name": "Artistic Consultation", "price": 200 }
+            ]
+          }
+        ]
       },
       "novelty-themed-cakes": {
         "name": "Novelty-themed cakes",
@@ -1767,7 +1883,7 @@
           {
             "id": "caramel-swirl-cupcakes",
             "name": "Caramel Swirl Cupcakes",
-            "description": "Moist vanilla cupcakes topped with rich caramel buttercream frosting piped in elegant swirls. Each cupcake is finished with a decorative element and offers the perfect balance of vanilla cake and buttery caramel flavor.",
+            "description": "Moist vanilla cupcakes topped with rich caramel buttercream frosting piped in elegant swirls. Each cupcake features decorative element and offers the perfect balance of vanilla cake and buttery caramel flavor.",
             "basePrice": 115,
             "image": "/images/cupcakes/caramel-swirl-cupcakes.jpeg",
             "sizes": [
