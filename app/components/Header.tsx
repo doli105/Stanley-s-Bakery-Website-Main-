@@ -40,25 +40,20 @@ export default function Header() {
           >
             {!logoError ? (
               <Image
-                src="/images/stanley-logo-full.jpg"
+                src="/images/stanleys-bakery-logo.jpeg"
                 alt="Stanley's Bakery Logo"
-                width={70}
-                height={52}
-                className="object-contain w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] rounded-lg shadow-md"
+                width={80}
+                height={60}
+                className="object-contain w-16 h-12 sm:w-20 sm:h-15 md:w-[80px] md:h-[60px] rounded-lg shadow-md"
                 onError={() => setLogoError(true)}
                 priority
                 unoptimized
               />
             ) : (
-              <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg shadow-md flex items-center justify-center border-2 border-amber-300">
-                <span className="text-white font-bold text-xs sm:text-sm font-dancing-script">SB</span>
+              <div className="w-16 h-12 sm:w-20 sm:h-15 md:w-[80px] md:h-[60px] bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg shadow-md flex items-center justify-center border-2 border-amber-300">
+                <span className="text-white font-bold text-sm sm:text-base font-dancing-script">Stanley's</span>
               </div>
             )}
-            <div className="block">
-              <h1 className="font-dancing-script text-base sm:text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-md">
-                Stanley's Bakery
-              </h1>
-            </div>
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
