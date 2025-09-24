@@ -189,7 +189,77 @@
       },
       "gentleman-cakes": {
         "name": "Gentleman cakes",
-        "items": []
+        "items": [
+          {
+            "id": "automotive-birthday-cake",
+            "name": "Automotive Birthday Cake",
+            "description": "Sophisticated black cake with automotive theme featuring realistic car wheel decorations on top and around the base. Decorated with elegant gold 'Happy Birthday' script lettering and personalized name in gold around the base. Perfect for car enthusiasts and automotive lovers celebrating special occasions.",
+            "basePrice": 520,
+            "image": "/images/gentleman-cakes/automotive-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 520 },
+              { "name": "Large (10 inch)", "price": 620 },
+              { "name": "Extra Large (12 inch)", "price": 720 }
+            ],
+            "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Coffee", "Salted Caramel"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Additional Car Wheel Decorations", "price": 45 },
+              { "name": "Gold Script Lettering", "price": 35 },
+              { "name": "Premium Black Finish", "price": 40 },
+              { "name": "Custom Car Brand Theme", "price": 50 }
+            ]
+          },
+          {
+            "id": "bow-tie-yolo-cake",
+            "name": "Elegant Bow Tie Gentleman Cake",
+            "description": "Sophisticated black cake with elegant gold bow tie decoration and luxurious gold and black spherical decorations with star accents on top. Features personalized message on the base with decorative footprint elements. Perfect for formal celebrations and milestone birthdays.",
+            "basePrice": 480,
+            "image": "/images/gentleman-cakes/bow-tie-yolo-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 480 },
+              { "name": "Large (10 inch)", "price": 580 },
+              { "name": "Extra Large (12 inch)", "price": 680 }
+            ],
+            "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Lemon", "Coconut"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Message on Base", "price": 0 },
+              { "name": "Gold Bow Tie Decoration", "price": 40 },
+              { "name": "Gold Star Decorations", "price": 35 },
+              { "name": "Spherical Accent Decorations", "price": 45 },
+              { "name": "Premium Black Cake Finish", "price": 35 }
+            ]
+          },
+          {
+            "id": "best-husband-dad-50th-cake",
+            "name": "Best Husband & Dad Milestone Cake",
+            "description": "Elegant two-tier milestone cake with white top tier and black bottom tier, featuring '50' number topper and 'Best HUSBAND & Dad' text in gold. Decorated with sophisticated gold and black spheres and decorative fan-like elements. Perfect for celebrating milestone birthdays and honoring special men in your life.",
+            "basePrice": 650,
+            "image": "/images/gentleman-cakes/best-husband-dad-50th-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 650 },
+              { "name": "Large Two-Tier", "price": 750 },
+              { "name": "Premium Two-Tier", "price": 850 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Chocolate",
+              "Red Velvet & Vanilla",
+              "Coffee & Vanilla"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Title Text", "price": 0 },
+              { "name": "Gold Sphere Decorations", "price": 50 },
+              { "name": "Decorative Fan Elements", "price": 40 },
+              { "name": "Premium Gold Lettering", "price": 45 },
+              { "name": "Additional Tier", "price": 200 }
+            ]
+          }
+        ]
       },
       "sport-man-cakes": {
         "name": "Sport man cakes",
