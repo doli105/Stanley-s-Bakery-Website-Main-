@@ -868,7 +868,78 @@
       },
       "princess-cakes": {
         "name": "Princess cakes",
-        "items": []
+        "items": [
+          {
+            "id": "ballet-thando-butterfly-cake",
+            "name": "Ballet Princess Butterfly Cake",
+            "description": "Elegant two-tier princess cake featuring delicate ballet shoes, purple butterflies, and sophisticated pink bow decoration. Perfect for little dancers and princess celebrations.",
+            "image": "/images/princess-cakes/ballet-thando-butterfly-cake.jpeg",
+            "price": "R850",
+            "sizes": ["6 inch", "8 inch", "10 inch"],
+            "flavors": ["Vanilla", "Chocolate", "Strawberry", "Red Velvet"],
+            "customization": "Personalized name in gold script, choice of butterfly colors, custom ballet shoe design"
+          },
+          {
+            "id": "masha-bear-sine-3rd-birthday-cake",
+            "name": "Masha & Bear Fairy Tale Cake",
+            "description": "Whimsical princess cake featuring beloved Masha character with enchanted forest elements including apple trees, mushrooms, and wooden fence border.",
+            "image": "/images/princess-cakes/masha-bear-sine-3rd-birthday-cake.jpeg",
+            "price": "R780",
+            "sizes": ["6 inch", "8 inch", "10 inch"],
+            "flavors": ["Vanilla", "Chocolate", "Strawberry", "Lemon"],
+            "customization": "Custom name lettering, age number, choice of forest decorations"
+          },
+          {
+            "id": "rainbow-butterfly-okuhle-4th-birthday-cake",
+            "name": "Rainbow Butterfly Princess Cake",
+            "description": "Modern princess cake with soft pink frosting, featuring pastel rainbows, delicate butterflies, and adorable cloud faces for a magical celebration.",
+            "image": "/images/princess-cakes/rainbow-butterfly-okuhle-4th-birthday-cake.jpeg",
+            "price": "R820",
+            "sizes": ["6 inch", "8 inch", "10 inch"],
+            "flavors": ["Vanilla", "Strawberry", "Funfetti", "Red Velvet"],
+            "customization": "Personalized name in gold, custom rainbow colors, butterfly color selection"
+          },
+          {
+            "id": "elegant-butterfly-dzuvha-10th-birthday-cake",
+            "name": "Elegant Butterfly Princess Tower",
+            "description": "Sophisticated three-tier princess cake with white and pink ombre effect, cascading pink butterflies, and pearl decorations for milestone celebrations.",
+            "image": "/images/princess-cakes/elegant-butterfly-dzuvha-10th-birthday-cake.jpeg",
+            "price": "R1200",
+            "sizes": ["Multi-tier only"],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
+            "customization": "Custom name and age, butterfly color options, pearl decoration placement"
+          },
+          {
+            "id": "barbie-azania-5th-birthday-cake",
+            "name": "Barbie Princess Dream Cake",
+            "description": "Glamorous Barbie-themed princess cake with rainbow decorations, stars, and official Barbie princess imagery for the ultimate princess celebration.",
+            "image": "/images/princess-cakes/barbie-azania-5th-birthday-cake.jpeg",
+            "price": "R890",
+            "sizes": ["6 inch", "8 inch", "10 inch"],
+            "flavors": ["Vanilla", "Strawberry", "Funfetti", "Red Velvet"],
+            "customization": "Personalized name, age number, choice of Barbie princess design"
+          },
+          {
+            "id": "royal-crown-owethu-10th-birthday-cake",
+            "name": "Royal Crown Princess Cake",
+            "description": "Majestic three-tier princess cake featuring golden crown topper, quilted fondant design with pink hearts, and luxurious ruffled base tier.",
+            "image": "/images/princess-cakes/royal-crown-owethu-10th-birthday-cake.jpeg",
+            "price": "R1150",
+            "sizes": ["Multi-tier only"],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
+            "customization": "Custom name lettering, age number, crown color options, heart decoration colors"
+          },
+          {
+            "id": "unicorn-celokuhle-5th-birthday-cake",
+            "name": "Magical Unicorn Princess Castle",
+            "description": "Enchanting three-tier unicorn princess cake with rainbow-maned unicorn, colorful flowers, mushroom decorations, and magical garden elements.",
+            "image": "/images/princess-cakes/unicorn-celokuhle-5th-birthday-cake.jpeg",
+            "price": "R1100",
+            "sizes": ["Multi-tier only"],
+            "flavors": ["Vanilla", "Strawberry", "Funfetti", "Red Velvet"],
+            "customization": "Personalized name, age number, unicorn color options, flower color selection"
+          }
+        ]
       },
       "super-hero-cakes": {
         "name": "Super hero cakes",
