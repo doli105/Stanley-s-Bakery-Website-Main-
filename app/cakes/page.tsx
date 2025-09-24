@@ -1140,6 +1140,10 @@ export default function CakesPage() {
                       }
                       alt={item.name}
                       className="w-full h-full object-contain"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert")}`
+                      }}
                     />
                   </div>
                   <h3 className={`font-semibold text-base sm:text-base ${category.textColor} mb-2 sm:mb-2`}>

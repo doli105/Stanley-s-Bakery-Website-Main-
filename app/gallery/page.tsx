@@ -519,6 +519,10 @@ export default function Gallery() {
                             src={cake.image || "/placeholder.svg"}
                             alt={cake.name}
                             className="w-full h-48 object-contain transition-all duration-500 group-hover:scale-110 p-3 group-hover:p-2"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement
+                              target.src = `/placeholder.svg?height=200&width=300&query=${encodeURIComponent(cake.name + " cake")}`
+                            }}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                           <Badge className="absolute top-3 left-3 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 text-white font-medium px-2 py-1 text-xs backdrop-blur-sm border border-yellow-400/30 shadow-lg hover:shadow-xl transition-all duration-500">

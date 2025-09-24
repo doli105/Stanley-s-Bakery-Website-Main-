@@ -49,8 +49,8 @@ export default function Header() {
                 priority
               />
             ) : (
-              <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-pink-500 rounded-lg shadow-md flex items-center justify-center">
-                <span className="text-white font-bold text-xs sm:text-sm">SB</span>
+              <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-gradient-to-r from-amber-400 to-amber-500 rounded-lg shadow-md flex items-center justify-center">
+                <span className="text-white font-bold text-xs sm:text-sm font-dancing-script">SB</span>
               </div>
             )}
             <div className="block">
