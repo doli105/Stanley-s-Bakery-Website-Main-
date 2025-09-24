@@ -193,7 +193,52 @@
       },
       "sport-man-cakes": {
         "name": "Sport man cakes",
-        "items": []
+        "items": [
+          {
+            "id": "arsenal-football-cake",
+            "name": "Arsenal Football Team Cake",
+            "description": "Spectacular Arsenal FC themed cake featuring the iconic Arsenal logo, player jerseys (Odegaard #8, Rice #41), realistic soccer balls, and personalized name on the base. Perfect for Arsenal fans and football enthusiasts celebrating birthdays or special occasions.",
+            "basePrice": 580,
+            "image": "/images/sports-cakes/arsenal-football-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 580 },
+              { "name": "Large (10 inch)", "price": 680 },
+              { "name": "Extra Large (12 inch)", "price": 780 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Player Names/Numbers", "price": 0 },
+              { "name": "Custom Team Name on Base", "price": 0 },
+              { "name": "Additional Soccer Ball Decorations", "price": 35 },
+              { "name": "Team Jersey Toppers", "price": 45 },
+              { "name": "Premium Team Logo", "price": 40 },
+              { "name": "Gold Pearl Decorations", "price": 30 }
+            ]
+          },
+          {
+            "id": "manchester-city-cake",
+            "name": "Manchester City Football Cake",
+            "description": "Stunning Manchester City themed cake with sky blue decorations, official Manchester City logo, soccer balls, balloon cluster, age number, and personalized name. Ideal for Manchester City supporters and football birthday celebrations.",
+            "basePrice": 560,
+            "image": "/images/sports-cakes/manchester-city-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 560 },
+              { "name": "Large (10 inch)", "price": 660 },
+              { "name": "Extra Large (12 inch)", "price": 760 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Blue Balloon Cluster", "price": 40 },
+              { "name": "Additional Soccer Ball Decorations", "price": 35 },
+              { "name": "Team Logo Enhancement", "price": 40 },
+              { "name": "Sky Blue Ombre Effect", "price": 45 }
+            ]
+          }
+        ]
       },
       "car-lovers-cakes": {
         "name": "Car lovers cakes",
