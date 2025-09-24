@@ -802,6 +802,126 @@
               { "name": "Dragon Ball Set (7 pieces)", "price": 70 },
               { "name": "Additional DBZ Characters", "price": 75 }
             ]
+          },
+          {
+            "id": "spongebob-1st-birthday-cake",
+            "name": "SpongeBob SquarePants 1st Birthday Cake",
+            "description": "Fun SpongeBob SquarePants cake with yellow frosting featuring SpongeBob's iconic face with big eyes and smile, stick arms extending from the sides, various SpongeBob characters on top with number '1', and 'THAPELO' personalized on the base. Perfect for young SpongeBob fans.",
+            "basePrice": 580,
+            "image": "/images/superhero-cakes/spongebob-1st-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 580 },
+              { "name": "Large (10 inch)", "price": 680 },
+              { "name": "Extra Large (12 inch)", "price": 780 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Lemon", "Pineapple"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "SpongeBob Character Toppers", "price": 60 },
+              { "name": "Stick Arms Feature", "price": 35 },
+              { "name": "Additional Bikini Bottom Characters", "price": 55 },
+              { "name": "Yellow Crumb Coating", "price": 25 }
+            ]
+          },
+          {
+            "id": "minecraft-lesego-birthday-cake",
+            "name": "Minecraft Adventure Birthday Cake",
+            "description": "Epic two-tier Minecraft cake with green grass top tier and brown dirt bottom tier, featuring Minecraft characters on top including Steve, Creeper, and others, TNT blocks, 'LESEGO' name topper, and authentic Minecraft logo. Perfect for gaming enthusiasts and Minecraft fans.",
+            "basePrice": 650,
+            "image": "/images/superhero-cakes/minecraft-lesego-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 650 },
+              { "name": "Large Two-Tier", "price": 750 },
+              { "name": "Premium Two-Tier", "price": 850 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Chocolate",
+              "Vanilla & Funfetti",
+              "Chocolate & Cookies & Cream"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name Topper", "price": 0 },
+              { "name": "Minecraft Character Set", "price": 70 },
+              { "name": "TNT Block Decorations", "price": 45 },
+              { "name": "Creeper Face Enhancement", "price": 40 },
+              { "name": "Additional Minecraft Elements", "price": 60 },
+              { "name": "Pixelated Design Details", "price": 50 }
+            ]
+          },
+          {
+            "id": "numberblocks-5-amo-cake",
+            "name": "Numberblocks 5 Educational Birthday Cake",
+            "description": "Educational Numberblocks cake with blue frosting featuring colorful number characters on top including number '5' with rainbow, white clouds, and 'AMO' written on the side. Perfect for young learners celebrating with their favorite educational characters.",
+            "basePrice": 520,
+            "image": "/images/superhero-cakes/numberblocks-5-amo-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 520 },
+              { "name": "Large (10 inch)", "price": 620 },
+              { "name": "Extra Large (12 inch)", "price": 720 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Side", "price": 0 },
+              { "name": "Custom Number Character", "price": 0 },
+              { "name": "Rainbow Decoration", "price": 40 },
+              { "name": "Cloud Decorations", "price": 30 },
+              { "name": "Additional Number Characters", "price": 55 },
+              { "name": "Educational Theme Enhancement", "price": 45 }
+            ]
+          },
+          {
+            "id": "paw-patrol-angela-3rd-birthday-cake",
+            "name": "Paw Patrol Angela 3rd Birthday Cake",
+            "description": "Adorable two-tier Paw Patrol cake with pink top tier and blue bottom tier, featuring Paw Patrol characters on top including Chase, Marshall, Skye, and Rubble, number '3', blue and red balloon clusters, and 'ANGELA' personalized on the base. Perfect for Paw Patrol fans.",
+            "basePrice": 580,
+            "image": "/images/superhero-cakes/paw-patrol-angela-3rd-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 580 },
+              { "name": "Large Two-Tier", "price": 680 },
+              { "name": "Premium Two-Tier", "price": 780 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Strawberry)",
+              "Double Vanilla",
+              "Vanilla & Chocolate",
+              "Strawberry & Funfetti"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Paw Patrol Character Set", "price": 65 },
+              { "name": "Blue & Red Balloon Clusters", "price": 40 },
+              { "name": "Paw Patrol Badge Enhancement", "price": 45 },
+              { "name": "Additional Pup Characters", "price": 60 }
+            ]
+          },
+          {
+            "id": "mickey-mouse-1st-birthday-cake",
+            "name": "Mickey Mouse 1st Birthday Cake",
+            "description": "Classic Mickey Mouse cake with blue frosting featuring Mickey's iconic face and white gloved hands, number '1' with star decorations, silver and teal star toppers, and letter cookies around the base. Perfect for Disney fans and first birthday celebrations.",
+            "basePrice": 550,
+            "image": "/images/superhero-cakes/mickey-mouse-1st-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Cookies & Cream"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Letter Cookie Set", "price": 45 },
+              { "name": "Mickey Mouse Ears Enhancement", "price": 40 },
+              { "name": "Star Topper Decorations", "price": 35 },
+              { "name": "Disney Character Addition", "price": 60 },
+              { "name": "White Glove Details", "price": 30 }
+            ]
           }
         ]
       },
