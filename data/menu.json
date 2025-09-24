@@ -316,7 +316,86 @@
       },
       "frozen-cakes": {
         "name": "Frozen cakes",
-        "items": []
+        "items": [
+          {
+            "id": "olaf-elsa-4th-birthday-cake",
+            "name": "Olaf & Elsa 4th Birthday Cake",
+            "description": "Magical Frozen-themed cake featuring beloved Olaf snowman topper with his signature smile and stick arms, plus Elsa portrait on the side. Decorated with blue and white winter theme, snowflakes, spherical decorations, and personalized name around the base. Perfect for young Frozen fans celebrating their special day.",
+            "basePrice": 520,
+            "image": "/images/frozen-cakes/olaf-elsa-4th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 520 },
+              { "name": "Large (10 inch)", "price": 620 },
+              { "name": "Extra Large (12 inch)", "price": 720 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Additional Snowflake Decorations", "price": 35 },
+              { "name": "Blue & White Sphere Decorations", "price": 40 },
+              { "name": "Olaf Character Topper", "price": 60 },
+              { "name": "Elsa Portrait Enhancement", "price": 45 }
+            ]
+          },
+          {
+            "id": "elsa-let-it-go-9th-birthday-cake",
+            "name": "Elsa 'Let It Go' 9th Birthday Cake",
+            "description": "Spectacular three-tier Frozen cake featuring Elsa portrait on top tier with 'LET IT GO' text and number topper. Beautiful blue ombre ruffled layers transitioning from white to deep blue, decorated with snowflakes and sparkly base. A show-stopping centerpiece for any Frozen celebration.",
+            "basePrice": 750,
+            "image": "/images/frozen-cakes/elsa-let-it-go-9th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Three-Tier", "price": 750 },
+              { "name": "Large Three-Tier", "price": 850 },
+              { "name": "Premium Three-Tier", "price": 950 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla, Chocolate, Strawberry)",
+              "All Vanilla Tiers",
+              "Vanilla & Chocolate Mix",
+              "Funfetti & Vanilla Mix"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name Addition", "price": 0 },
+              { "name": "Blue Ombre Ruffles", "price": 60 },
+              { "name": "Snowflake Decorations", "price": 45 },
+              { "name": "Sparkly Base Enhancement", "price": 40 },
+              { "name": "Elsa Portrait Upgrade", "price": 50 },
+              { "name": "Additional Tier", "price": 200 }
+            ]
+          },
+          {
+            "id": "elsa-enzo-4th-birthday-cake",
+            "name": "Elsa Enzo 4th Birthday Cake",
+            "description": "Enchanting two-tier Frozen cake with light blue frosting featuring Elsa portraits on both tiers, 'Happy Birthday' and number '4' toppers, white snowflake decorations, and blue & purple balloon clusters. Personalized with 'ENZO' on the base and decorated with pearl accents for a winter wonderland effect.",
+            "basePrice": 580,
+            "image": "/images/frozen-cakes/elsa-enzo-4th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 580 },
+              { "name": "Large Two-Tier", "price": 680 },
+              { "name": "Premium Two-Tier", "price": 780 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Vanilla",
+              "Vanilla & Strawberry",
+              "Chocolate & Funfetti"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Blue & Purple Balloon Clusters", "price": 45 },
+              { "name": "White Snowflake Decorations", "price": 35 },
+              { "name": "Pearl Accent Decorations", "price": 40 },
+              { "name": "Dual Elsa Portraits", "price": 55 },
+              { "name": "Winter Wonderland Theme Enhancement", "price": 50 }
+            ]
+          }
+        ]
       },
       "spiderman-cakes": {
         "name": "Spiderman cakes",
