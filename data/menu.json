@@ -512,6 +512,35 @@
               { "name": "Dual Elsa Portraits", "price": 55 },
               { "name": "Winter Wonderland Theme Enhancement", "price": 50 }
             ]
+          },
+          {
+            "id": "frozen-elsa-castle-cake",
+            "name": "Elsa's Ice Castle Cake",
+            "description": "A magical three-tier castle cake inspired by Elsa's ice palace, featuring shimmering blue and white fondant with edible snowflakes and crystal decorations",
+            "image": "/images/frozen-cakes/elsa-ice-castle-cake.jpeg",
+            "basePrice": 850,
+            "sizes": [
+              { "name": "Small (serves 15-20)", "price": 850 },
+              { "name": "Medium (serves 25-30)", "price": 1050 },
+              { "name": "Large (serves 35-40)", "price": 1250 }
+            ],
+            "flavors": [
+              { "name": "Vanilla", "price": 0 },
+              { "name": "Chocolate", "price": 0 },
+              { "name": "Red Velvet", "price": 50 },
+              { "name": "Lemon", "price": 25 }
+            ],
+            "personalization": [
+              { "name": "Custom name on cake", "price": 50 },
+              { "name": "Age number topper", "price": 30 },
+              { "name": "Custom message", "price": 40 }
+            ],
+            "extras": [
+              { "name": "Extra Frozen figurines", "price": 80 },
+              { "name": "LED lights for castle", "price": 120 },
+              { "name": "Edible glitter", "price": 25 },
+              { "name": "Matching cupcakes (dozen)", "price": 180 }
+            ]
           }
         ]
       },
@@ -1428,7 +1457,101 @@
       },
       "baby-shower-cakes": {
         "name": "Baby shower cakes",
-        "items": []
+        "items": [
+          {
+            "id": "timothy-teddy-bear-balloon-cake",
+            "name": "Timothy Teddy Bear Balloon Cake",
+            "description": "Adorable single-tier white cake featuring a handcrafted brown teddy bear sitting on a toy car base. Decorated with blue and beige balloon cake pops on wooden sticks creating a whimsical balloon bouquet effect. Perfect for baby boy showers with personalized name plaque.",
+            "image": "/images/baby-shower-cakes/timothy-teddy-bear-balloon-cake.jpeg",
+            "basePrice": 450,
+            "sizes": [
+              { "name": "6 inch", "serves": "8-10", "price": 450 },
+              { "name": "8 inch", "serves": "12-15", "price": 550 },
+              { "name": "10 inch", "serves": "20-25", "price": 650 }
+            ],
+            "flavors": [
+              "Vanilla sponge with vanilla buttercream",
+              "Chocolate sponge with chocolate ganache",
+              "Red velvet with cream cheese frosting",
+              "Lemon sponge with lemon buttercream",
+              "Strawberry sponge with strawberry buttercream"
+            ],
+            "personalization": [
+              { "name": "Custom name plaque", "price": 50 },
+              { "name": "Age number", "price": 30 },
+              { "name": "Custom message", "price": 40 },
+              { "name": "Color scheme change", "price": 25 }
+            ],
+            "extras": [
+              { "name": "Additional balloon cake pops (set of 3)", "price": 45 },
+              { "name": "Extra teddy bear decoration", "price": 60 },
+              { "name": "Sparkly cake board upgrade", "price": 35 },
+              { "name": "Gift box packaging", "price": 25 }
+            ]
+          },
+          {
+            "id": "kylian-turns-one-teddy-bears-cake",
+            "name": "Kylian Turns One Teddy Bears Cake",
+            "description": "Sophisticated two-tier cake with white top tier and blue striped bottom tier. Features elegant gold script lettering and adorable brown teddy bears with blue bow ties positioned around the cake. Decorated with beautiful blue, white, and grey balloon arrangements.",
+            "image": "/images/baby-shower-cakes/kylian-turns-one-teddy-bears-cake.jpeg",
+            "basePrice": 650,
+            "sizes": [
+              { "name": "6+8 inch tiers", "serves": "20-25", "price": 650 },
+              { "name": "8+10 inch tiers", "serves": "30-35", "price": 750 },
+              { "name": "6+8+10 inch tiers", "serves": "40-45", "price": 950 }
+            ],
+            "flavors": [
+              "Vanilla sponge with vanilla buttercream",
+              "Chocolate sponge with chocolate ganache",
+              "Red velvet with cream cheese frosting",
+              "Lemon sponge with lemon buttercream",
+              "Mixed flavors (different per tier)"
+            ],
+            "personalization": [
+              { "name": "Custom name and age", "price": 60 },
+              { "name": "Custom message", "price": 50 },
+              { "name": "Color scheme change", "price": 40 },
+              { "name": "Bow tie color change", "price": 20 }
+            ],
+            "extras": [
+              { "name": "Additional teddy bears (set of 2)", "price": 80 },
+              { "name": "Extra balloon arrangements", "price": 55 },
+              { "name": "Gold lettering upgrade", "price": 45 },
+              { "name": "Premium cake stand", "price": 40 }
+            ]
+          },
+          {
+            "id": "baby-boy-hot-air-balloon-cake",
+            "name": "Baby Boy Hot Air Balloon Cake",
+            "description": "Stunning single-tier cake with artistic blue and white watercolor brushstroke effect and gold accents. Features elegant gold script 'Baby Boy' lettering, blue and white hot air balloon toppers, and an elaborate balloon garland in blue, white, gold, and grey tones.",
+            "image": "/images/baby-shower-cakes/baby-boy-hot-air-balloon-cake.jpeg",
+            "basePrice": 550,
+            "sizes": [
+              { "name": "6 inch", "serves": "8-10", "price": 550 },
+              { "name": "8 inch", "serves": "12-15", "price": 650 },
+              { "name": "10 inch", "serves": "20-25", "price": 750 }
+            ],
+            "flavors": [
+              "Vanilla sponge with vanilla buttercream",
+              "Chocolate sponge with chocolate ganache",
+              "Red velvet with cream cheese frosting",
+              "Lemon sponge with lemon buttercream",
+              "Funfetti with vanilla buttercream"
+            ],
+            "personalization": [
+              { "name": "Custom message instead of 'Baby Boy'", "price": 50 },
+              { "name": "Name addition", "price": 40 },
+              { "name": "Color scheme change", "price": 45 },
+              { "name": "Hot air balloon color change", "price": 30 }
+            ],
+            "extras": [
+              { "name": "Additional hot air balloons", "price": 60 },
+              { "name": "Extended balloon garland", "price": 70 },
+              { "name": "Gold leaf accents", "price": 55 },
+              { "name": "Watercolor effect enhancement", "price": 40 }
+            ]
+          }
+        ]
       },
       "custom-corporate-cakes": {
         "name": "Custom and corporate cakes",
