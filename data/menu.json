@@ -706,7 +706,165 @@
       },
       "jungle-cakes": {
         "name": "Jungle Cakes",
-        "items": []
+        "items": [
+          {
+            "id": "safari-lwandile-7th-birthday-cake",
+            "name": "Safari Lwandile 7th Birthday Cake",
+            "description": "Sophisticated two-tier safari adventure cake with elegant green marble effect frosting, featuring golden safari animals including giraffe, elephant, and lion. Decorated with black tropical leaves, pampas grass, and a stunning balloon garland in gold, green, black and white colors. Perfect for safari-themed celebrations with 'LWANDILE 7' personalization.",
+            "basePrice": 750,
+            "image": "/images/jungle-cakes/safari-lwandile-7th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 750 },
+              { "name": "Large Two-Tier", "price": 850 },
+              { "name": "Premium Two-Tier", "price": 950 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Vanilla",
+              "Vanilla & Caramel",
+              "Chocolate & Vanilla"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Golden Safari Animal Set", "price": 80 },
+              { "name": "Balloon Garland Enhancement", "price": 60 },
+              { "name": "Tropical Leaves & Pampas Grass", "price": 45 },
+              { "name": "Marble Effect Upgrade", "price": 50 },
+              { "name": "Additional Safari Animals", "price": 70 }
+            ]
+          },
+          {
+            "id": "lion-king-oreha-1st-birthday-cake",
+            "name": "Lion King Oreha 1st Birthday Cake",
+            "description": "Delightful Lion King themed cake featuring beloved characters Simba, Timon and Pumbaa with wooden 'OREHA' sign and number '1' topper. Decorated with tropical leaves and sandy base decoration creating an authentic Pride Lands atmosphere. Perfect for young Lion King fans with colorful and child-friendly design.",
+            "basePrice": 580,
+            "image": "/images/jungle-cakes/lion-king-oreha-1st-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 580 },
+              { "name": "Large (10 inch)", "price": 680 },
+              { "name": "Extra Large (12 inch)", "price": 780 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Banana"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name Sign", "price": 0 },
+              { "name": "Lion King Character Set", "price": 65 },
+              { "name": "Wooden Sign Enhancement", "price": 40 },
+              { "name": "Tropical Leaves Decoration", "price": 35 },
+              { "name": "Sandy Base Effect", "price": 30 },
+              { "name": "Additional Pride Lands Characters", "price": 60 }
+            ]
+          },
+          {
+            "id": "dinosaur-ugochukwu-3rd-birthday-cake",
+            "name": "Dinosaur Ugochukwu 3rd Birthday Cake",
+            "description": "Exciting two-tier dinosaur jungle cake with 'Happy 3rd Birthday' banner featuring various colorful dinosaur characters on top including T-Rex, Triceratops, and Pterodactyl. Green and white tiers decorated with tropical foliage and 'UGOCHUKWU' personalization. Perfect for young dinosaur enthusiasts and prehistoric adventure themes.",
+            "basePrice": 620,
+            "image": "/images/jungle-cakes/dinosaur-ugochukwu-3rd-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 620 },
+              { "name": "Large Two-Tier", "price": 720 },
+              { "name": "Premium Two-Tier", "price": 820 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Double Vanilla",
+              "Vanilla & Funfetti",
+              "Chocolate & Strawberry"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Side", "price": 0 },
+              { "name": "Dinosaur Character Set", "price": 70 },
+              { "name": "Happy Birthday Banner", "price": 35 },
+              { "name": "Tropical Foliage Decorations", "price": 40 },
+              { "name": "Additional Dinosaur Species", "price": 65 },
+              { "name": "Prehistoric Landscape Enhancement", "price": 55 }
+            ]
+          },
+          {
+            "id": "lion-king-mvelo-safari-cake",
+            "name": "Lion King Mvelo Safari Cake",
+            "description": "Spectacular two-tier Lion King themed cake with Simba and Mufasa on top tier, featuring beloved characters like Timon and Pumbaa around the sides. Beautiful sunset colors with orange and blue tiers, elephant silhouettes, and 'MVELO' personalization on the base. Perfect for celebrating with the Circle of Life theme.",
+            "basePrice": 680,
+            "image": "/images/jungle-cakes/lion-king-mvelo-safari-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 680 },
+              { "name": "Large Two-Tier", "price": 780 },
+              { "name": "Premium Two-Tier", "price": 880 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Orange & Vanilla",
+              "Chocolate & Caramel",
+              "Vanilla & Strawberry"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Simba & Mufasa Character Toppers", "price": 75 },
+              { "name": "Timon & Pumbaa Side Characters", "price": 60 },
+              { "name": "Sunset Color Enhancement", "price": 45 },
+              { "name": "Elephant Silhouette Decorations", "price": 40 },
+              { "name": "Circle of Life Theme Elements", "price": 55 },
+              { "name": "Additional Pride Rock Characters", "price": 70 }
+            ]
+          },
+          {
+            "id": "safari-dithoriso-jungle-animals-cake",
+            "name": "Safari Dithoriso Jungle Animals Cake",
+            "description": "Amazing two-tier safari cake with blue and green colors featuring a wonderful collection of jungle animals including lion, monkey, giraffe, tiger, and zebra. Decorated with wooden 'DITHORISO' sign, tropical leaves, and lush foliage decorations creating an authentic jungle safari experience.",
+            "basePrice": 650,
+            "image": "/images/jungle-cakes/safari-dithoriso-jungle-animals-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 650 },
+              { "name": "Large Two-Tier", "price": 750 },
+              { "name": "Premium Two-Tier", "price": 850 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla & Chocolate)",
+              "Tropical Fruit & Vanilla",
+              "Coconut & Vanilla",
+              "Chocolate & Banana"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name Sign", "price": 0 },
+              { "name": "Complete Safari Animal Set", "price": 85 },
+              { "name": "Wooden Sign Enhancement", "price": 40 },
+              { "name": "Tropical Leaves & Foliage", "price": 50 },
+              { "name": "Additional Jungle Animals", "price": 75 },
+              { "name": "Safari Landscape Enhancement", "price": 60 }
+            ]
+          },
+          {
+            "id": "safari-mzands-6th-birthday-cake",
+            "name": "Safari Mzands 6th Birthday Cake",
+            "description": "Beautiful green jungle-themed cake with '6' number featuring an amazing collection of safari animals including lion, giraffe, monkey, zebra, and elephant. Decorated with 'Mzands' topper, tropical monstera leaves, and wooden tree trunk base design creating a complete jungle adventure experience.",
+            "basePrice": 620,
+            "image": "/images/jungle-cakes/safari-mzands-6th-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 620 },
+              { "name": "Large (10 inch)", "price": 720 },
+              { "name": "Extra Large (12 inch)", "price": 820 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Coconut", "Banana"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name Topper", "price": 0 },
+              { "name": "Complete Safari Animal Collection", "price": 80 },
+              { "name": "Monstera Leaves Decoration", "price": 45 },
+              { "name": "Tree Trunk Base Design", "price": 50 },
+              { "name": "Additional Safari Elements", "price": 65 },
+              { "name": "Jungle Adventure Enhancement", "price": 55 }
+            ]
+          }
+        ]
       },
       "princess-cakes": {
         "name": "Princess cakes",
