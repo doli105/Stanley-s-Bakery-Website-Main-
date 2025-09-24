@@ -327,6 +327,55 @@
               { "name": "Premium Gold Lettering", "price": 45 },
               { "name": "Additional Tier", "price": 200 }
             ]
+          },
+          {
+            "id": "black-gold-luxury-birthday-cake",
+            "name": "Black & Gold Luxury Birthday Cake",
+            "description": "Sophisticated two-tier black cake with stunning gold drip details and dramatic black fan decorations on top. Features gold and black spherical decorations arranged elegantly around both tiers, with personalized name on the base. Perfect for milestone celebrations and luxury birthday events.",
+            "basePrice": 680,
+            "image": "/images/gentleman-cakes/black-gold-luxury-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Two-Tier", "price": 680 },
+              { "name": "Large Two-Tier", "price": 780 },
+              { "name": "Premium Two-Tier", "price": 880 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Chocolate & Vanilla)",
+              "Double Chocolate",
+              "Chocolate & Red Velvet",
+              "Coffee & Chocolate"
+            ],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Black Fan Decorations", "price": 45 },
+              { "name": "Gold Drip Enhancement", "price": 40 },
+              { "name": "Gold & Black Sphere Decorations", "price": 55 },
+              { "name": "Premium Black Cake Finish", "price": 50 },
+              { "name": "Additional Tier", "price": 200 }
+            ]
+          },
+          {
+            "id": "best-dad-husband-family-cake",
+            "name": "Best Dad & Husband Family Cake",
+            "description": "Heartwarming white cake celebrating fatherhood with 'BEST DAD & HUSBAND' text and beautiful family silhouettes around the sides. Topped with black and silver spherical decorations and 'Happy Birthday' script topper. Perfect for honoring fathers and celebrating family bonds.",
+            "basePrice": 520,
+            "image": "/images/gentleman-cakes/best-dad-husband-family-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 520 },
+              { "name": "Large (10 inch)", "price": 620 },
+              { "name": "Extra Large (12 inch)", "price": 720 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Funfetti"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Family Silhouettes", "price": 0 },
+              { "name": "Custom Title Text", "price": 0 },
+              { "name": "Black & Silver Sphere Decorations", "price": 45 },
+              { "name": "Family Photo Integration", "price": 50 },
+              { "name": "Premium Script Topper", "price": 35 },
+              { "name": "Custom Message Addition", "price": 0 }
+            ]
           }
         ]
       },
@@ -468,7 +517,75 @@
       },
       "spiderman-cakes": {
         "name": "Spiderman cakes",
-        "items": []
+        "items": [
+          {
+            "id": "spiderman-cityscape-cake",
+            "name": "Spider-Man Cityscape Adventure Cake",
+            "description": "Epic Spider-Man themed cake featuring a dramatic cityscape design with Spider-Man mask on the front, various Spider-Man character toppers including different Spider-Man variants, spider web decorations, and red & black balloon clusters. Perfect for superhero fans with 'ROWAN' personalization on black base.",
+            "basePrice": 620,
+            "image": "/images/spiderman-cakes/spiderman-cityscape-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 620 },
+              { "name": "Large (10 inch)", "price": 720 },
+              { "name": "Extra Large (12 inch)", "price": 820 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Additional Spider-Man Toppers", "price": 45 },
+              { "name": "Red & Black Balloon Clusters", "price": 40 },
+              { "name": "Spider Web Decorations", "price": 35 },
+              { "name": "Cityscape Enhancement", "price": 50 },
+              { "name": "Multiple Spider-Man Variants", "price": 60 }
+            ]
+          },
+          {
+            "id": "classic-spiderman-web-cake",
+            "name": "Classic Spider-Man Web Cake",
+            "description": "Traditional Spider-Man cake with vibrant red frosting covered in white spider web piping, featuring Spider-Man character images around the sides, number topper, and 'SPIDER-MAN' logo topper. Includes personalized name on base for the ultimate Spider-Man birthday celebration.",
+            "basePrice": 580,
+            "image": "/images/spiderman-cakes/classic-spiderman-web-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 580 },
+              { "name": "Large (10 inch)", "price": 680 },
+              { "name": "Extra Large (12 inch)", "price": 780 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Spider Web Piping Enhancement", "price": 35 },
+              { "name": "Spider-Man Character Images", "price": 40 },
+              { "name": "Logo Topper Upgrade", "price": 45 },
+              { "name": "Red & Blue Color Scheme", "price": 30 }
+            ]
+          },
+          {
+            "id": "tall-spiderman-city-cake",
+            "name": "Tall Spider-Man City Tower Cake",
+            "description": "Impressive tall blue Spider-Man cake with the iconic Spider-Man mask prominently displayed on the front, cityscape toppers with Spider-Man figures, custom name and number toppers, and red & blue balloon decorations. Features modern comic book design elements perfect for superhero celebrations.",
+            "basePrice": 650,
+            "image": "/images/spiderman-cakes/tall-spiderman-city-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Tall", "price": 650 },
+              { "name": "Large Tall", "price": 750 },
+              { "name": "Extra Large Tall", "price": 850 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Blue Velvet"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name Topper", "price": 0 },
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Cityscape Topper Set", "price": 55 },
+              { "name": "Spider-Man Figure Toppers", "price": 50 },
+              { "name": "Red & Blue Balloon Decorations", "price": 45 },
+              { "name": "Comic Book Style Elements", "price": 40 },
+              { "name": "Spider-Man Mask Enhancement", "price": 45 }
+            ]
+          }
+        ]
       },
       "cocomelon-cakes": {
         "name": "Cocomelon Cakes",
