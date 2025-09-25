@@ -1159,7 +1159,9 @@ export default function CakesPage() {
                         id: `${category.key}-${item.name}`,
                         name: item.name,
                         description: item.description,
-                        basePrice: Number.parseFloat(item.price?.replace(/[^\d.]/g, "") || "0"),
+                        basePrice: Number.parseFloat(
+                          item.basePrice?.toString() || item.price?.replace(/[^\\d.]/g, "") || "0",
+                        ),
                         image: item.image,
                         category: category.name,
                         pricing: item.pricing,

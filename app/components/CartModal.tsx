@@ -75,7 +75,7 @@ export default function CartModal({ isOpen, onClose }: CartModalProps) {
                       {item.customizations?.flavor && (
                         <p className="text-xs text-amber-600">Flavor: {item.customizations.flavor.name}</p>
                       )}
-                      <p className="font-bold text-amber-800">R{item.price}</p>
+                      <p className="font-bold text-amber-800">R{item.price.toFixed(2)}</p>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Button

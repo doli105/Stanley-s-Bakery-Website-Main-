@@ -30,7 +30,7 @@ export default function AddToCartButton({
     const cartItem = {
       id: cake.id || `${category}-${subcategory}-${cake.name}`,
       name: cake.name,
-      price: cake.basePrice || cake.price || 0,
+      price: cake.basePrice || Number.parseFloat(cake.price?.toString().replace(/[^\\d.]/g, "") || "0"),
       category: `${category} - ${subcategory}`,
       subcategory,
       serves: cake.serves || "1 person",
