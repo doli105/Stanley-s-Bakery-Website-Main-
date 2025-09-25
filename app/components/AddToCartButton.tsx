@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 import { ShoppingCart, Plus } from "lucide-react"
 import { useCart } from "./CartContext"
 import CakeCustomizationModal from "./CakeCustomizationModal"

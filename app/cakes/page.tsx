@@ -1,10 +1,11 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { ArrowLeft, ShoppingCart, Phone } from "lucide-react"
+import { ArrowLeft, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import AddToCartButton from "../components/AddToCartButton"
 
 const romanCreamCookies = [
   {
@@ -1153,17 +1154,22 @@ export default function CakesPage() {
                     >
                       {item.price}
                     </Badge>
-                    <Button
-                      size="default"
-                      className="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 min-h-[44px] flex-shrink-0"
-                      onClick={() => {
-                        const message = `Hi! I'd like to order: ${item.name} (${item.price})`
-                        window.open(`https://wa.me/27123456789?text=${encodeURIComponent(message)}`, "_blank")
+                    <AddToCartButton
+                      cake={{
+                        id: `${category.key}-${item.name}`,
+                        name: item.name,
+                        description: item.description,
+                        basePrice: Number.parseFloat(item.price?.replace(/[^\d.]/g, "") || "0"),
+                        image: item.image,
+                        category: category.name,
+                        pricing: item.pricing,
                       }}
-                    >
-                      <ShoppingCart className="w-4 h-4 mr-2" />
-                      Order
-                    </Button>
+                      category={parentCategories.find((p) => p.id === selectedParentCategory)?.key || "general"}
+                      subcategory={category.key}
+                      variant="default"
+                      size="default"
+                      className="flex-shrink-0"
+                    />
                   </div>
                 </CardContent>
               </Card>
