@@ -1572,13 +1572,13 @@
             "id": "ginger-snap-cookies",
             "name": "Ginger Snap Cookies",
             "description": "Classic ginger snap cookies with warm spices and a perfectly crispy texture. These traditional cookies feature a beautiful crackled surface and rich ginger flavor that melts in your mouth.",
-            "basePrice": 75,
+            "basePrice": 37,
             "image": "/images/cookies/ginger-snap-cookies.jpeg",
             "sizes": [
-              { "name": "Small Pack (6 pieces)", "price": 75 },
-              { "name": "Medium Pack (12 pieces)", "price": 140 },
-              { "name": "Large Pack (18 pieces)", "price": 200 },
-              { "name": "Family Pack (24 pieces)", "price": 250 }
+              { "name": "190g Pack", "price": 37 },
+              { "name": "380g Pack", "price": 74 },
+              { "name": "570g Pack", "price": 111 },
+              { "name": "760g Pack", "price": 148 }
             ],
             "flavors": ["Traditional Ginger", "Spiced Ginger", "Molasses Ginger"],
             "customizable": true,
@@ -1593,13 +1593,13 @@
             "id": "chocolate-chip-cookies",
             "name": "Chocolate Chip Cookies",
             "description": "Soft-baked chocolate chip cookies loaded with premium dark chocolate chips. These golden-brown cookies offer the perfect balance of chewy texture and rich chocolate flavor in every bite.",
-            "basePrice": 85,
+            "basePrice": 37,
             "image": "/images/cookies/chocolate-chip-cookies.jpeg",
             "sizes": [
-              { "name": "Small Pack (6 pieces)", "price": 85 },
-              { "name": "Medium Pack (12 pieces)", "price": 160 },
-              { "name": "Large Pack (18 pieces)", "price": 230 },
-              { "name": "Family Pack (24 pieces)", "price": 290 }
+              { "name": "190g Pack", "price": 37 },
+              { "name": "380g Pack", "price": 74 },
+              { "name": "570g Pack", "price": 111 },
+              { "name": "760g Pack", "price": 148 }
             ],
             "flavors": [
               "Classic Chocolate Chip",
@@ -1620,13 +1620,13 @@
             "id": "sugar-cookies",
             "name": "Sugar Cookies",
             "description": "Classic buttery sugar cookies with a tender, melt-in-your-mouth texture and delicate vanilla flavor. These golden cookies have slightly crinkled edges and a perfectly sweet taste.",
-            "basePrice": 70,
+            "basePrice": 37,
             "image": "/images/cookies/sugar-cookies.jpeg",
             "sizes": [
-              { "name": "Small Pack (6 pieces)", "price": 70 },
-              { "name": "Medium Pack (12 pieces)", "price": 130 },
-              { "name": "Large Pack (18 pieces)", "price": 185 },
-              { "name": "Family Pack (24 pieces)", "price": 230 }
+              { "name": "190g Pack", "price": 37 },
+              { "name": "380g Pack", "price": 74 },
+              { "name": "570g Pack", "price": 111 },
+              { "name": "760g Pack", "price": 148 }
             ],
             "flavors": ["Classic Vanilla", "Lemon Sugar", "Almond Sugar", "Cinnamon Sugar"],
             "customizable": true,
@@ -1647,13 +1647,13 @@
             "id": "assorted-melting-moments-tray",
             "name": "Assorted Melting Moments Tray",
             "description": "Beautiful selection of buttery melting moment biscuits with decorative piped patterns in star and swirl designs. Each biscuit features the classic melt-in-your-mouth texture with colorful cherry and sprinkle decorations. Perfect for special occasions and gift giving.",
-            "basePrice": 120,
+            "basePrice": 35,
             "image": "/images/melting-moments/assorted-melting-moments-tray.jpeg",
             "sizes": [
-              { "name": "Small Tray (8 pieces)", "price": 120 },
-              { "name": "Medium Tray (12 pieces)", "price": 170 },
-              { "name": "Large Tray (16 pieces)", "price": 220 },
-              { "name": "Party Tray (24 pieces)", "price": 310 }
+              { "name": "180g Tray", "price": 35 },
+              { "name": "360g Tray", "price": 70 },
+              { "name": "540g Tray", "price": 105 },
+              { "name": "720g Tray", "price": 140 }
             ],
             "flavors": [
               "Classic Vanilla with Cherry",
@@ -1675,13 +1675,13 @@
             "id": "melting-moments-tub",
             "name": "Melting Moments Tub",
             "description": "Generous tub filled with traditional melting moment biscuits featuring the classic buttery shortbread texture with decorative piped ridges. Each biscuit melts delicately in your mouth and some are topped with colorful cherry decorations for extra sweetness.",
-            "basePrice": 180,
+            "basePrice": 35,
             "image": "/images/melting-moments/melting-moments-tub.jpeg",
             "sizes": [
-              { "name": "Small Tub (15 pieces)", "price": 180 },
-              { "name": "Medium Tub (25 pieces)", "price": 280 },
-              { "name": "Large Tub (35 pieces)", "price": 370 },
-              { "name": "Family Tub (50 pieces)", "price": 500 }
+              { "name": "180g Tub", "price": 35 },
+              { "name": "360g Tub", "price": 70 },
+              { "name": "540g Tub", "price": 105 },
+              { "name": "720g Tub", "price": 140 }
             ],
             "flavors": [
               "Traditional Vanilla",
@@ -1736,12 +1736,12 @@
             "id": "pink-coconut-snowballs",
             "name": "Pink Coconut Snowballs",
             "description": "Delightful round cake treats rolled in pink-tinted coconut flakes, creating a festive and colorful snowball effect. Soft, moist cake interior with sweet coconut coating that melts in your mouth.",
-            "basePrice": 95,
+            "basePrice": 42,
             "image": "/images/snowballs/pink-coconut-snowballs.jpeg",
             "sizes": [
-              { "name": "6-piece Pack", "price": 95 },
-              { "name": "12-piece Pack", "price": 180 },
-              { "name": "18-piece Pack", "price": 260 }
+              { "name": "6-piece Pack", "price": 42 },
+              { "name": "12-piece Pack", "price": 84 },
+              { "name": "18-piece Pack", "price": 126 }
             ],
             "flavors": [
               "Vanilla Cake with Pink Coconut",
@@ -1761,12 +1761,12 @@
             "id": "chocolate-coconut-snowballs",
             "name": "Chocolate Coconut Snowballs",
             "description": "Rich chocolate cake balls rolled in a mixture of chocolate crumbs and white coconut flakes, creating the perfect 'snow-covered' appearance. A classic treat with deep chocolate flavor.",
-            "basePrice": 100,
+            "basePrice": 42,
             "image": "/images/snowballs/chocolate-coconut-snowballs.jpeg",
             "sizes": [
-              { "name": "6-piece Pack", "price": 100 },
-              { "name": "12-piece Pack", "price": 190 },
-              { "name": "18-piece Pack", "price": 275 }
+              { "name": "6-piece Pack", "price": 42 },
+              { "name": "12-piece Pack", "price": 84 },
+              { "name": "18-piece Pack", "price": 126 }
             ],
             "flavors": [
               "Dark Chocolate with Coconut",
@@ -1791,13 +1791,13 @@
             "id": "chocolate-roman-creams",
             "name": "Chocolate Roman Creams",
             "description": "Classic chocolate Roman cream biscuits with rich cocoa flavor and smooth vanilla cream filling. These traditional oval-shaped sandwich biscuits offer the perfect balance of chocolate and cream in every bite.",
-            "basePrice": 85,
+            "basePrice": 49,
             "image": "/images/roman-creams/chocolate-roman-creams.jpeg",
             "sizes": [
-              { "name": "Small Pack (8 pieces)", "price": 85 },
-              { "name": "Medium Pack (12 pieces)", "price": 120 },
-              { "name": "Large Pack (16 pieces)", "price": 150 },
-              { "name": "Family Pack (24 pieces)", "price": 210 }
+              { "name": "280g Pack", "price": 49 },
+              { "name": "560g Pack", "price": 98 },
+              { "name": "840g Pack", "price": 147 },
+              { "name": "1120g Pack", "price": 196 }
             ],
             "flavors": ["Chocolate with Vanilla Cream", "Double Chocolate", "Chocolate with Strawberry Cream"],
             "customizable": true,
@@ -1812,13 +1812,13 @@
             "id": "vanilla-roman-creams",
             "name": "Vanilla Roman Creams",
             "description": "Traditional vanilla Roman cream biscuits with golden buttery cookies and rich vanilla cream filling. A timeless classic that melts in your mouth with every bite.",
-            "basePrice": 80,
+            "basePrice": 49,
             "image": "/images/roman-creams/vanilla-roman-creams.jpeg",
             "sizes": [
-              { "name": "Small Pack (8 pieces)", "price": 80 },
-              { "name": "Medium Pack (12 pieces)", "price": 115 },
-              { "name": "Large Pack (16 pieces)", "price": 145 },
-              { "name": "Family Pack (24 pieces)", "price": 200 }
+              { "name": "280g Pack", "price": 49 },
+              { "name": "560g Pack", "price": 98 },
+              { "name": "840g Pack", "price": 147 },
+              { "name": "1120g Pack", "price": 196 }
             ],
             "flavors": ["Classic Vanilla", "Vanilla with Lemon Cream", "Vanilla with Caramel Cream"],
             "customizable": true,
@@ -1833,13 +1833,13 @@
             "id": "red-velvet-roman-creams",
             "name": "Red Velvet Roman Creams",
             "description": "Luxurious red velvet Roman cream biscuits with vibrant red cocoa cookies and smooth cream cheese filling. A modern twist on the classic Roman cream with rich red velvet flavor.",
-            "basePrice": 95,
+            "basePrice": 49,
             "image": "/images/roman-creams/red-velvet-roman-creams.jpeg",
             "sizes": [
-              { "name": "Small Pack (8 pieces)", "price": 95 },
-              { "name": "Medium Pack (12 pieces)", "price": 135 },
-              { "name": "Large Pack (16 pieces)", "price": 170 },
-              { "name": "Family Pack (24 pieces)", "price": 240 }
+              { "name": "280g Pack", "price": 49 },
+              { "name": "560g Pack", "price": 98 },
+              { "name": "840g Pack", "price": 147 },
+              { "name": "1120g Pack", "price": 196 }
             ],
             "flavors": [
               "Red Velvet with Cream Cheese",
@@ -1957,13 +1957,13 @@
             "id": "red-velvet-crumb-cupcakes",
             "name": "Red Velvet Crumb Cupcakes",
             "description": "Decadent cupcakes topped with smooth vanilla buttercream frosting and sprinkled with red velvet cake crumbs. Each cupcake features elegant swirl piping and the perfect balance of sweet cream and rich red velvet flavor.",
-            "basePrice": 120,
+            "basePrice": 78,
             "image": "/images/cupcakes/red-velvet-crumb-cupcakes.jpeg",
             "sizes": [
-              { "name": "6-pack", "price": 120 },
-              { "name": "12-pack", "price": 220 },
-              { "name": "18-pack", "price": 310 },
-              { "name": "24-pack", "price": 390 }
+              { "name": "6-pack", "price": 78 },
+              { "name": "12-pack", "price": 156 },
+              { "name": "18-pack", "price": 234 },
+              { "name": "24-pack", "price": 312 }
             ],
             "flavors": [
               "Red Velvet with Vanilla Buttercream",
@@ -1983,13 +1983,13 @@
             "id": "chocolate-buttercream-cupcakes",
             "name": "Chocolate Buttercream Cupcakes",
             "description": "Rich chocolate cupcakes topped with luxurious chocolate buttercream frosting piped in perfect rose swirls. Made with premium cocoa for an intense chocolate experience that melts in your mouth.",
-            "basePrice": 110,
+            "basePrice": 78,
             "image": "/images/cupcakes/chocolate-buttercream-cupcakes.jpeg",
             "sizes": [
-              { "name": "6-pack", "price": 110 },
-              { "name": "12-pack", "price": 200 },
-              { "name": "18-pack", "price": 285 },
-              { "name": "24-pack", "price": 360 }
+              { "name": "6-pack", "price": 78 },
+              { "name": "12-pack", "price": 156 },
+              { "name": "18-pack", "price": 234 },
+              { "name": "24-pack", "price": 312 }
             ],
             "flavors": [
               "Double Chocolate",
@@ -2010,13 +2010,13 @@
             "id": "caramel-swirl-cupcakes",
             "name": "Caramel Swirl Cupcakes",
             "description": "Moist vanilla cupcakes topped with rich caramel buttercream frosting piped in elegant swirls. Each cupcake features decorative element and offers the perfect balance of vanilla cake and buttery caramel flavor.",
-            "basePrice": 115,
+            "basePrice": 78,
             "image": "/images/cupcakes/caramel-swirl-cupcakes.jpeg",
             "sizes": [
-              { "name": "6-pack", "price": 115 },
-              { "name": "12-pack", "price": 210 },
-              { "name": "18-pack", "price": 295 },
-              { "name": "24-pack", "price": 375 }
+              { "name": "6-pack", "price": 78 },
+              { "name": "12-pack", "price": 156 },
+              { "name": "18-pack", "price": 234 },
+              { "name": "24-pack", "price": 312 }
             ],
             "flavors": [
               "Vanilla with Caramel Buttercream",
@@ -2126,12 +2126,12 @@
             "id": "chocolate-drizzle-swiss-roll",
             "name": "Chocolate Drizzle Swiss Roll",
             "description": "Decadent chocolate Swiss roll filled with light vanilla cream and topped with an elegant chocolate drizzle pattern. A perfect balance of rich chocolate cake and smooth cream filling.",
-            "basePrice": 180,
+            "basePrice": 40,
             "image": "/images/swiss-rolls/chocolate-drizzle-swiss-roll.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 35 },
-              { "name": "Half Roll (4-5 slices)", "price": 180 },
-              { "name": "Full Roll (8-10 slices)", "price": 320 }
+              { "name": "Individual Roll", "price": 40 },
+              { "name": "2-pack", "price": 80 },
+              { "name": "4-pack", "price": 160 }
             ],
             "flavors": ["Chocolate Cake with Vanilla Cream", "Double Chocolate", "Chocolate with Strawberry Cream"],
             "customizable": true,
@@ -2146,12 +2146,12 @@
             "id": "chocolate-shavings-swiss-roll",
             "name": "Chocolate Shavings Swiss Roll",
             "description": "Rich chocolate Swiss roll with creamy white filling, generously topped with chocolate shavings and decorative chocolate pieces. A chocolate lover's dream dessert.",
-            "basePrice": 190,
+            "basePrice": 40,
             "image": "/images/swiss-rolls/chocolate-shavings-swiss-roll.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 38 },
-              { "name": "Half Roll (4-5 slices)", "price": 190 },
-              { "name": "Full Roll (8-10 slices)", "price": 340 }
+              { "name": "Individual Roll", "price": 40 },
+              { "name": "2-pack", "price": 80 },
+              { "name": "4-pack", "price": 160 }
             ],
             "flavors": [
               "Chocolate with Vanilla Cream",
@@ -2170,12 +2170,12 @@
             "id": "red-velvet-swiss-roll",
             "name": "Red Velvet Swiss Roll",
             "description": "Classic red velvet Swiss roll with smooth cream cheese filling, topped with red velvet crumbs for an authentic red velvet experience in every bite.",
-            "basePrice": 200,
+            "basePrice": 40,
             "image": "/images/swiss-rolls/red-velvet-swiss-roll.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 40 },
-              { "name": "Half Roll (4-5 slices)", "price": 200 },
-              { "name": "Full Roll (8-10 slices)", "price": 360 }
+              { "name": "Individual Roll", "price": 40 },
+              { "name": "2-pack", "price": 80 },
+              { "name": "4-pack", "price": 160 }
             ],
             "flavors": ["Traditional Red Velvet with Cream Cheese", "Red Velvet with Vanilla Cream"],
             "customizable": true,
@@ -2190,12 +2190,12 @@
             "id": "pink-coconut-swiss-roll",
             "name": "Pink Coconut Swiss Roll",
             "description": "Light vanilla Swiss roll filled with strawberry cream and covered in pink-tinted coconut flakes. A delightfully sweet and tropical treat with beautiful presentation.",
-            "basePrice": 185,
+            "basePrice": 40,
             "image": "/images/swiss-rolls/pink-coconut-swiss-roll.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 37 },
-              { "name": "Half Roll (4-5 slices)", "price": 185 },
-              { "name": "Full Roll (8-10 slices)", "price": 330 }
+              { "name": "Individual Roll", "price": 40 },
+              { "name": "2-pack", "price": 80 },
+              { "name": "4-pack", "price": 160 }
             ],
             "flavors": [
               "Vanilla with Strawberry Cream",
