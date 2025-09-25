@@ -1147,12 +1147,23 @@ export default function CakesPage() {
                     {item.name}
                   </h3>
                   <p className="text-sm sm:text-sm text-gray-600 mb-3 sm:mb-3 line-clamp-2">{item.description}</p>
+
+                  <div className="mb-3 space-y-1">
+                    <div className="flex items-center justify-between">
+                      <span className="text-lg font-bold text-gray-800">
+                        R{item.basePrice || item.price?.replace(/[^\d.]/g, "") || "0"}
+                      </span>
+                      {item.weight && <span className="text-sm text-gray-500 font-medium">{item.weight}</span>}
+                    </div>
+                    {item.servingSize && <p className="text-xs text-gray-500">Serves {item.servingSize}</p>}
+                  </div>
+
                   <div className="flex items-center justify-between gap-2">
                     <Badge
                       variant="secondary"
                       className={`${category.bgColor} ${category.textColor} text-sm font-bold px-3 py-1.5`}
                     >
-                      {item.price}
+                      {item.price || `R${item.basePrice || "0"}`}
                     </Badge>
                     <AddToCartButton
                       cake={{
