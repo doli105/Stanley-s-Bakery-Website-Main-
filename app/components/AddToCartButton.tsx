@@ -3,8 +3,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ShoppingCart, Plus } from "lucide-react"
-import { useCart } from "@/components/CartContext"
-import CakeCustomizationModal from "@/components/CakeCustomizationModal"
+import { useCart } from "./CartContext"
+import CakeCustomizationModal from "./CakeCustomizationModal"
 
 interface AddToCartButtonProps {
   cake: any
@@ -27,29 +27,21 @@ export default function AddToCartButton({
   const { addToCart } = useCart()
 
   const handleQuickAdd = () => {
-    try {
-      const cartItem = {
-        id: cake.id || `${category}-${subcategory}-${cake.name}`,
-        name: cake.name,
-        price: cake.basePrice || cake.price || 0,
-        category: `${category} - ${subcategory}`,
-        subcategory,
-        serves: cake.serves || "1 person",
-        image: cake.image || "/colorful-layered-cake.png",
-      }
-
-      addToCart(cartItem)
-    } catch (error) {
-      console.error("Error adding item to cart:", error)
+    const cartItem = {
+      id: cake.id || `${category}-${subcategory}-${cake.name}`,
+      name: cake.name,
+      price: cake.basePrice || cake.price || 0,
+      category: `${category} - ${subcategory}`,
+      subcategory,
+      serves: cake.serves || "1 person",
+      image: cake.image || "/colorful-layered-cake.png",
     }
+
+    addToCart(cartItem)
   }
 
   const handleCustomize = () => {
-    try {
-      setShowCustomization(true)
-    } catch (error) {
-      console.error("Error opening customization modal:", error)
-    }
+    setShowCustomization(true)
   }
 
   const needsCustomization =

@@ -1,11 +1,10 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { ArrowLeft, Phone } from "lucide-react"
+import { ArrowLeft, ShoppingCart, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import AddToCartButton from "@/components/AddToCartButton"
 
 const romanCreamCookies = [
   {
@@ -941,27 +940,17 @@ export default function CakesPage() {
   const [refreshTrigger, setRefreshTrigger] = useState(0)
   const categoryRefs = useRef<(HTMLDivElement | null)[]>([])
 
-  console.log(
-    "[v0] CakesPage rendered - selectedParentCategory:",
-    selectedParentCategory,
-    "selectedCategory:",
-    selectedCategory,
-  )
-
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
-        console.log("[v0] Fetching menu data...")
         const response = await fetch("/api/menu")
         if (response.ok) {
           const data = await response.json()
           setMenuData(data)
           console.log("[v0] Menu data loaded successfully:", Object.keys(data).length, "categories")
-        } else {
-          console.error("[v0] Failed to fetch menu data - response not ok:", response.status)
         }
       } catch (error) {
-        console.error("[v0] Failed to fetch menu data:", error)
+        console.error("Failed to fetch menu data:", error)
       } finally {
         setLoading(false)
       }
@@ -1046,12 +1035,7 @@ export default function CakesPage() {
 
   if (selectedCategory) {
     const category = categories.find((cat) => cat.id === selectedCategory)
-    if (!category) {
-      console.error("[v0] Category not found for selectedCategory:", selectedCategory)
-      return null
-    }
-
-    console.log("[v0] Rendering category items:", category.name, "items count:", category.items?.length)
+    if (!category) return null
 
     return (
       <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
@@ -1102,85 +1086,53 @@ export default function CakesPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-            {category.items.map((item, index) => {
-              console.log("[v0] Rendering item:", item.name, "index:", index)
-
-              return (
-                <Card
-                  key={item.name}
-                  className={`${category.bgColor} ${category.borderColor} border-2 hover:shadow-lg transition-all duration-300 transform hover:scale-105 animate-in slide-in-from-bottom-4 fade-in`}
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <CardContent className="p-4 sm:p-4">
-                    <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                      <img
-                        src={
-                          item.image ||
-                          `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert") || "/placeholder.svg"}`
-                        }
-                        alt={item.name}
-                        className="w-full h-full object-contain"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement
-                          target.src = `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert")}`
-                        }}
-                      />
-                    </div>
-                    <h3 className={`font-semibold text-base sm:text-base ${category.textColor} mb-2 sm:mb-2`}>
-                      {item.name}
-                    </h3>
-                    <p className="text-sm sm:text-sm text-gray-600 mb-3 sm:mb-3 line-clamp-2">{item.description}</p>
-                    <div className="flex items-center justify-between gap-2">
-                      <Badge
-                        variant="secondary"
-                        className={`${category.bgColor} ${category.textColor} text-sm font-bold px-3 py-1.5`}
-                      >
-                        {item.price}
-                      </Badge>
-                      <AddToCartButton
-                        cake={{
-                          id: `${category.key}-${item.name.toLowerCase().replace(/\s+/g, "-")}`,
-                          name: item.name,
-                          description: item.description,
-                          image:
-                            item.image ||
-                            `/placeholder.svg?height=300&width=400&query=${encodeURIComponent(item.name + " cake")}`,
-                          basePrice: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 0,
-                          category: category.name,
-                          pricing: item.pricing || [
-                            {
-                              size: "Small (6 inch)",
-                              serves: "6-8 people",
-                              price: Math.round((Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 350) * 0.8),
-                            },
-                            {
-                              size: "Medium (8 inch)",
-                              serves: "10-12 people",
-                              price: Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 450,
-                            },
-                            {
-                              size: "Large (10 inch)",
-                              serves: "15-20 people",
-                              price: Math.round((Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 450) * 1.3),
-                            },
-                            {
-                              size: "Extra Large (12 inch)",
-                              serves: "25-30 people",
-                              price: Math.round((Number.parseFloat(item.price.replace(/[^\d.]/g, "")) || 450) * 1.6),
-                            },
-                          ],
-                        }}
-                        category="celebration-special-occasion"
-                        subcategory={category.key}
-                        variant="default"
-                        size="default"
-                        className="flex-shrink-0"
-                      />
-                    </div>
-                  </CardContent>
-                </Card>
-              )
-            })}
+            {category.items.map((item, index) => (
+              <Card
+                key={item.name}
+                className={`${category.bgColor} ${category.borderColor} border-2 hover:shadow-lg transition-all duration-300 transform hover:scale-105 animate-in slide-in-from-bottom-4 fade-in`}
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardContent className="p-4 sm:p-4">
+                  <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                    <img
+                      src={
+                        item.image ||
+                        `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert") || "/placeholder.svg"}`
+                      }
+                      alt={item.name}
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert")}`
+                      }}
+                    />
+                  </div>
+                  <h3 className={`font-semibold text-base sm:text-base ${category.textColor} mb-2 sm:mb-2`}>
+                    {item.name}
+                  </h3>
+                  <p className="text-sm sm:text-sm text-gray-600 mb-3 sm:mb-3 line-clamp-2">{item.description}</p>
+                  <div className="flex items-center justify-between gap-2">
+                    <Badge
+                      variant="secondary"
+                      className={`${category.bgColor} ${category.textColor} text-sm font-bold px-3 py-1.5`}
+                    >
+                      {item.price}
+                    </Badge>
+                    <Button
+                      size="default"
+                      className="bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-2 min-h-[44px] flex-shrink-0"
+                      onClick={() => {
+                        const message = `Hi! I'd like to order: ${item.name} (${item.price})`
+                        window.open(`https://wa.me/27123456789?text=${encodeURIComponent(message)}`, "_blank")
+                      }}
+                    >
+                      <ShoppingCart className="w-4 h-4 mr-2" />
+                      Order
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
@@ -1326,7 +1278,7 @@ export default function CakesPage() {
 
                         <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
-                            src={`/abstract-geometric-shapes.png?height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
+                            src={`/abstract-geometric-shapes.png?key=x63n4&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                           />
