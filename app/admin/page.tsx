@@ -48,6 +48,10 @@ const completeMenuStructure = {
         name: "Heart Shaped Cakes",
         items: [],
       },
+      "car-lovers-cakes": {
+        name: "Car Lovers Cakes",
+        items: [],
+      },
       "fairyland-cakes": {
         name: "Fairyland Cakes",
         items: [],
