@@ -676,6 +676,36 @@ const regularCategories = [
       { name: "Art Contest Winner Cake", price: "R165", description: "Colorful palette and brush design" },
     ],
   },
+  {
+    id: "product-themed-drip-cakes",
+    name: "Product Themed/Drip Cakes",
+    description: "Modern drip cakes and realistic product replicas for contemporary celebrations",
+    bgColor: "bg-gradient-to-br from-slate-100 to-slate-200",
+    textColor: "text-slate-800",
+    borderColor: "border-slate-300",
+    items: [
+      {
+        name: "Classic Chocolate Drip Cake",
+        price: "R220",
+        description: "Rich chocolate ganache drip with gold accents",
+      },
+      {
+        name: "Caramel Drip Delight",
+        price: "R240",
+        description: "Salted caramel drip with vanilla buttercream",
+      },
+      { name: "iPhone Replica Cake", price: "R350", description: "Realistic smartphone cake with edible screen" },
+      { name: "Designer Handbag Cake", price: "R380", description: "Luxury handbag replica with intricate details" },
+      {
+        name: "Sneaker Cake",
+        price: "R320",
+        description: "Popular sneaker brand replica with laces and logos",
+      },
+      { name: "Makeup Palette Cake", price: "R290", description: "Cosmetic palette with edible eyeshadows" },
+      { name: "Gaming Console Cake", price: "R360", description: "PlayStation or Xbox replica with controllers" },
+      { name: "Perfume Bottle Cake", price: "R280", description: "Elegant perfume bottle with crystal details" },
+    ],
+  },
 ]
 
 const cakeBoardsCategories = [
@@ -738,6 +768,15 @@ const celebrationCategories = [
     bgColor: "bg-gradient-to-br from-red-100 to-red-200",
     textColor: "text-red-800",
     borderColor: "border-red-300",
+    items: [],
+  },
+  {
+    id: "car-lovers-cakes",
+    name: "Car Lovers Cakes",
+    description: "Perfect cakes for automotive enthusiasts and car lovers",
+    bgColor: "bg-gradient-to-br from-blue-100 to-blue-200",
+    textColor: "text-blue-800",
+    borderColor: "border-blue-300",
     items: [],
   },
   {
@@ -1101,10 +1140,6 @@ export default function CakesPage() {
                       }
                       alt={item.name}
                       className="w-full h-full object-contain"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement
-                        target.src = `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert")}`
-                      }}
                     />
                   </div>
                   <h3 className={`font-semibold text-base sm:text-base ${category.textColor} mb-2 sm:mb-2`}>

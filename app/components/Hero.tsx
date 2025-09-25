@@ -16,11 +16,11 @@ export default function Hero() {
   const cart = useCart()
 
   const slideshowImages = [
-    "/images/hero-chocolate-cake.jpg", // Rich chocolate cake with fresh berries - now first
+    "/images/hero-chocolate-strawberry.jpg", // Rich chocolate cake with fresh berries - now first
     "/images/hero-caramel-cupcakes.jpg", // Warm, inviting cupcakes
     "/images/elegant-white-wedding-cake.jpg", // Elegant white wedding cake with gold accents
     "/images/hero-glazed-donuts.jpg", // Golden glazed donuts
-    "/images/hero-churros.jpg", // Warm churros with chocolate
+    "/images/hero-churros-chocolate.jpg", // Warm churros with chocolate
     "/images/hero-dessert-cups.jpg", // Elegant chocolate dessert cups
   ]
 
