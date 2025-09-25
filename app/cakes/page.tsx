@@ -1150,12 +1150,37 @@ export default function CakesPage() {
 
                   <div className="mb-3 space-y-1">
                     <div className="flex items-center justify-between">
-                      <span className="text-lg font-bold text-gray-800">
+                      <span className="text-xl font-bold text-gray-800">
                         R{item.basePrice || item.price?.replace(/[^\d.]/g, "") || "0"}
                       </span>
-                      {item.weight && <span className="text-sm text-gray-500 font-medium">{item.weight}</span>}
                     </div>
-                    {item.servingSize && <p className="text-xs text-gray-500">Serves {item.servingSize}</p>}
+
+                    <div className="bg-white/70 rounded-lg p-2 border border-gray-200">
+                      {item.weight && (
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-sm font-medium text-gray-600">Weight:</span>
+                          <span className="text-sm font-bold text-amber-700 bg-amber-50 px-2 py-1 rounded">
+                            {item.weight}
+                          </span>
+                        </div>
+                      )}
+                      {item.quantity && (
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-sm font-medium text-gray-600">Quantity:</span>
+                          <span className="text-sm font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                            {item.quantity}
+                          </span>
+                        </div>
+                      )}
+                      {item.servingSize && (
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm font-medium text-gray-600">Serves:</span>
+                          <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded">
+                            {item.servingSize}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <div className="flex items-center justify-between gap-2">
