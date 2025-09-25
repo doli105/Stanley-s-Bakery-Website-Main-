@@ -1181,7 +1181,7 @@ export default function CakesPage() {
                       subcategory={category.key}
                       variant="default"
                       size="default"
-                      className="flex-shrink-0"
+                      className="w-full"
                     />
                   </div>
                 </CardContent>
