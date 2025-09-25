@@ -1531,7 +1531,7 @@
             "basePrice": 550,
             "sizes": [
               { "name": "6 inch", "serves": "8-10", "price": 550 },
-              { "name": "8 inch", "serves": "12-15", "price": 650 },
+              { "name": "8 inch", "price": 650 },
               { "name": "10 inch", "serves": "20-25", "price": 750 }
             ],
             "flavors": [
@@ -1681,7 +1681,10 @@
               { "name": "180g Tub", "price": 35 },
               { "name": "360g Tub", "price": 70 },
               { "name": "540g Tub", "price": 105 },
-              { "name": "720g Tub", "price": 140 }
+              { "name": "720g Tub", "price": 140 },
+              { "name": "5 Litre Tub", "price": 340 },
+              { "name": "10 Litre Tub", "price": 590 },
+              { "name": "20 Litre Tub", "price": 1050 }
             ],
             "flavors": [
               "Traditional Vanilla",
@@ -1708,13 +1711,16 @@
             "id": "traditional-buttermilk-scones",
             "name": "Traditional Buttermilk Scones",
             "description": "Classic homemade buttermilk scones with golden-brown crusts and tender, flaky interiors. Baked fresh daily with the perfect balance of buttery richness and light texture. Ideal for breakfast, afternoon tea, or any time you crave a traditional bakery treat.",
-            "basePrice": 95,
+            "basePrice": 240,
             "image": "/images/scones/traditional-buttermilk-scones.jpeg",
             "sizes": [
               { "name": "Small Tub (10 pieces)", "price": 95 },
               { "name": "Medium Tub (15 pieces)", "price": 135 },
               { "name": "Large Tub (20 pieces)", "price": 170 },
-              { "name": "Family Tub (30 pieces)", "price": 240 }
+              { "name": "Family Tub (30 pieces)", "price": 240 },
+              { "name": "5 Litre Tub", "price": 240 },
+              { "name": "10 Litre Tub", "price": 420 },
+              { "name": "20 Litre Tub", "price": 740 }
             ],
             "flavors": ["Traditional Buttermilk", "Vanilla Buttermilk", "Lemon Buttermilk", "Honey Buttermilk"],
             "customizable": true,
@@ -1924,13 +1930,13 @@
             "id": "assorted-glazed-donuts",
             "name": "Assorted Glazed Donuts",
             "description": "Delicious variety pack of 6 glazed donuts featuring different flavored glazes and toppings. Includes pink glazed with white drizzle, chocolate glazed with white drizzle, golden glazed with colorful sprinkles, and white glazed with rainbow sprinkles. Perfect for sharing or trying multiple flavors.",
-            "basePrice": 85,
+            "basePrice": 66,
             "image": "/images/donuts/assorted-glazed-donuts.jpeg",
             "sizes": [
-              { "name": "6-pack Assorted", "price": 85 },
-              { "name": "12-pack Assorted", "price": 160 },
-              { "name": "18-pack Assorted", "price": 230 },
-              { "name": "24-pack Party Box", "price": 290 }
+              { "name": "6-pack Assorted", "price": 66 },
+              { "name": "12-pack Assorted", "price": 132 },
+              { "name": "18-pack Assorted", "price": 198 },
+              { "name": "24-pack Party Box", "price": 264 }
             ],
             "flavors": [
               "Mixed Assortment (Pink, Chocolate, Golden, White)",
