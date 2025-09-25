@@ -10,19 +10,19 @@ const romanCreamCookies = [
   {
     id: "vanilla",
     name: "Classic Vanilla Roman Cream",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/roman-cream-vanilla.jpg",
     description: "Traditional golden cookies filled with smooth vanilla cream",
   },
   {
     id: "red-velvet",
     name: "Red Velvet Roman Cream",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/roman-cream-red-velvet.jpg",
     description: "Rich red velvet cookies with creamy filling",
   },
   {
     id: "chocolate",
     name: "Chocolate Roman Cream",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/roman-cream-chocolate.jpg",
     description: "Decadent chocolate cookies with chocolate cream filling",
   },
 ]
@@ -31,31 +31,31 @@ const swissRolls = [
   {
     id: "chocolate",
     name: "Chocolate Swiss Roll",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/swiss-roll-chocolate.jpg",
     description: "Rich chocolate sponge rolled with smooth vanilla cream and chocolate drizzle",
   },
   {
     id: "strawberry",
     name: "Strawberry Coconut Swiss Roll",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/swiss-roll-strawberry.jpg",
     description: "Light vanilla sponge with strawberry filling and pink coconut coating",
   },
   {
     id: "chocolate-cream",
     name: "Double Chocolate Swiss Roll",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/swiss-roll-chocolate-cream.jpg",
     description: "Chocolate sponge with white cream filling and chocolate shavings",
   },
   {
     id: "red-velvet",
     name: "Red Velvet Swiss Roll",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/swiss-roll-red-velvet.jpg",
     description: "Classic red velvet sponge with cream cheese filling and red velvet crumbs",
   },
   {
     id: "carrot",
     name: "Carrot Cake Swiss Roll",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/swiss-roll-carrot.jpg",
     description: "Spiced carrot sponge with cream cheese frosting and decorative carrot",
   },
 ]
@@ -64,13 +64,13 @@ const meltingMoments = [
   {
     id: "classic",
     name: "Classic Melting Moments",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/melting-moments-classic.jpg",
     description: "Traditional buttery biscuits with decorative piped patterns and colorful sprinkles",
   },
   {
     id: "container-pack",
     name: "Melting Moments Container Pack",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/melting-moments-container.jpg",
     description: "Convenient container pack of golden melting moments biscuits perfect for sharing",
   },
 ]
@@ -79,19 +79,19 @@ const regularCookies = [
   {
     id: "chocolate-chip",
     name: "Chocolate Chip Cookies",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/cookies-chocolate-chip.jpg",
     description: "Classic golden cookies loaded with rich chocolate chips for the perfect sweet treat",
   },
   {
     id: "sugar",
     name: "Sugar Cookies",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/cookies-sugar.jpg",
     description: "Traditional buttery sugar cookies with a tender crumb and sweet vanilla flavor",
   },
   {
     id: "ginger-snap",
     name: "Ginger Snap Cookies",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/cookies-ginger-snap.jpg",
     description: "Spiced cookies with warm ginger and molasses, featuring a delightfully crackled surface",
   },
 ]
@@ -100,13 +100,13 @@ const snowBalls = [
   {
     id: "pink",
     name: "Pink Coconut Snow Balls",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/snowballs-pink.jpg",
     description: "Delicious cake balls covered in sweet pink coconut flakes for a festive treat",
   },
   {
     id: "white",
     name: "Classic White Snow Balls",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/snowballs-white.jpg",
     description: "Traditional coconut-covered cake balls with fluffy white coconut coating",
   },
 ]
@@ -115,19 +115,19 @@ const cupcakes = [
   {
     id: "vanilla-sprinkles",
     name: "Vanilla Cupcakes with Red Sprinkles",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/cupcakes-vanilla-sprinkles.jpg",
     description: "Elegant vanilla cupcakes topped with swirled buttercream frosting and festive red sprinkles",
   },
   {
     id: "chocolate",
     name: "Chocolate Buttercream Cupcakes",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/cupcakes-chocolate.jpg",
     description: "Rich chocolate or mocha flavored cupcakes with beautifully piped chocolate buttercream rosettes",
   },
   {
     id: "vanilla-chocolate",
     name: "Vanilla Cupcakes with Chocolate Centers",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/cupcakes-vanilla-chocolate.jpg",
     description: "Classic vanilla cupcakes with smooth buttercream frosting and chocolate piece centers",
   },
 ]
@@ -136,31 +136,31 @@ const pastries = [
   {
     id: "petit-fours",
     name: "Chocolate Petit Fours",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/pastry-petit-fours.jpg",
     description: "Elegant mini chocolate cakes with white fondant drizzle in decorative patterns",
   },
   {
     id: "baklava",
     name: "Honey Baklava",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/pastry-baklava.jpg",
     description: "Traditional layered pastry with nuts and honey syrup, cut into perfect squares",
   },
   {
     id: "scones",
     name: "Fresh Baked Scones",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/pastry-scones.jpg",
     description: "Golden, flaky scones with a buttery texture, perfect for any time of day",
   },
   {
     id: "mini-cake",
     name: "Designer Mini Cake",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/pastry-mini-cake.jpg",
     description: "Instagram-worthy mini cake with pink drip glaze, meringue, macaron, and colorful sprinkles",
   },
   {
     id: "donuts",
     name: "Gourmet Donuts",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/pastry-donuts.jpg",
     description: "Assorted glazed donuts with chocolate, strawberry, caramel, and vanilla toppings",
   },
 ]
@@ -1278,7 +1278,7 @@ export default function CakesPage() {
 
                         <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
-                            src={`/placeholder.svg?height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
+                            src={`/abstract-geometric-shapes.png?key=x63n4&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                           />
