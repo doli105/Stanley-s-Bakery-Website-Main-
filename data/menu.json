@@ -107,330 +107,13 @@
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
             "customizable": true,
             "extras": [
+              { "name": "Custom Photo Panels", "price": 50 },
               { "name": "Custom Message", "price": 0 },
-              { "name": "Photo Panels (up to 4)", "price": 50 },
-              { "name": "Black Ribbon Decoration", "price": 25 },
-              { "name": "Pearl Border Details", "price": 35 },
-              { "name": "Custom Name Personalization", "price": 0 }
-            ]
-          },
-          {
-            "id": "red-august-calendar-heart",
-            "name": "Red Calendar Heart Cake",
-            "description": "Stunning red heart-shaped cake with vibrant red frosting and white pearl decorations. Features a personalized calendar design in the center with custom month and year. Perfect for anniversary celebrations and special date commemorations.",
-            "basePrice": 380,
-            "image": "/images/heart-cakes/red-august-calendar-heart.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 380 },
-              { "name": "Medium (8 inch)", "price": 480 },
-              { "name": "Large (10 inch)", "price": 580 }
-            ],
-            "flavors": ["Red Velvet", "Strawberry", "Vanilla", "Chocolate"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Calendar Month/Year", "price": 0 },
-              { "name": "White Pearl Border", "price": 30 },
-              { "name": "Special Date Highlighting", "price": 15 },
-              { "name": "Custom Message on Calendar", "price": 0 },
-              { "name": "Heart Decorations", "price": 20 }
+              { "name": "Decorative Black Ribbons", "price": 25 },
+              { "name": "Memorial Design Elements", "price": 40 }
             ]
           }
         ]
-      },
-      "milestones-cakes": {
-        "name": "Milestones cakes",
-        "items": [
-          {
-            "id": "gold-60th-birthday-cake",
-            "name": "Gold 60th Birthday Milestone Cake",
-            "description": "Luxurious gold and white milestone cake featuring elegant '60' number topper, 'Happy Birthday Mum' script, and sophisticated gold and white sphere decorations with metallic feather accents. Perfect for celebrating life's precious milestones.",
-            "basePrice": 650,
-            "image": "/images/milestone-cakes/gold-60th-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 650 },
-              { "name": "Large (10 inch)", "price": 750 },
-              { "name": "Extra Large (12 inch)", "price": 850 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Coconut"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Numbers", "price": 0 },
-              { "name": "Custom Name/Message", "price": 0 },
-              { "name": "Gold Sphere Decorations", "price": 45 },
-              { "name": "Metallic Feather Accents", "price": 35 },
-              { "name": "Premium Gold Cake Board", "price": 25 },
-              { "name": "Additional Decorative Elements", "price": 40 }
-            ]
-          },
-          {
-            "id": "april-calendar-birthday-cake",
-            "name": "April Calendar Birthday Milestone Cake",
-            "description": "Elegant white fondant milestone cake featuring a personalized April 1985 calendar design with highlighted special date. Decorated with white sugar roses, gold spherical accents, pink macarons, and a gold 'Happy Birthday' topper. Perfect for celebrating birth month milestones and special anniversaries.",
-            "basePrice": 580,
-            "image": "/images/milestone-cakes/april-calendar-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Strawberry"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Month/Year Calendar", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Sugar Rose Decorations", "price": 40 },
-              { "name": "Gold Sphere Accents", "price": 35 },
-              { "name": "Macaron Decorations", "price": 45 },
-              { "name": "Gold Leaf Trim", "price": 30 },
-              { "name": "Premium Gold Cake Board", "price": 25 }
-            ]
-          },
-          {
-            "id": "pink-gold-drip-birthday-cake",
-            "name": "Pink & Gold Drip Birthday Cake",
-            "description": "Stunning single-tier cake featuring elegant pink and gold drip effect cascading down the sides, topped with beautiful pink and gold roses and 'Happy Birthday' script topper. Decorated with pearl and gold ball accents throughout the drip design for a luxurious milestone celebration.",
-            "basePrice": 480,
-            "image": "/images/milestone-cakes/pink-gold-drip-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 480 },
-              { "name": "Large (10 inch)", "price": 580 },
-              { "name": "Extra Large (12 inch)", "price": 680 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Message Script", "price": 0 },
-              { "name": "Additional Rose Decorations", "price": 40 },
-              { "name": "Extra Gold Drip Effect", "price": 35 },
-              { "name": "Pearl Ball Decorations", "price": 30 },
-              { "name": "Premium Gold Cake Board", "price": 25 }
-            ]
-          },
-          {
-            "id": "white-botanical-birthday-cake",
-            "name": "White Botanical Birthday Cake",
-            "description": "Sophisticated white cake with artistic botanical design featuring white chocolate or fondant leaf decorations arranged vertically. Includes elegant 'Happy Birthday' script on white chocolate plaque with delicate white flower accent. Perfect for modern, minimalist milestone celebrations.",
-            "basePrice": 420,
-            "image": "/images/milestone-cakes/white-botanical-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 420 },
-              { "name": "Large (10 inch)", "price": 520 },
-              { "name": "Extra Large (12 inch)", "price": 620 }
-            ],
-            "flavors": ["Vanilla", "Lemon", "Coconut", "White Chocolate", "Almond"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Message on Plaque", "price": 0 },
-              { "name": "Additional Botanical Elements", "price": 45 },
-              { "name": "White Chocolate Leaf Decorations", "price": 40 },
-              { "name": "Delicate Flower Accents", "price": 35 },
-              { "name": "Premium White Cake Board", "price": 25 }
-            ]
-          },
-          {
-            "id": "pink-gold-anna-birthday-cake",
-            "name": "Pink & Gold Anna Birthday Cake",
-            "description": "Elegant two-tier milestone cake with pink top tier and gold bottom tier, featuring purple and cream roses with gold fan decoration. Decorated with gold spherical accents and personalized name on the base. Perfect for celebrating special milestones with sophisticated style.",
-            "basePrice": 550,
-            "image": "/images/milestone-cakes/pink-gold-anna-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 550 },
-              { "name": "Large Two-Tier", "price": 650 },
-              { "name": "Premium Two-Tier", "price": 750 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Vanilla",
-              "Strawberry & Vanilla",
-              "Red Velvet & Vanilla"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Additional Rose Decorations", "price": 45 },
-              { "name": "Gold Fan Decoration", "price": 40 },
-              { "name": "Gold Sphere Accents", "price": 35 },
-              { "name": "Premium Gold Cake Board", "price": 30 },
-              { "name": "Additional Tier", "price": 200 }
-            ]
-          }
-        ]
-      },
-      "gentleman-cakes": {
-        "name": "Gentleman cakes",
-        "items": [
-          {
-            "id": "automotive-birthday-cake",
-            "name": "Automotive Birthday Cake",
-            "description": "Sophisticated black cake with automotive theme featuring realistic car wheel decorations on top and around the base. Decorated with elegant gold 'Happy Birthday' script lettering and personalized name in gold around the base. Perfect for car enthusiasts and automotive lovers celebrating special occasions.",
-            "basePrice": 520,
-            "image": "/images/gentleman-cakes/automotive-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 },
-              { "name": "Extra Large (12 inch)", "price": 720 }
-            ],
-            "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Coffee", "Salted Caramel"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Additional Car Wheel Decorations", "price": 45 },
-              { "name": "Gold Script Lettering", "price": 35 },
-              { "name": "Premium Black Finish", "price": 40 },
-              { "name": "Custom Car Brand Theme", "price": 50 }
-            ]
-          },
-          {
-            "id": "bow-tie-yolo-cake",
-            "name": "Elegant Bow Tie Gentleman Cake",
-            "description": "Sophisticated black cake with elegant gold bow tie decoration and luxurious gold and black spherical decorations with star accents on top. Features personalized message on the base with decorative footprint elements. Perfect for formal celebrations and milestone birthdays.",
-            "basePrice": 480,
-            "image": "/images/gentleman-cakes/bow-tie-yolo-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 480 },
-              { "name": "Large (10 inch)", "price": 580 },
-              { "name": "Extra Large (12 inch)", "price": 680 }
-            ],
-            "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Lemon", "Coconut"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Message on Base", "price": 0 },
-              { "name": "Gold Bow Tie Decoration", "price": 40 },
-              { "name": "Gold Star Decorations", "price": 35 },
-              { "name": "Spherical Accent Decorations", "price": 45 },
-              { "name": "Premium Black Cake Finish", "price": 35 }
-            ]
-          },
-          {
-            "id": "best-husband-dad-50th-cake",
-            "name": "Best Husband & Dad Milestone Cake",
-            "description": "Elegant two-tier milestone cake with white top tier and black bottom tier, featuring '50' number topper and 'Best HUSBAND & Dad' text in gold. Decorated with sophisticated gold and black spheres and decorative fan-like elements. Perfect for celebrating milestone birthdays and honoring special men in your life.",
-            "basePrice": 650,
-            "image": "/images/gentleman-cakes/best-husband-dad-50th-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Chocolate",
-              "Red Velvet & Vanilla",
-              "Coffee & Vanilla"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Title Text", "price": 0 },
-              { "name": "Gold Sphere Decorations", "price": 50 },
-              { "name": "Decorative Fan Elements", "price": 40 },
-              { "name": "Premium Gold Lettering", "price": 45 },
-              { "name": "Additional Tier", "price": 200 }
-            ]
-          },
-          {
-            "id": "black-gold-luxury-birthday-cake",
-            "name": "Black & Gold Luxury Birthday Cake",
-            "description": "Sophisticated two-tier black cake with stunning gold drip details and dramatic black fan decorations on top. Features gold and black spherical decorations arranged elegantly around both tiers, with personalized name on the base. Perfect for milestone celebrations and luxury birthday events.",
-            "basePrice": 680,
-            "image": "/images/gentleman-cakes/black-gold-luxury-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 680 },
-              { "name": "Large Two-Tier", "price": 780 },
-              { "name": "Premium Two-Tier", "price": 880 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Chocolate & Vanilla)",
-              "Double Chocolate",
-              "Chocolate & Red Velvet",
-              "Coffee & Chocolate"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Black Fan Decorations", "price": 45 },
-              { "name": "Gold Drip Enhancement", "price": 40 },
-              { "name": "Gold & Black Sphere Decorations", "price": 55 },
-              { "name": "Premium Black Cake Finish", "price": 50 },
-              { "name": "Additional Tier", "price": 200 }
-            ]
-          },
-          {
-            "id": "best-dad-husband-family-cake",
-            "name": "Best Dad & Husband Family Cake",
-            "description": "Heartwarming white cake celebrating fatherhood with 'BEST DAD & HUSBAND' text and beautiful family silhouettes around the sides. Topped with black and silver spherical decorations and 'Happy Birthday' script topper. Perfect for honoring fathers and celebrating family bonds.",
-            "basePrice": 520,
-            "image": "/images/gentleman-cakes/best-dad-husband-family-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 },
-              { "name": "Extra Large (12 inch)", "price": 720 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Funfetti"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Family Silhouettes", "price": 0 },
-              { "name": "Custom Title Text", "price": 0 },
-              { "name": "Black & Silver Sphere Decorations", "price": 45 },
-              { "name": "Family Photo Integration", "price": 50 },
-              { "name": "Premium Script Topper", "price": 35 },
-              { "name": "Custom Message Addition", "price": 0 }
-            ]
-          }
-        ]
-      },
-      "sport-man-cakes": {
-        "name": "Sport man cakes",
-        "items": [
-          {
-            "id": "arsenal-football-cake",
-            "name": "Arsenal Football Team Cake",
-            "description": "Spectacular Arsenal FC themed cake featuring the iconic Arsenal logo, player jerseys (Odegaard #8, Rice #41), realistic soccer balls, and personalized name on the base. Perfect for Arsenal fans and football enthusiasts celebrating birthdays or special occasions.",
-            "basePrice": 580,
-            "image": "/images/sports-cakes/arsenal-football-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Player Names/Numbers", "price": 0 },
-              { "name": "Custom Team Name on Base", "price": 0 },
-              { "name": "Additional Soccer Ball Decorations", "price": 35 },
-              { "name": "Team Jersey Toppers", "price": 45 },
-              { "name": "Premium Team Logo", "price": 40 },
-              { "name": "Gold Pearl Decorations", "price": 30 }
-            ]
-          },
-          {
-            "id": "manchester-city-cake",
-            "name": "Manchester City Football Cake",
-            "description": "Stunning Manchester City themed cake with sky blue decorations, official Manchester City logo, soccer balls, balloon cluster, age number, and personalized name. Ideal for Manchester City supporters and football birthday celebrations.",
-            "basePrice": 560,
-            "image": "/images/sports-cakes/manchester-city-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 560 },
-              { "name": "Large (10 inch)", "price": 660 },
-              { "name": "Extra Large (12 inch)", "price": 760 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Blue Balloon Cluster", "price": 40 },
-              { "name": "Additional Soccer Ball Decorations", "price": 35 },
-              { "name": "Team Logo Enhancement", "price": 40 },
-              { "name": "Sky Blue Ombre Effect", "price": 45 }
-            ]
-          }
-        ]
-      },
-      "car-lovers-cakes": {
-        "name": "Car lovers cakes",
-        "items": []
       },
       "frozen-cakes": {
         "name": "Frozen cakes",
@@ -548,187 +231,23 @@
         "name": "Spiderman cakes",
         "items": [
           {
-            "id": "spiderman-cityscape-cake",
-            "name": "Spider-Man Cityscape Adventure Cake",
-            "description": "Epic Spider-Man themed cake featuring a dramatic cityscape design with Spider-Man mask on the front, various Spider-Man character toppers including different Spider-Man variants, spider web decorations, and red & black balloon clusters. Perfect for superhero fans with 'ROWAN' personalization on black base.",
-            "basePrice": 620,
-            "image": "/images/spiderman-cakes/spiderman-cityscape-cake.jpeg",
+            "id": "spiderman-petros-multi-tier",
+            "name": "Petros Multi-Tier Spider-Man Cake",
+            "description": "Spectacular multi-tiered cake with blue base, red brick wall backdrop, and various Spider-Man themed decorative elements including web patterns, city skyline, and character figurines. Perfect for superhero birthday celebrations.",
+            "basePrice": 680,
+            "image": "/images/spiderman-cakes/petros-multi-tier.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 620 },
-              { "name": "Large (10 inch)", "price": 720 },
-              { "name": "Extra Large (12 inch)", "price": 820 }
+              { "name": "Standard Two-Tier", "price": 680 },
+              { "name": "Large Two-Tier", "price": 780 },
+              { "name": "Premium Three-Tier", "price": 880 }
             ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti"],
             "customizable": true,
             "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Additional Spider-Man Toppers", "price": 45 },
-              { "name": "Red & Black Balloon Clusters", "price": 40 },
-              { "name": "Spider Web Decorations", "price": 35 },
-              { "name": "Cityscape Enhancement", "price": 50 },
-              { "name": "Multiple Spider-Man Variants", "price": 60 }
-            ]
-          },
-          {
-            "id": "classic-spiderman-web-cake",
-            "name": "Classic Spider-Man Web Cake",
-            "description": "Traditional Spider-Man cake with vibrant red frosting covered in white spider web piping, featuring Spider-Man character images around the sides, number topper, and 'SPIDER-MAN' logo topper. Includes personalized name on base for the ultimate Spider-Man birthday celebration.",
-            "basePrice": 580,
-            "image": "/images/spiderman-cakes/classic-spiderman-web-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Spider Web Piping Enhancement", "price": 35 },
-              { "name": "Spider-Man Character Images", "price": 40 },
-              { "name": "Logo Topper Upgrade", "price": 45 },
-              { "name": "Red & Blue Color Scheme", "price": 30 }
-            ]
-          },
-          {
-            "id": "tall-spiderman-city-cake",
-            "name": "Tall Spider-Man City Tower Cake",
-            "description": "Impressive tall blue Spider-Man cake with the iconic Spider-Man mask prominently displayed on the front, cityscape toppers with Spider-Man figures, custom name and number toppers, and red & blue balloon decorations. Features modern comic book design elements perfect for superhero celebrations.",
-            "basePrice": 650,
-            "image": "/images/spiderman-cakes/tall-spiderman-city-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Tall", "price": 650 },
-              { "name": "Large Tall", "price": 750 },
-              { "name": "Extra Large Tall", "price": 850 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Blue Velvet"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name Topper", "price": 0 },
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Cityscape Topper Set", "price": 55 },
-              { "name": "Spider-Man Figure Toppers", "price": 50 },
-              { "name": "Red & Blue Balloon Decorations", "price": 45 },
-              { "name": "Comic Book Style Elements", "price": 40 },
-              { "name": "Spider-Man Mask Enhancement", "price": 45 }
-            ]
-          }
-        ]
-      },
-      "cocomelon-cakes": {
-        "name": "Cocomelon Cakes",
-        "items": [
-          {
-            "id": "nokuhle-2nd-birthday-cocomelon-cake",
-            "name": "Nokuhle 2nd Birthday Cocomelon Cake",
-            "description": "Delightful two-tier green Cocomelon cake featuring JJ character on top with rainbow, watermelon character, number '2', colorful balloons, white clouds and stars decorations. The signature Cocomelon bus is prominently displayed on the bottom tier with 'NOKUHLE' spelled out in colorful letters around the base.",
-            "basePrice": 580,
-            "image": "/images/cocomelon-cakes/nokuhle-2nd-birthday-cocomelon-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 580 },
-              { "name": "Large Two-Tier", "price": 680 },
-              { "name": "Premium Two-Tier", "price": 780 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Vanilla",
-              "Vanilla & Strawberry",
-              "Chocolate & Funfetti"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "JJ Character Topper", "price": 60 },
-              { "name": "Cocomelon Bus Enhancement", "price": 45 },
-              { "name": "Rainbow & Cloud Decorations", "price": 40 },
-              { "name": "Colorful Balloon Cluster", "price": 35 },
-              { "name": "Watermelon Character Addition", "price": 50 }
-            ]
-          },
-          {
-            "id": "1st-birthday-cocomelon-cake",
-            "name": "1st Birthday Cocomelon Cake",
-            "description": "Charming two-tier Cocomelon cake with blue top tier and green bottom tier, featuring JJ character on top with number '1', white clouds and stars, and the signature Cocomelon bus on the bottom tier. 'BIRTHDAY' is written in colorful letters around the base for a perfect first birthday celebration.",
-            "basePrice": 520,
-            "image": "/images/cocomelon-cakes/1st-birthday-cocomelon-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 520 },
-              { "name": "Large Two-Tier", "price": 620 },
-              { "name": "Premium Two-Tier", "price": 720 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Vanilla",
-              "Vanilla & Funfetti",
-              "Strawberry & Vanilla"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name Addition", "price": 0 },
-              { "name": "JJ Character Topper", "price": 60 },
-              { "name": "Cocomelon Bus Feature", "price": 45 },
-              { "name": "Cloud & Star Decorations", "price": 35 },
-              { "name": "Colorful Letter Spelling", "price": 40 }
-            ]
-          },
-          {
-            "id": "akonaho-1st-birthday-cocomelon-cake",
-            "name": "Akonaho 1st Birthday Animal Friends Cocomelon Cake",
-            "description": "Adorable two-tier pink Cocomelon cake featuring JJ character on top with number '1', and various beloved Cocomelon animal characters including elephant, pig, and duck arranged around a colorful rainbow on the bottom tier. 'AKONAHO' is spelled out in alphabet blocks around the base, perfect for educational fun.",
-            "basePrice": 620,
-            "image": "/images/cocomelon-cakes/akonaho-1st-birthday-cocomelon-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 620 },
-              { "name": "Large Two-Tier", "price": 720 },
-              { "name": "Premium Two-Tier", "price": 820 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Strawberry)",
-              "Double Vanilla",
-              "Vanilla & Chocolate",
-              "Funfetti & Vanilla"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name in Alphabet Blocks", "price": 0 },
-              { "name": "JJ Character Topper", "price": 60 },
-              { "name": "Animal Character Set (Elephant, Pig, Duck)", "price": 75 },
-              { "name": "Rainbow Decoration", "price": 40 },
-              { "name": "Alphabet Block Letters", "price": 50 },
-              { "name": "Educational Theme Enhancement", "price": 45 }
-            ]
-          },
-          {
-            "id": "mokone-garden-cocomelon-cake",
-            "name": "Mokone Garden Theme Cocomelon Cake",
-            "description": "Beautiful two-tier cream Cocomelon cake with natural garden theme featuring rainbow topper, JJ character, butterfly decorations, daisy flowers, watermelon character, and various colorful balloon clusters. 'MOKONE' is written around the base with a delightful garden-like aesthetic while maintaining the cheerful Cocomelon spirit.",
-            "basePrice": 650,
-            "image": "/images/cocomelon-cakes/mokone-garden-cocomelon-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Lemon)",
-              "Double Vanilla",
-              "Vanilla & Coconut",
-              "Strawberry & Vanilla"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "JJ Character Topper", "price": 60 },
-              { "name": "Rainbow Arch Decoration", "price": 45 },
-              { "name": "Butterfly & Flower Set", "price": 55 },
-              { "name": "Watermelon Character", "price": 50 },
-              { "name": "Garden Theme Balloon Clusters", "price": 40 },
-              { "name": "Daisy Flower Decorations", "price": 35 },
-              { "name": "Natural Garden Enhancement", "price": 50 }
+              { "name": "Custom Name", "price": 0 },
+              { "name": "Spider-Man Figurines", "price": 60 },
+              { "name": "Web Pattern Details", "price": 40 },
+              { "name": "City Skyline Backdrop", "price": 55 }
             ]
           }
         ]
@@ -899,360 +418,90 @@
         "name": "Princess cakes",
         "items": [
           {
-            "id": "ballet-thando-butterfly-cake",
-            "name": "Ballet Butterfly Elegance Cake",
-            "description": "A sophisticated two-tier princess cake featuring delicate ballet shoes, purple butterflies, and elegant gold script lettering. Perfect for young dancers and princess celebrations with 'THANDO' personalization.",
+            "id": "princess-unami-disney-castle",
+            "name": "Unami's Disney Princess Castle Cake",
+            "description": "Luxurious three-tier pink cake featuring Disney princesses with golden glittery castle, gold balloons, and butterflies. Perfect for princess-themed celebrations with magical castle design and royal decorations.",
             "basePrice": 850,
-            "image": "/images/princess-cakes/ballet-thando-butterfly-cake.jpeg",
-            "sizes": [{ "name": "Standard (2-tier)", "price": 850 }, { "name": "Large (2-tier)", "price": 1050 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Funfetti"],
+            "image": "/images/princess-cakes/unami-disney-castle.jpeg",
+            "sizes": [
+              { "name": "Standard Three-Tier", "price": 850 },
+              { "name": "Large Three-Tier", "price": 950 },
+              { "name": "Premium Three-Tier", "price": 1050 }
+            ],
+            "flavors": [
+              "Mixed Flavors (Vanilla, Strawberry, Chocolate)",
+              "All Vanilla Tiers",
+              "Princess Pink (Strawberry & Vanilla)",
+              "Royal Mix (Vanilla & Red Velvet)"
+            ],
             "customizable": true,
             "extras": [
-              { "name": "Custom Name in Gold Script", "price": 0 },
-              { "name": "Age Number Topper", "price": 0 },
-              { "name": "Additional Butterfly Decorations", "price": 50 },
-              { "name": "Premium Balloon Garland", "price": 150 },
-              { "name": "Custom Ballet-themed Toppers", "price": 100 },
-              { "name": "Edible Glitter Finish", "price": 75 },
-              { "name": "Ballet Shoe Color Customization", "price": 30 }
-            ]
-          },
-          {
-            "id": "masha-bear-sine-3rd-birthday-cake",
-            "name": "Masha and Bear Adventure Cake",
-            "description": "A delightful fairy tale cake featuring beloved Masha character with forest elements, apple tree, mushrooms, and charming wooden fence details. Perfect for 'SINE' 3rd birthday celebration.",
-            "basePrice": 750,
-            "image": "/images/princess-cakes/masha-bear-sine-3rd-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard", "price": 750 }, { "name": "Large", "price": 950 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name Lettering", "price": 0 },
-              { "name": "Age Number Decoration", "price": 0 },
-              { "name": "Extra Forest Decorations", "price": 75 },
-              { "name": "Custom Wooden Fence Extension", "price": 100 },
-              { "name": "Additional Character Figures", "price": 120 },
-              { "name": "Edible Mushroom Garden", "price": 80 },
-              { "name": "Additional Masha and Bear Elements", "price": 90 }
-            ]
-          },
-          {
-            "id": "rainbow-butterfly-okuhle-4th-birthday-cake",
-            "name": "Rainbow Butterfly Garden Cake",
-            "description": "A modern princess cake with soft pastels, featuring rainbow arches, delicate butterflies, smiling clouds, and whimsical garden elements. Perfect for 'OKUHLE' 4th birthday celebration.",
-            "basePrice": 800,
-            "image": "/images/princess-cakes/rainbow-butterfly-okuhle-4th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (2-tier)", "price": 800 }, { "name": "Large (2-tier)", "price": 1000 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name in Elegant Script", "price": 0 },
-              { "name": "Age Number with Rainbow Design", "price": 0 },
-              { "name": "Additional Rainbow Elements", "price": 100 },
-              { "name": "Extra Butterfly Decorations", "price": 75 },
-              { "name": "Cloud Face Customization", "price": 50 },
-              { "name": "Edible Flower Garden", "price": 90 },
-              { "name": "Rainbow Color Customization", "price": 60 }
-            ]
-          },
-          {
-            "id": "elegant-butterfly-dzuvha-10th-birthday-cake",
-            "name": "Elegant Butterfly Cascade Cake",
-            "description": "A sophisticated three-tier princess cake with white and pink ombre effect, featuring cascading pink butterflies, pearl details, and golden birthday message. Perfect for 'DZUVHA' 10th birthday celebration.",
-            "basePrice": 1200,
-            "image": "/images/princess-cakes/elegant-butterfly-dzuvha-10th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (3-tier)", "price": 1200 }, { "name": "Large (3-tier)", "price": 1500 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name at Base", "price": 0 },
-              { "name": "Age Number Customization", "price": 0 },
-              { "name": "Additional Butterfly Cascade", "price": 150 },
-              { "name": "Premium Pearl Decorations", "price": 100 },
-              { "name": "Gold Leaf Accents", "price": 200 },
-              { "name": "Custom Tier Height Adjustment", "price": 100 },
-              { "name": "Ombre Color Options", "price": 80 }
-            ]
-          },
-          {
-            "id": "barbie-azania-5th-birthday-cake",
-            "name": "Barbie Princess Dream Cake",
-            "description": "A glamorous Barbie-themed princess cake with pink frosting, rainbow decorations, stars, and official Barbie princess imagery. Perfect for 'AZANIA' 5th birthday celebration.",
-            "basePrice": 700,
-            "image": "/images/princess-cakes/barbie-azania-5th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard", "price": 700 }, { "name": "Large", "price": 900 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Funfetti"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name Lettering", "price": 0 },
-              { "name": "Age Number with Star Design", "price": 0 },
-              { "name": "Additional Barbie Elements", "price": 100 },
-              { "name": "Extra Rainbow Decorations", "price": 75 },
-              { "name": "Star and Pearl Accents", "price": 80 },
-              { "name": "Custom Barbie Image Printing", "price": 120 },
-              { "name": "Pink Theme Color Variations", "price": 50 }
-            ]
-          },
-          {
-            "id": "royal-crown-owethu-10th-birthday-cake",
-            "name": "Royal Crown Princess Cake",
-            "description": "A majestic three-tier princess cake featuring a golden crown topper, quilted white middle tier with pink hearts, and luxurious pink ruffled base. Perfect for 'OWETHU' 10th birthday celebration.",
-            "basePrice": 1100,
-            "image": "/images/princess-cakes/royal-crown-owethu-10th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (3-tier)", "price": 1100 }, { "name": "Large (3-tier)", "price": 1400 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name at Base", "price": 0 },
-              { "name": "Age Number on Quilted Tier", "price": 0 },
-              { "name": "Premium Gold Crown Upgrade", "price": 200 },
-              { "name": "Additional Quilted Pattern Details", "price": 150 },
-              { "name": "Extra Ruffle Tier Decoration", "price": 100 },
-              { "name": "Edible Pearls and Gems", "price": 120 },
-              { "name": "Crown and Heart Color Customization", "price": 80 }
-            ]
-          },
-          {
-            "id": "unicorn-celokuhle-5th-birthday-cake",
-            "name": "Magical Unicorn Castle Cake",
-            "description": "An enchanting three-tier unicorn cake with rainbow mane unicorn topper, colorful flowers throughout, mushroom decorations, and magical garden elements. Perfect for 'CELOKUHLE' 5th birthday celebration.",
-            "basePrice": 950,
-            "image": "/images/princess-cakes/unicorn-celokuhle-5th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (3-tier)", "price": 950 }, { "name": "Large (3-tier)", "price": 1200 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name Lettering", "price": 0 },
-              { "name": "Age Number with Floral Design", "price": 0 },
-              { "name": "Additional Unicorn Elements", "price": 150 },
-              { "name": "Extra Flower Garden Decorations", "price": 100 },
-              { "name": "Mushroom Village Expansion", "price": 80 },
-              { "name": "Rainbow Mane Color Upgrade", "price": 75 },
-              { "name": "Unicorn and Flower Color Customization", "price": 90 }
+              { "name": "Custom Name", "price": 0 },
+              { "name": "Disney Princess Figurines", "price": 80 },
+              { "name": "Golden Glittery Castle", "price": 70 },
+              { "name": "Gold Balloon Decorations", "price": 45 },
+              { "name": "Butterfly Accents", "price": 35 },
+              { "name": "Royal Crown Topper", "price": 60 }
             ]
           }
         ]
       },
-      "super-hero-cakes": {
-        "name": "Super hero cakes",
+      "fairyland-cakes": {
+        "name": "Fairyland cakes",
         "items": [
           {
-            "id": "transformers-bumblebee-cake",
-            "name": "Transformers Bumblebee Action Cake",
-            "description": "Epic Transformers Bumblebee cake featuring a 3D Bumblebee figure on top with yellow and black colors, Autobot logo on the side, yellow and black star decorations, and personalized name on the base. Perfect for Transformers fans celebrating their special day with authentic robot action.",
-            "basePrice": 680,
-            "image": "/images/superhero-cakes/transformers-bumblebee-cake.jpeg",
+            "id": "fairyland-rainbow-unicorn",
+            "name": "Rainbow Unicorn Fairyland Cake",
+            "description": "Magical three-tier cake with pastel rainbow colors, featuring a beautiful unicorn topper with flowing mane, edible flowers, butterflies, and fairy tale elements. Perfect for creating enchanted celebrations.",
+            "basePrice": 720,
+            "image": "/images/fairyland-cakes/rainbow-unicorn.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 680 },
-              { "name": "Large (10 inch)", "price": 780 },
-              { "name": "Extra Large (12 inch)", "price": 880 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "3D Bumblebee Figure", "price": 80 },
-              { "name": "Autobot Logo Enhancement", "price": 45 },
-              { "name": "Yellow & Black Star Decorations", "price": 40 },
-              { "name": "Additional Transformer Characters", "price": 70 }
-            ]
-          },
-          {
-            "id": "superman-action-cake",
-            "name": "Superman Action Hero Cake",
-            "description": "Dynamic Superman cake with blue frosting and red drip effect, featuring multiple Superman character toppers, 'SUPERMAN' banner, yellow star decorations, and iconic Superman logo on the front. Perfect for superhero fans with personalized name on the base.",
-            "basePrice": 620,
-            "image": "/images/superhero-cakes/superman-action-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 620 },
-              { "name": "Large (10 inch)", "price": 720 },
-              { "name": "Extra Large (12 inch)", "price": 820 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Blue Velvet"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Multiple Superman Toppers", "price": 60 },
-              { "name": "Superman Banner", "price": 45 },
-              { "name": "Yellow Star Decorations", "price": 35 },
-              { "name": "Red Drip Effect", "price": 40 },
-              { "name": "Superman Logo Enhancement", "price": 50 }
-            ]
-          },
-          {
-            "id": "batman-5th-birthday-cake",
-            "name": "Batman 5th Birthday Cake",
-            "description": "Impressive Batman cake with white frosting and black drip, featuring Batman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Batman fans with comic book style elements.",
-            "basePrice": 650,
-            "image": "/images/superhero-cakes/batman-5th-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 650 },
-              { "name": "Large (10 inch)", "price": 750 },
-              { "name": "Extra Large (12 inch)", "price": 850 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Cookies & Cream"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Personal Photo Integration", "price": 50 },
-              { "name": "Batman Mask & Logo", "price": 55 },
-              { "name": "Comic Book Style Toppers", "price": 45 },
-              { "name": "Black Drip Effect", "price": 40 }
-            ]
-          },
-          {
-            "id": "dragon-ball-z-goku-cake",
-            "name": "Dragon Ball Z Goku Power Cake",
-            "description": "Spectacular Dragon Ball Z cake with blue frosting featuring Goku character image with flame decorations on top, orange Dragon Balls around the base, and personalized name. Perfect for anime and superhero fans celebrating with authentic Dragon Ball Z elements.",
-            "basePrice": 680,
-            "image": "/images/superhero-cakes/dragon-ball-z-goku-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 680 },
-              { "name": "Large (10 inch)", "price": 780 },
-              { "name": "Extra Large (12 inch)", "price": 880 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Orange", "Funfetti", "Mango"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Goku Character Enhancement", "price": 60 },
-              { "name": "Flame Decorations", "price": 50 },
-              { "name": "Dragon Ball Set (7 pieces)", "price": 70 },
-              { "name": "Additional DBZ Characters", "price": 75 }
-            ]
-          },
-          {
-            "id": "spongebob-1st-birthday-cake",
-            "name": "SpongeBob SquarePants 1st Birthday Cake",
-            "description": "Fun SpongeBob SquarePants cake with yellow frosting featuring SpongeBob's iconic face with big eyes and smile, stick arms extending from the sides, various SpongeBob characters on top with number '1', and 'THAPELO' personalized on the base. Perfect for young SpongeBob fans.",
-            "basePrice": 580,
-            "image": "/images/superhero-cakes/spongebob-1st-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Lemon", "Pineapple"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "SpongeBob Character Toppers", "price": 60 },
-              { "name": "Stick Arms Feature", "price": 35 },
-              { "name": "Additional Bikini Bottom Characters", "price": 55 },
-              { "name": "Yellow Crumb Coating", "price": 25 }
-            ]
-          },
-          {
-            "id": "minecraft-lesego-birthday-cake",
-            "name": "Minecraft Adventure Birthday Cake",
-            "description": "Epic two-tier Minecraft cake with green grass top tier and brown dirt bottom tier, featuring Minecraft characters on top including Steve, Creeper, and others, TNT blocks, 'LESEGO' name topper, and authentic Minecraft logo. Perfect for gaming enthusiasts and Minecraft fans.",
-            "basePrice": 650,
-            "image": "/images/superhero-cakes/minecraft-lesego-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
+              { "name": "Standard Three-Tier", "price": 720 },
+              { "name": "Large Three-Tier", "price": 820 },
+              { "name": "Premium Three-Tier", "price": 920 }
             ],
             "flavors": [
-              "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Chocolate",
-              "Vanilla & Funfetti",
-              "Chocolate & Cookies & Cream"
+              "Rainbow Layers (Mixed Flavors)",
+              "Vanilla & Strawberry",
+              "Funfetti & Vanilla",
+              "Cotton Candy & Vanilla"
             ],
             "customizable": true,
             "extras": [
-              { "name": "Custom Name Topper", "price": 0 },
-              { "name": "Minecraft Character Set", "price": 70 },
-              { "name": "TNT Block Decorations", "price": 45 },
-              { "name": "Creeper Face Enhancement", "price": 40 },
-              { "name": "Additional Minecraft Elements", "price": 60 },
-              { "name": "Pixelated Design Details", "price": 50 }
-            ]
-          },
-          {
-            "id": "numberblocks-5-amo-cake",
-            "name": "Numberblocks 5 Educational Birthday Cake",
-            "description": "Educational Numberblocks cake with blue frosting featuring colorful number characters on top including number '5' with rainbow, white clouds, and 'AMO' written on the side. Perfect for young learners celebrating with their favorite educational characters.",
-            "basePrice": 520,
-            "image": "/images/superhero-cakes/numberblocks-5-amo-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 },
-              { "name": "Extra Large (12 inch)", "price": 720 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Lemon"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name on Side", "price": 0 },
-              { "name": "Custom Number Character", "price": 0 },
-              { "name": "Rainbow Decoration", "price": 40 },
-              { "name": "Cloud Decorations", "price": 30 },
-              { "name": "Additional Number Characters", "price": 55 },
-              { "name": "Educational Theme Enhancement", "price": 45 }
-            ]
-          },
-          {
-            "id": "paw-patrol-angela-3rd-birthday-cake",
-            "name": "Paw Patrol Angela 3rd Birthday Cake",
-            "description": "Adorable two-tier Paw Patrol cake with pink top tier and blue bottom tier, featuring Paw Patrol characters on top including Chase, Marshall, Skye, and Rubble, number '3', blue and red balloon clusters, and 'ANGELA' personalized on the base. Perfect for Paw Patrol fans.",
-            "basePrice": 580,
-            "image": "/images/superhero-cakes/paw-patrol-angela-3rd-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 580 },
-              { "name": "Large Two-Tier", "price": 680 },
-              { "name": "Premium Two-Tier", "price": 780 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Strawberry)",
-              "Double Vanilla",
-              "Vanilla & Chocolate",
-              "Strawberry & Funfetti"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Paw Patrol Character Set", "price": 65 },
-              { "name": "Blue & Red Balloon Clusters", "price": 40 },
-              { "name": "Paw Patrol Badge Enhancement", "price": 45 },
-              { "name": "Additional Pup Characters", "price": 60 }
-            ]
-          },
-          {
-            "id": "mickey-mouse-1st-birthday-cake",
-            "name": "Mickey Mouse 1st Birthday Cake",
-            "description": "Classic Mickey Mouse cake with blue frosting featuring Mickey's iconic face and white gloved hands, number '1' with star decorations, silver and teal star toppers, and letter cookies around the base. Perfect for Disney fans and first birthday celebrations.",
-            "basePrice": 550,
-            "image": "/images/superhero-cakes/mickey-mouse-1st-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard (8 inch)", "price": 550 },
-              { "name": "Large (10 inch)", "price": 650 },
-              { "name": "Extra Large (12 inch)", "price": 750 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Cookies & Cream"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Letter Cookie Set", "price": 45 },
-              { "name": "Mickey Mouse Ears Enhancement", "price": 40 },
-              { "name": "Star Topper Decorations", "price": 35 },
-              { "name": "Disney Character Addition", "price": 60 },
-              { "name": "White Glove Details", "price": 30 }
+              { "name": "Custom Name", "price": 0 },
+              { "name": "Unicorn Topper", "price": 65 },
+              { "name": "Edible Flowers", "price": 40 },
+              { "name": "Butterfly Decorations", "price": 35 },
+              { "name": "Rainbow Drip Effect", "price": 50 },
+              { "name": "Fairy Tale Elements", "price": 55 }
             ]
           }
         ]
       },
-      "cartoon-character-cakes": {
-        "name": "Cartoon character cakes",
-        "items": []
-      },
-      "product-themed-cakes": {
-        "name": "Product themed cakes",
-        "items": []
+      "mickey-mouse-cakes": {
+        "name": "Mickey Mouse cakes",
+        "items": [
+          {
+            "id": "classic-mickey-head",
+            "name": "Classic Mickey Head Cake",
+            "description": "Traditional Mickey Mouse head shape with chocolate ears and classic red, black, and yellow color scheme. Perfect for Disney-themed celebrations.",
+            "basePrice": 450,
+            "image": "/images/mickey-cakes/classic-head.jpeg",
+            "sizes": [
+              { "name": "Small Mickey Head", "price": 450 },
+              { "name": "Large Mickey Head", "price": 550 },
+              { "name": "Extra Large Mickey Head", "price": 650 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Funfetti", "Red Velvet"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Mickey Ears Enhancement", "price": 30 },
+              { "name": "Classic Color Scheme", "price": 25 },
+              { "name": "Disney Character Accents", "price": 45 }
+            ]
+          }
+        ]
       },
       "wedding-cakes": {
         "name": "Wedding cakes",
@@ -1451,111 +700,105 @@
           }
         ]
       },
-      "novelty-themed-cakes": {
-        "name": "Novelty-themed cakes",
-        "items": []
+      "milestone-cakes": {
+        "name": "Milestone cakes",
+        "items": [
+          {
+            "id": "graduation-celebration",
+            "name": "Graduation Celebration Cake",
+            "description": "Elegant graduation cake with cap and diploma decorations, perfect for celebrating academic achievements. Customizable with school colors and graduate's name.",
+            "basePrice": 480,
+            "image": "/images/milestone-cakes/graduation-celebration.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 480 },
+              { "name": "Large (10 inch)", "price": 580 },
+              { "name": "Extra Large (12 inch)", "price": 680 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom School Colors", "price": 0 },
+              { "name": "Graduate Name", "price": 0 },
+              { "name": "Graduation Cap Topper", "price": 45 },
+              { "name": "Diploma Decoration", "price": 35 }
+            ]
+          }
+        ]
       },
       "baby-shower-cakes": {
         "name": "Baby shower cakes",
         "items": [
           {
-            "id": "timothy-teddy-bear-balloon-cake",
-            "name": "Timothy Teddy Bear Balloon Cake",
-            "description": "Adorable single-tier white cake featuring a handcrafted brown teddy bear sitting on a toy car base. Decorated with blue and beige balloon cake pops on wooden sticks creating a whimsical balloon bouquet effect. Perfect for baby boy showers with personalized name plaque.",
-            "image": "/images/baby-shower-cakes/timothy-teddy-bear-balloon-cake.jpeg",
-            "basePrice": 450,
+            "id": "baby-elephant-shower",
+            "name": "Baby Elephant Shower Cake",
+            "description": "Adorable baby shower cake featuring cute elephant decorations in soft pastel colors. Perfect for welcoming new arrivals with sweet elephant family theme.",
+            "basePrice": 520,
+            "image": "/images/baby-shower-cakes/baby-elephant.jpeg",
             "sizes": [
-              { "name": "6 inch", "serves": "8-10", "price": 450 },
-              { "name": "8 inch", "serves": "12-15", "price": 550 },
-              { "name": "10 inch", "serves": "20-25", "price": 650 }
+              { "name": "Standard (8 inch)", "price": 520 },
+              { "name": "Large (10 inch)", "price": 620 },
+              { "name": "Extra Large (12 inch)", "price": 720 }
             ],
-            "flavors": [
-              "Vanilla sponge with vanilla buttercream",
-              "Chocolate sponge with chocolate ganache",
-              "Red velvet with cream cheese frosting",
-              "Lemon sponge with lemon buttercream",
-              "Strawberry sponge with strawberry buttercream"
-            ],
-            "personalization": [
-              { "name": "Custom name plaque", "price": 50 },
-              { "name": "Age number", "price": 30 },
-              { "name": "Custom message", "price": 40 },
-              { "name": "Color scheme change", "price": 25 }
-            ],
+            "flavors": ["Vanilla", "Strawberry", "Lemon", "Funfetti"],
+            "customizable": true,
             "extras": [
-              { "name": "Additional balloon cake pops (set of 3)", "price": 45 },
-              { "name": "Extra teddy bear decoration", "price": 60 },
-              { "name": "Sparkly cake board upgrade", "price": 35 },
-              { "name": "Gift box packaging", "price": 25 }
-            ]
-          },
-          {
-            "id": "kylian-turns-one-teddy-bears-cake",
-            "name": "Kylian Turns One Teddy Bears Cake",
-            "description": "Sophisticated two-tier cake with white top tier and blue striped bottom tier. Features elegant gold script lettering and adorable brown teddy bears with blue bow ties positioned around the cake. Decorated with beautiful blue, white, and grey balloon arrangements.",
-            "image": "/images/baby-shower-cakes/kylian-turns-one-teddy-bears-cake.jpeg",
-            "basePrice": 650,
-            "sizes": [
-              { "name": "6+8 inch tiers", "serves": "20-25", "price": 650 },
-              { "name": "8+10 inch tiers", "serves": "30-35", "price": 750 },
-              { "name": "6+8+10 inch tiers", "serves": "40-45", "price": 950 }
-            ],
-            "flavors": [
-              "Vanilla sponge with vanilla buttercream",
-              "Chocolate sponge with chocolate ganache",
-              "Red velvet with cream cheese frosting",
-              "Lemon sponge with lemon buttercream",
-              "Mixed flavors (different per tier)"
-            ],
-            "personalization": [
-              { "name": "Custom name and age", "price": 60 },
-              { "name": "Custom message", "price": 50 },
-              { "name": "Color scheme change", "price": 40 },
-              { "name": "Bow tie color change", "price": 20 }
-            ],
-            "extras": [
-              { "name": "Additional teddy bears (set of 2)", "price": 80 },
-              { "name": "Extra balloon arrangements", "price": 55 },
-              { "name": "Gold lettering upgrade", "price": 45 },
-              { "name": "Premium cake stand", "price": 40 }
-            ]
-          },
-          {
-            "id": "baby-boy-hot-air-balloon-cake",
-            "name": "Baby Boy Hot Air Balloon Cake",
-            "description": "Stunning single-tier cake with artistic blue and white watercolor brushstroke effect and gold accents. Features elegant gold script 'Baby Boy' lettering, blue and white hot air balloon toppers, and an elaborate balloon garland in blue, white, gold, and grey tones.",
-            "image": "/images/baby-shower-cakes/baby-boy-hot-air-balloon-cake.jpeg",
-            "basePrice": 550,
-            "sizes": [
-              { "name": "6 inch", "serves": "8-10", "price": 550 },
-              { "name": "8 inch", "serves": "12-15", "price": 650 },
-              { "name": "10 inch", "serves": "20-25", "price": 750 }
-            ],
-            "flavors": [
-              "Vanilla sponge with vanilla buttercream",
-              "Chocolate sponge with chocolate ganache",
-              "Red velvet with cream cheese frosting",
-              "Lemon sponge with lemon buttercream",
-              "Funfetti with vanilla buttercream"
-            ],
-            "personalization": [
-              { "name": "Custom message instead of 'Baby Boy'", "price": 50 },
-              { "name": "Name addition", "price": 40 },
-              { "name": "Color scheme change", "price": 45 },
-              { "name": "Hot air balloon color change", "price": 30 }
-            ],
-            "extras": [
-              { "name": "Additional hot air balloons", "price": 60 },
-              { "name": "Extended balloon garland", "price": 70 },
-              { "name": "Gold leaf accents", "price": 55 },
-              { "name": "Watercolor effect enhancement", "price": 40 }
+              { "name": "Custom Baby Name", "price": 0 },
+              { "name": "Gender Color Scheme", "price": 0 },
+              { "name": "Elephant Family Toppers", "price": 60 },
+              { "name": "Pastel Decorations", "price": 40 }
             ]
           }
         ]
       },
-      "custom-corporate-cakes": {
-        "name": "Custom and corporate cakes",
-        "items": []
+      "novelty-themed-cakes": {
+        "name": "Novelty themed cakes",
+        "items": [
+          {
+            "id": "sports-car-cake",
+            "name": "Sports Car Novelty Cake",
+            "description": "Realistic sports car shaped cake perfect for car enthusiasts. Features detailed car design with racing stripes and custom license plate option.",
+            "basePrice": 680,
+            "image": "/images/novelty-cakes/sports-car.jpeg",
+            "sizes": [
+              { "name": "Standard Car Size", "price": 680 },
+              { "name": "Large Car Size", "price": 780 },
+              { "name": "Premium Detail Car", "price": 880 }
+            ],
+            "flavors": ["Chocolate", "Vanilla", "Red Velvet"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom License Plate", "price": 0 },
+              { "name": "Racing Stripes", "price": 35 },
+              { "name": "Detailed Car Features", "price": 60 },
+              { "name": "Custom Car Color", "price": 40 }
+            ]
+          }
+        ]
+      },
+      "corporate-custom-cakes": {
+        "name": "Corporate & custom cakes",
+        "items": [
+          {
+            "id": "corporate-logo-cake",
+            "name": "Corporate Logo Celebration Cake",
+            "description": "Professional corporate cake featuring your company logo and branding. Perfect for office celebrations, product launches, and corporate events.",
+            "basePrice": 750,
+            "image": "/images/corporate-cakes/logo-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Corporate (10 inch)", "price": 750 },
+              { "name": "Large Corporate (12 inch)", "price": 850 },
+              { "name": "Premium Corporate (14 inch)", "price": 950 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Logo Recreation", "price": 100 },
+              { "name": "Corporate Colors", "price": 0 },
+              { "name": "Company Message", "price": 50 },
+              { "name": "Professional Presentation", "price": 75 }
+            ]
+          }
+        ]
       }
     }
   },
@@ -1566,351 +809,39 @@
         "name": "Cookies",
         "items": [
           {
-            "id": "ginger-snap-cookies",
-            "name": "Ginger Snap Cookies",
-            "description": "Classic ginger snap cookies with warm spices and a perfectly crispy texture. These traditional cookies feature a beautiful crackled surface and rich ginger flavor that melts in your mouth.",
-            "basePrice": 75,
-            "image": "/images/cookies/ginger-snap-cookies.jpeg",
-            "sizes": [
-              { "name": "Small Pack (6 pieces)", "price": 75 },
-              { "name": "Medium Pack (12 pieces)", "price": 140 },
-              { "name": "Large Pack (18 pieces)", "price": 200 },
-              { "name": "Family Pack (24 pieces)", "price": 250 }
-            ],
-            "flavors": ["Traditional Ginger", "Spiced Ginger", "Molasses Ginger"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Gift Box Packaging", "price": 18 },
-              { "name": "Ribbon Decoration", "price": 10 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
-          },
-          {
-            "id": "chocolate-chip-cookies",
-            "name": "Chocolate Chip Cookies",
-            "description": "Soft-baked chocolate chip cookies loaded with premium dark chocolate chips. These golden-brown cookies offer the perfect balance of chewy texture and rich chocolate flavor in every bite.",
-            "basePrice": 85,
-            "image": "/images/cookies/chocolate-chip-cookies.jpeg",
-            "sizes": [
-              { "name": "Small Pack (6 pieces)", "price": 85 },
-              { "name": "Medium Pack (12 pieces)", "price": 160 },
-              { "name": "Large Pack (18 pieces)", "price": 230 },
-              { "name": "Family Pack (24 pieces)", "price": 290 }
-            ],
-            "flavors": [
-              "Classic Chocolate Chip",
-              "Double Chocolate Chip",
-              "White Chocolate Chip",
-              "Mixed Chocolate Chip"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Chocolate Chips", "price": 15 },
-              { "name": "Gift Box Packaging", "price": 20 },
-              { "name": "Warm Cookie Service", "price": 12 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
-          },
-          {
-            "id": "sugar-cookies",
-            "name": "Sugar Cookies",
-            "description": "Classic buttery sugar cookies with a tender, melt-in-your-mouth texture and delicate vanilla flavor. These golden cookies have slightly crinkled edges and a perfectly sweet taste.",
-            "basePrice": 70,
-            "image": "/images/cookies/sugar-cookies.jpeg",
-            "sizes": [
-              { "name": "Small Pack (6 pieces)", "price": 70 },
-              { "name": "Medium Pack (12 pieces)", "price": 130 },
-              { "name": "Large Pack (18 pieces)", "price": 185 },
-              { "name": "Family Pack (24 pieces)", "price": 230 }
-            ],
-            "flavors": ["Classic Vanilla", "Lemon Sugar", "Almond Sugar", "Cinnamon Sugar"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Royal Icing Decoration", "price": 25 },
-              { "name": "Colored Sugar Sprinkles", "price": 12 },
-              { "name": "Gift Box Packaging", "price": 18 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
-          }
-        ]
-      },
-      "melting-moment-biscuits": {
-        "name": "Melting moment biscuits",
-        "items": [
-          {
-            "id": "assorted-melting-moments-tray",
-            "name": "Assorted Melting Moments Tray",
-            "description": "Beautiful selection of buttery melting moment biscuits with decorative piped patterns in star and swirl designs. Each biscuit features the classic melt-in-your-mouth texture with colorful cherry and sprinkle decorations. Perfect for special occasions and gift giving.",
+            "id": "chocolate-chip-classic",
+            "name": "Classic Chocolate Chip Cookies",
+            "description": "Traditional homemade chocolate chip cookies with the perfect balance of crispy edges and chewy centers, loaded with premium chocolate chips.",
             "basePrice": 120,
-            "image": "/images/melting-moments/assorted-melting-moments-tray.jpeg",
+            "image": "/images/cookies/chocolate-chip-classic.jpeg",
             "sizes": [
-              { "name": "Small Tray (8 pieces)", "price": 120 },
-              { "name": "Medium Tray (12 pieces)", "price": 170 },
-              { "name": "Large Tray (16 pieces)", "price": 220 },
-              { "name": "Party Tray (24 pieces)", "price": 310 }
+              { "name": "Half Dozen (6 cookies)", "price": 120 },
+              { "name": "Dozen (12 cookies)", "price": 220 },
+              { "name": "Two Dozen (24 cookies)", "price": 400 }
             ],
-            "flavors": [
-              "Classic Vanilla with Cherry",
-              "Lemon with Colorful Sprinkles",
-              "Almond with Red Cherry",
-              "Mixed Assortment"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Cherry Decorations", "price": 15 },
-              { "name": "Custom Color Sprinkles", "price": 12 },
-              { "name": "Gift Box Packaging", "price": 25 },
-              { "name": "Ribbon Decoration", "price": 10 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
-          },
-          {
-            "id": "melting-moments-tub",
-            "name": "Melting Moments Tub",
-            "description": "Generous tub filled with traditional melting moment biscuits featuring the classic buttery shortbread texture with decorative piped ridges. Each biscuit melts delicately in your mouth and some are topped with colorful cherry decorations for extra sweetness.",
-            "basePrice": 180,
-            "image": "/images/melting-moments/melting-moments-tub.jpeg",
-            "sizes": [
-              { "name": "Small Tub (15 pieces)", "price": 180 },
-              { "name": "Medium Tub (25 pieces)", "price": 280 },
-              { "name": "Large Tub (35 pieces)", "price": 370 },
-              { "name": "Family Tub (50 pieces)", "price": 500 }
-            ],
-            "flavors": [
-              "Traditional Vanilla",
-              "Vanilla with Cherry Topping",
-              "Lemon Melting Moments",
-              "Coconut Melting Moments"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Cherry Toppings", "price": 20 },
-              { "name": "Mixed Flavor Selection", "price": 15 },
-              { "name": "Premium Gift Tub", "price": 30 },
-              { "name": "Decorative Ribbon", "price": 12 },
-              { "name": "Custom Label", "price": 10 }
-            ]
+            "flavors": ["Classic Chocolate Chip", "Double Chocolate Chip", "White Chocolate Chip"],
+            "customizable": false,
+            "extras": [{ "name": "Gift Box Packaging", "price": 25 }, { "name": "Custom Message Card", "price": 15 }]
           }
         ]
       },
-      "scones": {
-        "name": "Scones",
+      "pastries": {
+        "name": "Pastries",
         "items": [
           {
-            "id": "traditional-buttermilk-scones",
-            "name": "Traditional Buttermilk Scones",
-            "description": "Classic homemade buttermilk scones with golden-brown crusts and tender, flaky interiors. Baked fresh daily with the perfect balance of buttery richness and light texture. Ideal for breakfast, afternoon tea, or any time you crave a traditional bakery treat.",
-            "basePrice": 95,
-            "image": "/images/scones/traditional-buttermilk-scones.jpeg",
+            "id": "croissant-butter",
+            "name": "Fresh Butter Croissants",
+            "description": "Flaky, buttery croissants baked fresh daily with layers of delicate pastry. Perfect for breakfast or afternoon treats.",
+            "basePrice": 35,
+            "image": "/images/pastries/butter-croissant.jpeg",
             "sizes": [
-              { "name": "Small Tub (10 pieces)", "price": 95 },
-              { "name": "Medium Tub (15 pieces)", "price": 135 },
-              { "name": "Large Tub (20 pieces)", "price": 170 },
-              { "name": "Family Tub (30 pieces)", "price": 240 }
+              { "name": "Single Croissant", "price": 35 },
+              { "name": "Half Dozen (6 croissants)", "price": 180 },
+              { "name": "Dozen (12 croissants)", "price": 320 }
             ],
-            "flavors": ["Traditional Buttermilk", "Vanilla Buttermilk", "Lemon Buttermilk", "Honey Buttermilk"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Clotted Cream (side)", "price": 25 },
-              { "name": "Strawberry Jam (side)", "price": 18 },
-              { "name": "Butter Portions", "price": 12 },
-              { "name": "Gift Tub Packaging", "price": 20 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
-          }
-        ]
-      },
-      "snow-balls": {
-        "name": "Snow balls",
-        "items": [
-          {
-            "id": "pink-coconut-snowballs",
-            "name": "Pink Coconut Snowballs",
-            "description": "Delightful round cake treats rolled in pink-tinted coconut flakes, creating a festive and colorful snowball effect. Soft, moist cake interior with sweet coconut coating that melts in your mouth.",
-            "basePrice": 95,
-            "image": "/images/snowballs/pink-coconut-snowballs.jpeg",
-            "sizes": [
-              { "name": "6-piece Pack", "price": 95 },
-              { "name": "12-piece Pack", "price": 180 },
-              { "name": "18-piece Pack", "price": 260 }
-            ],
-            "flavors": [
-              "Vanilla Cake with Pink Coconut",
-              "Strawberry Cake with Pink Coconut",
-              "Lemon Cake with Pink Coconut"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Coconut Coating", "price": 15 },
-              { "name": "Gift Box Packaging", "price": 20 },
-              { "name": "Ribbon Decoration", "price": 10 },
-              { "name": "Custom Color Coconut", "price": 12 }
-            ]
-          },
-          {
-            "id": "chocolate-coconut-snowballs",
-            "name": "Chocolate Coconut Snowballs",
-            "description": "Rich chocolate cake balls rolled in a mixture of chocolate crumbs and white coconut flakes, creating the perfect 'snow-covered' appearance. A classic treat with deep chocolate flavor.",
-            "basePrice": 100,
-            "image": "/images/snowballs/chocolate-coconut-snowballs.jpeg",
-            "sizes": [
-              { "name": "6-piece Pack", "price": 100 },
-              { "name": "12-piece Pack", "price": 190 },
-              { "name": "18-piece Pack", "price": 275 }
-            ],
-            "flavors": [
-              "Dark Chocolate with Coconut",
-              "Milk Chocolate with Coconut",
-              "Double Chocolate with White Coconut"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Coconut Coating", "price": 15 },
-              { "name": "Chocolate Drizzle", "price": 18 },
-              { "name": "Premium Gift Box", "price": 25 },
-              { "name": "Decorative Ribbon", "price": 10 }
-            ]
-          }
-        ]
-      },
-      "roman-creams": {
-        "name": "Roman creams",
-        "items": [
-          {
-            "id": "chocolate-roman-creams",
-            "name": "Chocolate Roman Creams",
-            "description": "Classic chocolate Roman cream biscuits with rich cocoa flavor and smooth vanilla cream filling. These traditional oval-shaped sandwich biscuits offer the perfect balance of chocolate and cream in every bite.",
-            "basePrice": 85,
-            "image": "/images/roman-creams/chocolate-roman-creams.jpeg",
-            "sizes": [
-              { "name": "Small Pack (8 pieces)", "price": 85 },
-              { "name": "Medium Pack (12 pieces)", "price": 120 },
-              { "name": "Large Pack (16 pieces)", "price": 150 },
-              { "name": "Family Pack (24 pieces)", "price": 210 }
-            ],
-            "flavors": ["Chocolate with Vanilla Cream", "Double Chocolate", "Chocolate with Strawberry Cream"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Gift Box Packaging", "price": 15 },
-              { "name": "Ribbon Decoration", "price": 8 },
-              { "name": "Custom Message Card", "price": 5 }
-            ]
-          },
-          {
-            "id": "vanilla-roman-creams",
-            "name": "Vanilla Roman Creams",
-            "description": "Traditional vanilla Roman cream biscuits with golden buttery cookies and rich vanilla cream filling. A timeless classic that melts in your mouth with every bite.",
-            "basePrice": 80,
-            "image": "/images/roman-creams/vanilla-roman-creams.jpeg",
-            "sizes": [
-              { "name": "Small Pack (8 pieces)", "price": 80 },
-              { "name": "Medium Pack (12 pieces)", "price": 115 },
-              { "name": "Large Pack (16 pieces)", "price": 145 },
-              { "name": "Family Pack (24 pieces)", "price": 200 }
-            ],
-            "flavors": ["Classic Vanilla", "Vanilla with Lemon Cream", "Vanilla with Caramel Cream"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Gift Box Packaging", "price": 15 },
-              { "name": "Ribbon Decoration", "price": 8 },
-              { "name": "Custom Message Card", "price": 5 }
-            ]
-          },
-          {
-            "id": "red-velvet-roman-creams",
-            "name": "Red Velvet Roman Creams",
-            "description": "Luxurious red velvet Roman cream biscuits with vibrant red cocoa cookies and smooth cream cheese filling. A modern twist on the classic Roman cream with rich red velvet flavor.",
-            "basePrice": 95,
-            "image": "/images/roman-creams/red-velvet-roman-creams.jpeg",
-            "sizes": [
-              { "name": "Small Pack (8 pieces)", "price": 95 },
-              { "name": "Medium Pack (12 pieces)", "price": 135 },
-              { "name": "Large Pack (16 pieces)", "price": 170 },
-              { "name": "Family Pack (24 pieces)", "price": 240 }
-            ],
-            "flavors": [
-              "Red Velvet with Cream Cheese",
-              "Red Velvet with Vanilla Cream",
-              "Red Velvet with White Chocolate Cream"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Premium Gift Box", "price": 20 },
-              { "name": "Elegant Ribbon", "price": 10 },
-              { "name": "Custom Message Card", "price": 5 }
-            ]
-          }
-        ]
-      },
-      "brownies": {
-        "name": "Brownies",
-        "items": [
-          {
-            "id": "classic-fudge-brownies",
-            "name": "Classic Fudge Brownies",
-            "description": "Rich, dense chocolate brownies with a glossy fudgy texture and deep chocolate flavor. Cut into perfect squares and served in a convenient clear container. These indulgent brownies are made with premium cocoa for the ultimate chocolate experience.",
-            "basePrice": 85,
-            "image": "/images/brownies/classic-fudge-brownies.jpeg",
-            "sizes": [
-              { "name": "6-piece Tray", "price": 85 },
-              { "name": "12-piece Tray", "price": 160 },
-              { "name": "18-piece Tray", "price": 230 },
-              { "name": "24-piece Family Tray", "price": 290 }
-            ],
-            "flavors": [
-              "Classic Chocolate Fudge",
-              "Double Chocolate Fudge",
-              "Salted Caramel Fudge",
-              "Espresso Chocolate Fudge"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Chocolate Drizzle", "price": 15 },
-              { "name": "Chopped Walnuts", "price": 20 },
-              { "name": "Sea Salt Sprinkle", "price": 8 },
-              { "name": "Gift Box Packaging", "price": 18 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
-          },
-          {
-            "id": "zebra-stripe-brownies",
-            "name": "Zebra Stripe Brownies",
-            "description": "Elegant chocolate brownies decorated with distinctive white chocolate drizzle in a beautiful zebra stripe pattern. These gourmet brownies combine rich chocolate base with artistic white chocolate decoration for a sophisticated presentation.",
-            "basePrice": 95,
-            "image": "/images/brownies/zebra-stripe-brownies.jpeg",
-            "sizes": [
-              { "name": "9-piece Tray", "price": 95 },
-              { "name": "16-piece Tray", "price": 170 },
-              { "name": "25-piece Tray", "price": 250 },
-              { "name": "36-piece Party Tray", "price": 340 }
-            ],
-            "flavors": [
-              "Chocolate with White Chocolate Drizzle",
-              "Dark Chocolate with Vanilla Drizzle",
-              "Milk Chocolate with White Chocolate Stripes",
-              "Red Velvet with Cream Cheese Drizzle"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra White Chocolate Drizzle", "price": 18 },
-              { "name": "Colored Drizzle Pattern", "price": 20 },
-              { "name": "Premium Chocolate Upgrade", "price": 25 },
-              { "name": "Elegant Gift Box", "price": 22 },
-              { "name": "Decorative Ribbon", "price": 10 }
-            ]
+            "flavors": ["Plain Butter", "Almond", "Chocolate", "Ham & Cheese"],
+            "customizable": false,
+            "extras": [{ "name": "Warming Service", "price": 0 }, { "name": "Butter & Jam Set", "price": 25 }]
           }
         ]
       },
@@ -1918,117 +849,39 @@
         "name": "Donuts",
         "items": [
           {
-            "id": "assorted-glazed-donuts",
-            "name": "Assorted Glazed Donuts",
-            "description": "Delicious variety pack of 6 glazed donuts featuring different flavored glazes and toppings. Includes pink glazed with white drizzle, chocolate glazed with white drizzle, golden glazed with colorful sprinkles, and white glazed with rainbow sprinkles. Perfect for sharing or trying multiple flavors.",
-            "basePrice": 85,
-            "image": "/images/donuts/assorted-glazed-donuts.jpeg",
+            "id": "glazed-donuts",
+            "name": "Classic Glazed Donuts",
+            "description": "Light and fluffy yeast donuts with a sweet glaze coating. Made fresh daily for the perfect texture and taste.",
+            "basePrice": 25,
+            "image": "/images/donuts/classic-glazed.jpeg",
             "sizes": [
-              { "name": "6-pack Assorted", "price": 85 },
-              { "name": "12-pack Assorted", "price": 160 },
-              { "name": "18-pack Assorted", "price": 230 },
-              { "name": "24-pack Party Box", "price": 290 }
+              { "name": "Single Donut", "price": 25 },
+              { "name": "Half Dozen (6 donuts)", "price": 130 },
+              { "name": "Dozen (12 donuts)", "price": 240 }
             ],
-            "flavors": [
-              "Mixed Assortment (Pink, Chocolate, Golden, White)",
-              "Chocolate Lovers (All Chocolate Varieties)",
-              "Fruity Mix (Pink Strawberry, Lemon, White Vanilla)",
-              "Classic Glazed (Traditional Glazed Varieties)"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Sprinkles", "price": 12 },
-              { "name": "Custom Glaze Colors", "price": 18 },
-              { "name": "Gift Box Packaging", "price": 20 },
-              { "name": "Decorative Ribbon", "price": 10 },
-              { "name": "Custom Message Card", "price": 8 }
-            ]
+            "flavors": ["Classic Glazed", "Chocolate Glazed", "Strawberry Glazed", "Cinnamon Sugar"],
+            "customizable": false,
+            "extras": [{ "name": "Donut Box", "price": 15 }, { "name": "Mixed Flavors", "price": 0 }]
           }
         ]
       },
-      "cupcakes": {
-        "name": "Cupcakes",
+      "muffins": {
+        "name": "Muffins",
         "items": [
           {
-            "id": "red-velvet-crumb-cupcakes",
-            "name": "Red Velvet Crumb Cupcakes",
-            "description": "Decadent cupcakes topped with smooth vanilla buttercream frosting and sprinkled with red velvet cake crumbs. Each cupcake features elegant swirl piping and the perfect balance of sweet cream and rich red velvet flavor.",
-            "basePrice": 120,
-            "image": "/images/cupcakes/red-velvet-crumb-cupcakes.jpeg",
+            "id": "blueberry-muffins",
+            "name": "Fresh Blueberry Muffins",
+            "description": "Moist and fluffy muffins bursting with fresh blueberries and topped with a golden crumb topping. Perfect for breakfast or snacking.",
+            "basePrice": 45,
+            "image": "/images/muffins/blueberry-fresh.jpeg",
             "sizes": [
-              { "name": "6-pack", "price": 120 },
-              { "name": "12-pack", "price": 220 },
-              { "name": "18-pack", "price": 310 },
-              { "name": "24-pack", "price": 390 }
+              { "name": "Single Muffin", "price": 45 },
+              { "name": "Half Dozen (6 muffins)", "price": 240 },
+              { "name": "Dozen (12 muffins)", "price": 450 }
             ],
-            "flavors": [
-              "Red Velvet with Vanilla Buttercream",
-              "Red Velvet with Cream Cheese Frosting",
-              "Chocolate with Red Velvet Crumbs"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Red Velvet Crumbs", "price": 15 },
-              { "name": "Custom Message Toppers", "price": 25 },
-              { "name": "Gift Box Packaging", "price": 20 },
-              { "name": "Decorative Ribbon", "price": 10 }
-            ]
-          },
-          {
-            "id": "chocolate-buttercream-cupcakes",
-            "name": "Chocolate Buttercream Cupcakes",
-            "description": "Rich chocolate cupcakes topped with luxurious chocolate buttercream frosting piped in perfect rose swirls. Made with premium cocoa for an intense chocolate experience that melts in your mouth.",
-            "basePrice": 110,
-            "image": "/images/cupcakes/chocolate-buttercream-cupcakes.jpeg",
-            "sizes": [
-              { "name": "6-pack", "price": 110 },
-              { "name": "12-pack", "price": 200 },
-              { "name": "18-pack", "price": 285 },
-              { "name": "24-pack", "price": 360 }
-            ],
-            "flavors": [
-              "Double Chocolate",
-              "Chocolate with Vanilla Buttercream",
-              "Dark Chocolate with Mocha Buttercream",
-              "Milk Chocolate with Peanut Butter Frosting"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Chocolate Shavings", "price": 18 },
-              { "name": "Chocolate Drizzle", "price": 15 },
-              { "name": "Premium Gift Box", "price": 22 },
-              { "name": "Custom Decorations", "price": 20 }
-            ]
-          },
-          {
-            "id": "caramel-swirl-cupcakes",
-            "name": "Caramel Swirl Cupcakes",
-            "description": "Moist vanilla cupcakes topped with rich caramel buttercream frosting piped in elegant swirls. Each cupcake features decorative element and offers the perfect balance of vanilla cake and buttery caramel flavor.",
-            "basePrice": 115,
-            "image": "/images/cupcakes/caramel-swirl-cupcakes.jpeg",
-            "sizes": [
-              { "name": "6-pack", "price": 115 },
-              { "name": "12-pack", "price": 210 },
-              { "name": "18-pack", "price": 295 },
-              { "name": "24-pack", "price": 375 }
-            ],
-            "flavors": [
-              "Vanilla with Caramel Buttercream",
-              "Salted Caramel Cupcakes",
-              "Butterscotch with Caramel Frosting",
-              "Vanilla with Peanut Butter Caramel"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Caramel Drizzle", "price": 16 },
-              { "name": "Sea Salt Sprinkle", "price": 8 },
-              { "name": "Decorative Caramel Pieces", "price": 20 },
-              { "name": "Elegant Gift Box", "price": 20 }
-            ]
+            "flavors": ["Blueberry", "Chocolate Chip", "Banana Nut", "Lemon Poppy Seed"],
+            "customizable": false,
+            "extras": [{ "name": "Butter Portion", "price": 10 }, { "name": "Muffin Box", "price": 20 }]
           }
         ]
       }
@@ -2037,82 +890,23 @@
   "regular-treats": {
     "name": "Regular treats and desserts",
     "subcategories": {
-      "desserts": {
-        "name": "Desserts",
+      "roman-cream": {
+        "name": "Roman Cream",
         "items": [
           {
-            "id": "layered-trifle-cup",
-            "name": "Layered Trifle Cup",
-            "description": "Delightful individual trifle featuring layers of vanilla custard, fresh berry compote, fluffy whipped cream, and cake pieces. Topped with a cherry and served in a convenient clear cup with dome lid.",
-            "basePrice": 45,
-            "image": "/images/desserts/layered-trifle-cup.jpeg",
-            "sizes": [{ "name": "Individual Cup", "price": 45 }, { "name": "Large Cup", "price": 55 }],
-            "flavors": ["Mixed Berry Trifle", "Strawberry Trifle", "Chocolate Berry Trifle", "Lemon Berry Trifle"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Whipped Cream", "price": 8 },
-              { "name": "Fresh Berry Topping", "price": 12 },
-              { "name": "Chocolate Shavings", "price": 10 }
-            ]
-          },
-          {
-            "id": "berry-cheesecake-cup",
-            "name": "Berry Cheesecake Cup",
-            "description": "Creamy individual cheesecake with graham cracker crust, smooth cheesecake filling, and a vibrant berry compote layer. Topped with berry sauce and served in a clear container.",
-            "basePrice": 50,
-            "image": "/images/desserts/cheesecake-cup-berry.jpeg",
-            "sizes": [{ "name": "Individual Cup", "price": 50 }, { "name": "Large Cup", "price": 60 }],
-            "flavors": [
-              "Strawberry Cheesecake",
-              "Mixed Berry Cheesecake",
-              "Raspberry Cheesecake",
-              "Blueberry Cheesecake"
+            "id": "classic-roman-cream",
+            "name": "Classic Roman Cream Cookies",
+            "description": "Traditional South African sandwich cookies with a sweet cream filling between two golden biscuits. A beloved local favorite.",
+            "basePrice": 150,
+            "image": "/images/roman-cream/classic.jpeg",
+            "sizes": [
+              { "name": "Half Dozen (6 cookies)", "price": 150 },
+              { "name": "Dozen (12 cookies)", "price": 280 },
+              { "name": "Family Pack (24 cookies)", "price": 520 }
             ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Berry Compote", "price": 10 },
-              { "name": "Graham Cracker Crumbs", "price": 8 },
-              { "name": "Whipped Cream Dollop", "price": 8 }
-            ]
-          },
-          {
-            "id": "tiramisu-cup",
-            "name": "Tiramisu Cup",
-            "description": "Classic Italian tiramisu in individual serving size. Features coffee-soaked ladyfingers layered with rich mascarpone cream, dusted with cocoa powder and finished with chocolate drizzle.",
-            "basePrice": 55,
-            "image": "/images/desserts/tiramisu-cup.jpeg",
-            "sizes": [{ "name": "Individual Cup", "price": 55 }, { "name": "Large Cup", "price": 65 }],
-            "flavors": ["Classic Tiramisu", "Chocolate Tiramisu", "Amaretto Tiramisu", "Espresso Tiramisu"],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Cocoa Dusting", "price": 5 },
-              { "name": "Chocolate Shavings", "price": 12 },
-              { "name": "Coffee Bean Garnish", "price": 8 }
-            ]
-          },
-          {
-            "id": "cherry-cheesecake-cup",
-            "name": "Cherry Cheesecake Cup",
-            "description": "Individual New York style cheesecake with graham cracker crust, rich cream cheese filling, and topped with cherry compote and a fresh cherry. Perfect portion-controlled dessert.",
-            "basePrice": 52,
-            "image": "/images/desserts/cheesecake-cup-cherry.jpeg",
-            "sizes": [{ "name": "Individual Cup", "price": 52 }, { "name": "Large Cup", "price": 62 }],
-            "flavors": [
-              "Classic Cherry Cheesecake",
-              "Black Cherry Cheesecake",
-              "Cherry Vanilla Cheesecake",
-              "White Chocolate Cherry Cheesecake"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Extra Cherry Topping", "price": 10 },
-              { "name": "Fresh Cherry Garnish", "price": 8 },
-              { "name": "Vanilla Wafer Crumbs", "price": 8 }
-            ]
+            "flavors": ["Classic Vanilla", "Chocolate", "Coconut"],
+            "customizable": false,
+            "extras": [{ "name": "Gift Tin", "price": 35 }, { "name": "Mixed Flavors", "price": 0 }]
           }
         ]
       },
@@ -2120,116 +914,97 @@
         "name": "Swiss Rolls",
         "items": [
           {
-            "id": "chocolate-drizzle-swiss-roll",
-            "name": "Chocolate Drizzle Swiss Roll",
-            "description": "Decadent chocolate Swiss roll filled with light vanilla cream and topped with an elegant chocolate drizzle pattern. A perfect balance of rich chocolate cake and smooth cream filling.",
+            "id": "chocolate-swiss-roll",
+            "name": "Chocolate Swiss Roll",
+            "description": "Light chocolate sponge cake rolled with fresh cream and finished with chocolate shavings. A classic dessert perfect for any occasion.",
             "basePrice": 180,
-            "image": "/images/swiss-rolls/chocolate-drizzle-swiss-roll.jpeg",
+            "image": "/images/swiss-rolls/chocolate.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 35 },
-              { "name": "Half Roll (4-5 slices)", "price": 180 },
-              { "name": "Full Roll (8-10 slices)", "price": 320 }
+              { "name": "Individual Roll", "price": 180 },
+              { "name": "Large Roll (serves 6-8)", "price": 320 },
+              { "name": "Family Roll (serves 10-12)", "price": 450 }
             ],
-            "flavors": ["Chocolate Cake with Vanilla Cream", "Double Chocolate", "Chocolate with Strawberry Cream"],
+            "flavors": ["Chocolate", "Vanilla", "Strawberry", "Coffee"],
             "customizable": true,
-            "inStock": true,
             "extras": [
-              { "name": "Extra Chocolate Drizzle", "price": 15 },
-              { "name": "Fresh Berries", "price": 25 },
-              { "name": "Gift Box", "price": 20 }
+              { "name": "Fresh Berries", "price": 40 },
+              { "name": "Chocolate Drizzle", "price": 25 },
+              { "name": "Powdered Sugar Dusting", "price": 0 }
             ]
-          },
+          }
+        ]
+      },
+      "cupcakes": {
+        "name": "Cupcakes",
+        "items": [
           {
-            "id": "chocolate-shavings-swiss-roll",
-            "name": "Chocolate Shavings Swiss Roll",
-            "description": "Rich chocolate Swiss roll with creamy white filling, generously topped with chocolate shavings and decorative chocolate pieces. A chocolate lover's dream dessert.",
-            "basePrice": 190,
-            "image": "/images/swiss-rolls/chocolate-shavings-swiss-roll.jpeg",
+            "id": "vanilla-buttercream-cupcakes",
+            "name": "Vanilla Buttercream Cupcakes",
+            "description": "Moist vanilla cupcakes topped with smooth buttercream frosting and colorful sprinkles. Perfect for parties and celebrations.",
+            "basePrice": 35,
+            "image": "/images/cupcakes/vanilla-buttercream.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 38 },
-              { "name": "Half Roll (4-5 slices)", "price": 190 },
-              { "name": "Full Roll (8-10 slices)", "price": 340 }
+              { "name": "Single Cupcake", "price": 35 },
+              { "name": "Half Dozen (6 cupcakes)", "price": 180 },
+              { "name": "Dozen (12 cupcakes)", "price": 320 },
+              { "name": "Two Dozen (24 cupcakes)", "price": 600 }
             ],
-            "flavors": [
-              "Chocolate with Vanilla Cream",
-              "Chocolate with Coffee Cream",
-              "Dark Chocolate with White Chocolate Cream"
-            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
             "customizable": true,
-            "inStock": true,
             "extras": [
-              { "name": "Extra Chocolate Shavings", "price": 20 },
-              { "name": "Chocolate Sauce", "price": 15 },
-              { "name": "Premium Gift Box", "price": 25 }
+              { "name": "Custom Frosting Colors", "price": 0 },
+              { "name": "Decorative Toppers", "price": 15 },
+              { "name": "Cupcake Box", "price": 25 },
+              { "name": "Custom Message Toppers", "price": 30 }
             ]
-          },
+          }
+        ]
+      },
+      "brownies": {
+        "name": "Brownies",
+        "items": [
           {
-            "id": "red-velvet-swiss-roll",
-            "name": "Red Velvet Swiss Roll",
-            "description": "Classic red velvet Swiss roll with smooth cream cheese filling, topped with red velvet crumbs for an authentic red velvet experience in every bite.",
-            "basePrice": 200,
-            "image": "/images/swiss-rolls/red-velvet-swiss-roll.jpeg",
+            "id": "fudgy-chocolate-brownies",
+            "name": "Fudgy Chocolate Brownies",
+            "description": "Rich, dense chocolate brownies with a fudgy texture and intense chocolate flavor. Made with premium cocoa and chocolate chips.",
+            "basePrice": 45,
+            "image": "/images/brownies/fudgy-chocolate.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 40 },
-              { "name": "Half Roll (4-5 slices)", "price": 200 },
-              { "name": "Full Roll (8-10 slices)", "price": 360 }
+              { "name": "Single Brownie", "price": 45 },
+              { "name": "Half Dozen (6 brownies)", "price": 240 },
+              { "name": "Dozen (12 brownies)", "price": 450 }
             ],
-            "flavors": ["Traditional Red Velvet with Cream Cheese", "Red Velvet with Vanilla Cream"],
-            "customizable": true,
-            "inStock": true,
+            "flavors": ["Classic Fudgy", "Walnut", "Salted Caramel", "Peanut Butter"],
+            "customizable": false,
             "extras": [
-              { "name": "Extra Red Velvet Crumbs", "price": 18 },
-              { "name": "Cream Cheese Frosting Drizzle", "price": 20 },
-              { "name": "Elegant Gift Box", "price": 25 }
+              { "name": "Vanilla Ice Cream Scoop", "price": 25 },
+              { "name": "Chocolate Drizzle", "price": 15 },
+              { "name": "Brownie Box", "price": 20 }
             ]
-          },
+          }
+        ]
+      },
+      "cheesecakes": {
+        "name": "Cheesecakes",
+        "items": [
           {
-            "id": "pink-coconut-swiss-roll",
-            "name": "Pink Coconut Swiss Roll",
-            "description": "Light vanilla Swiss roll filled with strawberry cream and covered in pink-tinted coconut flakes. A delightfully sweet and tropical treat with beautiful presentation.",
-            "basePrice": 185,
-            "image": "/images/swiss-rolls/pink-coconut-swiss-roll.jpeg",
+            "id": "new-york-cheesecake",
+            "name": "Classic New York Cheesecake",
+            "description": "Rich and creamy New York style cheesecake with a graham cracker crust. Smooth, dense texture with the perfect balance of sweetness and tang.",
+            "basePrice": 280,
+            "image": "/images/cheesecakes/new-york-classic.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 37 },
-              { "name": "Half Roll (4-5 slices)", "price": 185 },
-              { "name": "Full Roll (8-10 slices)", "price": 330 }
+              { "name": "Individual Slice", "price": 65 },
+              { "name": "Small Cheesecake (6 inch)", "price": 280 },
+              { "name": "Large Cheesecake (9 inch)", "price": 450 }
             ],
-            "flavors": [
-              "Vanilla with Strawberry Cream",
-              "Coconut Cake with Berry Cream",
-              "Vanilla with Raspberry Cream"
-            ],
+            "flavors": ["Classic Plain", "Strawberry", "Blueberry", "Chocolate", "Caramel"],
             "customizable": true,
-            "inStock": true,
             "extras": [
-              { "name": "Extra Coconut Coating", "price": 15 },
-              { "name": "Fresh Strawberries", "price": 30 },
-              { "name": "Decorative Gift Box", "price": 22 }
-            ]
-          },
-          {
-            "id": "carrot-cake-swiss-roll",
-            "name": "Carrot Cake Swiss Roll",
-            "description": "Moist spiced carrot cake rolled with rich cream cheese frosting and topped with decorative piped cream cheese and a fondant carrot. All the flavors of classic carrot cake in Swiss roll form.",
-            "basePrice": 210,
-            "image": "/images/swiss-rolls/carrot-cake-swiss-roll.jpeg",
-            "sizes": [
-              { "name": "Individual Slice", "price": 42 },
-              { "name": "Half Roll (4-5 slices)", "price": 210 },
-              { "name": "Full Roll (8-10 slices)", "price": 380 }
-            ],
-            "flavors": [
-              "Traditional Carrot with Cream Cheese",
-              "Spiced Carrot with Cinnamon Cream",
-              "Carrot with Maple Cream Cheese"
-            ],
-            "customizable": true,
-            "inStock": true,
-            "extras": [
-              { "name": "Chopped Walnuts", "price": 25 },
-              { "name": "Extra Cream Cheese Frosting", "price": 20 },
-              { "name": "Decorative Fondant Carrots", "price": 15 },
-              { "name": "Premium Gift Box", "price": 28 }
+              { "name": "Fresh Berry Topping", "price": 45 },
+              { "name": "Chocolate Sauce", "price": 25 },
+              { "name": "Whipped Cream", "price": 20 },
+              { "name": "Graham Cracker Crust Upgrade", "price": 30 }
             ]
           }
         ]
@@ -2243,78 +1018,21 @@
         "name": "Round Cake Boards",
         "items": [
           {
-            "id": "white-round-boards-stack",
-            "name": "White Round Cake Boards - Multi Pack",
-            "description": "Professional white round cake boards in a convenient multi-pack. Food-safe and sturdy construction perfect for supporting cakes of all sizes. Essential for cake presentation and transport.",
-            "basePrice": 35,
-            "image": "/images/cake-boards/round/white-round-boards-stack.jpeg",
+            "id": "round-cake-boards-set",
+            "name": "Round Cake Boards Set",
+            "description": "Professional quality round cake boards in various sizes. Perfect for presenting and transporting your cakes safely.",
+            "basePrice": 25,
+            "image": "/images/cake-boards/round-set.jpeg",
             "sizes": [
-              { "name": "6 inch (Pack of 10)", "price": 35 },
-              { "name": "8 inch (Pack of 10)", "price": 45 },
-              { "name": "10 inch (Pack of 8)", "price": 50 },
-              { "name": "12 inch (Pack of 6)", "price": 55 }
+              { "name": "6 inch Round Board", "price": 25 },
+              { "name": "8 inch Round Board", "price": 30 },
+              { "name": "10 inch Round Board", "price": 35 },
+              { "name": "12 inch Round Board", "price": 40 },
+              { "name": "Mixed Size Set (4 boards)", "price": 120 }
             ],
+            "flavors": [],
             "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "silver-decorative-round-boards",
-            "name": "Silver Decorative Round Cake Boards",
-            "description": "Premium silver round cake boards with elegant decorative pattern on top. Features a sophisticated embossed design that adds luxury to your cake presentation. Bulk pack for professional use.",
-            "basePrice": 65,
-            "image": "/images/cake-boards/round/silver-decorative-round-boards.jpeg",
-            "sizes": [
-              { "name": "8 inch (Pack of 20)", "price": 65 },
-              { "name": "10 inch (Pack of 15)", "price": 75 },
-              { "name": "12 inch (Pack of 12)", "price": 85 }
-            ],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "white-blue-round-boards",
-            "name": "Premium White Round Cake Boards",
-            "description": "High-quality white round cake boards with clean, professional finish. Perfect for wedding cakes, birthday cakes, and special occasions. Smooth surface ideal for elegant presentations.",
-            "basePrice": 40,
-            "image": "/images/cake-boards/round/white-blue-round-boards.jpeg",
-            "sizes": [
-              { "name": "6 inch (Pack of 8)", "price": 40 },
-              { "name": "8 inch (Pack of 6)", "price": 45 },
-              { "name": "10 inch (Pack of 5)", "price": 50 },
-              { "name": "12 inch (Pack of 4)", "price": 55 }
-            ],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "gold-round-boards",
-            "name": "Gold Round Cake Boards",
-            "description": "Luxurious gold round cake boards that add elegance and sophistication to any cake presentation. Perfect for special occasions, weddings, and milestone celebrations.",
-            "basePrice": 55,
-            "image": "/images/cake-boards/round/gold-round-boards.jpeg",
-            "sizes": [
-              { "name": "6 inch (Pack of 6)", "price": 55 },
-              { "name": "8 inch (Pack of 5)", "price": 60 },
-              { "name": "10 inch (Pack of 4)", "price": 65 },
-              { "name": "12 inch (Pack of 3)", "price": 70 }
-            ],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "black-slate-round-boards",
-            "name": "Black Slate Round Cake Boards",
-            "description": "Sophisticated black round cake boards with natural slate-like finish. Creates dramatic contrast and modern elegance for contemporary cake designs and upscale presentations.",
-            "basePrice": 60,
-            "image": "/images/cake-boards/round/black-slate-round-boards.jpeg",
-            "sizes": [
-              { "name": "8 inch (Pack of 6)", "price": 60 },
-              { "name": "10 inch (Pack of 5)", "price": 65 },
-              { "name": "12 inch (Pack of 4)", "price": 70 },
-              { "name": "14 inch (Pack of 3)", "price": 75 }
-            ],
-            "customizable": false,
-            "inStock": true
+            "extras": [{ "name": "Food Safe Coating", "price": 0 }, { "name": "Decorative Edge", "price": 10 }]
           }
         ]
       },
@@ -2322,190 +1040,45 @@
         "name": "Square Cake Boards",
         "items": [
           {
-            "id": "6-cupcake-box",
-            "name": "6 Cupcake Box",
-            "description": "Sturdy white square box with 6 circular cutouts designed to hold standard cupcakes securely during transport.",
+            "id": "square-cake-boards-set",
+            "name": "Square Cake Boards Set",
+            "description": "Modern square cake boards for contemporary cake presentations. Sturdy and food-safe for professional results.",
             "basePrice": 30,
-            "image": "/images/cake-boards/square/6-cupcake-box.jpeg",
-            "sizes": [{ "name": "Standard 6 Cupcake", "price": 30 }],
-            "customizable": false
-          },
-          {
-            "id": "tall-cupcake-display-box",
-            "name": "Tall Cupcake Display Box",
-            "description": "Premium tall square display box with clear window, featuring multiple tiers of circular cutouts for elegant cupcake presentation.",
-            "basePrice": 55,
-            "image": "/images/cake-boards/square/tall-cupcake-display-box.jpeg",
-            "sizes": [{ "name": "15 Cupcake Display", "price": 55 }, { "name": "24 Cupcake Display", "price": 75 }],
-            "customizable": false
-          },
-          {
-            "id": "8-cupcake-box",
-            "name": "8 Cupcake Box",
-            "description": "Professional white square box with 8 circular cutouts arranged in 2 rows, ideal for medium-sized cupcake orders.",
-            "basePrice": 35,
-            "image": "/images/cake-boards/square/8-cupcake-box.jpeg",
-            "sizes": [{ "name": "Standard 8 Cupcake", "price": 35 }],
-            "customizable": false
-          },
-          {
-            "id": "mini-treats-box",
-            "name": "Mini Treats Box",
-            "description": "Large square box with multiple small circular cutouts, perfect for mini cupcakes, cake pops, or small treats display.",
-            "basePrice": 40,
-            "image": "/images/cake-boards/square/mini-treats-box.jpeg",
-            "sizes": [{ "name": "24 Mini Treats", "price": 40 }, { "name": "36 Mini Treats", "price": 50 }],
-            "customizable": false
-          },
-          {
-            "id": "windowed-cake-boxes",
-            "name": "Windowed Cake Boxes",
-            "description": "Elegant white square cake boxes with clear top windows, available in various sizes for different cake types and occasions.",
-            "basePrice": 20,
-            "image": "/images/cake-boards/square/windowed-cake-boxes.jpeg",
+            "image": "/images/cake-boards/square-set.jpeg",
             "sizes": [
-              { "name": "Small (6 inch)", "price": 20 },
-              { "name": "Medium (8 inch)", "price": 25 },
-              { "name": "Large (10 inch)", "price": 30 },
-              { "name": "Extra Large (12 inch)", "price": 35 }
+              { "name": "6 inch Square Board", "price": 30 },
+              { "name": "8 inch Square Board", "price": 35 },
+              { "name": "10 inch Square Board", "price": 40 },
+              { "name": "12 inch Square Board", "price": 45 },
+              { "name": "Mixed Size Set (4 boards)", "price": 140 }
             ],
-            "customizable": false
-          },
-          {
-            "id": "basic-square-cake-box",
-            "name": "Basic Square Cake Box",
-            "description": "Simple, sturdy white square cake box without window, perfect for secure cake transport and storage.",
-            "basePrice": 15,
-            "image": "/images/cake-boards/square/basic-square-cake-box.jpeg",
-            "sizes": [
-              { "name": "Small (6 inch)", "price": 15 },
-              { "name": "Medium (8 inch)", "price": 18 },
-              { "name": "Large (10 inch)", "price": 22 },
-              { "name": "Extra Large (12 inch)", "price": 28 }
-            ],
-            "customizable": false
+            "flavors": [],
+            "customizable": false,
+            "extras": [{ "name": "Food Safe Coating", "price": 0 }, { "name": "Modern Edge Design", "price": 15 }]
           }
         ]
       },
-      "cake-accessories": {
-        "name": "Cake accessories",
+      "custom-boards": {
+        "name": "Custom Cake Boards",
         "items": [
           {
-            "id": "happy-birthday-gold-topper",
-            "name": "Happy Birthday Gold Script Topper",
-            "description": "Elegant gold script 'Happy Birthday' cake topper with flowing cursive lettering. Perfect for adding a luxurious touch to any birthday celebration.",
-            "basePrice": 45,
-            "image": "/images/cake-accessories/happy-birthday-gold-topper.jpeg",
-            "sizes": [{ "name": "Standard Size", "price": 45 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "gold-rhinestone-crown",
-            "name": "Gold Rhinestone Crown Topper",
-            "description": "Stunning gold crown cake topper adorned with sparkling rhinestones and crystals. Ideal for princess parties, milestone birthdays, and royal-themed celebrations.",
+            "id": "custom-shaped-boards",
+            "name": "Custom Shaped Cake Boards",
+            "description": "Specially designed cake boards in custom shapes and sizes. Perfect for unique cake designs and special occasions.",
             "basePrice": 85,
-            "image": "/images/cake-accessories/gold-rhinestone-crown.jpeg",
-            "sizes": [{ "name": "Standard Crown", "price": 85 }, { "name": "Large Crown", "price": 110 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "soccer-ball-decorations",
-            "name": "Soccer Ball Cake Decorations",
-            "description": "Set of 9 realistic soccer ball cake decorations made from high-quality edible materials. Perfect for sports-themed cakes and football fan celebrations.",
-            "basePrice": 65,
-            "image": "/images/cake-accessories/soccer-ball-decorations.jpeg",
-            "sizes": [{ "name": "9-piece Set", "price": 65 }, { "name": "15-piece Set", "price": 95 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "rainbow-cake-decoration-set",
-            "name": "Rainbow Cake Decoration Set",
-            "description": "Colorful rainbow cake decoration kit with vibrant rainbow arch and matching colorful ball decorations. Brings joy and color to any celebration.",
-            "basePrice": 75,
-            "image": "/images/cake-accessories/rainbow-cake-decoration-set.jpeg",
-            "sizes": [{ "name": "Complete Rainbow Set", "price": 75 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "gold-crystal-crown",
-            "name": "Gold Crystal Crown Topper",
-            "description": "Magnificent gold crown cake topper with intricate crystal detailing and ornate design. Perfect for creating show-stopping celebration cakes fit for royalty.",
-            "basePrice": 95,
-            "image": "/images/cake-accessories/gold-crystal-crown.jpeg",
-            "sizes": [{ "name": "Standard Crown", "price": 95 }, { "name": "Premium Large Crown", "price": 125 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "yellow-happy-birthday-topper",
-            "name": "Yellow Happy Birthday Circle Topper",
-            "description": "Bright yellow 'Happy Birthday' cake topper with circular design and elegant script lettering. Adds a cheerful pop of color to birthday celebrations.",
-            "basePrice": 40,
-            "image": "/images/cake-accessories/yellow-happy-birthday-topper.jpeg",
-            "sizes": [{ "name": "Standard Size", "price": 40 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "colored-cake-balls",
-            "name": "Assorted Colored Cake Balls",
-            "description": "Collection of colorful edible cake decoration balls in various sizes and vibrant colors including pink, blue, yellow, green, and more. Perfect for adding texture and color to any cake design.",
-            "basePrice": 55,
-            "image": "/images/cake-accessories/colored-cake-balls.jpeg",
+            "image": "/images/cake-boards/custom-shapes.jpeg",
             "sizes": [
-              { "name": "Mixed Color Set (30 pieces)", "price": 55 },
-              { "name": "Large Mixed Set (50 pieces)", "price": 85 }
+              { "name": "Heart Shape", "price": 85 },
+              { "name": "Star Shape", "price": 90 },
+              { "name": "Custom Shape (specify)", "price": 120 },
+              { "name": "Tiered Board System", "price": 150 }
             ],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "gold-birthday-toppers-set",
-            "name": "Gold Birthday Toppers Collection",
-            "description": "Premium set of gold 'Happy Birthday' cake toppers in various elegant script styles. Includes multiple designs for versatile decoration options.",
-            "basePrice": 70,
-            "image": "/images/cake-accessories/gold-birthday-toppers-set.jpeg",
-            "sizes": [{ "name": "3-piece Topper Set", "price": 70 }, { "name": "5-piece Deluxe Set", "price": 110 }],
-            "customizable": false,
-            "inStock": true
-          },
-          {
-            "id": "baby-pink-fondant",
-            "name": "Premium Baby Pink Fondant",
-            "description": "High-quality baby pink cake covering fondant that's silky smooth with great taste and easy to use. Perfect for creating elegant pink-themed cakes and decorations with professional results.",
-            "basePrice": 45,
-            "image": "/images/cake-accessories/baby-pink-fondant.jpeg",
-            "sizes": [
-              { "name": "Small Tub (500g)", "price": 45 },
-              { "name": "Medium Tub (1kg)", "price": 75 },
-              { "name": "Large Tub (2kg)", "price": 135 }
-            ],
-            "flavors": ["Baby Pink", "Rose Pink", "Dusty Pink", "Hot Pink"],
-            "customizable": false,
-            "inStock": true,
+            "flavors": [],
+            "customizable": true,
             "extras": [
-              { "name": "Fondant Tools Set", "price": 25 },
-              { "name": "Rolling Mat", "price": 15 },
-              { "name": "Modeling Tools", "price": 20 }
-            ]
-          },
-          {
-            "id": "gold-botanical-topper",
-            "name": "Gold Botanical Leaf Topper",
-            "description": "Exquisite gold botanical cake topper featuring intricate leaf design with delicate line work. This elegant decorative piece adds sophisticated natural beauty to wedding cakes and special occasion desserts.",
-            "basePrice": 65,
-            "image": "/images/cake-accessories/gold-botanical-topper.jpeg",
-            "sizes": [{ "name": "Standard Size", "price": 65 }, { "name": "Large Size", "price": 85 }],
-            "customizable": false,
-            "inStock": true,
-            "extras": [
-              { "name": "Matching Small Leaves (set of 3)", "price": 25 },
-              { "name": "Silver Version", "price": 65 },
-              { "name": "Rose Gold Version", "price": 70 }
+              { "name": "Custom Size", "price": 25 },
+              { "name": "Decorative Pattern", "price": 35 },
+              { "name": "Premium Finish", "price": 40 }
             ]
           }
         ]
