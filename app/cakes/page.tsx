@@ -1083,10 +1083,7 @@ export default function CakesPage() {
                 <CardContent className="p-4 sm:p-4">
                   <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                     <img
-                      src={
-                        item.image ||
-                        `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert") || "/placeholder.svg"}`
-                      }
+                      src={`/.jpg?key=rg1g4&height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert bakery")}`}
                       alt={item.name}
                       className="w-full h-full object-contain"
                     />
@@ -1305,7 +1302,7 @@ export default function CakesPage() {
 
                         <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
-                            src={`/.jpg?key=ngtso&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
+                            src={`/.jpg?key=k4t0y&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                           />
