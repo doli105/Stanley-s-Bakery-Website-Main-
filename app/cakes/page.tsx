@@ -1,11 +1,13 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useRef } from "react"
 import { ArrowLeft, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import AddToCartButton from "../components/AddToCartButton"
+
+import menuData from "../../data/menu.json"
 
 const romanCreamCookies = [
   {
@@ -975,46 +977,7 @@ export default function CakesPage() {
   const [selectedParentCategory, setSelectedParentCategory] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState(null)
   const [visibleCategories, setVisibleCategories] = useState<Set<number>>(new Set())
-  const [menuData, setMenuData] = useState<any>({})
-  const [loading, setLoading] = useState(true)
-  const [refreshTrigger, setRefreshTrigger] = useState(0)
   const categoryRefs = useRef<(HTMLDivElement | null)[]>([])
-
-  useEffect(() => {
-    const fetchMenuData = async () => {
-      try {
-        const response = await fetch("/api/menu")
-        if (response.ok) {
-          const data = await response.json()
-          setMenuData(data)
-          console.log("[v0] Menu data loaded successfully:", Object.keys(data).length, "categories")
-        }
-      } catch (error) {
-        console.error("Failed to fetch menu data:", error)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchMenuData()
-  }, [refreshTrigger])
-
-  const refreshMenuData = () => {
-    setLoading(true)
-    setRefreshTrigger((prev) => prev + 1)
-  }
-
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (!document.hidden) {
-        // Tab became active, refresh menu data to get latest items
-        refreshMenuData()
-      }
-    }
-
-    document.addEventListener("visibilitychange", handleVisibilityChange)
-    return () => document.removeEventListener("visibilitychange", handleVisibilityChange)
-  }, [])
 
   const parentCategories = Object.keys(menuData).map((categoryKey, index) => {
     const categoryData = menuData[categoryKey]
@@ -1056,21 +1019,6 @@ export default function CakesPage() {
       "Cake boards": "Professional cake boards and accessories for your perfect presentation",
     }
     return descriptions[categoryName] || "Delicious treats made with love"
-  }
-
-  const categories1 = selectedParentCategory
-    ? parentCategoriesData.find((parent) => parent.id === selectedParentCategory)?.subcategories || []
-    : []
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500 mx-auto mb-4"></div>
-          <p className="text-pink-600 font-medium">Loading menu...</p>
-        </div>
-      </div>
-    )
   }
 
   if (selectedCategory) {
@@ -1357,7 +1305,7 @@ export default function CakesPage() {
 
                         <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
-                            src={`/abstract-geometric-shapes.png?key=x63n4&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
+                            src={`/.jpg?key=ngtso&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                           />
