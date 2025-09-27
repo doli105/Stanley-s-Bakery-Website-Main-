@@ -1151,64 +1151,11 @@ export default function CakesPage() {
                   <div className="mb-3 space-y-1">
                     <div className="flex items-center justify-between">
                       <span className="text-xl font-bold text-gray-800">
-                        R{item.basePrice || item.price?.replace(/[^\\d.]/g, "") || "0"}
+                        R{item.basePrice || item.price?.replace(/[^\d.]/g, "") || "0"}
                       </span>
                     </div>
 
                     <div className="bg-white/70 rounded-lg p-2 border border-gray-200">
-                      {/* Calculate and display per gram pricing */}
-                      {item.sizes && item.sizes.length > 0 && (
-                        <div className="space-y-1">
-                          {item.sizes.slice(0, 2).map((size, index) => {
-                            // Extract weight in grams from size name
-                            const weightMatch = size.name.match(/(\d+)g/)
-                            const weight = weightMatch ? Number.parseInt(weightMatch[1]) : null
-                            const pricePerGram = weight ? (size.price / weight).toFixed(2) : null
-
-                            return (
-                              <div key={index} className="flex items-center justify-between text-xs">
-                                <span className="text-gray-600">{size.name}:</span>
-                                <div className="flex gap-2">
-                                  <span className="font-bold text-amber-700 bg-amber-50 px-2 py-1 rounded">
-                                    R{size.price}
-                                  </span>
-                                  {pricePerGram && (
-                                    <span className="font-bold text-green-700 bg-green-50 px-2 py-1 rounded">
-                                      R{pricePerGram}/g
-                                    </span>
-                                  )}
-                                </div>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      )}
-
-                      {/* Show per unit pricing for pack items */}
-                      {item.sizes && item.sizes.length > 0 && (
-                        <div className="mt-2 pt-2 border-t border-gray-200">
-                          {item.sizes.slice(0, 1).map((size, index) => {
-                            // Extract pack count from size name
-                            const packMatch = size.name.match(/(\d+)-?pack|(\d+)\s*pieces?/i)
-                            const unitCount = packMatch ? Number.parseInt(packMatch[1] || packMatch[2]) : null
-                            const pricePerUnit = unitCount ? (size.price / unitCount).toFixed(2) : null
-
-                            if (pricePerUnit) {
-                              return (
-                                <div key={index} className="flex items-center justify-between text-xs">
-                                  <span className="text-gray-600">Per unit:</span>
-                                  <span className="font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded">
-                                    R{pricePerUnit} each
-                                  </span>
-                                </div>
-                              )
-                            }
-                            return null
-                          })}
-                        </div>
-                      )}
-
-                      {/* Existing weight, quantity, serving size display */}
                       {item.weight && (
                         <div className="flex items-center justify-between mb-1">
                           <span className="text-sm font-medium text-gray-600">Weight:</span>

@@ -14,11 +14,6 @@ export default function About() {
 
   const slideshowImages = [
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-13%20at%2011.24.08_84ebfc3e.jpg-91x12RM8FKSyoRPHbNH5xxjsz0uI63.jpeg",
-      alt: "Stanley's Bakery Team",
-      caption: "Our dedicated team of bakers working together to create exceptional treats",
-    },
-    {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-13%20at%2011.19.42_530d56d5.jpg-VhGy1cz3ZKYWYGlqrRwPPkK00vogLC.jpeg",
       alt: "Sifiso in the bakery",
       caption: "Master Baker Sifiso showcasing our fresh daily selection of baked goods",

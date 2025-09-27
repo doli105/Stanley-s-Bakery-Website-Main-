@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 
 export default function WhatsAppChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +17,7 @@ export default function WhatsAppChatWidget() {
         <div className="mb-4 bg-white rounded-2xl shadow-2xl border-2 border-stanley-pink/20 p-6 w-80 animate-in slide-in-from-bottom-4 duration-300 backdrop-blur-sm">
           <div className="flex items-center gap-3 mb-4">
             <div className="relative">
-              <img
+              <Image
                 src="/images/sfiso-bakery-staff.jpg"
                 alt="Sfiso - Stanley's Bakery"
                 width={50}
@@ -65,7 +66,7 @@ export default function WhatsAppChatWidget() {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="relative">
-          <img
+          <Image
             src="/images/sfiso-bakery-staff.jpg"
             alt="Sfiso - Stanley's Bakery"
             width={56}

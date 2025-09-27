@@ -68,28 +68,6 @@
               { "name": "Luxury Gift Box", "price": 35 },
               { "name": "Gold Twisted Candle", "price": 15 }
             ]
-          },
-          {
-            "id": "standard-bento-5-cupcakes",
-            "name": "Standard Bento Cake & 5 Cupcakes Set",
-            "description": "Classic bento cake set featuring 1 beautifully decorated cake with 5 matching cupcakes. Perfect for small celebrations and intimate gatherings. Price excludes happy birthday cake topper and custom-made cake topper.",
-            "basePrice": 750,
-            "image": "/images/bento-cakes/standard-bento-5-cupcakes.jpeg",
-            "weight": "Approx. 1.2kg total",
-            "quantity": "1 cake + 5 cupcakes (6 pieces total)",
-            "servingSize": "6-8 people",
-            "sizes": [{ "name": "Standard Set (1 cake + 5 cupcakes)", "price": 750 }],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon", "Funfetti"],
-            "customizable": true,
-            "extras": [
-              { "name": "Happy Birthday Cake Topper", "price": 25 },
-              { "name": "Custom-Made Cake Topper", "price": 45 },
-              { "name": "Custom Message Writing", "price": 0 },
-              { "name": "Extra Cupcakes (each)", "price": 35 },
-              { "name": "Gift Box Packaging", "price": 20 },
-              { "name": "Ribbon Decoration", "price": 10 }
-            ],
-            "notes": "Base price excludes happy birthday and custom cake toppers. Add toppers separately if needed."
           }
         ]
       },
