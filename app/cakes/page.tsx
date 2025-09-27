@@ -1083,7 +1083,7 @@ export default function CakesPage() {
                 <CardContent className="p-4 sm:p-4">
                   <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                     <img
-                      src={`/.jpg?key=nzpkl&height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert bakery")}`}
+                      src={`/.jpg?key=wdr3e&height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert bakery")}`}
                       alt={item.name}
                       className="w-full h-full object-contain"
                     />
@@ -1302,12 +1302,12 @@ export default function CakesPage() {
 
                         <div className="aspect-[4/2.5] bg-white/50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border-2 border-pink-200 group-hover:border-pink-300 transition-all duration-500">
                           <img
-                            src={`/.jpg?key=y77jh&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
+                            src={`/.jpg?key=zel7n&height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`}
                             alt={category.name}
                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                           />
                         </div>
-                        <h3 className="font-bold text-lg sm:text-lg text-pink-600 mb-2 sm:mb-2 font-serif group-hover:text-pink-700 transition-colors duration-300">
+                        <h3 className="font-bold text-lg sm:text-lg text-pink-600 mb-2 sm:mb-2 font-serif font-serif group-hover:text-pink-700 transition-colors duration-300">
                           {category.name}
                         </h3>
                         <p className="text-sm sm:text-sm text-pink-500 mb-4 sm:mb-4 line-clamp-2">
