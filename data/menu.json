@@ -1016,22 +1016,22 @@
             ]
           },
           {
-            "id": "unicorn-celokuhle-5th-birthday-cake",
-            "name": "Magical Unicorn Castle Cake",
-            "description": "An enchanting three-tier unicorn cake with rainbow mane unicorn topper, colorful flowers throughout, mushroom decorations, and magical garden elements. Perfect for 'CELOKUHLE' 5th birthday celebration.",
+            "id": "disney-princess-unami-3rd-birthday-cake",
+            "name": "Disney Princess Castle Cake",
+            "description": "A magical two-tier Disney princess cake featuring Snow White, Cinderella, and Aurora figures with a golden castle topper, pink decorations, and elegant princess elements. Perfect for 'UNAMI' 3rd birthday celebration.",
             "basePrice": 950,
-            "image": "/images/princess-cakes/unicorn-celokuhle-5th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (3-tier)", "price": 950 }, { "name": "Large (3-tier)", "price": 1200 }],
+            "image": "/images/princess-cakes/disney-princess-unami-3rd-birthday-cake.jpeg",
+            "sizes": [{ "name": "Standard (2-tier)", "price": 950 }, { "name": "Large (2-tier)", "price": 1200 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
             "customizable": true,
             "extras": [
               { "name": "Custom Name Lettering", "price": 0 },
-              { "name": "Age Number with Floral Design", "price": 0 },
-              { "name": "Additional Unicorn Elements", "price": 150 },
-              { "name": "Extra Flower Garden Decorations", "price": 100 },
-              { "name": "Mushroom Village Expansion", "price": 80 },
-              { "name": "Rainbow Mane Color Upgrade", "price": 75 },
-              { "name": "Unicorn and Flower Color Customization", "price": 90 }
+              { "name": "Age Number with Crown Design", "price": 0 },
+              { "name": "Additional Disney Princess Figures", "price": 150 },
+              { "name": "Premium Gold Castle Upgrade", "price": 200 },
+              { "name": "Extra Princess Decorations", "price": 100 },
+              { "name": "Edible Gold Pearls", "price": 75 },
+              { "name": "Princess Theme Color Customization", "price": 90 }
             ]
           }
         ]
