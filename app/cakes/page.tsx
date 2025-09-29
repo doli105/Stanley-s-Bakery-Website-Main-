@@ -31,23 +31,23 @@ export default function CakesPage() {
   })
 
   const categories = selectedParentCategory
-    ? Object.keys(
-        menuData[parentCategories.find((p) => p.id === selectedParentCategory)?.key]?.subcategories || {},
-      ).map((subcategoryKey, index) => {
-        const parentCategoryKey = parentCategories.find((p) => p.id === selectedParentCategory)?.key
-        const subcategoryData = menuData[parentCategoryKey]?.subcategories[subcategoryKey]
+    ? Object.keys(menuData[parentCategories.find((p) => p.id === selectedParentCategory)?.key]?.subcategories || {})
+        .map((subcategoryKey, index) => {
+          const parentCategoryKey = parentCategories.find((p) => p.id === selectedParentCategory)?.key
+          const subcategoryData = menuData[parentCategoryKey]?.subcategories[subcategoryKey]
 
-        return {
-          id: index + 1,
-          name: subcategoryData?.name || subcategoryKey,
-          key: subcategoryKey,
-          description: `Delicious ${(subcategoryData?.name || subcategoryKey).toLowerCase()} made fresh daily`,
-          items: subcategoryData?.items || [],
-          bgColor: getBgColorForCategory(subcategoryData?.name || subcategoryKey),
-          textColor: getTextColorForCategory(subcategoryData?.name || subcategoryKey),
-          borderColor: getBorderColorForCategory(subcategoryData?.name || subcategoryKey),
-        }
-      })
+          return {
+            id: index + 1,
+            name: subcategoryData?.name || subcategoryKey,
+            key: subcategoryKey,
+            description: `Delicious ${(subcategoryData?.name || subcategoryKey).toLowerCase()} made fresh daily`,
+            items: subcategoryData?.items || [],
+            bgColor: getBgColorForCategory(subcategoryData?.name || subcategoryKey),
+            textColor: getTextColorForCategory(subcategoryData?.name || subcategoryKey),
+            borderColor: getBorderColorForCategory(subcategoryData?.name || subcategoryKey),
+          }
+        })
+        .filter((category) => category.items && category.items.length > 0)
     : []
 
   function getDescriptionForCategory(categoryName: string) {
@@ -175,10 +175,10 @@ export default function CakesPage() {
                     <img
                       src={
                         item.image ||
-                        `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert bakery")}`
+                        `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert bakery") || "/placeholder.svg"}`
                       }
                       alt={item.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement
                         target.src = `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(item.name + " cake dessert bakery")}`
@@ -404,7 +404,7 @@ export default function CakesPage() {
                               `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display") || "/placeholder.svg"}`
                             }
                             alt={category.name}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                             onError={(e) => {
                               const target = e.target as HTMLImageElement
                               target.src = `/placeholder.svg?height=120&width=160&query=${encodeURIComponent(category.name + " cakes bakery display")}`

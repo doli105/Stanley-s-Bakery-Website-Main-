@@ -1456,7 +1456,137 @@
       },
       "novelty-themed-cakes": {
         "name": "Novelty-themed cakes",
-        "items": []
+        "items": [
+          {
+            "id": "money-safe-cake",
+            "name": "Money Safe Cake",
+            "description": "Realistic black safe-shaped cake with edible money bills spilling out, gold coins, and intricate safe details. Perfect for business celebrations, retirement parties, or anyone who loves unique themed designs.",
+            "basePrice": 850,
+            "image": "/images/novelty-cakes/money-safe-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Safe (8x8 inch)", "price": 850, "serves": "12 to 16 people" },
+              { "name": "Large Safe (10x10 inch)", "price": 1200, "serves": "20 to 25 people" },
+              { "name": "Premium Safe (12x12 inch)", "price": 1500, "serves": "30 to 35 people" }
+            ],
+            "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Coffee", "Salted Caramel"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name on Safe", "price": 0 },
+              { "name": "Additional Edible Money", "price": 45 },
+              { "name": "Gold Coin Decorations", "price": 35 },
+              { "name": "Custom Safe Combination", "price": 0 },
+              { "name": "Premium Black Fondant", "price": 40 }
+            ]
+          },
+          {
+            "id": "graduation-cake",
+            "name": "Graduation Celebration Cake",
+            "description": "Elegant white marble-effect cake with realistic black graduation cap, diploma scroll, and personalized name plaque. Perfect for graduation ceremonies and academic achievements.",
+            "basePrice": 650,
+            "image": "/images/novelty-cakes/graduation-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 650, "serves": "12 to 16 people" },
+              { "name": "Large (10 inch)", "price": 850, "serves": "20 to 25 people" },
+              { "name": "Extra Large (12 inch)", "price": 1050, "serves": "30 to 35 people" }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Funfetti"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Graduate Name", "price": 0 },
+              { "name": "Custom Degree/School", "price": 0 },
+              { "name": "Gold Tassel Details", "price": 25 },
+              { "name": "Diploma Scroll Decoration", "price": 30 },
+              { "name": "Marble Effect Upgrade", "price": 35 },
+              { "name": "Mini Book Decorations", "price": 40 }
+            ]
+          },
+          {
+            "id": "dior-themed-cake",
+            "name": "Designer Dior Themed Cake",
+            "description": "Sophisticated white cake featuring the iconic Dior logo pattern with elegant black bow decoration. Perfect for fashion lovers and luxury brand enthusiasts.",
+            "basePrice": 750,
+            "image": "/images/novelty-cakes/dior-themed-cake.jpeg",
+            "sizes": [
+              { "name": "Standard (8 inch)", "price": 750, "serves": "12 to 16 people" },
+              { "name": "Large (10 inch)", "price": 950, "serves": "20 to 25 people" },
+              { "name": "Extra Large (12 inch)", "price": 1150, "serves": "30 to 35 people" }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Strawberry", "Red Velvet", "Lemon"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Brand Pattern", "price": 50 },
+              { "name": "Large Black Bow", "price": 40 },
+              { "name": "Premium White Fondant", "price": 35 },
+              { "name": "Gold Accent Details", "price": 45 },
+              { "name": "Designer Gift Box", "price": 60 }
+            ]
+          },
+          {
+            "id": "kfc-bucket-cake",
+            "name": "KFC Bucket Cake",
+            "description": "Incredibly realistic KFC bucket cake filled with edible 'fried chicken' pieces. Complete with authentic KFC branding and packaging details. Perfect for fast food lovers and fun celebrations.",
+            "basePrice": 680,
+            "image": "/images/novelty-cakes/kfc-bucket-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Bucket", "price": 680, "serves": "10 to 14 people" },
+              { "name": "Large Bucket", "price": 880, "serves": "16 to 20 people" },
+              { "name": "Family Bucket", "price": 1080, "serves": "25 to 30 people" }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Caramel", "Spiced Cake", "Funfetti"],
+            "customizable": true,
+            "extras": [
+              { "name": "Extra Chicken Pieces", "price": 50 },
+              { "name": "Realistic Packaging Details", "price": 40 },
+              { "name": "Custom Branding", "price": 60 },
+              { "name": "Sauce Packet Decorations", "price": 25 },
+              { "name": "Edible Napkin Details", "price": 20 }
+            ]
+          },
+          {
+            "id": "pilot-uniform-cake",
+            "name": "Pilot Uniform Cake",
+            "description": "Detailed blue pilot uniform cake with authentic military styling, gold buttons, badges, and matching pilot cap. Perfect for aviation enthusiasts, military celebrations, or career achievements.",
+            "basePrice": 950,
+            "image": "/images/novelty-cakes/pilot-uniform-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Uniform", "price": 950, "serves": "15 to 20 people" },
+              { "name": "Large Uniform", "price": 1250, "serves": "25 to 30 people" },
+              { "name": "Premium Uniform Set", "price": 1550, "serves": "35 to 40 people" }
+            ],
+            "flavors": ["Chocolate", "Vanilla", "Coffee", "Red Velvet", "Salted Caramel"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Name Badge", "price": 0 },
+              { "name": "Custom Rank Insignia", "price": 35 },
+              { "name": "Gold Button Details", "price": 45 },
+              { "name": "Pilot Wings Badge", "price": 40 },
+              { "name": "Matching Pilot Cap", "price": 80 },
+              { "name": "Military Cord Details", "price": 30 }
+            ]
+          },
+          {
+            "id": "luxury-brand-cake",
+            "name": "Luxury Brand Designer Cake",
+            "description": "Elegant geometric cake featuring Louis Vuitton and Dior luxury brand logos with pink and white color scheme, decorated with sugar roses, gold spheres, and sophisticated design elements. Perfect for fashion-forward celebrations.",
+            "basePrice": 1200,
+            "image": "/images/novelty-cakes/luxury-brand-cake.jpeg",
+            "sizes": [
+              { "name": "Standard Designer (8 inch)", "price": 1200, "serves": "15 to 20 people" },
+              { "name": "Large Designer (10 inch)", "price": 1500, "serves": "25 to 30 people" },
+              { "name": "Premium Designer (12 inch)", "price": 1800, "serves": "35 to 40 people" }
+            ],
+            "flavors": ["Vanilla", "Strawberry", "Rose", "Champagne", "White Chocolate"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Brand Logos", "price": 80 },
+              { "name": "Sugar Rose Decorations", "price": 60 },
+              { "name": "Gold Sphere Accents", "price": 50 },
+              { "name": "Geometric Pattern Upgrade", "price": 70 },
+              { "name": "Premium Pink Fondant", "price": 45 },
+              { "name": "Luxury Gift Box", "price": 90 }
+            ]
+          }
+        ]
       },
       "baby-shower-cakes": {
         "name": "Baby shower cakes",
