@@ -515,35 +515,6 @@
               { "name": "Dual Elsa Portraits", "price": 55 },
               { "name": "Winter Wonderland Theme Enhancement", "price": 50 }
             ]
-          },
-          {
-            "id": "frozen-elsa-castle-cake",
-            "name": "Elsa's Ice Castle Cake",
-            "description": "A magical three-tier castle cake inspired by Elsa's ice palace, featuring shimmering blue and white fondant with edible snowflakes and crystal decorations",
-            "image": "/images/frozen-cakes/elsa-ice-castle-cake.jpeg",
-            "basePrice": 850,
-            "sizes": [
-              { "name": "Small (serves 15-20)", "price": 850 },
-              { "name": "Medium (serves 25-30)", "price": 1050 },
-              { "name": "Large (serves 35-40)", "price": 1250 }
-            ],
-            "flavors": [
-              { "name": "Vanilla", "price": 0 },
-              { "name": "Chocolate", "price": 0 },
-              { "name": "Red Velvet", "price": 50 },
-              { "name": "Lemon", "price": 25 }
-            ],
-            "personalization": [
-              { "name": "Custom name on cake", "price": 50 },
-              { "name": "Age number topper", "price": 30 },
-              { "name": "Custom message", "price": 40 }
-            ],
-            "extras": [
-              { "name": "Extra Frozen figurines", "price": 80 },
-              { "name": "LED lights for castle", "price": 120 },
-              { "name": "Edible glitter", "price": 25 },
-              { "name": "Matching cupcakes (dozen)", "price": 180 }
-            ]
           }
         ]
       },
@@ -740,31 +711,29 @@
         "name": "Jungle Cakes",
         "items": [
           {
-            "id": "safari-lwandile-7th-birthday-cake",
-            "name": "Safari Lwandile 7th Birthday Cake",
-            "description": "Sophisticated two-tier safari adventure cake with elegant green marble effect frosting, featuring golden safari animals including giraffe, elephant, and lion. Decorated with black tropical leaves, pampas grass, and a stunning balloon garland in gold, green, black and white colors. Perfect for safari-themed celebrations with 'LWANDILE 7' personalization.",
-            "basePrice": 750,
-            "image": "/images/jungle-cakes/safari-lwandile-7th-birthday-cake.jpeg",
+            "id": "jungle-adventure-cake",
+            "name": "Jungle Adventure Cake",
+            "description": "A vibrant two-tier jungle-themed cake featuring a collection of friendly jungle animals like lions, monkeys, and elephants. Decorated with lush green foliage, colorful flowers, and a 'Happy Birthday' banner. Perfect for a wild and fun celebration.",
+            "basePrice": 620,
+            "image": "/images/jungle-cakes/jungle-adventure-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 750 },
-              { "name": "Large Two-Tier", "price": 850 },
-              { "name": "Premium Two-Tier", "price": 950 }
+              { "name": "Standard Two-Tier", "price": 620 },
+              { "name": "Large Two-Tier", "price": 720 },
+              { "name": "Premium Two-Tier", "price": 820 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Vanilla",
-              "Vanilla & Caramel",
-              "Chocolate & Vanilla"
+              "Vanilla & Banana",
+              "Chocolate & Coconut",
+              "Funfetti & Vanilla"
             ],
             "customizable": true,
             "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Golden Safari Animal Set", "price": 80 },
-              { "name": "Balloon Garland Enhancement", "price": 60 },
-              { "name": "Tropical Leaves & Pampas Grass", "price": 45 },
-              { "name": "Marble Effect Upgrade", "price": 50 },
-              { "name": "Additional Safari Animals", "price": 70 }
+              { "name": "Custom Name on Banner", "price": 0 },
+              { "name": "Additional Jungle Animals", "price": 70 },
+              { "name": "Lush Foliage Enhancement", "price": 45 },
+              { "name": "Colorful Flower Decorations", "price": 50 },
+              { "name": "Animal Sound Effects (toy)", "price": 35 }
             ]
           },
           {
@@ -1084,11 +1053,11 @@
             ]
           },
           {
-            "id": "batman-5th-birthday-cake",
-            "name": "Batman 5th Birthday Cake",
-            "description": "Impressive Batman cake with white frosting and black drip, featuring Batman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Batman fans with comic book style elements.",
+            "id": "spiderman-birthday-cake",
+            "name": "Spiderman Birthday Cake",
+            "description": "Dynamic Spiderman cake with red and blue frosting, featuring Spiderman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Spiderman fans with comic book style elements.",
             "basePrice": 650,
-            "image": "/images/superhero-cakes/batman-5th-birthday-cake.jpeg",
+            "image": "/images/superhero-cakes/spiderman-birthday-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 650 },
               { "name": "Large (10 inch)", "price": 750 },
@@ -1100,9 +1069,9 @@
               { "name": "Custom Age Number", "price": 0 },
               { "name": "Custom Name on Base", "price": 0 },
               { "name": "Personal Photo Integration", "price": 50 },
-              { "name": "Batman Mask & Logo", "price": 55 },
+              { "name": "Spiderman Mask & Logo", "price": 55 },
               { "name": "Comic Book Style Toppers", "price": 45 },
-              { "name": "Black Drip Effect", "price": 40 }
+              { "name": "Red & Blue Drip Effect", "price": 40 }
             ]
           },
           {
@@ -1128,11 +1097,11 @@
             ]
           },
           {
-            "id": "spongebob-1st-birthday-cake",
-            "name": "SpongeBob SquarePants 1st Birthday Cake",
+            "id": "spongebob-birthday-cake",
+            "name": "SpongeBob Birthday Cake",
             "description": "Fun SpongeBob SquarePants cake with yellow frosting featuring SpongeBob's iconic face with big eyes and smile, stick arms extending from the sides, various SpongeBob characters on top with number '1', and 'THAPELO' personalized on the base. Perfect for young SpongeBob fans.",
             "basePrice": 580,
-            "image": "/images/superhero-cakes/spongebob-1st-birthday-cake.jpeg",
+            "image": "/images/superhero-cakes/spongebob-birthday-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 580 },
               { "name": "Large (10 inch)", "price": 680 },
@@ -1147,33 +1116,6 @@
               { "name": "Stick Arms Feature", "price": 35 },
               { "name": "Additional Bikini Bottom Characters", "price": 55 },
               { "name": "Yellow Crumb Coating", "price": 25 }
-            ]
-          },
-          {
-            "id": "minecraft-lesego-birthday-cake",
-            "name": "Minecraft Adventure Birthday Cake",
-            "description": "Epic two-tier Minecraft cake with green grass top tier and brown dirt bottom tier, featuring Minecraft characters on top including Steve, Creeper, and others, TNT blocks, 'LESEGO' name topper, and authentic Minecraft logo. Perfect for gaming enthusiasts and Minecraft fans.",
-            "basePrice": 650,
-            "image": "/images/superhero-cakes/minecraft-lesego-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
-            ],
-            "flavors": [
-              "Mixed Flavors (Vanilla & Chocolate)",
-              "Double Chocolate",
-              "Vanilla & Funfetti",
-              "Chocolate & Cookies & Cream"
-            ],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Name Topper", "price": 0 },
-              { "name": "Minecraft Character Set", "price": 70 },
-              { "name": "TNT Block Decorations", "price": 45 },
-              { "name": "Creeper Face Enhancement", "price": 40 },
-              { "name": "Additional Minecraft Elements", "price": 60 },
-              { "name": "Pixelated Design Details", "price": 50 }
             ]
           },
           {
@@ -1261,15 +1203,15 @@
         "name": "Wedding cakes",
         "items": [
           {
-            "id": "classic-white-roses-monogram",
-            "name": "Classic White Roses with Monogram",
-            "description": "Elegant three-tier white wedding cake featuring handcrafted sugar roses cascading from top to side, with personalized gold script monogram on middle tier. Perfect for traditional and romantic weddings.",
-            "image": "/images/wedding-cakes/classic-white-roses-monogram-cake.jpeg",
-            "basePrice": 2800,
+            "id": "elegant-white-wedding-cake",
+            "name": "Elegant White Wedding Cake",
+            "description": "A classic three-tier white wedding cake adorned with delicate white sugar flowers and subtle pearl accents. Features a smooth fondant finish and a personalized monogram on the top tier. Perfect for timeless and romantic celebrations.",
+            "image": "/images/wedding-cakes/elegant-white-wedding-cake.jpeg",
+            "basePrice": 2500,
             "sizes": [
-              { "name": "2-Tier (Serves 30-40)", "price": 2200 },
-              { "name": "3-Tier (Serves 60-80)", "price": 2800 },
-              { "name": "4-Tier (Serves 100-120)", "price": 3600 }
+              { "name": "2-Tier (Serves 30-40)", "price": 2000 },
+              { "name": "3-Tier (Serves 60-80)", "price": 2500 },
+              { "name": "4-Tier (Serves 100-120)", "price": 3200 }
             ],
             "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
             "personalization": [
@@ -1278,34 +1220,10 @@
               { "name": "Special Message", "price": 120 }
             ],
             "extras": [
-              { "name": "Additional Sugar Roses", "price": 80 },
+              { "name": "Additional Sugar Flowers", "price": 80 },
               { "name": "Gold Leaf Accents", "price": 200 },
-              { "name": "Pearl Details", "price": 150 },
+              { "name": "Pearl Details Upgrade", "price": 150 },
               { "name": "Ribbon Decoration", "price": 100 }
-            ]
-          },
-          {
-            "id": "navy-white-botanical-magnolia",
-            "name": "Navy & White Botanical Magnolia",
-            "description": "Stunning four-tier wedding cake with alternating white and navy tiers, featuring textured chevron pattern and cascading white magnolia flowers with orange berries and natural greenery.",
-            "image": "/images/wedding-cakes/navy-white-botanical-magnolia-cake.jpeg",
-            "basePrice": 3800,
-            "sizes": [
-              { "name": "3-Tier (Serves 70-90)", "price": 3200 },
-              { "name": "4-Tier (Serves 110-130)", "price": 3800 },
-              { "name": "5-Tier (Serves 150-180)", "price": 4800 }
-            ],
-            "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
-            "personalization": [
-              { "name": "Custom Color Scheme", "price": 200 },
-              { "name": "Monogram Addition", "price": 150 },
-              { "name": "Different Flower Types", "price": 250 }
-            ],
-            "extras": [
-              { "name": "Additional Botanical Elements", "price": 180 },
-              { "name": "Textured Pattern Upgrade", "price": 220 },
-              { "name": "Fresh Flower Option", "price": 300 },
-              { "name": "Gold Accent Details", "price": 180 }
             ]
           },
           {
