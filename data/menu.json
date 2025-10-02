@@ -1542,11 +1542,11 @@
             "name": "Timothy Teddy Bear Balloon Cake",
             "description": "Adorable single-tier white cake featuring a handcrafted brown teddy bear sitting on a toy car base. Decorated with blue and beige balloon cake pops on wooden sticks creating a whimsical balloon bouquet effect. Perfect for baby boy showers with personalized name plaque.",
             "image": "/images/baby-shower-cakes/timothy-teddy-bear-balloon-cake.jpeg",
-            "basePrice": 450,
+            "basePrice": 550,
             "sizes": [
-              { "name": "6 inch", "serves": "8-10", "price": 450 },
-              { "name": "8 inch", "serves": "12-15", "price": 550 },
-              { "name": "10 inch", "serves": "20-25", "price": 650 }
+              { "name": "6 inch", "serves": "8-10", "price": 550 },
+              { "name": "8 inch", "serves": "12-15", "price": 650 },
+              { "name": "10 inch", "serves": "20-25", "price": 750 }
             ],
             "flavors": [
               "Vanilla sponge with vanilla buttercream",
@@ -2296,12 +2296,12 @@
             "id": "carrot-cake-swiss-roll",
             "name": "Carrot Cake Swiss Roll",
             "description": "Moist spiced carrot cake rolled with rich cream cheese frosting and topped with decorative piped cream cheese and a fondant carrot. All the flavors of classic carrot cake in Swiss roll form.",
-            "basePrice": 210,
+            "basePrice": 550,
             "image": "/images/swiss-rolls/carrot-cake-swiss-roll.jpeg",
             "sizes": [
               { "name": "Individual Slice", "price": 40 },
-              { "name": "Half Roll (4-5 slices)", "price": 210 },
-              { "name": "Full Roll (8-10 slices)", "price": 380 }
+              { "name": "Half Roll (4-5 slices)", "price": 550 },
+              { "name": "Full Roll (8-10 slices)", "price": 750 }
             ],
             "flavors": [
               "Traditional Carrot with Cream Cheese",
