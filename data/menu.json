@@ -2271,7 +2271,7 @@
             "basePrice": 210,
             "image": "/images/swiss-rolls/carrot-cake-swiss-roll.jpeg",
             "sizes": [
-              { "name": "Individual Slice", "price": 40 },
+              { "name": "Individual Slice", "price": 42 },
               { "name": "Half Roll (4-5 slices)", "price": 210 },
               { "name": "Full Roll (8-10 slices)", "price": 380 }
             ],
