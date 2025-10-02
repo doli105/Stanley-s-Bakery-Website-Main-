@@ -88,6 +88,15 @@ export default function CakeCustomizationModal({
       ]
     }
 
+    if (cake?.sizes && Array.isArray(cake.sizes)) {
+      return cake.sizes.map((size: any, index: number) => ({
+        id: `size-${index}`,
+        name: size.name,
+        serves: size.serves || "See description",
+        price: size.price,
+      }))
+    }
+
     return cake?.pricing
       ? cake.pricing.map((pricing: any, index: number) => ({
           id: `size-${index}`,
@@ -115,6 +124,14 @@ export default function CakeCustomizationModal({
     { id: "chocolate-mint", name: "Moist Chocolate Sponge with Choc Mint", price: 0 },
   ]
 
+  const availableFlavors = cake?.flavors
+    ? cake.flavors.map((flavor: string, index: number) => ({
+        id: `flavor-${index}`,
+        name: flavor,
+        price: 0,
+      }))
+    : flavorOptions
+
   const extraOptions =
     cake?.category === "Jungle Cakes"
       ? [
@@ -122,7 +139,8 @@ export default function CakeCustomizationModal({
           { id: "happy-birthday-topper", name: "Happy Birthday Cake Topper", price: 150 },
           { id: "custom-topper", name: "Custom-Made Cake Topper", price: 200 },
         ]
-      : [
+      : // Use extras from cake data if available
+        cake?.extras || [
           { id: "happy-birthday-topper", name: "Happy Birthday Cake Topper", price: 150 },
           { id: "custom-topper", name: "Custom-Made Cake Topper", price: 200 },
         ]
@@ -148,7 +166,10 @@ export default function CakeCustomizationModal({
 
     let basePrice = 0
 
-    if (cake?.category === "Jungle Cakes" && selectedSize) {
+    if (cake?.sizes && selectedSize) {
+      const selectedSizeOption = sizeOptions.find((size) => size.id === selectedSize)
+      basePrice = selectedSizeOption?.price || 0
+    } else if (cake?.category === "Jungle Cakes" && selectedSize) {
       const selectedSizeOption = sizeOptions.find((size) => size.id === selectedSize)
       basePrice = selectedSizeOption?.price || 0
     } else if (cake.pricing && selectedSize) {
@@ -159,7 +180,7 @@ export default function CakeCustomizationModal({
       basePrice = (cake.basePrice || 0) * (selectedSizeOption?.priceMultiplier || 1)
     }
 
-    const selectedFlavorOption = flavorOptions.find((flavor) => flavor.id === selectedFlavor)
+    const selectedFlavorOption = availableFlavors.find((flavor: any) => flavor.id === selectedFlavor)
     basePrice += selectedFlavorOption?.price || 0
 
     const extrasPrice = selectedExtras.reduce((total, extraId) => {
@@ -174,7 +195,7 @@ export default function CakeCustomizationModal({
     if (!selectedSize) return
 
     const selectedSizeOption = sizeOptions.find((s) => s.id === selectedSize)
-    const selectedFlavorOption = flavorOptions.find((f) => f.id === selectedFlavor)
+    const selectedFlavorOption = availableFlavors.find((f: any) => f.id === selectedFlavor)
     const selectedExtrasOptions = selectedExtras.map((id) => extraOptions.find((e) => e.id === id)).filter(Boolean)
 
     const cartItem = {
@@ -357,7 +378,7 @@ export default function CakeCustomizationModal({
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    {flavorOptions.map((flavor) => (
+                    {availableFlavors.map((flavor: any) => (
                       <SelectItem key={flavor.id} value={flavor.id}>
                         {flavor.name}
                       </SelectItem>

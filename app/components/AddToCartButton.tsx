@@ -45,7 +45,11 @@ export default function AddToCartButton({
   }
 
   const needsCustomization =
-    category === "celebration-special-occasion" || subcategory === "cupcakes" || subcategory === "cheesecakes"
+    category === "celebration-special-occasion" ||
+    subcategory === "cupcakes" ||
+    subcategory === "cheesecakes" ||
+    (cake.sizes && cake.sizes.length > 1) ||
+    cake.customizable
 
   return (
     <>

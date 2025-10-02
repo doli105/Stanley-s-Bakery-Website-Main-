@@ -192,10 +192,19 @@ export default function CakesPage() {
 
                   <div className="mb-3 space-y-1">
                     <div className="flex items-center justify-between">
-                      <span className="text-xl font-bold text-gray-800">
-                        R{item.basePrice || item.price?.replace(/[^\d.]/g, "") || "0"}
-                      </span>
+                      {item.sizes && item.sizes.length > 1 ? (
+                        <>
+                          R{Math.min(...item.sizes.map((s: any) => s.price))} - R
+                          {Math.max(...item.sizes.map((s: any) => s.price))}
+                        </>
+                      ) : (
+                        `R${item.basePrice || item.price?.replace(/[^\d.]/g, "") || "0"}`
+                      )}
                     </div>
+
+                    {item.sizes && item.sizes.length > 1 && (
+                      <p className="text-xs text-amber-600 font-medium">Multiple sizes available - Click to select</p>
+                    )}
 
                     <div className="bg-white/70 rounded-lg p-2 border border-gray-200">
                       {item.weight && (
@@ -243,6 +252,10 @@ export default function CakesPage() {
                         image: item.image,
                         category: category.name,
                         pricing: item.pricing,
+                        sizes: item.sizes,
+                        flavors: item.flavors,
+                        extras: item.extras,
+                        customizable: item.customizable,
                       }}
                       category={parentCategories.find((p) => p.id === selectedParentCategory)?.key || "general"}
                       subcategory={category.key}
@@ -481,7 +494,9 @@ export default function CakesPage() {
                       <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                      <h3 className="font-bold text-xl sm:text-2xl bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent mb-3 sm:mb-4 font-serif group-hover:from-pink-600 group-hover:to-pink-700 transition-all duration-300">
+                      <h3
+                        className={`font-bold text-xl sm:text-2xl bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent mb-3 sm:mb-4 font-serif group-hover:from-pink-600 group-hover:to-pink-700 transition-all duration-300`}
+                      >
                         {category.name}
                       </h3>
                       <p className="text-sm sm:text-base text-pink-500 mb-4 sm:mb-6 line-clamp-3 font-medium">
