@@ -2177,8 +2177,8 @@
         "name": "Swiss Rolls",
         "items": [
           {
-            "id": "chocolate-drizzle-swiss-roll",
-            "name": "Chocolate Drizzle Swiss Roll",
+            "id": "chocolate-bar-one-swiss-roll",
+            "name": "Chocolate Bar One Swiss Roll",
             "description": "Decadent chocolate Swiss roll filled with light vanilla cream and topped with an elegant chocolate drizzle pattern. A perfect balance of rich chocolate cake and smooth cream filling.",
             "basePrice": 40,
             "image": "/images/swiss-rolls/chocolate-drizzle-swiss-roll.jpeg",
@@ -2197,8 +2197,8 @@
             ]
           },
           {
-            "id": "chocolate-shavings-swiss-roll",
-            "name": "Chocolate Shavings Swiss Roll",
+            "id": "blackforest-swiss-roll",
+            "name": "Blackforest Swiss Roll",
             "description": "Rich chocolate Swiss roll with creamy white filling, generously topped with chocolate shavings and decorative chocolate pieces. A chocolate lover's dream dessert.",
             "basePrice": 40,
             "image": "/images/swiss-rolls/chocolate-shavings-swiss-roll.jpeg",
@@ -2241,8 +2241,8 @@
             ]
           },
           {
-            "id": "pink-coconut-swiss-roll",
-            "name": "Pink Coconut Swiss Roll",
+            "id": "strawberry-swiss-roll",
+            "name": "Strawberry Swiss Roll",
             "description": "Light vanilla Swiss roll filled with strawberry cream and covered in pink-tinted coconut flakes. A delightfully sweet and tropical treat with beautiful presentation.",
             "basePrice": 40,
             "image": "/images/swiss-rolls/pink-coconut-swiss-roll.jpeg",
