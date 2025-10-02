@@ -1915,15 +1915,15 @@
         "items": [
           {
             "id": "classic-fudge-brownies",
-            "name": "Classic Fudge Brownies",
+            "name": "No Bake Squares",
             "description": "Rich, dense chocolate brownies with a glossy fudgy texture and deep chocolate flavor. Cut into perfect squares and served in a convenient clear container. These indulgent brownies are made with premium cocoa for the ultimate chocolate experience.",
-            "basePrice": 85,
+            "basePrice": 48,
             "image": "/images/brownies/classic-fudge-brownies.jpeg",
             "sizes": [
-              { "name": "6-piece Tray", "price": 85 },
-              { "name": "12-piece Tray", "price": 160 },
-              { "name": "18-piece Tray", "price": 230 },
-              { "name": "24-piece Family Tray", "price": 290 }
+              { "name": "6-piece Tray", "price": 48 },
+              { "name": "12-piece Tray", "price": 90 },
+              { "name": "18-piece Tray", "price": 130 },
+              { "name": "24-piece Family Tray", "price": 165 }
             ],
             "flavors": [
               "Classic Chocolate Fudge",
@@ -1943,15 +1943,15 @@
           },
           {
             "id": "zebra-stripe-brownies",
-            "name": "Zebra Stripe Brownies",
+            "name": "Chocolate Brownies",
             "description": "Elegant chocolate brownies decorated with distinctive white chocolate drizzle in a beautiful zebra stripe pattern. These gourmet brownies combine rich chocolate base with artistic white chocolate decoration for a sophisticated presentation.",
-            "basePrice": 95,
+            "basePrice": 60,
             "image": "/images/brownies/zebra-stripe-brownies.jpeg",
             "sizes": [
-              { "name": "9-piece Tray", "price": 95 },
-              { "name": "16-piece Tray", "price": 170 },
-              { "name": "25-piece Tray", "price": 250 },
-              { "name": "36-piece Party Tray", "price": 340 }
+              { "name": "9-piece Tray", "price": 60 },
+              { "name": "16-piece Tray", "price": 105 },
+              { "name": "25-piece Tray", "price": 155 },
+              { "name": "36-piece Party Tray", "price": 210 }
             ],
             "flavors": [
               "Chocolate with White Chocolate Drizzle",
