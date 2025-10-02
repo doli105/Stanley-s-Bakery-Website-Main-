@@ -528,9 +528,16 @@
             "basePrice": 550,
             "image": "/images/spiderman-cakes/spiderman-cityscape-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 550 },
-              { "name": "Large (10 inch)", "price": 650 },
-              { "name": "Extra Large (12 inch)", "price": 750 }
+              { "name": "12.5cm x 10cm (Serves 2-4)", "price": 550 },
+              { "name": "12.5cm x 15cm (Serves 4-6)", "price": 650 },
+              { "name": "15cm x 10cm (Serves 8-10)", "price": 850 },
+              { "name": "15cm x 15cm (Serves 10-12)", "price": 950 },
+              { "name": "17.5cm x 10cm (Serves 12-14)", "price": 1200 },
+              { "name": "17.5cm x 15cm (Serves 15-20)", "price": 1500 },
+              { "name": "20cm x 10cm (Serves 16-22)", "price": 1700 },
+              { "name": "20cm x 15cm (Serves 20-25)", "price": 1900 },
+              { "name": "22.5cm x 10cm (Serves 25-30)", "price": 2300 },
+              { "name": "25cm x 10cm (Serves 30-35)", "price": 2600 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
             "customizable": true,
@@ -550,9 +557,16 @@
             "basePrice": 550,
             "image": "/images/spiderman-cakes/classic-spiderman-web-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 550 },
-              { "name": "Large (10 inch)", "price": 650 },
-              { "name": "Extra Large (12 inch)", "price": 750 }
+              { "name": "12.5cm x 10cm (Serves 2-4)", "price": 550 },
+              { "name": "12.5cm x 15cm (Serves 4-6)", "price": 650 },
+              { "name": "15cm x 10cm (Serves 8-10)", "price": 850 },
+              { "name": "15cm x 15cm (Serves 10-12)", "price": 950 },
+              { "name": "17.5cm x 10cm (Serves 12-14)", "price": 1200 },
+              { "name": "17.5cm x 15cm (Serves 15-20)", "price": 1500 },
+              { "name": "20cm x 10cm (Serves 16-22)", "price": 1700 },
+              { "name": "20cm x 15cm (Serves 20-25)", "price": 1900 },
+              { "name": "22.5cm x 10cm (Serves 25-30)", "price": 2300 },
+              { "name": "25cm x 10cm (Serves 30-35)", "price": 2600 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
             "customizable": true,
@@ -572,9 +586,16 @@
             "basePrice": 550,
             "image": "/images/spiderman-cakes/tall-spiderman-city-cake.jpeg",
             "sizes": [
-              { "name": "Standard Tall", "price": 550 },
-              { "name": "Large Tall", "price": 650 },
-              { "name": "Extra Large Tall", "price": 750 }
+              { "name": "12.5cm x 10cm (Serves 2-4)", "price": 550 },
+              { "name": "12.5cm x 15cm (Serves 4-6)", "price": 650 },
+              { "name": "15cm x 10cm (Serves 8-10)", "price": 850 },
+              { "name": "15cm x 15cm (Serves 10-12)", "price": 950 },
+              { "name": "17.5cm x 10cm (Serves 12-14)", "price": 1200 },
+              { "name": "17.5cm x 15cm (Serves 15-20)", "price": 1500 },
+              { "name": "20cm x 10cm (Serves 16-22)", "price": 1700 },
+              { "name": "20cm x 15cm (Serves 20-25)", "price": 1900 },
+              { "name": "22.5cm x 10cm (Serves 25-30)", "price": 2300 },
+              { "name": "25cm x 10cm (Serves 30-35)", "price": 2600 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Blue Velvet"],
             "customizable": true,
@@ -586,6 +607,35 @@
               { "name": "Red & Blue Balloon Decorations", "price": 45 },
               { "name": "Comic Book Style Elements", "price": 40 },
               { "name": "Spider-Man Mask Enhancement", "price": 45 }
+            ]
+          },
+          {
+            "id": "spiderman-birthday-cake",
+            "name": "Spiderman Birthday Cake",
+            "description": "Dynamic Spiderman cake with red and blue frosting, featuring Spiderman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Spiderman fans with comic book style elements.",
+            "basePrice": 550,
+            "image": "/images/superhero-cakes/spiderman-birthday-cake.jpeg",
+            "sizes": [
+              { "name": "12.5cm x 10cm (Serves 2-4)", "price": 550 },
+              { "name": "12.5cm x 15cm (Serves 4-6)", "price": 650 },
+              { "name": "15cm x 10cm (Serves 8-10)", "price": 850 },
+              { "name": "15cm x 15cm (Serves 10-12)", "price": 950 },
+              { "name": "17.5cm x 10cm (Serves 12-14)", "price": 1200 },
+              { "name": "17.5cm x 15cm (Serves 15-20)", "price": 1500 },
+              { "name": "20cm x 10cm (Serves 16-22)", "price": 1700 },
+              { "name": "20cm x 15cm (Serves 20-25)", "price": 1900 },
+              { "name": "22.5cm x 10cm (Serves 25-30)", "price": 2300 },
+              { "name": "25cm x 10cm (Serves 30-35)", "price": 2600 }
+            ],
+            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Cookies & Cream"],
+            "customizable": true,
+            "extras": [
+              { "name": "Custom Age Number", "price": 0 },
+              { "name": "Custom Name on Base", "price": 0 },
+              { "name": "Personal Photo Integration", "price": 50 },
+              { "name": "Spiderman Mask & Logo", "price": 55 },
+              { "name": "Comic Book Style Toppers", "price": 45 },
+              { "name": "Red & Blue Drip Effect", "price": 40 }
             ]
           }
         ]
@@ -1059,9 +1109,16 @@
             "basePrice": 550,
             "image": "/images/superhero-cakes/spiderman-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 550 },
-              { "name": "Large (10 inch)", "price": 650 },
-              { "name": "Extra Large (12 inch)", "price": 750 }
+              { "name": "12.5cm x 10cm (Serves 2-4)", "price": 550 },
+              { "name": "12.5cm x 15cm (Serves 4-6)", "price": 650 },
+              { "name": "15cm x 10cm (Serves 8-10)", "price": 850 },
+              { "name": "15cm x 15cm (Serves 10-12)", "price": 950 },
+              { "name": "17.5cm x 10cm (Serves 12-14)", "price": 1200 },
+              { "name": "17.5cm x 15cm (Serves 15-20)", "price": 1500 },
+              { "name": "20cm x 10cm (Serves 16-22)", "price": 1700 },
+              { "name": "20cm x 15cm (Serves 20-25)", "price": 1900 },
+              { "name": "22.5cm x 10cm (Serves 25-30)", "price": 2300 },
+              { "name": "25cm x 10cm (Serves 30-35)", "price": 2600 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Cookies & Cream"],
             "customizable": true,
