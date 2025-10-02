@@ -362,10 +362,10 @@
             "id": "best-dad-husband-family-cake",
             "name": "Best Dad & Husband Family Cake",
             "description": "Heartwarming white cake celebrating fatherhood with 'BEST DAD & HUSBAND' text and beautiful family silhouettes around the sides. Topped with black and silver spherical decorations and 'Happy Birthday' script topper. Perfect for honoring fathers and celebrating family bonds.",
-            "basePrice": 520,
+            "basePrice": 550,
             "image": "/images/gentleman-cakes/best-dad-husband-family-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
+              { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 620 },
               { "name": "Extra Large (12 inch)", "price": 720 }
             ],
@@ -1235,9 +1235,9 @@
             "name": "Elegant White Wedding Cake",
             "description": "A classic three-tier white wedding cake adorned with delicate white sugar flowers and subtle pearl accents. Features a smooth fondant finish and a personalized monogram on the top tier. Perfect for timeless and romantic celebrations.",
             "image": "/images/wedding-cakes/elegant-white-wedding-cake.jpeg",
-            "basePrice": 2500,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 30-40)", "price": 2000 },
+              { "name": "2-Tier (Serves 30-40)", "price": 1500 },
               { "name": "3-Tier (Serves 60-80)", "price": 2500 },
               { "name": "4-Tier (Serves 100-120)", "price": 3200 }
             ],
@@ -1259,9 +1259,9 @@
             "name": "Gold Mandala Luxury Wedding Cake",
             "description": "Sophisticated three-tier cake with gold metallic top tier, pristine white middle tier, and ornate mandala pattern bottom tier. Features elegant white sugar flowers and luxurious gold detailing.",
             "image": "/images/wedding-cakes/gold-mandala-luxury-wedding-cake.jpeg",
-            "basePrice": 3200,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 40-50)", "price": 2600 },
+              { "name": "2-Tier (Serves 40-50)", "price": 1500 },
               { "name": "3-Tier (Serves 70-90)", "price": 3200 },
               { "name": "4-Tier (Serves 110-130)", "price": 4200 }
             ],
@@ -1283,9 +1283,9 @@
             "name": "Portuguese Tile with Blue Bow",
             "description": "Cultural two-tier wedding cake featuring authentic Portuguese tile patterns on bottom tier with elegant white top tier. Crowned with a stunning blue patterned fabric bow and white flower accent.",
             "image": "/images/wedding-cakes/portuguese-tile-blue-bow-cake.jpeg",
-            "basePrice": 2600,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 35-45)", "price": 2600 },
+              { "name": "2-Tier (Serves 35-45)", "price": 1500 },
               { "name": "3-Tier (Serves 65-85)", "price": 3400 },
               { "name": "4-Tier (Serves 100-120)", "price": 4200 }
             ],
@@ -1307,9 +1307,9 @@
             "name": "Mediterranean Tile Pattern Masterpiece",
             "description": "Bold three-tier wedding cake completely adorned with intricate blue and gold Mediterranean tile patterns separated by elegant gold grid lines. Features decorative patterned fabric accent on top.",
             "image": "/images/wedding-cakes/mediterranean-tile-pattern-cake.jpeg",
-            "basePrice": 3600,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 40-55)", "price": 2800 },
+              { "name": "2-Tier (Serves 40-55)", "price": 1500 },
               { "name": "3-Tier (Serves 75-95)", "price": 3600 },
               { "name": "4-Tier (Serves 115-140)", "price": 4600 }
             ],
@@ -1331,9 +1331,9 @@
             "name": "African Protea Cultural Wedding Cake",
             "description": "Vibrant two-tier cake celebrating African heritage with traditional beadwork patterns on middle tier and geometric tribal designs on bottom tier. Crowned with a magnificent protea flower.",
             "image": "/images/wedding-cakes/african-protea-cultural-cake.jpeg",
-            "basePrice": 2800,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 35-50)", "price": 2800 },
+              { "name": "2-Tier (Serves 35-50)", "price": 1500 },
               { "name": "3-Tier (Serves 70-90)", "price": 3600 },
               { "name": "4-Tier (Serves 105-125)", "price": 4400 }
             ],
@@ -1355,9 +1355,9 @@
             "name": "White Roses Monogram with Texture",
             "description": "Refined three-tier white wedding cake featuring 'R+A' monogram, cascading white roses, and elegant textured bottom tier with vertical line pattern. Classic romance meets modern sophistication.",
             "image": "/images/wedding-cakes/white-roses-monogram-textured-cake.jpeg",
-            "basePrice": 2900,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 35-45)", "price": 2300 },
+              { "name": "2-Tier (Serves 35-45)", "price": 1500 },
               { "name": "3-Tier (Serves 65-85)", "price": 2900 },
               { "name": "4-Tier (Serves 100-120)", "price": 3800 }
             ],
@@ -1379,9 +1379,9 @@
             "name": "Modern Fabric Drape Sculptural Cake",
             "description": "Contemporary three-tier white wedding cake featuring dramatic flowing fabric-like fondant draping with elegant gold trim edges. A true work of edible art for modern couples.",
             "image": "/images/wedding-cakes/modern-fabric-drape-sculptural-cake.jpeg",
-            "basePrice": 3400,
+            "basePrice": 1500,
             "sizes": [
-              { "name": "2-Tier (Serves 40-50)", "price": 2700 },
+              { "name": "2-Tier (Serves 40-50)", "price": 1500 },
               { "name": "3-Tier (Serves 70-90)", "price": 3400 },
               { "name": "4-Tier (Serves 110-130)", "price": 4400 }
             ],
