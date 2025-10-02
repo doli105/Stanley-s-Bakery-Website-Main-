@@ -192,12 +192,12 @@
             "id": "pink-gold-drip-birthday-cake",
             "name": "Pink & Gold Drip Birthday Cake",
             "description": "Stunning single-tier cake featuring elegant pink and gold drip effect cascading down the sides, topped with beautiful pink and gold roses and 'Happy Birthday' script topper. Decorated with pearl and gold ball accents throughout the drip design for a luxurious milestone celebration.",
-            "basePrice": 480,
+            "basePrice": 550,
             "image": "/images/milestone-cakes/pink-gold-drip-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 480 },
-              { "name": "Large (10 inch)", "price": 580 },
-              { "name": "Extra Large (12 inch)", "price": 680 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
             "customizable": true,
@@ -213,12 +213,12 @@
             "id": "white-botanical-birthday-cake",
             "name": "White Botanical Birthday Cake",
             "description": "Sophisticated white cake with artistic botanical design featuring white chocolate or fondant leaf decorations arranged vertically. Includes elegant 'Happy Birthday' script on white chocolate plaque with delicate white flower accent. Perfect for modern, minimalist milestone celebrations.",
-            "basePrice": 420,
+            "basePrice": 550,
             "image": "/images/milestone-cakes/white-botanical-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 420 },
-              { "name": "Large (10 inch)", "price": 520 },
-              { "name": "Extra Large (12 inch)", "price": 620 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Lemon", "Coconut", "White Chocolate", "Almond"],
             "customizable": true,
@@ -266,12 +266,12 @@
             "id": "automotive-birthday-cake",
             "name": "Automotive Birthday Cake",
             "description": "Sophisticated black cake with automotive theme featuring realistic car wheel decorations on top and around the base. Decorated with elegant gold 'Happy Birthday' script lettering and personalized name in gold around the base. Perfect for car enthusiasts and automotive lovers celebrating special occasions.",
-            "basePrice": 520,
+            "basePrice": 550,
             "image": "/images/gentleman-cakes/automotive-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 },
-              { "name": "Extra Large (12 inch)", "price": 720 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Coffee", "Salted Caramel"],
             "customizable": true,
@@ -287,12 +287,12 @@
             "id": "bow-tie-yolo-cake",
             "name": "Elegant Bow Tie Gentleman Cake",
             "description": "Sophisticated black cake with elegant gold bow tie decoration and luxurious gold and black spherical decorations with star accents on top. Features personalized message on the base with decorative footprint elements. Perfect for formal celebrations and milestone birthdays.",
-            "basePrice": 480,
+            "basePrice": 550,
             "image": "/images/gentleman-cakes/bow-tie-yolo-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 480 },
-              { "name": "Large (10 inch)", "price": 580 },
-              { "name": "Extra Large (12 inch)", "price": 680 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Lemon", "Coconut"],
             "customizable": true,
@@ -411,12 +411,12 @@
             "id": "manchester-city-cake",
             "name": "Manchester City Football Cake",
             "description": "Stunning Manchester City themed cake with sky blue decorations, official Manchester City logo, soccer balls, balloon cluster, age number, and personalized name. Ideal for Manchester City supporters and football birthday celebrations.",
-            "basePrice": 560,
+            "basePrice": 550,
             "image": "/images/sports-cakes/manchester-city-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 560 },
-              { "name": "Large (10 inch)", "price": 660 },
-              { "name": "Extra Large (12 inch)", "price": 760 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
             "customizable": true,
@@ -761,12 +761,12 @@
             "id": "lion-king-oreha-1st-birthday-cake",
             "name": "Lion King Oreha 1st Birthday Cake",
             "description": "Delightful Lion King themed cake featuring beloved characters Simba, Timon and Pumbaa with wooden 'OREHA' sign and number '1' topper. Decorated with tropical leaves and sandy base decoration creating an authentic Pride Lands atmosphere. Perfect for young Lion King fans with colorful and child-friendly design.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/jungle-cakes/lion-king-oreha-1st-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Banana"],
             "customizable": true,
@@ -971,9 +971,9 @@
             "id": "barbie-azania-5th-birthday-cake",
             "name": "Barbie Princess Dream Cake",
             "description": "A glamorous Barbie-themed princess cake with pink frosting, rainbow decorations, stars, and official Barbie princess imagery. Perfect for 'AZANIA' 5th birthday celebration.",
-            "basePrice": 700,
+            "basePrice": 550,
             "image": "/images/princess-cakes/barbie-azania-5th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard", "price": 700 }, { "name": "Large", "price": 900 }],
+            "sizes": [{ "name": "Standard", "price": 550 }, { "name": "Large", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Funfetti"],
             "customizable": true,
             "extras": [
@@ -1150,12 +1150,12 @@
             "id": "numberblocks-5-amo-cake",
             "name": "Numberblocks 5 Educational Birthday Cake",
             "description": "Educational Numberblocks cake with blue frosting featuring colorful number characters on top including number '5' with rainbow, white clouds, and 'AMO' written on the side. Perfect for young learners celebrating with their favorite educational characters.",
-            "basePrice": 520,
+            "basePrice": 550,
             "image": "/images/superhero-cakes/numberblocks-5-amo-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 },
-              { "name": "Extra Large (12 inch)", "price": 720 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Lemon"],
             "customizable": true,
