@@ -9,12 +9,12 @@
             "id": "pink-birthday-bento-set",
             "name": "Pink Birthday Bento Cake Set",
             "description": "Elegant bento cake set featuring a heart-shaped 'Happy 31st Birthday' cake with pearl border, accompanied by 4 matching cupcakes with pink and white frosting. Perfect for intimate celebrations and gift giving.",
-            "basePrice": 280,
+            "basePrice": 750,
             "image": "/images/bento-cakes/pink-birthday-bento-set.jpeg",
             "sizes": [
-              { "name": "Standard Bento Set (1 cake + 4 cupcakes)", "price": 280 },
-              { "name": "Large Bento Set (1 cake + 6 cupcakes)", "price": 350 },
-              { "name": "Premium Bento Set (1 cake + 8 cupcakes)", "price": 420 }
+              { "name": "Standard Bento Set (1 cake + 4 cupcakes)", "price": 750 },
+              { "name": "Large Bento Set (1 cake + 6 cupcakes)", "price": 850 },
+              { "name": "Premium Bento Set (1 cake + 8 cupcakes)", "price": 950 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
             "customizable": true,
@@ -30,12 +30,12 @@
             "id": "humorous-25th-birthday-bento",
             "name": "Humorous 25th Birthday Bento Set",
             "description": "Fun and playful bento cake set featuring a heart-shaped cake with 'Not me Turning 25' message and crying character, accompanied by 5 cupcakes with hilarious South African slang messages like 'HAMU SERIOUS!', 'Bathong 25 vele?', and 'HAIBO 25 VELE!'. Perfect for those who love humor with their celebrations.",
-            "basePrice": 320,
+            "basePrice": 750,
             "image": "/images/bento-cakes/humorous-25th-birthday-bento.jpeg",
             "sizes": [
-              { "name": "Standard Bento Set (1 cake + 5 cupcakes)", "price": 320 },
-              { "name": "Large Bento Set (1 cake + 8 cupcakes)", "price": 420 },
-              { "name": "Premium Bento Set (1 cake + 10 cupcakes)", "price": 520 }
+              { "name": "Standard Bento Set (1 cake + 5 cupcakes)", "price": 750 },
+              { "name": "Large Bento Set (1 cake + 8 cupcakes)", "price": 920 },
+              { "name": "Premium Bento Set (1 cake + 10 cupcakes)", "price": 1020 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
             "customizable": true,
@@ -51,12 +51,12 @@
             "id": "elegant-black-gold-bento",
             "name": "Elegant Black & Gold Birthday Bento Set",
             "description": "Sophisticated bento cake set featuring a main cake with black buttercream rosettes, gold pearl decorations, and 'Happy Birthday' script, accompanied by 5 cupcakes including calendar design, personalized name, and elegant birthday messages. Perfect for milestone celebrations and sophisticated tastes.",
-            "basePrice": 380,
+            "basePrice": 750,
             "image": "/images/bento-cakes/elegant-black-gold-bento.jpeg",
             "sizes": [
-              { "name": "Standard Bento Set (1 cake + 5 cupcakes)", "price": 380 },
-              { "name": "Large Bento Set (1 cake + 8 cupcakes)", "price": 480 },
-              { "name": "Premium Bento Set (1 cake + 12 cupcakes)", "price": 620 }
+              { "name": "Standard Bento Set (1 cake + 5 cupcakes)", "price": 750 },
+              { "name": "Large Bento Set (1 cake + 8 cupcakes)", "price": 980 },
+              { "name": "Premium Bento Set (1 cake + 12 cupcakes)", "price": 1120 }
             ],
             "flavors": ["Chocolate", "Vanilla", "Red Velvet", "Coffee", "Salted Caramel"],
             "customizable": true,
@@ -442,12 +442,12 @@
             "id": "olaf-elsa-4th-birthday-cake",
             "name": "Olaf & Elsa 4th Birthday Cake",
             "description": "Magical Frozen-themed cake featuring beloved Olaf snowman topper with his signature smile and stick arms, plus Elsa portrait on the side. Decorated with blue and white winter theme, snowflakes, spherical decorations, and personalized name around the base. Perfect for young Frozen fans celebrating their special day.",
-            "basePrice": 520,
+            "basePrice": 550,
             "image": "/images/frozen-cakes/olaf-elsa-4th-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 520 },
-              { "name": "Large (10 inch)", "price": 620 },
-              { "name": "Extra Large (12 inch)", "price": 720 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Funfetti", "Strawberry", "Lemon"],
             "customizable": true,
@@ -608,35 +608,6 @@
               { "name": "Comic Book Style Elements", "price": 40 },
               { "name": "Spider-Man Mask Enhancement", "price": 45 }
             ]
-          },
-          {
-            "id": "spiderman-birthday-cake",
-            "name": "Spiderman Birthday Cake",
-            "description": "Dynamic Spiderman cake with red and blue frosting, featuring Spiderman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Spiderman fans with comic book style elements.",
-            "basePrice": 550,
-            "image": "/images/superhero-cakes/spiderman-birthday-cake.jpeg",
-            "sizes": [
-              { "name": "12.5cm diameter x 10cm height it serve 2 to 4 people", "price": 550 },
-              { "name": "12.5cm diameter x 15cm height it serve 4 to 6 people", "price": 650 },
-              { "name": "15cm diameter x 10cm height it serve 8 to 10 people", "price": 850 },
-              { "name": "15cm diameter x 15cm height it serve 10 to 12 people", "price": 950 },
-              { "name": "17.5cm diameter x 10cm height it serve 12 to 14 people", "price": 1200 },
-              { "name": "17.5cm diameter x 15cm height it serve 15 to 20 people", "price": 1500 },
-              { "name": "20cm diameter x 10cm height it serve 16 to 22 people", "price": 1700 },
-              { "name": "20cm diameter x 15cm height it serve 20 to 25 people", "price": 1900 },
-              { "name": "22.5cm diameter x 10cm height it serve 25 to 30 people", "price": 2300 },
-              { "name": "25cm diameter x 10cm height it serve 30 to 35 people", "price": 2600 }
-            ],
-            "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Cookies & Cream"],
-            "customizable": true,
-            "extras": [
-              { "name": "Custom Age Number", "price": 0 },
-              { "name": "Custom Name on Base", "price": 0 },
-              { "name": "Personal Photo Integration", "price": 50 },
-              { "name": "Spiderman Mask & Logo", "price": 55 },
-              { "name": "Comic Book Style Toppers", "price": 45 },
-              { "name": "Red & Blue Drip Effect", "price": 40 }
-            ]
           }
         ]
       },
@@ -675,12 +646,12 @@
             "id": "1st-birthday-cocomelon-cake",
             "name": "1st Birthday Cocomelon Cake",
             "description": "Charming two-tier Cocomelon cake with blue top tier and green bottom tier, featuring JJ character on top with number '1', white clouds and stars, and the signature Cocomelon bus on the bottom tier. 'BIRTHDAY' is written in colorful letters around the base for a perfect first birthday celebration.",
-            "basePrice": 520,
+            "basePrice": 550,
             "image": "/images/cocomelon-cakes/1st-birthday-cocomelon-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 520 },
-              { "name": "Large Two-Tier", "price": 620 },
-              { "name": "Premium Two-Tier", "price": 720 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -1816,7 +1787,7 @@
             "id": "traditional-buttermilk-scones",
             "name": "Traditional Buttermilk Scones",
             "description": "Classic homemade buttermilk scones with golden-brown crusts and tender, flaky interiors. Baked fresh daily with the perfect balance of buttery richness and light texture. Ideal for breakfast, afternoon tea, or any time you crave a traditional bakery treat.",
-            "basePrice": 240,
+            "basePrice": 95,
             "image": "/images/scones/traditional-buttermilk-scones.jpeg",
             "sizes": [
               { "name": "Small Tub (10 pieces)", "price": 95 },
