@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Star, Sparkles, ShoppingCart, Package } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useCart } from "./CartContext"
 import CartModal from "./CartModal"
 import OrderTracking from "./OrderTracking"
@@ -63,18 +64,18 @@ export default function Hero() {
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
-            <div
-              className={`absolute inset-0 zoom-animation ${index === currentSlide ? "zoom-animation" : ""}`}
-              style={{
-                backgroundImage: `url("${image}")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
-                transform: index === currentSlide ? "scale(1)" : "scale(1.05)",
-                transition: "transform 8s ease-in-out",
-              }}
-            />
+            <div className={`absolute inset-0 ${index === currentSlide ? "zoom-animation" : ""}`}>
+              <Image
+                src={image || "/placeholder.svg"}
+                alt={`Bakery slideshow image ${index + 1}`}
+                fill
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
+                quality={95}
+                sizes="100vw"
+                className="object-cover object-center"
+              />
+            </div>
           </div>
         ))}
         <div className="absolute inset-0 bg-black/50 sm:bg-black/40" />
