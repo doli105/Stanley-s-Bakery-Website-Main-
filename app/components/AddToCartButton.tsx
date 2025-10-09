@@ -45,16 +45,35 @@ export default function AddToCartButton({
   }
 
   const needsCustomization =
-    category === "celebration-special-occasion" || subcategory === "cupcakes" || subcategory === "cheesecakes"
+    category === "celebration-special-occasion" ||
+    subcategory === "cupcakes" ||
+    subcategory === "cheesecakes" ||
+    subcategory === "spiderman-cakes"
+
+  const getPriceRange = () => {
+    if (cake.pricing && cake.pricing.length > 0) {
+      const minPrice = cake.pricing[0].price
+      const maxPrice = cake.pricing[cake.pricing.length - 1].price
+      return `R${minPrice} - R${maxPrice}`
+    }
+    return null
+  }
+
+  const priceRange = getPriceRange()
 
   return (
     <>
-      <div className={`flex gap-2 ${className}`}>
+      <div className={`flex flex-col gap-2 ${className}`}>
         {needsCustomization ? (
-          <Button onClick={handleCustomize} variant={variant} size={size} className="flex-1">
-            <Plus className="mr-2 h-4 w-4" />
-            Customize & Add
-          </Button>
+          <>
+            <Button onClick={handleCustomize} variant={variant} size={size} className="flex-1">
+              <Plus className="mr-2 h-4 w-4" />
+              Customize & Add
+            </Button>
+            {priceRange && subcategory === "spiderman-cakes" && (
+              <span className="text-xs font-semibold text-center text-gray-600">{priceRange}</span>
+            )}
+          </>
         ) : (
           <Button onClick={handleQuickAdd} variant={variant} size={size} className="flex-1">
             <ShoppingCart className="mr-2 h-4 w-4" />

@@ -91,8 +91,8 @@ export default function CakeCustomizationModal({
     return cake?.pricing
       ? cake.pricing.map((pricing: any, index: number) => ({
           id: `size-${index}`,
-          name: `${pricing.size}`,
-          serves: pricing.serves,
+          name: pricing.name,
+          serves: pricing.name.includes("serve") ? "" : pricing.serves || "",
           price: pricing.price,
         }))
       : [
@@ -339,7 +339,9 @@ export default function CakeCustomizationModal({
                     {sizeOptions.map((size) => (
                       <SelectItem key={size.id} value={size.id}>
                         {cake.pricing || size.price
-                          ? `${size.name} - ${size.serves} - R${size.price}`
+                          ? size.serves
+                            ? `${size.name} - ${size.serves} - R${size.price}`
+                            : `${size.name} - R${size.price}`
                           : `${size.name} - ${size.serves}`}
                       </SelectItem>
                     ))}

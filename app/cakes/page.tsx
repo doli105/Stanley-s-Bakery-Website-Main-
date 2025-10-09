@@ -232,6 +232,11 @@ export default function CakesPage() {
                     >
                       {item.price || `R${item.basePrice || "0"}`}
                     </Badge>
+                    {category.name === "Spider Man Cakes" && item.pricing && item.pricing.length > 0 && (
+                      <span className="text-xs font-semibold text-gray-600">
+                        R{item.pricing[0].price} - R{item.pricing[item.pricing.length - 1].price}
+                      </span>
+                    )}
                     <AddToCartButton
                       cake={{
                         id: `${category.key}-${item.name}`,
@@ -481,7 +486,9 @@ export default function CakesPage() {
                       <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                      <h3 className="font-bold text-xl sm:text-2xl bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent mb-3 sm:mb-4 font-serif group-hover:from-pink-600 group-hover:to-pink-700 transition-all duration-300">
+                      <h3
+                        className={`font-bold text-xl sm:text-2xl bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent mb-3 sm:mb-4 font-serif group-hover:from-pink-600 group-hover:to-pink-700 transition-all duration-300`}
+                      >
                         {category.name}
                       </h3>
                       <p className="text-sm sm:text-base text-pink-500 mb-4 sm:mb-6 line-clamp-3 font-medium">
