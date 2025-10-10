@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ShoppingCart, ChevronRight } from "lucide-react"
 import { useCart } from "../components/CartContext"
+import WhatsAppChatWidget from "../components/WhatsAppChatWidget"
 
 interface MenuItem {
   id: string
@@ -218,6 +219,9 @@ export default function MenuPage() {
           </div>
         )}
       </div>
+
+      {/* WhatsApp chat widget */}
+      <WhatsAppChatWidget />
     </div>
   )
 }
