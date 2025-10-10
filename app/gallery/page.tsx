@@ -67,42 +67,6 @@ const cakeCategories = [
     ],
   },
   {
-    name: "Wedding Cakes",
-    menuLink: "/cakes?category=wedding&subcategory=Bridal Cakes",
-    cakes: [
-      {
-        id: 45,
-        name: "Elegant Rose Monogram Wedding Cake",
-        image: "/images/wedding-cake-elegant-roses.jpg",
-      },
-      {
-        id: 46,
-        name: "Portuguese Tile Pattern Wedding Cake",
-        image: "/images/wedding-cake-blue-portuguese.jpg",
-      },
-      {
-        id: 47,
-        name: "Moroccan Geometric Wedding Cake",
-        image: "/images/wedding-cake-moroccan-tiles.jpg",
-      },
-      {
-        id: 48,
-        name: "African Traditional Wedding Cake",
-        image: "/images/wedding-cake-african-traditional.jpg",
-      },
-      {
-        id: 49,
-        name: "Minimalist Monogram Wedding Cake",
-        image: "/images/wedding-cake-minimalist-monogram.jpg",
-      },
-      {
-        id: 50,
-        name: "Golden Mandala Wedding Cake",
-        image: "/images/wedding-cake-golden-mandala.jpg",
-      },
-    ],
-  },
-  {
     name: "Frozen Cakes",
     menuLink: "/cakes?category=birthday&subcategory=For Girls&section=princess",
     cakes: [
@@ -125,37 +89,6 @@ const cakeCategories = [
         id: 9,
         name: "Let It Go Ombre Ruffle Cake",
         image: "/images/frozen-cake-4.jpg",
-      },
-    ],
-  },
-  {
-    name: "Spider Man Cakes",
-    menuLink: "/cakes?category=birthday&subcategory=For Boys&section=superhero",
-    cakes: [
-      {
-        id: 1,
-        name: "Spider-Man Cityscape Adventure",
-        image: "/images/spiderman-cake-1.jpg",
-      },
-      {
-        id: 2,
-        name: "Classic Spider-Man Hero Cake",
-        image: "/images/spiderman-cake-2.jpg",
-      },
-      {
-        id: 3,
-        name: "Spider-Man Web Pattern Cake",
-        image: "/images/spiderman-cake-3.jpg",
-      },
-      {
-        id: 4,
-        name: "Spider-Man Wall Crawler Cake",
-        image: "/images/spiderman-cake-4.jpg",
-      },
-      {
-        id: 5,
-        name: "Spider-Man Mask Celebration",
-        image: "/images/spiderman-cake-5.jpg",
       },
     ],
   },
@@ -514,7 +447,7 @@ export default function Gallery() {
                           <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                           <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                           <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                          <div className="absolute inset-1 border-2 border-transparent group-hover:border-yellow-300 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-yellow-200/50"></div>
+                          <div className="absolute inset-1 border-2 border-transparent group-hover:border-yellow-300 rounded-lg opacity-0 hover:opacity-100 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-yellow-200/50"></div>
                           <img
                             src={cake.image || "/placeholder.svg"}
                             alt={cake.name}

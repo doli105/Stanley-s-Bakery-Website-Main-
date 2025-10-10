@@ -14,6 +14,7 @@ interface MenuItem {
   name: string
   description: string
   basePrice: number
+  priceRange?: string // Added priceRange field for items with price ranges
   image: string
   sizes?: Array<{ name: string; price: number; serves?: string }>
   flavors?: string[]
@@ -49,8 +50,8 @@ export default function MenuPage() {
         // Set first category as default
         const firstCategory = Object.keys(data)[0]
         setSelectedCategory(firstCategory)
-        const firstSubcategory = Object.keys(data[firstCategory].subcategories)[0]
-        setSelectedSubcategory(firstSubcategory)
+        const firstSubcat = Object.keys(data[firstCategory].subcategories)[0]
+        setSelectedSubcategory(firstSubcat)
       })
       .catch((error) => console.error("Error loading menu:", error))
   }, [])
@@ -172,8 +173,14 @@ export default function MenuPage() {
                       <div className="space-y-3">
                         {/* Price */}
                         <div className="flex items-center justify-between">
-                          <span className="text-sm font-medium text-muted-foreground">Starting from:</span>
-                          <span className="text-2xl font-bold text-stanley-pink">R{item.basePrice.toFixed(2)}</span>
+                          <span className="text-sm font-medium text-muted-foreground">
+                            {item.priceRange ? "Price range:" : "Starting from:"}
+                          </span>
+                          <span className="text-2xl font-bold text-stanley-pink">
+                            {item.priceRange
+                              ? `R${item.priceRange.split("-")[0]}-R${item.priceRange.split("-")[1]}`
+                              : `R${item.basePrice.toFixed(2)}`}
+                          </span>
                         </div>
 
                         {/* Sizes */}

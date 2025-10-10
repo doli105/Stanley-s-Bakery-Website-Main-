@@ -79,6 +79,7 @@
             "name": "Pink 21st Birthday Heart Cake",
             "description": "Beautiful pink heart-shaped cake with elegant ruffled piping and personalized birthday message. Perfect for milestone celebrations with decorative ribbons.",
             "basePrice": 550,
+            "priceRange": "550-1700",
             "image": "/images/heart-cakes/pink-21st-birthday-heart.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height", "price": 550, "serves": "2 to 4 people" },
@@ -99,6 +100,7 @@
             "name": "White Birthday Memorial Heart Cake",
             "description": "Elegant white heart-shaped cake with cream frosting and decorative black ribbons. Features personalized photo panels and custom birthday message. Perfect for special birthday celebrations and memorial occasions.",
             "basePrice": 550,
+            "priceRange": "550-1700",
             "image": "/images/heart-cakes/white-nqobile-birthday-heart.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height", "price": 550, "serves": "2 to 4 people" },
@@ -121,6 +123,7 @@
             "name": "Red Calendar Heart Cake",
             "description": "Stunning red heart-shaped cake with vibrant red frosting and white pearl decorations. Features a personalized calendar design in the center with custom month and year. Perfect for anniversary celebrations and special date commemorations.",
             "basePrice": 550,
+            "priceRange": "550-1700",
             "image": "/images/heart-cakes/red-august-calendar-heart.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height", "price": 550, "serves": "2 to 4 people" },
