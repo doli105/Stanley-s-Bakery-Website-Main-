@@ -17,8 +17,8 @@ export default function Hero() {
   const cart = useCart()
 
   const slideshowImages = [
-    "/images/hero-chocolate-cake.jpg",
     "/images/hero-caramel-cupcakes.jpg",
+    "/images/hero-chocolate-cake.jpg",
     "/images/hero-wedding-cake.jpg",
     "/images/hero-donuts.jpg",
     "/images/hero-churros.jpg",
