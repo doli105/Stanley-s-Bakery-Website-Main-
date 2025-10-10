@@ -139,7 +139,7 @@ export default function MenuPage() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {currentSubcategory.items.map((item) => (
+                {currentSubcategory.items.map((item, index) => (
                   <Card
                     key={item.id}
                     className="overflow-hidden hover:shadow-xl transition-all duration-300 card-hover"
@@ -151,6 +151,8 @@ export default function MenuPage() {
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority={index < 6}
+                        quality={90}
                         onError={(e) => {
                           const target = e.target as HTMLImageElement
                           target.src = "/images/hero-cake-1.jpg"
