@@ -2298,11 +2298,7 @@
             "description": "Moist spiced carrot cake rolled with rich cream cheese frosting and topped with decorative piped cream cheese and a fondant carrot. All the flavors of classic carrot cake in Swiss roll form.",
             "basePrice": 40,
             "image": "/images/swiss-rolls/carrot-cake-swiss-roll.jpeg",
-            "sizes": [
-              { "name": "Individual Slice", "price": 40 },
-              { "name": "Half Roll (4-5 slices)", "price": 550 },
-              { "name": "Full Roll (8-10 slices)", "price": 750 }
-            ],
+            "sizes": [],
             "flavors": [
               "Traditional Carrot with Cream Cheese",
               "Spiced Carrot with Cinnamon Cream",
