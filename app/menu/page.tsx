@@ -71,6 +71,8 @@ export default function MenuPage() {
   const currentSubcategory =
     currentCategory && selectedSubcategory ? currentCategory.subcategories[selectedSubcategory] : null
 
+  const isCelebrationCategory = selectedCategory === "celebration-special-occasion"
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-pink-50">
       {/* Hero Section */}
@@ -173,14 +175,22 @@ export default function MenuPage() {
                       <div className="space-y-3">
                         {/* Price */}
                         <div className="flex items-center justify-between">
-                          <span className="text-sm font-medium text-muted-foreground">
-                            {item.priceRange ? "Price range:" : "Starting from:"}
-                          </span>
-                          <span className="text-2xl font-bold text-stanley-pink">
-                            {item.priceRange
-                              ? `R${item.priceRange.split("-")[0]}-R${item.priceRange.split("-")[1]}`
-                              : `R${item.basePrice.toFixed(2)}`}
-                          </span>
+                          {isCelebrationCategory && !item.priceRange ? (
+                            <span className="text-2xl font-bold text-stanley-pink">
+                              From R{Math.round(item.basePrice)}
+                            </span>
+                          ) : (
+                            <>
+                              <span className="text-sm font-medium text-muted-foreground">
+                                {item.priceRange ? "Price range:" : "Starting from:"}
+                              </span>
+                              <span className="text-2xl font-bold text-stanley-pink">
+                                {item.priceRange
+                                  ? `R${item.priceRange.split("-")[0]}-R${item.priceRange.split("-")[1]}`
+                                  : `R${item.basePrice.toFixed(2)}`}
+                              </span>
+                            </>
+                          )}
                         </div>
 
                         {/* Sizes */}
