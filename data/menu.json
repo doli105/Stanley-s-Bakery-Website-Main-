@@ -150,12 +150,12 @@
             "id": "gold-60th-birthday-cake",
             "name": "Gold 60th Birthday Milestone Cake",
             "description": "Luxurious gold and white milestone cake featuring elegant '60' number topper, 'Happy Birthday Mum' script, and sophisticated gold and white sphere decorations with metallic feather accents. Perfect for celebrating life's precious milestones.",
-            "basePrice": 650,
+            "basePrice": 550,
             "image": "/images/milestone-cakes/gold-60th-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 650 },
-              { "name": "Large (10 inch)", "price": 750 },
-              { "name": "Extra Large (12 inch)", "price": 850 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Coconut"],
             "customizable": true,
@@ -172,12 +172,12 @@
             "id": "april-calendar-birthday-cake",
             "name": "April Calendar Birthday Milestone Cake",
             "description": "Elegant white fondant milestone cake featuring a personalized April 1985 calendar design with highlighted special date. Decorated with white sugar roses, gold spherical accents, pink macarons, and a gold 'Happy Birthday' topper. Perfect for celebrating birth month milestones and special anniversaries.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/milestone-cakes/april-calendar-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon", "Strawberry"],
             "customizable": true,
@@ -311,12 +311,12 @@
             "id": "best-husband-dad-50th-cake",
             "name": "Best Husband & Dad Milestone Cake",
             "description": "Elegant two-tier milestone cake with white top tier and black bottom tier, featuring '50' number topper and 'Best HUSBAND & Dad' text in gold. Decorated with sophisticated gold and black spheres and decorative fan-like elements. Perfect for celebrating milestone birthdays and honoring special men in your life.",
-            "basePrice": 650,
+            "basePrice": 550,
             "image": "/images/gentleman-cakes/best-husband-dad-50th-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -338,12 +338,12 @@
             "id": "black-gold-luxury-birthday-cake",
             "name": "Black & Gold Luxury Birthday Cake",
             "description": "Sophisticated two-tier black cake with stunning gold drip details and dramatic black fan decorations on top. Features gold and black spherical decorations arranged elegantly around both tiers, with personalized name on the base. Perfect for milestone celebrations and luxury birthday events.",
-            "basePrice": 680,
+            "basePrice": 550,
             "image": "/images/gentleman-cakes/black-gold-luxury-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 680 },
-              { "name": "Large Two-Tier", "price": 780 },
-              { "name": "Premium Two-Tier", "price": 880 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Chocolate & Vanilla)",
@@ -392,12 +392,12 @@
             "id": "arsenal-football-cake",
             "name": "Arsenal Football Team Cake",
             "description": "Spectacular Arsenal FC themed cake featuring the iconic Arsenal logo, player jerseys (Odegaard #8, Rice #41), realistic soccer balls, and personalized name on the base. Perfect for Arsenal fans and football enthusiasts celebrating birthdays or special occasions.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/sports-cakes/arsenal-football-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
             "customizable": true,
@@ -467,12 +467,12 @@
             "id": "elsa-let-it-go-9th-birthday-cake",
             "name": "Elsa 'Let It Go' 9th Birthday Cake",
             "description": "Spectacular three-tier Frozen cake featuring Elsa portrait on top tier with 'LET IT GO' text and number topper. Beautiful blue ombre ruffled layers transitioning from white to deep blue, decorated with snowflakes and sparkly base. A show-stopping centerpiece for any Frozen celebration.",
-            "basePrice": 750,
+            "basePrice": 550,
             "image": "/images/frozen-cakes/elsa-let-it-go-9th-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard Three-Tier", "price": 750 },
-              { "name": "Large Three-Tier", "price": 850 },
-              { "name": "Premium Three-Tier", "price": 950 }
+              { "name": "Standard Three-Tier", "price": 550 },
+              { "name": "Large Three-Tier", "price": 650 },
+              { "name": "Premium Three-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla, Chocolate, Strawberry)",
@@ -495,12 +495,12 @@
             "id": "elsa-enzo-4th-birthday-cake",
             "name": "Elsa Enzo 4th Birthday Cake",
             "description": "Enchanting two-tier Frozen cake with light blue frosting featuring Elsa portraits on both tiers, 'Happy Birthday' and number '4' toppers, white snowflake decorations, and blue & purple balloon clusters. Personalized with 'ENZO' on the base and decorated with pearl accents for a winter wonderland effect.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/frozen-cakes/elsa-enzo-4th-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 580 },
-              { "name": "Large Two-Tier", "price": 680 },
-              { "name": "Premium Two-Tier", "price": 780 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -621,12 +621,12 @@
             "id": "nokuhle-2nd-birthday-cocomelon-cake",
             "name": "Nokuhle 2nd Birthday Cocomelon Cake",
             "description": "Delightful two-tier green Cocomelon cake featuring JJ character on top with rainbow, watermelon character, number '2', colorful balloons, white clouds and stars decorations. The signature Cocomelon bus is prominently displayed on the bottom tier with 'NOKUHLE' spelled out in colorful letters around the base.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/cocomelon-cakes/nokuhle-2nd-birthday-cocomelon-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 580 },
-              { "name": "Large Two-Tier", "price": 680 },
-              { "name": "Premium Two-Tier", "price": 780 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -676,12 +676,12 @@
             "id": "akonaho-1st-birthday-cocomelon-cake",
             "name": "Akonaho 1st Birthday Animal Friends Cocomelon Cake",
             "description": "Adorable two-tier pink Cocomelon cake featuring JJ character on top with number '1', and various beloved Cocomelon animal characters including elephant, pig, and duck arranged around a colorful rainbow on the bottom tier. 'AKONAHO' is spelled out in alphabet blocks around the base, perfect for educational fun.",
-            "basePrice": 620,
+            "basePrice": 550,
             "image": "/images/cocomelon-cakes/akonaho-1st-birthday-cocomelon-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 620 },
-              { "name": "Large Two-Tier", "price": 720 },
-              { "name": "Premium Two-Tier", "price": 820 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Strawberry)",
@@ -704,12 +704,12 @@
             "id": "mokone-garden-cocomelon-cake",
             "name": "Mokone Garden Theme Cocomelon Cake",
             "description": "Beautiful two-tier cream Cocomelon cake with natural garden theme featuring rainbow topper, JJ character, butterfly decorations, daisy flowers, watermelon character, and various colorful balloon clusters. 'MOKONE' is written around the base with a delightful garden-like aesthetic while maintaining the cheerful Cocomelon spirit.",
-            "basePrice": 650,
+            "basePrice": 550,
             "image": "/images/cocomelon-cakes/mokone-garden-cocomelon-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Lemon)",
@@ -738,12 +738,12 @@
             "id": "jungle-adventure-cake",
             "name": "Jungle Adventure Cake",
             "description": "A vibrant two-tier jungle-themed cake featuring a collection of friendly jungle animals like lions, monkeys, and elephants. Decorated with lush green foliage, colorful flowers, and a 'Happy Birthday' banner. Perfect for a wild and fun celebration.",
-            "basePrice": 620,
+            "basePrice": 550,
             "image": "/images/jungle-cakes/jungle-adventure-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 620 },
-              { "name": "Large Two-Tier", "price": 720 },
-              { "name": "Premium Two-Tier", "price": 820 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -787,12 +787,12 @@
             "id": "dinosaur-ugochukwu-3rd-birthday-cake",
             "name": "Dinosaur Ugochukwu 3rd Birthday Cake",
             "description": "Exciting two-tier dinosaur jungle cake with 'Happy 3rd Birthday' banner featuring various colorful dinosaur characters on top including T-Rex, Triceratops, and Pterodactyl. Green and white tiers decorated with tropical foliage and 'UGOCHUKWU' personalization. Perfect for young dinosaur enthusiasts and prehistoric adventure themes.",
-            "basePrice": 620,
+            "basePrice": 550,
             "image": "/images/jungle-cakes/dinosaur-ugochukwu-3rd-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 620 },
-              { "name": "Large Two-Tier", "price": 720 },
-              { "name": "Premium Two-Tier", "price": 820 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -815,12 +815,12 @@
             "id": "lion-king-mvelo-safari-cake",
             "name": "Lion King Mvelo Safari Cake",
             "description": "Spectacular two-tier Lion King themed cake with Simba and Mufasa on top tier, featuring beloved characters like Timon and Pumbaa around the sides. Beautiful sunset colors with orange and blue tiers, elephant silhouettes, and 'MVELO' personalization on the base. Perfect for celebrating with the Circle of Life theme.",
-            "basePrice": 680,
+            "basePrice": 550,
             "image": "/images/jungle-cakes/lion-king-mvelo-safari-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 680 },
-              { "name": "Large Two-Tier", "price": 780 },
-              { "name": "Premium Two-Tier", "price": 880 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -843,12 +843,12 @@
             "id": "safari-dithoriso-jungle-animals-cake",
             "name": "Safari Dithoriso Jungle Animals Cake",
             "description": "Amazing two-tier safari cake with blue and green colors featuring a wonderful collection of jungle animals including lion, monkey, giraffe, tiger, and zebra. Decorated with wooden 'DITHORISO' sign, tropical leaves, and lush foliage decorations creating an authentic jungle safari experience.",
-            "basePrice": 650,
+            "basePrice": 550,
             "image": "/images/jungle-cakes/safari-dithoriso-jungle-animals-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 650 },
-              { "name": "Large Two-Tier", "price": 750 },
-              { "name": "Premium Two-Tier", "price": 850 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Chocolate)",
@@ -870,12 +870,12 @@
             "id": "safari-mzands-6th-birthday-cake",
             "name": "Safari Mzands 6th Birthday Cake",
             "description": "Beautiful green jungle-themed cake with '6' number featuring an amazing collection of safari animals including lion, giraffe, monkey, zebra, and elephant. Decorated with 'Mzands' topper, tropical monstera leaves, and wooden tree trunk base design creating a complete jungle adventure experience.",
-            "basePrice": 620,
+            "basePrice": 550,
             "image": "/images/jungle-cakes/safari-mzands-6th-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 620 },
-              { "name": "Large (10 inch)", "price": 720 },
-              { "name": "Extra Large (12 inch)", "price": 820 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Funfetti", "Coconut", "Banana"],
             "customizable": true,
@@ -898,9 +898,9 @@
             "id": "ballet-thando-butterfly-cake",
             "name": "Ballet Butterfly Elegance Cake",
             "description": "A sophisticated two-tier princess cake featuring delicate ballet shoes, purple butterflies, and elegant gold script lettering. Perfect for young dancers and princess celebrations with 'THANDO' personalization.",
-            "basePrice": 850,
+            "basePrice": 550,
             "image": "/images/princess-cakes/ballet-thando-butterfly-cake.jpeg",
-            "sizes": [{ "name": "Standard (2-tier)", "price": 850 }, { "name": "Large (2-tier)", "price": 1050 }],
+            "sizes": [{ "name": "Standard (2-tier)", "price": 550 }, { "name": "Large (2-tier)", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Funfetti"],
             "customizable": true,
             "extras": [
@@ -917,9 +917,9 @@
             "id": "masha-bear-sine-3rd-birthday-cake",
             "name": "Masha and Bear Adventure Cake",
             "description": "A delightful fairy tale cake featuring beloved Masha character with forest elements, apple tree, mushrooms, and charming wooden fence details. Perfect for 'SINE' 3rd birthday celebration.",
-            "basePrice": 750,
+            "basePrice": 550,
             "image": "/images/princess-cakes/masha-bear-sine-3rd-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard", "price": 750 }, { "name": "Large", "price": 950 }],
+            "sizes": [{ "name": "Standard", "price": 550 }, { "name": "Large", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
             "customizable": true,
             "extras": [
@@ -936,9 +936,9 @@
             "id": "rainbow-butterfly-okuhle-4th-birthday-cake",
             "name": "Rainbow Butterfly Garden Cake",
             "description": "A modern princess cake with soft pastels, featuring rainbow arches, delicate butterflies, smiling clouds, and whimsical garden elements. Perfect for 'OKUHLE' 4th birthday celebration.",
-            "basePrice": 800,
+            "basePrice": 550,
             "image": "/images/princess-cakes/rainbow-butterfly-okuhle-4th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (2-tier)", "price": 800 }, { "name": "Large (2-tier)", "price": 1000 }],
+            "sizes": [{ "name": "Standard (2-tier)", "price": 550 }, { "name": "Large (2-tier)", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
             "customizable": true,
             "extras": [
@@ -955,9 +955,9 @@
             "id": "elegant-butterfly-dzuvha-10th-birthday-cake",
             "name": "Elegant Butterfly Cascade Cake",
             "description": "A sophisticated three-tier princess cake with white and pink ombre effect, featuring cascading pink butterflies, pearl details, and golden birthday message. Perfect for 'DZUVHA' 10th birthday celebration.",
-            "basePrice": 1200,
+            "basePrice": 550,
             "image": "/images/princess-cakes/elegant-butterfly-dzuvha-10th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (3-tier)", "price": 1200 }, { "name": "Large (3-tier)", "price": 1500 }],
+            "sizes": [{ "name": "Standard (3-tier)", "price": 550 }, { "name": "Large (3-tier)", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
             "customizable": true,
             "extras": [
@@ -993,9 +993,9 @@
             "id": "royal-crown-owethu-10th-birthday-cake",
             "name": "Royal Crown Princess Cake",
             "description": "A majestic three-tier princess cake featuring a golden crown topper, quilted white middle tier with pink hearts, and luxurious pink ruffled base. Perfect for 'OWETHU' 10th birthday celebration.",
-            "basePrice": 1100,
+            "basePrice": 550,
             "image": "/images/princess-cakes/royal-crown-owethu-10th-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (3-tier)", "price": 1100 }, { "name": "Large (3-tier)", "price": 1400 }],
+            "sizes": [{ "name": "Standard (3-tier)", "price": 550 }, { "name": "Large (3-tier)", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Strawberry", "Lemon"],
             "customizable": true,
             "extras": [
@@ -1012,9 +1012,9 @@
             "id": "disney-princess-unami-3rd-birthday-cake",
             "name": "Disney Princess Castle Cake",
             "description": "A magical two-tier Disney princess cake featuring Snow White, Cinderella, and Aurora figures with a golden castle topper, pink decorations, and elegant princess elements. Perfect for 'UNAMI' 3rd birthday celebration.",
-            "basePrice": 950,
+            "basePrice": 550,
             "image": "/images/princess-cakes/disney-princess-unami-3rd-birthday-cake.jpeg",
-            "sizes": [{ "name": "Standard (2-tier)", "price": 950 }, { "name": "Large (2-tier)", "price": 1200 }],
+            "sizes": [{ "name": "Standard (2-tier)", "price": 550 }, { "name": "Large (2-tier)", "price": 750 }],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Strawberry"],
             "customizable": true,
             "extras": [
@@ -1036,12 +1036,12 @@
             "id": "transformers-bumblebee-cake",
             "name": "Transformers Bumblebee Action Cake",
             "description": "Epic Transformers Bumblebee cake featuring a 3D Bumblebee figure on top with yellow and black colors, Autobot logo on the side, yellow and black star decorations, and personalized name on the base. Perfect for Transformers fans celebrating their special day with authentic robot action.",
-            "basePrice": 680,
+            "basePrice": 550,
             "image": "/images/superhero-cakes/transformers-bumblebee-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 680 },
-              { "name": "Large (10 inch)", "price": 780 },
-              { "name": "Extra Large (12 inch)", "price": 880 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Lemon"],
             "customizable": true,
@@ -1058,12 +1058,12 @@
             "id": "superman-action-cake",
             "name": "Superman Action Hero Cake",
             "description": "Dynamic Superman cake with blue frosting and red drip effect, featuring multiple Superman character toppers, 'SUPERMAN' banner, yellow star decorations, and iconic Superman logo on the front. Perfect for superhero fans with personalized name on the base.",
-            "basePrice": 620,
+            "basePrice": 550,
             "image": "/images/superhero-cakes/superman-action-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 620 },
-              { "name": "Large (10 inch)", "price": 720 },
-              { "name": "Extra Large (12 inch)", "price": 820 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Funfetti", "Blue Velvet"],
             "customizable": true,
@@ -1109,12 +1109,12 @@
             "id": "dragon-ball-z-goku-cake",
             "name": "Dragon Ball Z Goku Power Cake",
             "description": "Spectacular Dragon Ball Z cake with blue frosting featuring Goku character image with flame decorations on top, orange Dragon Balls around the base, and personalized name. Perfect for anime and superhero fans celebrating with authentic Dragon Ball Z elements.",
-            "basePrice": 680,
+            "basePrice": 550,
             "image": "/images/superhero-cakes/dragon-ball-z-goku-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 680 },
-              { "name": "Large (10 inch)", "price": 780 },
-              { "name": "Extra Large (12 inch)", "price": 880 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Orange", "Funfetti", "Mango"],
             "customizable": true,
@@ -1131,12 +1131,12 @@
             "id": "spongebob-birthday-cake",
             "name": "SpongeBob Birthday Cake",
             "description": "Fun SpongeBob SquarePants cake with yellow frosting featuring SpongeBob's iconic face with big eyes and smile, stick arms extending from the sides, various SpongeBob characters on top with number '1', and 'THAPELO' personalized on the base. Perfect for young SpongeBob fans.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/superhero-cakes/spongebob-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 580 },
-              { "name": "Large (10 inch)", "price": 680 },
-              { "name": "Extra Large (12 inch)", "price": 780 }
+              { "name": "Standard (8 inch)", "price": 550 },
+              { "name": "Large (10 inch)", "price": 650 },
+              { "name": "Extra Large (12 inch)", "price": 750 }
             ],
             "flavors": ["Vanilla", "Chocolate", "Funfetti", "Lemon", "Pineapple"],
             "customizable": true,
@@ -1175,12 +1175,12 @@
             "id": "paw-patrol-angela-3rd-birthday-cake",
             "name": "Paw Patrol Angela 3rd Birthday Cake",
             "description": "Adorable two-tier Paw Patrol cake with pink top tier and blue bottom tier, featuring Paw Patrol characters on top including Chase, Marshall, Skye, and Rubble, number '3', blue and red balloon clusters, and 'ANGELA' personalized on the base. Perfect for Paw Patrol fans.",
-            "basePrice": 580,
+            "basePrice": 550,
             "image": "/images/superhero-cakes/paw-patrol-angela-3rd-birthday-cake.jpeg",
             "sizes": [
-              { "name": "Standard Two-Tier", "price": 580 },
-              { "name": "Large Two-Tier", "price": 680 },
-              { "name": "Premium Two-Tier", "price": 780 }
+              { "name": "Standard Two-Tier", "price": 550 },
+              { "name": "Large Two-Tier", "price": 650 },
+              { "name": "Premium Two-Tier", "price": 750 }
             ],
             "flavors": [
               "Mixed Flavors (Vanilla & Strawberry)",
@@ -1238,11 +1238,11 @@
             "name": "Elegant White Wedding Cake",
             "description": "A classic three-tier white wedding cake adorned with delicate white sugar flowers and subtle pearl accents. Features a smooth fondant finish and a personalized monogram on the top tier. Perfect for timeless and romantic celebrations.",
             "image": "/images/wedding-cakes/elegant-white-wedding-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 30-40)", "price": 1500 },
-              { "name": "3-Tier (Serves 60-80)", "price": 2500 },
-              { "name": "4-Tier (Serves 100-120)", "price": 3200 }
+              { "name": "2-Tier (Serves 30-40)", "price": 550 },
+              { "name": "3-Tier (Serves 60-80)", "price": 1500 },
+              { "name": "4-Tier (Serves 100-120)", "price": 2500 }
             ],
             "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
             "personalization": [
@@ -1262,11 +1262,11 @@
             "name": "Gold Mandala Luxury Wedding Cake",
             "description": "Sophisticated three-tier cake with gold metallic top tier, pristine white middle tier, and ornate mandala pattern bottom tier. Features elegant white sugar flowers and luxurious gold detailing.",
             "image": "/images/wedding-cakes/gold-mandala-luxury-wedding-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 40-50)", "price": 1500 },
-              { "name": "3-Tier (Serves 70-90)", "price": 3200 },
-              { "name": "4-Tier (Serves 110-130)", "price": 4200 }
+              { "name": "2-Tier (Serves 40-50)", "price": 550 },
+              { "name": "3-Tier (Serves 70-90)", "price": 1500 },
+              { "name": "4-Tier (Serves 110-130)", "price": 3200 }
             ],
             "flavors": ["Vanilla Bean", "Red Velvet", "Lemon", "Chocolate", "Strawberry", "Carrot"],
             "personalization": [
@@ -1286,9 +1286,9 @@
             "name": "Portuguese Tile with Blue Bow",
             "description": "Cultural two-tier wedding cake featuring authentic Portuguese tile patterns on bottom tier with elegant white top tier. Crowned with a stunning blue patterned fabric bow and white flower accent.",
             "image": "/images/wedding-cakes/portuguese-tile-blue-bow-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 35-45)", "price": 1500 },
+              { "name": "2-Tier (Serves 35-45)", "price": 550 },
               { "name": "3-Tier (Serves 65-85)", "price": 3400 },
               { "name": "4-Tier (Serves 100-120)", "price": 4200 }
             ],
@@ -1310,9 +1310,9 @@
             "name": "Mediterranean Tile Pattern Masterpiece",
             "description": "Bold three-tier wedding cake completely adorned with intricate blue and gold Mediterranean tile patterns separated by elegant gold grid lines. Features decorative patterned fabric accent on top.",
             "image": "/images/wedding-cakes/mediterranean-tile-pattern-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 40-55)", "price": 1500 },
+              { "name": "2-Tier (Serves 40-55)", "price": 550 },
               { "name": "3-Tier (Serves 75-95)", "price": 3600 },
               { "name": "4-Tier (Serves 115-140)", "price": 4600 }
             ],
@@ -1334,9 +1334,9 @@
             "name": "African Protea Cultural Wedding Cake",
             "description": "Vibrant two-tier cake celebrating African heritage with traditional beadwork patterns on middle tier and geometric tribal designs on bottom tier. Crowned with a magnificent protea flower.",
             "image": "/images/wedding-cakes/african-protea-cultural-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 35-50)", "price": 1500 },
+              { "name": "2-Tier (Serves 35-50)", "price": 550 },
               { "name": "3-Tier (Serves 70-90)", "price": 3600 },
               { "name": "4-Tier (Serves 105-125)", "price": 4400 }
             ],
@@ -1358,9 +1358,9 @@
             "name": "White Roses Monogram with Texture",
             "description": "Refined three-tier white wedding cake featuring 'R+A' monogram, cascading white roses, and elegant textured bottom tier with vertical line pattern. Classic romance meets modern sophistication.",
             "image": "/images/wedding-cakes/white-roses-monogram-textured-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 35-45)", "price": 1500 },
+              { "name": "2-Tier (Serves 35-45)", "price": 550 },
               { "name": "3-Tier (Serves 65-85)", "price": 2900 },
               { "name": "4-Tier (Serves 100-120)", "price": 3800 }
             ],
@@ -1382,9 +1382,9 @@
             "name": "Modern Fabric Drape Sculptural Cake",
             "description": "Contemporary three-tier white wedding cake featuring dramatic flowing fabric-like fondant draping with elegant gold trim edges. A true work of edible art for modern couples.",
             "image": "/images/wedding-cakes/modern-fabric-drape-sculptural-cake.jpeg",
-            "basePrice": 1500,
+            "basePrice": 550,
             "sizes": [
-              { "name": "2-Tier (Serves 40-50)", "price": 1500 },
+              { "name": "2-Tier (Serves 40-50)", "price": 550 },
               { "name": "3-Tier (Serves 70-90)", "price": 3400 },
               { "name": "4-Tier (Serves 110-130)", "price": 4400 }
             ],
@@ -1410,10 +1410,10 @@
             "id": "money-safe-cake",
             "name": "Money Safe Cake",
             "description": "Realistic black safe-shaped cake with edible money bills spilling out, gold coins, and intricate safe details. Perfect for business celebrations, retirement parties, or anyone who loves unique themed designs.",
-            "basePrice": 850,
+            "basePrice": 550,
             "image": "/images/novelty-cakes/money-safe-cake.jpeg",
             "sizes": [
-              { "name": "Standard Safe (8x8 inch)", "price": 850, "serves": "12 to 16 people" },
+              { "name": "Standard Safe (8x8 inch)", "price": 550, "serves": "12 to 16 people" },
               { "name": "Large Safe (10x10 inch)", "price": 1200, "serves": "20 to 25 people" },
               { "name": "Premium Safe (12x12 inch)", "price": 1500, "serves": "30 to 35 people" }
             ],
@@ -1431,10 +1431,10 @@
             "id": "graduation-cake",
             "name": "Graduation Celebration Cake",
             "description": "Elegant white marble-effect cake with realistic black graduation cap, diploma scroll, and personalized name plaque. Perfect for graduation ceremonies and academic achievements.",
-            "basePrice": 650,
+            "basePrice": 550,
             "image": "/images/novelty-cakes/graduation-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 650, "serves": "12 to 16 people" },
+              { "name": "Standard (8 inch)", "price": 550, "serves": "12 to 16 people" },
               { "name": "Large (10 inch)", "price": 850, "serves": "20 to 25 people" },
               { "name": "Extra Large (12 inch)", "price": 1050, "serves": "30 to 35 people" }
             ],
@@ -1453,12 +1453,12 @@
             "id": "dior-themed-cake",
             "name": "Designer Dior Themed Cake",
             "description": "Sophisticated white cake featuring the iconic Dior logo pattern with elegant black bow decoration. Perfect for fashion lovers and luxury brand enthusiasts.",
-            "basePrice": 750,
+            "basePrice": 550,
             "image": "/images/novelty-cakes/dior-themed-cake.jpeg",
             "sizes": [
-              { "name": "Standard (8 inch)", "price": 750, "serves": "12 to 16 people" },
-              { "name": "Large (10 inch)", "price": 950, "serves": "20 to 25 people" },
-              { "name": "Extra Large (12 inch)", "price": 1150, "serves": "30 to 35 people" }
+              { "name": "Standard (8 inch)", "price": 550, "serves": "12 to 16 people" },
+              { "name": "Large (10 inch)", "price": 650, "serves": "20 to 25 people" },
+              { "name": "Extra Large (12 inch)", "price": 750, "serves": "30 to 35 people" }
             ],
             "flavors": ["Vanilla", "Chocolate", "Strawberry", "Red Velvet", "Lemon"],
             "customizable": true,
@@ -1474,12 +1474,12 @@
             "id": "kfc-bucket-cake",
             "name": "KFC Bucket Cake",
             "description": "Incredibly realistic KFC bucket cake filled with edible 'fried chicken' pieces. Complete with authentic KFC branding and packaging details. Perfect for fast food lovers and fun celebrations.",
-            "basePrice": 680,
+            "basePrice": 550,
             "image": "/images/novelty-cakes/kfc-bucket-cake.jpeg",
             "sizes": [
-              { "name": "Standard Bucket", "price": 680, "serves": "10 to 14 people" },
-              { "name": "Large Bucket", "price": 880, "serves": "16 to 20 people" },
-              { "name": "Family Bucket", "price": 1080, "serves": "25 to 30 people" }
+              { "name": "Standard Bucket", "price": 550, "serves": "10 to 14 people" },
+              { "name": "Large Bucket", "price": 750, "serves": "16 to 20 people" },
+              { "name": "Family Bucket", "price": 950, "serves": "25 to 30 people" }
             ],
             "flavors": ["Vanilla", "Chocolate", "Caramel", "Spiced Cake", "Funfetti"],
             "customizable": true,
@@ -1495,12 +1495,12 @@
             "id": "pilot-uniform-cake",
             "name": "Pilot Uniform Cake",
             "description": "Detailed blue pilot uniform cake with authentic military styling, gold buttons, badges, and matching pilot cap. Perfect for aviation enthusiasts, military celebrations, or career achievements.",
-            "basePrice": 950,
+            "basePrice": 550,
             "image": "/images/novelty-cakes/pilot-uniform-cake.jpeg",
             "sizes": [
-              { "name": "Standard Uniform", "price": 950, "serves": "15 to 20 people" },
-              { "name": "Large Uniform", "price": 1250, "serves": "25 to 30 people" },
-              { "name": "Premium Uniform Set", "price": 1550, "serves": "35 to 40 people" }
+              { "name": "Standard Uniform", "price": 550, "serves": "15 to 20 people" },
+              { "name": "Large Uniform", "price": 750, "serves": "25 to 30 people" },
+              { "name": "Premium Uniform Set", "price": 950, "serves": "35 to 40 people" }
             ],
             "flavors": ["Chocolate", "Vanilla", "Coffee", "Red Velvet", "Salted Caramel"],
             "customizable": true,
@@ -1517,12 +1517,12 @@
             "id": "luxury-brand-cake",
             "name": "Luxury Brand Designer Cake",
             "description": "Elegant geometric cake featuring Louis Vuitton and Dior luxury brand logos with pink and white color scheme, decorated with sugar roses, gold spheres, and sophisticated design elements. Perfect for fashion-forward celebrations.",
-            "basePrice": 1200,
+            "basePrice": 550,
             "image": "/images/novelty-cakes/luxury-brand-cake.jpeg",
             "sizes": [
-              { "name": "Standard Designer (8 inch)", "price": 1200, "serves": "15 to 20 people" },
-              { "name": "Large Designer (10 inch)", "price": 1500, "serves": "25 to 30 people" },
-              { "name": "Premium Designer (12 inch)", "price": 1800, "serves": "35 to 40 people" }
+              { "name": "Standard Designer (8 inch)", "price": 550, "serves": "15 to 20 people" },
+              { "name": "Large Designer (10 inch)", "price": 750, "serves": "25 to 30 people" },
+              { "name": "Premium Designer (12 inch)", "price": 950, "serves": "35 to 40 people" }
             ],
             "flavors": ["Vanilla", "Strawberry", "Rose", "Champagne", "White Chocolate"],
             "customizable": true,
@@ -1576,11 +1576,11 @@
             "name": "Kylian Turns One Teddy Bears Cake",
             "description": "Sophisticated two-tier cake with white top tier and blue striped bottom tier. Features elegant gold script lettering and adorable brown teddy bears with blue bow ties positioned around the cake. Decorated with beautiful blue, white, and grey balloon arrangements.",
             "image": "/images/baby-shower-cakes/kylian-turns-one-teddy-bears-cake.jpeg",
-            "basePrice": 650,
+            "basePrice": 550,
             "sizes": [
-              { "name": "6+8 inch tiers", "serves": "20-25", "price": 650 },
-              { "name": "8+10 inch tiers", "serves": "30-35", "price": 750 },
-              { "name": "6+8+10 inch tiers", "serves": "40-45", "price": 950 }
+              { "name": "6+8 inch tiers", "serves": "20-25", "price": 550 },
+              { "name": "8+10 inch tiers", "serves": "30-35", "price": 650 },
+              { "name": "6+8+10 inch tiers", "serves": "40-45", "price": 850 }
             ],
             "flavors": [
               "Vanilla sponge with vanilla buttercream",
@@ -2301,7 +2301,11 @@
             "description": "Moist spiced carrot cake rolled with rich cream cheese frosting and topped with decorative piped cream cheese and a fondant carrot. All the flavors of classic carrot cake in Swiss roll form.",
             "basePrice": 40,
             "image": "/images/swiss-rolls/carrot-cake-swiss-roll.jpeg",
-            "sizes": [],
+            "sizes": [
+              { "name": "Individual Roll", "price": 40 },
+              { "name": "2-pack", "price": 80 },
+              { "name": "4-pack", "price": 160 }
+            ],
             "flavors": [
               "Traditional Carrot with Cream Cheese",
               "Spiced Carrot with Cinnamon Cream",

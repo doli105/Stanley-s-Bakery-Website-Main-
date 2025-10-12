@@ -49,19 +49,7 @@ export default function DeliveryCalculator({ onDeliveryCostCalculated }: Deliver
       }
 
       const distanceKm = data.distance / 1000
-      let cost = 0
-
-      if (distanceKm <= 5) {
-        cost = 50 // R50 for up to 5km
-      } else if (distanceKm <= 10) {
-        cost = 80 // R80 for 5-10km
-      } else if (distanceKm <= 20) {
-        cost = 120 // R120 for 10-20km
-      } else if (distanceKm <= 30) {
-        cost = 180 // R180 for 20-30km
-      } else {
-        cost = Math.ceil(distanceKm * 8) // R8 per km for longer distances
-      }
+      const cost = Math.ceil(distanceKm * 8) // R8 per km for all distances
 
       setDeliveryCost(cost)
       onDeliveryCostCalculated?.(cost)
@@ -105,7 +93,7 @@ export default function DeliveryCalculator({ onDeliveryCostCalculated }: Deliver
             >
               <Truck className="h-6 w-6 mb-2" />
               <span className="font-medium">Delivery</span>
-              <span className="text-xs opacity-75">From R50</span>
+              <span className="text-xs opacity-75">R8 per km</span>
             </Button>
           </div>
         </div>
@@ -152,8 +140,8 @@ export default function DeliveryCalculator({ onDeliveryCostCalculated }: Deliver
             )}
 
             <div className="text-xs text-amber-600 space-y-1">
-              <p>• Delivery rates: R50 (0-5km), R80 (5-10km), R120 (10-20km), R180 (20-30km)</p>
-              <p>• Longer distances calculated at R8 per km</p>
+              <p>• Delivery rate: R8 per kilometer from Stanley's Bakery</p>
+              <p>• Distance calculated using Google Maps</p>
               <p>• Delivery available Monday-Saturday: 9:00 AM - 5:00 PM</p>
             </div>
           </div>
