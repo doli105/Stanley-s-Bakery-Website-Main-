@@ -393,7 +393,7 @@
             "name": "Arsenal Football Cake",
             "description": "Show your Arsenal pride with this football-themed cake featuring the iconic red and white colors.",
             "basePrice": 550,
-            "image": "/images/milestone-cakes/gold-60th-birthday-cake.jpeg",
+            "image": "/images/sports-cakes/arsenal-football-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -415,7 +415,7 @@
             "name": "Manchester City Cake",
             "description": "Celebrate with this Manchester City themed cake in sky blue colors.",
             "basePrice": 550,
-            "image": "/images/milestone-cakes/pink-gold-drip-birthday-cake.jpeg",
+            "image": "/images/sports-cakes/manchester-city-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -529,7 +529,7 @@
             "name": "Spiderman Cityscape Cake",
             "description": "Amazing Spiderman cake featuring cityscape design with web details.",
             "basePrice": 550,
-            "image": "/images/hero-cake-1.jpg",
+            "image": "/images/spiderman-cakes/spiderman-cityscape-cake.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height it serve 2 to 4 people", "price": 550 },
               { "name": "12.5cm diameter x 15cm height it serve 4 to 6 people", "price": 650 },
@@ -558,7 +558,7 @@
             "name": "Classic Spiderman Web Cake",
             "description": "Classic Spiderman design with iconic web pattern.",
             "basePrice": 550,
-            "image": "/images/hero-cake-2.jpg",
+            "image": "/images/spiderman-cakes/classic-spiderman-web-cake.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height it serve 2 to 4 people", "price": 550 },
               { "name": "12.5cm diameter x 15cm height it serve 4 to 6 people", "price": 650 },
@@ -585,9 +585,9 @@
           {
             "id": "tall-spiderman-city-cake",
             "name": "Tall Spiderman City Cake",
-            "description": "Impressive tall cake featuring Spiderman swinging through the city.",
+            "description": "Impressive tall cake with Spiderman and city theme.",
             "basePrice": 550,
-            "image": "/images/hero-cake-3.jpg",
+            "image": "/images/spiderman-cakes/tall-spiderman-city-cake.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height it serve 2 to 4 people", "price": 550 },
               { "name": "12.5cm diameter x 15cm height it serve 4 to 6 people", "price": 650 },
@@ -1238,7 +1238,7 @@
             "name": "Elegant White Wedding Cake",
             "description": "Stunning multi-tier white wedding cake with elegant decorations.",
             "basePrice": 550,
-            "image": "/images/hero-wedding-cake.jpg",
+            "image": "/images/wedding-cakes/elegant-white-wedding-cake.jpeg",
             "sizes": [
               { "name": "2-Tier (Serves 30-40)", "price": 550 },
               { "name": "3-Tier (Serves 60-80)", "price": 1500 },
@@ -1262,7 +1262,7 @@
             "name": "Gold Mandala Luxury Wedding Cake",
             "description": "Luxurious wedding cake with intricate gold mandala designs.",
             "basePrice": 550,
-            "image": "/images/hero-luxury-wedding.jpg",
+            "image": "/images/wedding-cakes/gold-mandala-luxury-wedding-cake.jpeg",
             "sizes": [
               { "name": "2-Tier (Serves 40-50)", "price": 550 },
               { "name": "3-Tier (Serves 70-90)", "price": 1500 },
