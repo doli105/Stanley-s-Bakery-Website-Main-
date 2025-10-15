@@ -390,8 +390,8 @@
         "items": [
           {
             "id": "arsenal-football-cake",
-            "name": "Arsenal Football Cake",
-            "description": "Show your Arsenal pride with this football-themed cake featuring the iconic red and white colors.",
+            "name": "Arsenal Football Team Cake",
+            "description": "Spectacular Arsenal FC themed cake featuring the iconic Arsenal logo, player jerseys (Odegaard #8, Rice #41), realistic soccer balls, and personalized name on the base. Perfect for Arsenal fans and football enthusiasts celebrating birthdays or special occasions.",
             "basePrice": 550,
             "image": "/images/sports-cakes/arsenal-football-cake.jpeg",
             "sizes": [
@@ -412,8 +412,8 @@
           },
           {
             "id": "manchester-city-cake",
-            "name": "Manchester City Cake",
-            "description": "Celebrate with this Manchester City themed cake in sky blue colors.",
+            "name": "Manchester City Football Cake",
+            "description": "Stunning Manchester City themed cake with sky blue decorations, official Manchester City logo, soccer balls, balloon cluster, age number, and personalized name. Ideal for Manchester City supporters and football birthday celebrations.",
             "basePrice": 550,
             "image": "/images/sports-cakes/manchester-city-cake.jpeg",
             "sizes": [
@@ -526,8 +526,8 @@
         "items": [
           {
             "id": "spiderman-cityscape-cake",
-            "name": "Spiderman Cityscape Cake",
-            "description": "Amazing Spiderman cake featuring cityscape design with web details.",
+            "name": "Spider-Man Cityscape Adventure Cake",
+            "description": "Epic Spider-Man themed cake featuring a dramatic cityscape design with Spider-Man mask on the front, various Spider-Man character toppers including different Spider-Man variants, spider web decorations, and red & black balloon clusters. Perfect for superhero fans with 'ROWAN' personalization on black base. From R550 - R2600",
             "basePrice": 550,
             "image": "/images/spiderman-cakes/spiderman-cityscape-cake.jpeg",
             "sizes": [
@@ -555,8 +555,8 @@
           },
           {
             "id": "classic-spiderman-web-cake",
-            "name": "Classic Spiderman Web Cake",
-            "description": "Classic Spiderman design with iconic web pattern.",
+            "name": "Classic Spider-Man Web Cake",
+            "description": "Traditional Spider-Man cake with vibrant red frosting covered in white spider web piping, featuring Spider-Man character images around the sides, number topper, and 'SPIDER-MAN' logo topper. Includes personalized name on base for the ultimate Spider-Man birthday celebration. From R550 - R2600",
             "basePrice": 550,
             "image": "/images/spiderman-cakes/classic-spiderman-web-cake.jpeg",
             "sizes": [
@@ -584,8 +584,8 @@
           },
           {
             "id": "tall-spiderman-city-cake",
-            "name": "Tall Spiderman City Cake",
-            "description": "Impressive tall cake with Spiderman and city theme.",
+            "name": "Tall Spider-Man City Tower Cake",
+            "description": "Impressive tall blue Spider-Man cake with the iconic Spider-Man mask prominently displayed on the front, cityscape toppers with Spider-Man figures, custom name and number toppers, and red & blue balloon decorations. Features modern comic book design elements perfect for superhero celebrations. From R550 - R2600",
             "basePrice": 550,
             "image": "/images/spiderman-cakes/tall-spiderman-city-cake.jpeg",
             "sizes": [
@@ -737,9 +737,9 @@
           {
             "id": "jungle-adventure-cake",
             "name": "Jungle Adventure Cake",
-            "description": "Exciting jungle adventure cake with wild animals and tropical foliage.",
+            "description": "A vibrant two-tier jungle-themed cake featuring a collection of friendly jungle animals like lions, monkeys, and elephants. Decorated with lush green foliage, colorful flowers, and a 'Happy Birthday' banner. Perfect for a wild and fun celebration.",
             "basePrice": 550,
-            "image": "/images/jungle-cakes/safari-dithoriso-jungle-animals-cake.jpeg",
+            "image": "/images/jungle-cakes/jungle-adventure-cake.jpeg",
             "sizes": [
               { "name": "Standard Two-Tier", "price": 550 },
               { "name": "Large Two-Tier", "price": 650 },
@@ -1034,10 +1034,10 @@
         "items": [
           {
             "id": "transformers-bumblebee-cake",
-            "name": "Transformers Bumblebee Cake",
-            "description": "Transformers themed cake featuring Bumblebee in action.",
+            "name": "Transformers Bumblebee Action Cake",
+            "description": "Epic Transformers Bumblebee cake featuring a 3D Bumblebee figure on top with yellow and black colors, Autobot logo on the side, yellow and black star decorations, and personalized name on the base. Perfect for Transformers fans celebrating their special day with authentic robot action.",
             "basePrice": 550,
-            "image": "/images/milestone-cakes/gold-60th-birthday-cake.jpeg",
+            "image": "/images/superhero-cakes/transformers-bumblebee-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -1056,10 +1056,10 @@
           },
           {
             "id": "superman-action-cake",
-            "name": "Superman Action Cake",
-            "description": "Superman themed cake with iconic S shield and action design.",
+            "name": "Superman Action Hero Cake",
+            "description": "Dynamic Superman cake with blue frosting and red drip effect, featuring multiple Superman character toppers, 'SUPERMAN' banner, yellow star decorations, and iconic Superman logo on the front. Perfect for superhero fans with personalized name on the base.",
             "basePrice": 550,
-            "image": "/images/hero-cake-4.jpg",
+            "image": "/images/superhero-cakes/superman-action-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -1079,9 +1079,9 @@
           {
             "id": "spiderman-birthday-cake",
             "name": "Spiderman Birthday Cake",
-            "description": "Classic Spiderman birthday cake with web design.",
+            "description": "Dynamic Spiderman cake with red and blue frosting, featuring Spiderman mask and logo, 'POW' and 'HAPPY BIRTHDAY' toppers, number topper, personal photo element, and personalized name on the base. Perfect for young Spiderman fans with comic book style elements. From R550 - R2600",
             "basePrice": 550,
-            "image": "/images/hero-cake-5.jpg",
+            "image": "/images/superhero-cakes/spiderman-birthday-cake.jpeg",
             "sizes": [
               { "name": "12.5cm diameter x 10cm height it serve 2 to 4 people", "price": 550 },
               { "name": "12.5cm diameter x 15cm height it serve 4 to 6 people", "price": 650 },
@@ -1107,10 +1107,10 @@
           },
           {
             "id": "dragon-ball-z-goku-cake",
-            "name": "Dragon Ball Z Goku Cake",
-            "description": "Dragon Ball Z themed cake featuring Goku in Super Saiyan form.",
+            "name": "Dragon Ball Z Goku Power Cake",
+            "description": "Spectacular Dragon Ball Z cake with blue frosting featuring Goku character image with flame decorations on top, orange Dragon Balls around the base, and personalized name. Perfect for anime and superhero fans celebrating with authentic Dragon Ball Z elements.",
             "basePrice": 550,
-            "image": "/images/milestone-cakes/pink-gold-anna-birthday-cake.jpeg",
+            "image": "/images/superhero-cakes/dragon-ball-z-goku-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -1130,9 +1130,9 @@
           {
             "id": "spongebob-birthday-cake",
             "name": "SpongeBob Birthday Cake",
-            "description": "Fun SpongeBob SquarePants themed birthday cake.",
+            "description": "Fun SpongeBob SquarePants cake with yellow frosting featuring SpongeBob's iconic face with big eyes and smile, stick arms extending from the sides, various SpongeBob characters on top with number '1', and 'THAPELO' personalized on the base. Perfect for young SpongeBob fans.",
             "basePrice": 550,
-            "image": "/images/cocomelon-cakes/1st-birthday-cocomelon-cake.jpeg",
+            "image": "/images/superhero-cakes/spongebob-birthday-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -1151,10 +1151,10 @@
           },
           {
             "id": "numberblocks-5-amo-cake",
-            "name": "Numberblocks 5 Amo Cake",
-            "description": "Numberblocks themed cake featuring Number 5 character.",
+            "name": "Numberblocks 5 Educational Birthday Cake",
+            "description": "Educational Numberblocks cake with blue frosting featuring colorful number characters on top including number '5' with rainbow, white clouds, and 'AMO' written on the side. Perfect for young learners celebrating with their favorite educational characters.",
             "basePrice": 550,
-            "image": "/images/milestone-cakes/white-botanical-birthday-cake.jpeg",
+            "image": "/images/superhero-cakes/numberblocks-5-amo-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -1174,9 +1174,9 @@
           {
             "id": "paw-patrol-angela-3rd-birthday-cake",
             "name": "Paw Patrol Angela 3rd Birthday Cake",
-            "description": "Paw Patrol themed cake perfect for young fans.",
+            "description": "Adorable two-tier Paw Patrol cake with pink top tier and blue bottom tier, featuring Paw Patrol characters on top including Chase, Marshall, Skye, and Rubble, number '3', blue and red balloon clusters, and 'ANGELA' personalized on the base. Perfect for Paw Patrol fans.",
             "basePrice": 550,
-            "image": "/images/jungle-cakes/lion-king-oreha-1st-birthday-cake.jpeg",
+            "image": "/images/superhero-cakes/paw-patrol-angela-3rd-birthday-cake.jpeg",
             "sizes": [
               { "name": "Standard Two-Tier", "price": 550 },
               { "name": "Large Two-Tier", "price": 650 },
@@ -1201,9 +1201,9 @@
           {
             "id": "mickey-mouse-1st-birthday-cake",
             "name": "Mickey Mouse 1st Birthday Cake",
-            "description": "Classic Mickey Mouse themed first birthday cake.",
+            "description": "Classic Mickey Mouse cake with blue frosting featuring Mickey's iconic face and white gloved hands, number '1' with star decorations, silver and teal star toppers, and letter cookies around the base. Perfect for Disney fans and first birthday celebrations.",
             "basePrice": 550,
-            "image": "/images/cocomelon-cakes/akonaho-1st-birthday-cocomelon-cake.jpeg",
+            "image": "/images/superhero-cakes/mickey-mouse-1st-birthday-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550 },
               { "name": "Large (10 inch)", "price": 650 },
@@ -1236,9 +1236,9 @@
           {
             "id": "elegant-white-wedding-cake",
             "name": "Elegant White Wedding Cake",
-            "description": "Stunning multi-tier white wedding cake with elegant decorations.",
-            "basePrice": 550,
+            "description": "A classic three-tier white wedding cake adorned with delicate white sugar flowers and subtle pearl accents. Features a smooth fondant finish and a personalized monogram on the top tier. Perfect for timeless and romantic celebrations.",
             "image": "/images/wedding-cakes/elegant-white-wedding-cake.jpeg",
+            "basePrice": 550,
             "sizes": [
               { "name": "2-Tier (Serves 30-40)", "price": 550 },
               { "name": "3-Tier (Serves 60-80)", "price": 1500 },
@@ -1260,9 +1260,9 @@
           {
             "id": "gold-mandala-luxury",
             "name": "Gold Mandala Luxury Wedding Cake",
-            "description": "Luxurious wedding cake with intricate gold mandala designs.",
-            "basePrice": 550,
+            "description": "Sophisticated three-tier cake with gold metallic top tier, pristine white middle tier, and ornate mandala pattern bottom tier. Features elegant white sugar flowers and luxurious gold detailing.",
             "image": "/images/wedding-cakes/gold-mandala-luxury-wedding-cake.jpeg",
+            "basePrice": 550,
             "sizes": [
               { "name": "2-Tier (Serves 40-50)", "price": 550 },
               { "name": "3-Tier (Serves 70-90)", "price": 1500 },
@@ -1409,9 +1409,9 @@
           {
             "id": "money-safe-cake",
             "name": "Money Safe Cake",
-            "description": "Novelty cake designed as a money safe, perfect for milestone birthdays.",
+            "description": "Realistic black safe-shaped cake with edible money bills spilling out, gold coins, and intricate safe details. Perfect for business celebrations, retirement parties, or anyone who loves unique themed designs.",
             "basePrice": 550,
-            "image": "/images/gentleman-cakes/bow-tie-yolo-cake.jpeg",
+            "image": "/images/novelty-cakes/money-safe-cake.jpeg",
             "sizes": [
               { "name": "Standard Safe (8x8 inch)", "price": 550, "serves": "12 to 16 people" },
               { "name": "Large Safe (10x10 inch)", "price": 1200, "serves": "20 to 25 people" },
@@ -1429,10 +1429,10 @@
           },
           {
             "id": "graduation-cake",
-            "name": "Graduation Cake",
-            "description": "Celebrate academic achievement with this graduation themed cake.",
+            "name": "Graduation Celebration Cake",
+            "description": "Elegant white marble-effect cake with realistic black graduation cap, diploma scroll, and personalized name plaque. Perfect for graduation ceremonies and academic achievements.",
             "basePrice": 550,
-            "image": "/images/milestone-cakes/gold-60th-birthday-cake.jpeg",
+            "image": "/images/novelty-cakes/graduation-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550, "serves": "12 to 16 people" },
               { "name": "Large (10 inch)", "price": 850, "serves": "20 to 25 people" },
@@ -1451,10 +1451,10 @@
           },
           {
             "id": "dior-themed-cake",
-            "name": "Dior Themed Cake",
-            "description": "Luxury Dior branded themed cake perfect for fashion lovers.",
+            "name": "Designer Dior Themed Cake",
+            "description": "Sophisticated white cake featuring the iconic Dior logo pattern with elegant black bow decoration. Perfect for fashion lovers and luxury brand enthusiasts.",
             "basePrice": 550,
-            "image": "/images/gentleman-cakes/black-gold-luxury-birthday-cake.jpeg",
+            "image": "/images/novelty-cakes/dior-themed-cake.jpeg",
             "sizes": [
               { "name": "Standard (8 inch)", "price": 550, "serves": "12 to 16 people" },
               { "name": "Large (10 inch)", "price": 650, "serves": "20 to 25 people" },
@@ -1473,9 +1473,9 @@
           {
             "id": "kfc-bucket-cake",
             "name": "KFC Bucket Cake",
-            "description": "Fun novelty cake designed to look like a KFC bucket.",
+            "description": "Incredibly realistic KFC bucket cake filled with edible 'fried chicken' pieces. Complete with authentic KFC branding and packaging details. Perfect for fast food lovers and fun celebrations.",
             "basePrice": 550,
-            "image": "/images/gentleman-cakes/automotive-birthday-cake.jpeg",
+            "image": "/images/novelty-cakes/kfc-bucket-cake.jpeg",
             "sizes": [
               { "name": "Standard Bucket", "price": 550, "serves": "10 to 14 people" },
               { "name": "Large Bucket", "price": 750, "serves": "16 to 20 people" },
@@ -1494,9 +1494,9 @@
           {
             "id": "pilot-uniform-cake",
             "name": "Pilot Uniform Cake",
-            "description": "Professional pilot uniform themed cake for aviation enthusiasts.",
+            "description": "Detailed blue pilot uniform cake with authentic military styling, gold buttons, badges, and matching pilot cap. Perfect for aviation enthusiasts, military celebrations, or career achievements.",
             "basePrice": 550,
-            "image": "/images/gentleman-cakes/best-dad-husband-family-cake.jpeg",
+            "image": "/images/novelty-cakes/pilot-uniform-cake.jpeg",
             "sizes": [
               { "name": "Standard Uniform", "price": 550, "serves": "15 to 20 people" },
               { "name": "Large Uniform", "price": 750, "serves": "25 to 30 people" },
@@ -1515,10 +1515,10 @@
           },
           {
             "id": "luxury-brand-cake",
-            "name": "Luxury Brand Cake",
-            "description": "Designer luxury brand themed cake with elegant details.",
+            "name": "Luxury Brand Designer Cake",
+            "description": "Elegant geometric cake featuring Louis Vuitton and Dior luxury brand logos with pink and white color scheme, decorated with sugar roses, gold spheres, and sophisticated design elements. Perfect for fashion-forward celebrations.",
             "basePrice": 550,
-            "image": "/images/gentleman-cakes/best-husband-dad-50th-cake.jpeg",
+            "image": "/images/novelty-cakes/luxury-brand-cake.jpeg",
             "sizes": [
               { "name": "Standard Designer (8 inch)", "price": 550, "serves": "15 to 20 people" },
               { "name": "Large Designer (10 inch)", "price": 750, "serves": "25 to 30 people" },

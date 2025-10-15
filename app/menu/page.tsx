@@ -173,23 +173,14 @@ export default function MenuPage() {
                       <div className="space-y-3">
                         {/* Price */}
                         <div className="flex items-center justify-between">
-                          {selectedCategory === "celebration-special-occasion" &&
-                          selectedSubcategory !== "bento-cakes" ? (
-                            <span className="text-2xl font-bold text-stanley-pink">
-                              From R{Math.round(item.basePrice)}
-                            </span>
-                          ) : (
-                            <>
-                              <span className="text-sm font-medium text-muted-foreground">
-                                {item.priceRange ? "Price range:" : "Starting from:"}
-                              </span>
-                              <span className="text-2xl font-bold text-stanley-pink">
-                                {item.priceRange
-                                  ? `R${item.priceRange.split("-")[0]}-R${item.priceRange.split("-")[1]}`
-                                  : `R${item.basePrice.toFixed(2)}`}
-                              </span>
-                            </>
-                          )}
+                          <span className="text-sm font-medium text-muted-foreground">
+                            {item.priceRange ? "Price range:" : "Starting from:"}
+                          </span>
+                          <span className="text-2xl font-bold text-stanley-pink">
+                            {item.priceRange
+                              ? `R${item.priceRange.split("-")[0]}-R${item.priceRange.split("-")[1]}`
+                              : `R${item.basePrice.toFixed(2)}`}
+                          </span>
                         </div>
 
                         {/* Sizes */}
