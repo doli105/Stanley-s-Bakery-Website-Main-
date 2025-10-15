@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Instagram, Facebook, Clock, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -10,9 +11,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-stanley-pink to-stanley-yellow rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-base sm:text-lg">S</span>
-              </div>
+              <Image
+                src="/images/stanley-logo-full.jpeg"
+                alt="Stanley's Bakery"
+                width={40}
+                height={40}
+                className="object-contain w-8 h-8 sm:w-10 sm:h-10 rounded-lg"
+              />
               <h3 className="font-dancing-script text-xl sm:text-2xl font-bold text-stanley-pink">Stanley's Bakery</h3>
             </Link>
             <p className="text-stanley-pink mb-4 max-w-md text-sm sm:text-base">

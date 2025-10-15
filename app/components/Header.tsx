@@ -40,7 +40,7 @@ export default function Header() {
           >
             {!logoError ? (
               <Image
-                src="/images/stanley-logo-full.jpg"
+                src="/images/stanley-logo-full.jpeg"
                 alt="Stanley's Bakery"
                 width={60}
                 height={45}
