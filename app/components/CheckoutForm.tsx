@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useCart } from "./CartContext"
 import DeliveryCalculator from "./DeliveryCalculator"
 import YocoPaymentForm from "./YocoPaymentForm"
+import OrderConfirmation from "./OrderConfirmation"
 import Image from "next/image"
 
 interface CheckoutFormProps {
@@ -26,8 +27,9 @@ export default function CheckoutForm({ isOpen, onClose }: CheckoutFormProps) {
     customNotes: "",
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
-  const [currentStep, setCurrentStep] = useState<"details" | "payment">("details")
+  const [currentStep, setCurrentStep] = useState<"details" | "payment" | "confirmation">("details")
   const [orderData, setOrderData] = useState<any>(null)
+  const [paymentResult, setPaymentResult] = useState<any>(null)
 
   const totalAmount = getTotalPrice()
 
@@ -111,42 +113,8 @@ export default function CheckoutForm({ isOpen, onClose }: CheckoutFormProps) {
   const handlePaymentSuccess = (paymentResult: any) => {
     console.log("[v0] Payment successful:", paymentResult)
 
-    const orderSummary = `
-Order Confirmation - ${orderData.orderNumber}
-
-Payment ID: ${paymentResult.id}
-Customer: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Event Date: ${formData.eventDate}
-
-Delivery: ${deliveryOption === "pickup" ? "Store Pickup" : `Home Delivery to ${deliveryAddress}`}
-${deliveryOption === "delivery" ? `Delivery Cost: R${deliveryCost}` : ""}
-
-Items:
-${items
-  .map(
-    (item) => `- ${item.name} (Qty: ${item.quantity}) - R${(item.price * item.quantity).toFixed(2)}
-  ${item.customizations?.size ? `Size: ${item.customizations.size.name}` : ""}
-  ${item.customizations?.flavor ? `Flavor: ${item.customizations.flavor.name}` : ""}
-  ${item.customizations?.extras?.length ? `Extras: ${item.customizations.extras.map((e) => e.name).join(", ")}` : ""}
-  ${item.customizations?.specialInstructions ? `Special Instructions: ${item.customizations.specialInstructions}` : ""}`,
-  )
-  .join("\n\n")}
-
-Total Paid: R${totalAmount.toFixed(2)}
-
-${formData.customNotes ? `Additional Notes: ${formData.customNotes}` : ""}
-    `
-
-    alert(
-      `Payment successful!\n\nOrder Number: ${orderData.orderNumber}\nPayment ID: ${paymentResult.id}\n\nWe'll contact you within 24 hours to confirm your order details and arrange ${deliveryOption === "pickup" ? "pickup" : "delivery"}.`,
-    )
-
-    console.log("[v0] Order completed:", orderSummary)
-
-    clearCart()
-    onClose()
+    setPaymentResult(paymentResult)
+    setCurrentStep("confirmation")
   }
 
   const handlePaymentError = (error: string) => {
@@ -163,7 +131,23 @@ ${formData.customNotes ? `Additional Notes: ${formData.customNotes}` : ""}
     }
   }
 
+  const handleConfirmationClose = () => {
+    clearCart()
+    onClose()
+  }
+
   if (!isOpen) return null
+
+  if (currentStep === "confirmation" && orderData && paymentResult) {
+    return (
+      <OrderConfirmation
+        isOpen={true}
+        onClose={handleConfirmationClose}
+        orderData={orderData}
+        paymentId={paymentResult.id}
+      />
+    )
+  }
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
@@ -172,7 +156,11 @@ ${formData.customNotes ? `Additional Notes: ${formData.customNotes}` : ""}
           <div className="flex items-center justify-between">
             <CardTitle className="text-2xl font-bold flex items-center">
               <Package className="mr-2 h-6 w-6" />
-              {currentStep === "details" ? "Checkout" : "Secure Payment"}
+              {currentStep === "details"
+                ? "Checkout"
+                : currentStep === "payment"
+                  ? "Secure Payment"
+                  : "Order Confirmation"}
             </CardTitle>
             <Button variant="ghost" size="icon" onClick={onClose} className="text-amber-900 hover:bg-amber-100">
               <X className="h-6 w-6" />
@@ -365,7 +353,7 @@ ${formData.customNotes ? `Additional Notes: ${formData.customNotes}` : ""}
                 </form>
               </div>
             </div>
-          ) : (
+          ) : currentStep === "payment" ? (
             // Payment Step
             <div className="flex justify-center">
               <YocoPaymentForm
@@ -375,7 +363,7 @@ ${formData.customNotes ? `Additional Notes: ${formData.customNotes}` : ""}
                 onPaymentError={handlePaymentError}
               />
             </div>
-          )}
+          ) : null}
         </CardContent>
       </Card>
     </div>
