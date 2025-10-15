@@ -40,11 +40,11 @@ export default function Header() {
           >
             {!logoError ? (
               <Image
-                src="/images/stanley-logo-full.jpeg"
+                src="/images/stanley-logo-full.jpg"
                 alt="Stanley's Bakery"
-                width={60}
-                height={45}
-                className="object-contain w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] rounded-lg shadow-md"
+                width={70}
+                height={52}
+                className="object-contain w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] rounded-lg shadow-md logo-glow"
                 onError={() => setLogoError(true)}
                 priority
               />
