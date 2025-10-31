@@ -145,21 +145,18 @@ export default function MenuPage() {
                     key={item.id}
                     className="overflow-hidden hover:shadow-xl transition-all duration-300 card-hover"
                   >
-                    <div className="relative h-64 bg-gradient-to-br from-amber-100 to-pink-100">
+                    <div className="relative h-64 bg-gray-100">
                       <Image
-                        src={
-                          item.image ||
-                          `/placeholder.svg?height=400&width=600&query=${encodeURIComponent(item.name + " cake")}`
-                        }
+                        src={item.image || "/images/hero-cake-1.jpg"}
                         alt={item.name}
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={index < 6}
-                        quality={85}
+                        quality={90}
                         onError={(e) => {
                           const target = e.target as HTMLImageElement
-                          target.src = `/placeholder.svg?height=400&width=600&query=${encodeURIComponent(item.name + " cake")}`
+                          target.src = "/images/hero-cake-1.jpg"
                         }}
                       />
                       {!item.inStock && <Badge className="absolute top-2 right-2 bg-red-500">Out of Stock</Badge>}
