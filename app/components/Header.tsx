@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { useCart } from "./CartContext"
 import CartModal from "./CartModal"
 import OrderTracking from "./OrderTracking"
-import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 export default function Header() {
@@ -38,21 +37,9 @@ export default function Header() {
             href="/"
             className="flex items-center space-x-2 sm:space-x-3 hover:scale-105 transition-transform duration-300"
           >
-            {!logoError ? (
-              <Image
-                src="/images/stanley-logo-full.jpg"
-                alt="Stanley's Bakery"
-                width={60}
-                height={45}
-                className="object-contain w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] rounded-lg shadow-md"
-                onError={() => setLogoError(true)}
-                priority
-              />
-            ) : (
-              <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg shadow-md flex items-center justify-center">
-                <span className="text-white font-bold text-xs sm:text-sm md:text-base">SB</span>
-              </div>
-            )}
+            <div className="w-12 h-9 sm:w-16 sm:h-12 md:w-[70px] md:h-[52px] bg-gradient-to-br from-pink-500 via-pink-400 to-pink-600 rounded-lg shadow-md flex items-center justify-center border-2 border-white/30">
+              <span className="text-white font-bold text-xs sm:text-sm md:text-base drop-shadow-lg">SB</span>
+            </div>
             <div className="block">
               <h1 className="font-dancing-script text-base sm:text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-md">
                 Stanley's Bakery
